@@ -1,0 +1,98 @@
+@import url(http://fonts.googleapis.com/css?family=Quicksand);
+
+* {
+font-family: 'Quicksand', sans-serif;
+}
+
+#rogersparkmap {
+	height:100%;
+	width:100%;
+}
+
+a:link {text-decoration:none;}
+a:visited {text-decoration:none;}
+a:hover {text-decoration:none;}
+a:active {text-decoration:none;}
+
+.ui-icon-notes {
+  background-image: url('images/notes.png');
+  background-size: 16px 16px;
+  background-position: center;
+}
+.ui-icon-missions {
+  background-image: url('images/missions.png');
+  background-size: 18px 18px;
+  background-position: center;
+}
+.ui-icon-directory {
+  background-image: url('images/directory.png');
+  background-size: 18px 13px;
+  background-position: center;
+}
+.ui-icon-map {
+  background-image: url('images/map.png');
+  background-size: 18px 14px;
+}
+.ui-icon-weather {
+  background-image: url('images/weather.png');
+  background-size: 18px 18px;
+  background-position: center;
+}
+.ui-icon-quotations {
+  background-image: url('images/quotations.png');
+  background-size: 18px 16px;
+  background-position: center;
+}
+.ui-icon-guidance {
+  background-image: url('images/guidance.png');
+  background-size: 14px 18px;
+  background-position: center;
+}
+.ui-icon-prayers {
+  background-image: url('images/prayers.png');
+  background-size: 12px 18px;
+  background-position: center;
+}
+.ui-icon-menu {
+  background-image: url('images/menu.png');
+  background-size: 16px 16px;
+  background-position: center;
+}
+.ui-icon-schedule {
+  background-image: url('images/schedule.png');
+  background-size: 18px 18px;
+}
+.ui-icon-right {
+  background-image: url('images/right.png');
+  background-size: 16px 16px;
+}
+.ui-icon-book1 {
+  background-image: url('images/book1.jpg');
+  background-size: 13px 18px;
+  background-position: center;
+}
+.ui-icon-book2 {
+  background-image: url('images/book2.jpg');
+  background-size: 13px 18px;
+  background-position: center;
+}
+.ui-icon-book3 {
+  background-image: url('images/book3.jpg');
+  background-size: 13px 18px;
+  background-position: center;
+}
+.ui-icon-book4 {
+  background-image: url('images/book4.jpg');
+  background-size: 13px 18px;
+  background-position: center;
+}
+.ui-icon-book6 {
+  background-image: url('images/book6.jpg');
+  background-size: 13px 18px;
+  background-position: center;
+}
+.ui-icon-book7 {
+  background-image: url('images/book7.jpg');
+  background-size: 13px 18px;
+  background-position: center;
+}
