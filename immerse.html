@@ -25,7 +25,11 @@
 		<link rel="stylesheet" href="add2home.css">
 		<script type="application/javascript" src="add2home.js"></script>
 		<style type="text/css">
-</style>
+			.ui-collapsible-heading .ui-icon {
+				display: none;
+				position: right;
+			}
+		</style>
 	</head>
 	<body>
 		<div data-role="page" data-control-title="search" class="ui-icon-nodisc" id="search">
@@ -48,7 +52,7 @@
 					<div align="center">
 						<i><small>All titles are searched by default.<br>To search specific titles select below.</i></small>
 					</div>
-					<div data-role="collapsible" id="Bahaullah">
+					<div data-role="collapsible" id="Bahaullah" data-iconpos="right">
 					<h3>Bah&aacute;'u'll&aacute;h</h3>
 						<p>
 							<input type="checkbox" name="idxname[]" value="en-b" id="B"/><label for="B"><strong>All Works of Bah&aacute;'u'll&aacute;h</strong></label>
@@ -66,14 +70,14 @@
 							<input type="checkbox" name="idxname[]" value="en-TB" id="TB"/><label for="TB">Tablets of Bah&aacute;'u'll&aacute;h Revealed after the Kit&aacute;b-i-Aqdas</label>
 						</p>
 					</div>
-					<div data-role="collapsible" id="Bab">
+					<div data-role="collapsible" id="Bab" data-iconpos="right">
 					<h3>The B&aacute;b</h3>
 						<p>
 							<input type="checkbox" name="idxname[]" value="en-tb" id="tb"/><label for="tb"><strong>All Works of The B&aacute;b</strong></label>
 							<input type="checkbox" name="idxname[]" value="en-SWB" id="SWB"/><label for="SWB">Selections from the Writings of The B&aacute;b</label>
 						</p>
 					</div>
-					<div data-role="collapsible" id="Abdul-Baha">
+					<div data-role="collapsible" id="Abdul-Baha" data-iconpos="right">
 					<h3>&#0145;Abdu&#0146;l-Bah&aacute;</h3>
 						<p>
 							<input type="checkbox" name="idxname[]" value="en-ab" id="ab"/><label for="ab"><strong>All Works of &#0145;Abdu&#0146;l-Bah&aacute;</strong></label>
@@ -93,7 +97,7 @@
 							<input type="checkbox" name="idxname[]" value="en-WT" id="WT"/><label for="WT">The Will and Testament of &#0145;Abdu&#0146;l-Bah&aacute;</label>
 						</p>
 					</div>
-					<div data-role="collapsible" id="Shoghi">
+					<div data-role="collapsible" id="Shoghi" data-iconpos="right">
 					<h3>Shoghi Effendi</h3>
 						<p>
 							<input type="checkbox" name="idxname[]" value="en-se" id="se"/><label for="se"><strong>All Works of Shoghi Effendi</strong></label>
@@ -116,7 +120,7 @@
 							<input type="checkbox" name="idxname[]" value="en-WOB" id="WOB"/><label for="WOB">The World Order of Bah&aacute;'u'll&aacute;h</label>
 						</p>
 					</div>
-					<div data-role="collapsible" id="Universal">
+					<div data-role="collapsible" id="Universal" data-iconpos="right">
 					<h3>The Universal House of Justice</h3>
 						<p>
 							<input type="checkbox" name="idxname[]" value="en-uhj" id="uhj1"/><label for="uhj1"><strong>All Works of the Universal House of Justice</strong></label>
@@ -124,7 +128,7 @@
 							<input type="checkbox" name="idxname[]" value="en-PWP" id="PWP"/><label for="PWP">The Promise of World Peace</label>
 						</p>
 					</div>
-					<div data-role="collapsible" id="Compilations">
+					<div data-role="collapsible" id="Compilations" data-iconpos="right">
 					<h3>Compilations</h3>
 						<p>
 							<input type="checkbox" name="idxname[]" value="en-c" id="c"/><label for="c"><strong>All Compilations</strong></label>
@@ -136,7 +140,7 @@
 							<input type="checkbox" name="idxname[]" value="en-JWTA" id="JWTA"/><label for="JWTA">Japan Will Turn Ablaze!</label>
 						</p>
 					</div>
-					<div data-role="collapsible" id="Other">
+					<div data-role="collapsible" id="Other" data-iconpos="right">
 					<h3>Other Authors</h3>
 						<p>
 							<input type="checkbox" name="idxname[]" value="en-uhj" id="uhj2"/><label for="uhj2"><strong>All Works of Other Authors</strong></label>
