@@ -19,6 +19,13 @@ a:active {text-decoration:none;}
   background-size: 16px 16px;
   background-position: center;
 }
+
+.ui-icon-search {
+  background-image: url('images/search.png');
+  background-size: 16px 16px;
+  background-position: center;
+}
+
 .ui-icon-missions {
   background-image: url('images/missions.png');
   background-size: 18px 18px;
