@@ -24,6 +24,22 @@
 		<!-- iDevice Add to Homescreen Popup-->	
 		<link rel="stylesheet" href="add2home.css">
 		<script type="application/javascript" src="add2home.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function(e) {
+				$('#specify').click(function(e) {
+					$('#advanced').toggle();
+					if($('#specify').val()=='Advanced'){
+						$('#specify').val('Hide Advanced');
+					}
+					else{
+						$('#specify').val('Advanced');
+						}
+				});
+				$('h3').on("click", function (e) {
+					$(window).scrollTop($(e.target).offset().top - 43);
+				});
+			});
+		</script>
 	</head>
 	<body>
 		<div data-role="page" data-control-title="search" class="ui-icon-nodisc" id="search">
@@ -36,14 +52,16 @@
 				<div align="center">
 					<p><i>"Immerse yourselves in the ocean of My words..."</i></p>
 				</div>
-				<form action="http://reference.bahai.org/search" method="get">
+				<form action="http://reference.bahai.org/search" method="get" target="iframe">
 					<input type="search" name="query" value=""/>
 					<input type="hidden" name="max" value="10">
 					<input type="hidden" name="lang" value="en">
 					<input type="hidden" name="first" value="1" />
 					<div align="center">
-						<br><i><small>All titles are searched by default. To search specific titles, select below.</i></small>
+						<i><small>All titles searched by default. Click below to specify titles:</i></small>
 					</div>
+					<input type="button" name="specify" id="specify" value="Advanced" data-iconpos="right" data-icon="right">
+					<div id="advanced" style="display: none;">
 					<div data-role="collapsible-set" id="set">
 					<div data-role="collapsible" id="Bahaullah">
 					<h3>Bah&aacute;'u'll&aacute;h</h3>
@@ -145,9 +163,12 @@
 						</p>
 					</div>
 					</div>
-					<br>
+					</div>
 					<input type="submit" data-icon="search" value="Search" data-iconpos="right"/>
 				</form>
+				<br>
+				<iframe name="iframe" width="100%" height="960px">
+				</iframe>
 			</div>
 		</div>
 	</body>
