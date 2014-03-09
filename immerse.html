@@ -24,6 +24,7 @@
 		<!-- iDevice Add to Homescreen Popup-->	
 		<link rel="stylesheet" href="add2home.css">
 		<script type="application/javascript" src="add2home.js"></script>
+		<script type="application/javascript" src="jquery.stayInWebApp.min.js"></script>
 		<script type="text/javascript">
 			$(document).ready(function(e) {
 				$('#specify').click(function(e) {
@@ -37,6 +38,9 @@
 				});
 				$('h3').on("click", function (e) {
 					$(window).scrollTop($(e.target).offset().top - 43);
+				});
+				$(function() {
+					$.stayInWebApp();
 				});
 			});
 		</script>
