@@ -23,7 +23,7 @@
 		<link href="apple-touch-icon-144x144.png" sizes="144x144" rel="apple-touch-icon">
 		<!-- iDevice Add to Homescreen Popup-->	
 		<link rel="stylesheet" href="add2home.css">
-		<script type="application/javascript" src="add2home.js"></script>
+<!-- 		<script type="application/javascript" src="add2home.js"></script> -->
 		<script type="text/javascript">
 			$(document).ready(function(e) {
 				$('#specify').click(function(e) {
@@ -38,6 +38,10 @@
 				$('h3').on("click", function (e) {
 					$(window).scrollTop($(e.target).offset().top);
 				});
+			});
+		</script>
+<!-- 		<script type="text/javascript">
+			$(document).ready(function(e) {
 				$(window).on('load resize', function(){
 					$window = $(window);
 					$('iframe').height(function(){
@@ -48,7 +52,7 @@
 					$(window).scrollTop($('wrap').offset().top);
 				});
 			});
-		</script>
+		</script> -->
 <!-- 		<style type="text/css">
 			 #wrap { width: 600px; height: 390px; padding: 0; overflow: hidden; }
 				#iframe { width: 800px; height: 520px; border: 1px solid black; }
