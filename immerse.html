@@ -38,8 +38,52 @@
 				$('h3').on("click", function (e) {
 					$(window).scrollTop($(e.target).offset().top);
 				});
+				$(window).on('load resize', function(){
+					$window = $(window);
+					$('iframe').height(function(){
+						return $window.height()-$(this).offset().top;   
+					});
+				});
+				$('submit').on("click", function (e) {
+					$(window).scrollTop($('wrap').offset().top);
+				});
 			});
 		</script>
+<!-- 		<style type="text/css">
+			 #wrap { width: 600px; height: 390px; padding: 0; overflow: hidden; }
+				#iframe { width: 800px; height: 520px; border: 1px solid black; }
+				#iframe {
+					-ms-zoom: 0.75;
+					-moz-transform: scale(0.75);
+					-moz-transform-origin: 0 0;
+					-o-transform: scale(0.75);
+					-o-transform-origin: 0 0;
+					-webkit-transform: scale(0.75);
+					-webkit-transform-origin: 0 0;
+				}
+		</style> -->
+<!-- 		<style type="text/css">
+			iframe {
+			  -moz-transform: scale(0.75, 0.75); 
+			  -webkit-transform: scale(0.75, 0.75); 
+			  -o-transform: scale(0.75, 0.75);
+			  -ms-transform: scale(0.75, 0.75);
+			  transform: scale(0.75, 0.75); 
+			  -moz-transform-origin: top left;
+			  -webkit-transform-origin: top left;
+			  -o-transform-origin: top left;
+			  -ms-transform-origin: top left;
+			  transform-origin: top left;
+			}
+		</style> -->
+		<style type="text/css">
+			iframe{
+				display:block; 
+				margin:0; 
+				padding:0; 
+				border:0;
+			}
+		</style>
 	</head>
 	<body>
 		<div data-role="page" data-control-title="search" class="ui-icon-nodisc" id="search">
@@ -164,11 +208,12 @@
 					</div>
 					</div>
 					</div>
-					<input type="submit" data-icon="search" value="Search" data-iconpos="right"/>
+					<input type="submit" id="submit" data-icon="search" value="Search" data-iconpos="right"/>
 				</form>
 				<br>
-				<iframe name="iframe" width="100%" height="960px">
-				</iframe>
+				<div id="wrap">
+					<iframe name="iframe" width="100%"></iframe>
+				</div>
 			</div>
 		</div>
 	</body>
