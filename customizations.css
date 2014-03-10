@@ -20,6 +20,12 @@ a:active {text-decoration:none;}
   background-position: center;
 }
 
+.ui-icon-advanced {
+  background-image: url('images/advanced.png');
+  background-size: 16px 16px;
+  background-position: center;
+}
+
 .ui-icon-search {
   background-image: url('images/search.png');
   background-size: 16px 16px;

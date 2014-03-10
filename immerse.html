@@ -76,14 +76,14 @@
 			  transform-origin: top left;
 			}
 		</style> -->
-		<style type="text/css">
+<!-- 		<style type="text/css">
 			iframe{
 				display:block; 
 				margin:0; 
 				padding:0; 
 				border:0;
 			}
-		</style>
+		</style> -->
 	</head>
 	<body>
 		<div data-role="page" data-control-title="search" class="ui-icon-nodisc" id="search">
@@ -94,9 +94,9 @@
 			</div>
 			<div data-role="content">
 				<div align="center">
-					<p><i>"Immerse yourselves in the ocean of My words..."</i></p>
+						<p><i>"Immerse yourselves in the ocean of My words..."</i></p>
 				</div>
-				<form action="http://reference.bahai.org/search" method="get" target="iframe">
+				<form action="http://reference.bahai.org/search" method="get">
 					<input type="search" name="query" value=""/>
 					<input type="hidden" name="max" value="10">
 					<input type="hidden" name="lang" value="en">
@@ -104,116 +104,116 @@
 					<div align="center">
 						<i><small>All titles searched by default. Click below to specify titles:</i></small>
 					</div>
-					<input type="button" name="specify" id="specify" value="Advanced" data-iconpos="right" data-icon="right">
+					<input type="button" name="specify" id="specify" value="Advanced" data-iconpos="right" data-icon="advanced">
 					<div id="advanced" style="display: none;">
-					<div data-role="collapsible-set" id="set">
-					<div data-role="collapsible" id="Bahaullah">
-					<h3>Bah&aacute;'u'll&aacute;h</h3>
-						<p>
-							<input type="checkbox" name="idxname[]" value="en-b" id="B"/><label for="B"><strong>All Works of Bah&aacute;'u'll&aacute;h</strong></label>
-							<input type="checkbox" name="idxname[]" value="en-ESW" id="ESW"/><label for="ESW">Epistle to the Son of the Wolf</label>
-							<input type="checkbox" name="idxname[]" value="en-GDM" id="GDM"/><label for="GDM">Gems of Divine Mysteries</label>
-							<input type="checkbox" name="idxname[]" value="en-GWB" id="GWB"/><label for="GWB">Gleanings from the Writings of Bah&aacute;'u'll&aacute;h</label>
-							<input type="checkbox" name="idxname[]" value="en-HW" id="HW"/><label for="HW">The Hidden Words of Bah&aacute;'u'll&aacute;h</label>
-							<input type="checkbox" name="idxname[]" value="en-KA" id="KA"/><label for="KA">The Kit&aacute;b-i-Aqdas (The Most Holy Book)</label>
-							<input type="checkbox" name="idxname[]" value="en-KI" id="KI"/><label for="KI">The Kit&aacute;b-i-&Iacute;q&aacute;n (The Book of Certitude)</label>
-							<input type="checkbox" name="idxname[]" value="en-PM" id="PM"/><label for="PM">Prayers and Meditations by Bah&aacute;'u'll&aacute;h</label>
-							<input type="checkbox" name="idxname[]" value="en-PB" id="PB"/><label for="PB">Proclamation of Bah&aacute;'u'll&aacute;h</label>
-							<input type="checkbox" name="idxname[]" value="en-SVFV" id="SVFV"/><label for="SVFV">The Seven Valleys and the Four Valleys</label>
-							<input type="checkbox" name="idxname[]" value="en-SLH" id="SLH"/><label for="SLH">The Summons of the Lord of Hosts</label>
-							<input type="checkbox" name="idxname[]" value="en-TU" id="TU"/><label for="TU">The Tabernacle of Unity</label>
-							<input type="checkbox" name="idxname[]" value="en-TB" id="TB"/><label for="TB">Tablets of Bah&aacute;'u'll&aacute;h Revealed after the Kit&aacute;b-i-Aqdas</label>
-						</p>
-					</div>
-					<div data-role="collapsible" id="Bab">
-					<h3>The B&aacute;b</h3>
-						<p>
-							<input type="checkbox" name="idxname[]" value="en-tb" id="tb"/><label for="tb"><strong>All Works of The B&aacute;b</strong></label>
-							<input type="checkbox" name="idxname[]" value="en-SWB" id="SWB"/><label for="SWB">Selections from the Writings of The B&aacute;b</label>
-						</p>
-					</div>
-					<div data-role="collapsible" id="Abdul-Baha">
-					<h3>&#0145;Abdu&#0146;l-Bah&aacute;</h3>
-						<p>
-							<input type="checkbox" name="idxname[]" value="en-ab" id="ab"/><label for="ab"><strong>All Works of &#0145;Abdu&#0146;l-Bah&aacute;</strong></label>
-							<input type="checkbox" name="idxname[]" value="en-ABL" id="ABL"/><label for="ABL">&#0145;Abdu&#0146;l-Bah&aacute; in London</label>
-							<input type="checkbox" name="idxname[]" value="en-BWF" id="BWF"/><label for="BWF">Bah&aacute;'&iacute; World Faith (&#0145;Abdu&#0146;l-Bah&aacute;'s Section Only)</label>
-							<input type="checkbox" name="idxname[]" value="en-FWU" id="FWU"/><label for="FWU">Foundations of World Unity</label>
-							<input type="checkbox" name="idxname[]" value="en-MF" id="MF"/><label for="MF">Memorials of the Faithful</label>
-							<input type="checkbox" name="idxname[]" value="en-PT" id="PT"/><label for="PT">Paris Talks</label>
-							<input type="checkbox" name="idxname[]" value="en-PUP" id="PUP"/><label for="PUP">The Promulgation of Universal Peace</label>
-							<input type="checkbox" name="idxname[]" value="en-SDC" id="SDC"/><label for="SDC">The Secret of Divine Civilization</label>
-							<input type="checkbox" name="idxname[]" value="en-SAB" id="SAB"/><label for="SAB">Selections from the Writings of &#0145;Abdu&#0146;l-Bah&aacute;</label>
-							<input type="checkbox" name="idxname[]" value="en-SAQ" id="SAQ"/><label for="SAQ">Some Answered Questions</label>
-							<input type="checkbox" name="idxname[]" value="en-TAF" id="TAF"/><label for="TAF">Tablet to August Forel</label>
-							<input type="checkbox" name="idxname[]" value="en-TAB" id="TAB"/><label for="TAB">Tablets of &#0145;Abdu&#0146;l-Bah&aacute;</label>
-							<input type="checkbox" name="idxname[]" value="en-TDP" id="TDP"/><label for="TDP">Tablets of the Divine Plan</label>
-							<input type="checkbox" name="idxname[]" value="en-TN" id="TN"/><label for="TN">Traveler's Narrative</label>
-							<input type="checkbox" name="idxname[]" value="en-WT" id="WT"/><label for="WT">The Will and Testament of &#0145;Abdu&#0146;l-Bah&aacute;</label>
-						</p>
-					</div>
-					<div data-role="collapsible" id="ShoghiEffendi">
-					<h3>Shoghi Effendi</h3>
-						<p>
-							<input type="checkbox" name="idxname[]" value="en-se" id="se"/><label for="se"><strong>All Works of Shoghi Effendi</strong></label>
-							<input type="checkbox" name="idxname[]" value="en-ADJ" id="ADJ"/><label for="ADJ">The Advent of Divine Justice</label>
-							<input type="checkbox" name="idxname[]" value="en-ARO" id="ARO"/><label for="ARO">Arohanui: Letters to New Zealand</label>
-							<input type="checkbox" name="idxname[]" value="en-BA" id="BA"/><label for="BA">Bah&aacute;'&iacute; Administration</label>
-							<input type="checkbox" name="idxname[]" value="en-CF" id="CF"/><label for="CF">Citadel of Faith</label>
-							<input type="checkbox" name="idxname[]" value="en-DND" id="DND"/><label for="DND">Dawn of a New Day</label>
-							<input type="checkbox" name="idxname[]" value="en-DG" id="DG"/><label for="DG">Directives from the Guardian</label>
-							<input type="checkbox" name="idxname[]" value="en-GPB" id="GPB"/><label for="GPB">God Passes By</label>
-							<input type="checkbox" name="idxname[]" value="en-HE" id="HE"/><label for="HE">High Endeavours: Messages to Alaska</label>
-							<input type="checkbox" name="idxname[]" value="en-LANZ" id="LANZ"/><label for="LANZ">Letters from the Guardian to Australia and New Zealand</label>
-							<input type="checkbox" name="idxname[]" value="en-LDG1" id="LDG1"/><label for="LDG1">The Light of Divine Guidance (Volume I)</label>
-							<input type="checkbox" name="idxname[]" value="en-LDG2" id="LDG2"/><label for="LDG2">The Light of Divine Guidance (Volume II)</label>
-							<input type="checkbox" name="idxname[]" value="en-MA" id="MA"/><label for="MA">Messages to America</label>
-							<input type="checkbox" name="idxname[]" value="en-MC" id="MC"/><label for="MC">Messages to Canada</label>
-							<input type="checkbox" name="idxname[]" value="en-MBW" id="MBW"/><label for="MBW">Messages to the Bah&aacute;'&iacute; World: 1950-1957</label>
-							<input type="checkbox" name="idxname[]" value="en-PDC" id="PDC"/><label for="PDC">The Promised Day is Come</label>
-							<input type="checkbox" name="idxname[]" value="en-UD" id="UD"/><label for="UD">Unfolding Destiny</label>
-							<input type="checkbox" name="idxname[]" value="en-WOB" id="WOB"/><label for="WOB">The World Order of Bah&aacute;'u'll&aacute;h</label>
-						</p>
-					</div>
-					<div data-role="collapsible" id="BWC">
-					<h3>Bah&aacute;'&iacute; World Centre</h3>
-						<p>
-							<input type="checkbox" name="idxname[]" value="en-uhj" id="uhj1"/><label for="uhj1"><strong>All Works of the Bah&aacute;'&iacute; World Centre</strong></label>
-							<input type="checkbox" name="idxname[]" value="en-BK" id="BK"/><label for="BK">Bah&iacute;yyih <u>Kh</u>&aacute;num</label>
-							<input type="checkbox" name="idxname[]" value="en-COL" id="COL"/><label for="COL">Century of Light</label>
-							<input type="checkbox" name="idxname[]" value="en-PWP" id="PWP"/><label for="PWP">The Promise of World Peace (The Universal House of Justice)</label>
-						</p>
-					</div>
-					<div data-role="collapsible" id="Compilations">
-					<h3>Compilations</h3>
-						<p>
-							<input type="checkbox" name="idxname[]" value="en-c" id="c"/><label for="c"><strong>All Compilations</strong></label>
-							<input type="checkbox" name="idxname[]" value="en-BP" id="BP"/><label for="BP">Bah&aacute;'&iacute; Prayers: A selection of prayers revealed by Bah&aacute;'u'll&aacute;h, the B&aacute;b, and &#0145;Abdu&#0146;l-Bah&aacute;.</label>
-							<input type="checkbox" name="idxname[]" value="en-BE" id="BE"/><label for="BE">Compilation on Bah&aacute;'&iacute; Education</label>
-							<input type="checkbox" name="idxname[]" value="en-CP" id="CP"/><label for="CP">Compilation on Peace</label>
-							<input type="checkbox" name="idxname[]" value="en-SCH" id="SCH"/><label for="SCH">Compilation on Scholarship</label>
-							<input type="checkbox" name="idxname[]" value="en-CW" id="CW"/><label for="CW">Compilation on Women</label>
-							<input type="checkbox" name="idxname[]" value="en-JWTA" id="JWTA"/><label for="JWTA">Japan Will Turn Ablaze!</label>
-						</p>
-					</div>
-					<div data-role="collapsible" id="Other">
-					<h3>Other Authors</h3>
-						<p>
-							<input type="checkbox" name="idxname[]" value="en-uhj" id="uhj2"/><label for="uhj2"><strong>All Works of Other Authors</strong></label>
-							<input type="checkbox" name="idxname[]" value="en-BNE" id="BNE"/><label for="BNE">Bah&aacute;'u'll&aacute;h and the New Era (Esslemont)</label>
-							<input type="checkbox" name="idxname[]" value="en-DB" id="DB"/><label for="DB">The Dawn Breakers (Nabil)</label>
-							<input type="checkbox" name="idxname[]" value="en-PRH" id="PRH"/><label for="PRH">The Prosperity of Humankind (Bah&aacute;'&iacute; International Community)</label>
-							<input type="checkbox" name="idxname[]" value="en-SB" id="SB"/><label for="SB">Statement on Bah&aacute;'u'll&aacute;h (Bah&aacute;'&iacute; International Community)</label>
-						</p>
-					</div>
-					</div>
+						<div data-role="collapsible-set" id="set">
+							<div data-role="collapsible" id="Bahaullah">
+							<h3>Bah&aacute;'u'll&aacute;h</h3>
+								<p>
+									<input type="checkbox" name="idxname[]" value="en-b" id="B"/><label for="B"><strong>All Works of Bah&aacute;'u'll&aacute;h</strong></label>
+									<input type="checkbox" name="idxname[]" value="en-ESW" id="ESW"/><label for="ESW">Epistle to the Son of the Wolf</label>
+									<input type="checkbox" name="idxname[]" value="en-GDM" id="GDM"/><label for="GDM">Gems of Divine Mysteries</label>
+									<input type="checkbox" name="idxname[]" value="en-GWB" id="GWB"/><label for="GWB">Gleanings from the Writings of Bah&aacute;'u'll&aacute;h</label>
+									<input type="checkbox" name="idxname[]" value="en-HW" id="HW"/><label for="HW">The Hidden Words of Bah&aacute;'u'll&aacute;h</label>
+									<input type="checkbox" name="idxname[]" value="en-KA" id="KA"/><label for="KA">The Kit&aacute;b-i-Aqdas (The Most Holy Book)</label>
+									<input type="checkbox" name="idxname[]" value="en-KI" id="KI"/><label for="KI">The Kit&aacute;b-i-&Iacute;q&aacute;n (The Book of Certitude)</label>
+									<input type="checkbox" name="idxname[]" value="en-PM" id="PM"/><label for="PM">Prayers and Meditations by Bah&aacute;'u'll&aacute;h</label>
+									<input type="checkbox" name="idxname[]" value="en-PB" id="PB"/><label for="PB">Proclamation of Bah&aacute;'u'll&aacute;h</label>
+									<input type="checkbox" name="idxname[]" value="en-SVFV" id="SVFV"/><label for="SVFV">The Seven Valleys and the Four Valleys</label>
+									<input type="checkbox" name="idxname[]" value="en-SLH" id="SLH"/><label for="SLH">The Summons of the Lord of Hosts</label>
+									<input type="checkbox" name="idxname[]" value="en-TU" id="TU"/><label for="TU">The Tabernacle of Unity</label>
+									<input type="checkbox" name="idxname[]" value="en-TB" id="TB"/><label for="TB">Tablets of Bah&aacute;'u'll&aacute;h Revealed after the Kit&aacute;b-i-Aqdas</label>
+								</p>
+							</div>
+							<div data-role="collapsible" id="Bab">
+							<h3>The B&aacute;b</h3>
+								<p>
+									<input type="checkbox" name="idxname[]" value="en-tb" id="tb"/><label for="tb"><strong>All Works of The B&aacute;b</strong></label>
+									<input type="checkbox" name="idxname[]" value="en-SWB" id="SWB"/><label for="SWB">Selections from the Writings of The B&aacute;b</label>
+								</p>
+							</div>
+							<div data-role="collapsible" id="Abdul-Baha">
+							<h3>&#0145;Abdu&#0146;l-Bah&aacute;</h3>
+								<p>
+									<input type="checkbox" name="idxname[]" value="en-ab" id="ab"/><label for="ab"><strong>All Works of &#0145;Abdu&#0146;l-Bah&aacute;</strong></label>
+									<input type="checkbox" name="idxname[]" value="en-ABL" id="ABL"/><label for="ABL">&#0145;Abdu&#0146;l-Bah&aacute; in London</label>
+									<input type="checkbox" name="idxname[]" value="en-BWF" id="BWF"/><label for="BWF">Bah&aacute;'&iacute; World Faith (&#0145;Abdu&#0146;l-Bah&aacute;'s Section Only)</label>
+									<input type="checkbox" name="idxname[]" value="en-FWU" id="FWU"/><label for="FWU">Foundations of World Unity</label>
+									<input type="checkbox" name="idxname[]" value="en-MF" id="MF"/><label for="MF">Memorials of the Faithful</label>
+									<input type="checkbox" name="idxname[]" value="en-PT" id="PT"/><label for="PT">Paris Talks</label>
+									<input type="checkbox" name="idxname[]" value="en-PUP" id="PUP"/><label for="PUP">The Promulgation of Universal Peace</label>
+									<input type="checkbox" name="idxname[]" value="en-SDC" id="SDC"/><label for="SDC">The Secret of Divine Civilization</label>
+									<input type="checkbox" name="idxname[]" value="en-SAB" id="SAB"/><label for="SAB">Selections from the Writings of &#0145;Abdu&#0146;l-Bah&aacute;</label>
+									<input type="checkbox" name="idxname[]" value="en-SAQ" id="SAQ"/><label for="SAQ">Some Answered Questions</label>
+									<input type="checkbox" name="idxname[]" value="en-TAF" id="TAF"/><label for="TAF">Tablet to August Forel</label>
+									<input type="checkbox" name="idxname[]" value="en-TAB" id="TAB"/><label for="TAB">Tablets of &#0145;Abdu&#0146;l-Bah&aacute;</label>
+									<input type="checkbox" name="idxname[]" value="en-TDP" id="TDP"/><label for="TDP">Tablets of the Divine Plan</label>
+									<input type="checkbox" name="idxname[]" value="en-TN" id="TN"/><label for="TN">Traveler's Narrative</label>
+									<input type="checkbox" name="idxname[]" value="en-WT" id="WT"/><label for="WT">The Will and Testament of &#0145;Abdu&#0146;l-Bah&aacute;</label>
+								</p>
+							</div>
+							<div data-role="collapsible" id="ShoghiEffendi">
+							<h3>Shoghi Effendi</h3>
+								<p>
+									<input type="checkbox" name="idxname[]" value="en-se" id="se"/><label for="se"><strong>All Works of Shoghi Effendi</strong></label>
+									<input type="checkbox" name="idxname[]" value="en-ADJ" id="ADJ"/><label for="ADJ">The Advent of Divine Justice</label>
+									<input type="checkbox" name="idxname[]" value="en-ARO" id="ARO"/><label for="ARO">Arohanui: Letters to New Zealand</label>
+									<input type="checkbox" name="idxname[]" value="en-BA" id="BA"/><label for="BA">Bah&aacute;'&iacute; Administration</label>
+									<input type="checkbox" name="idxname[]" value="en-CF" id="CF"/><label for="CF">Citadel of Faith</label>
+									<input type="checkbox" name="idxname[]" value="en-DND" id="DND"/><label for="DND">Dawn of a New Day</label>
+									<input type="checkbox" name="idxname[]" value="en-DG" id="DG"/><label for="DG">Directives from the Guardian</label>
+									<input type="checkbox" name="idxname[]" value="en-GPB" id="GPB"/><label for="GPB">God Passes By</label>
+									<input type="checkbox" name="idxname[]" value="en-HE" id="HE"/><label for="HE">High Endeavours: Messages to Alaska</label>
+									<input type="checkbox" name="idxname[]" value="en-LANZ" id="LANZ"/><label for="LANZ">Letters from the Guardian to Australia and New Zealand</label>
+									<input type="checkbox" name="idxname[]" value="en-LDG1" id="LDG1"/><label for="LDG1">The Light of Divine Guidance (Volume I)</label>
+									<input type="checkbox" name="idxname[]" value="en-LDG2" id="LDG2"/><label for="LDG2">The Light of Divine Guidance (Volume II)</label>
+									<input type="checkbox" name="idxname[]" value="en-MA" id="MA"/><label for="MA">Messages to America</label>
+									<input type="checkbox" name="idxname[]" value="en-MC" id="MC"/><label for="MC">Messages to Canada</label>
+									<input type="checkbox" name="idxname[]" value="en-MBW" id="MBW"/><label for="MBW">Messages to the Bah&aacute;'&iacute; World: 1950-1957</label>
+									<input type="checkbox" name="idxname[]" value="en-PDC" id="PDC"/><label for="PDC">The Promised Day is Come</label>
+									<input type="checkbox" name="idxname[]" value="en-UD" id="UD"/><label for="UD">Unfolding Destiny</label>
+									<input type="checkbox" name="idxname[]" value="en-WOB" id="WOB"/><label for="WOB">The World Order of Bah&aacute;'u'll&aacute;h</label>
+								</p>
+							</div>
+							<div data-role="collapsible" id="BWC">
+							<h3>Bah&aacute;'&iacute; World Centre</h3>
+								<p>
+									<input type="checkbox" name="idxname[]" value="en-uhj" id="uhj1"/><label for="uhj1"><strong>All Works of the Bah&aacute;'&iacute; World Centre</strong></label>
+									<input type="checkbox" name="idxname[]" value="en-BK" id="BK"/><label for="BK">Bah&iacute;yyih <u>Kh</u>&aacute;num</label>
+									<input type="checkbox" name="idxname[]" value="en-COL" id="COL"/><label for="COL">Century of Light</label>
+									<input type="checkbox" name="idxname[]" value="en-PWP" id="PWP"/><label for="PWP">The Promise of World Peace (The Universal House of Justice)</label>
+								</p>
+							</div>
+							<div data-role="collapsible" id="Compilations">
+							<h3>Compilations</h3>
+								<p>
+									<input type="checkbox" name="idxname[]" value="en-c" id="c"/><label for="c"><strong>All Compilations</strong></label>
+									<input type="checkbox" name="idxname[]" value="en-BP" id="BP"/><label for="BP">Bah&aacute;'&iacute; Prayers: A selection of prayers revealed by Bah&aacute;'u'll&aacute;h, the B&aacute;b, and &#0145;Abdu&#0146;l-Bah&aacute;.</label>
+									<input type="checkbox" name="idxname[]" value="en-BE" id="BE"/><label for="BE">Compilation on Bah&aacute;'&iacute; Education</label>
+									<input type="checkbox" name="idxname[]" value="en-CP" id="CP"/><label for="CP">Compilation on Peace</label>
+									<input type="checkbox" name="idxname[]" value="en-SCH" id="SCH"/><label for="SCH">Compilation on Scholarship</label>
+									<input type="checkbox" name="idxname[]" value="en-CW" id="CW"/><label for="CW">Compilation on Women</label>
+									<input type="checkbox" name="idxname[]" value="en-JWTA" id="JWTA"/><label for="JWTA">Japan Will Turn Ablaze!</label>
+								</p>
+							</div>
+							<div data-role="collapsible" id="Other">
+							<h3>Other Authors</h3>
+								<p>
+									<input type="checkbox" name="idxname[]" value="en-uhj" id="uhj2"/><label for="uhj2"><strong>All Works of Other Authors</strong></label>
+									<input type="checkbox" name="idxname[]" value="en-BNE" id="BNE"/><label for="BNE">Bah&aacute;'u'll&aacute;h and the New Era (Esslemont)</label>
+									<input type="checkbox" name="idxname[]" value="en-DB" id="DB"/><label for="DB">The Dawn Breakers (Nabil)</label>
+									<input type="checkbox" name="idxname[]" value="en-PRH" id="PRH"/><label for="PRH">The Prosperity of Humankind (Bah&aacute;'&iacute; International Community)</label>
+									<input type="checkbox" name="idxname[]" value="en-SB" id="SB"/><label for="SB">Statement on Bah&aacute;'u'll&aacute;h (Bah&aacute;'&iacute; International Community)</label>
+								</p>
+							</div>
+						</div>
 					</div>
 					<input type="submit" id="submit" data-icon="search" value="Search" data-iconpos="right"/>
 				</form>
-				<br>
+<!-- 				<br>
 				<div id="wrap">
 					<iframe name="iframe" width="100%"></iframe>
-				</div>
+				</div> -->
 			</div>
 		</div>
 	</body>
