@@ -94,10 +94,26 @@
 				});
 			});
 		</script>
-		<style type=text/css>
+		<script type="text/javascript">
+			$(document).ready(function(e) {
+				$(window).on('load resize', function(){
+					$window = $(window);
+					$('iframe').height(function(){
+						return $window.height()-$(this).offset().top;   
+					});
+				});
+			});
+		</script>
+		<style type="text/css">
             #successpop .ui-header a:first-child, #failpop .ui-header a:first-child, #start .ui-header a:first-child {
                 display: none;
             }
+			iframe{
+				display:block; 
+				margin:0; 
+				padding:0; 
+				border:0;
+			}
 		</style>
 	</head>
 	<body>
@@ -409,7 +425,7 @@
 				</h3>
 			</div>
 			<div data-role="content" align="center">
-				<iframe  frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps/ms?msa=0&amp;msid=202571910023296987417.0004dc89532dc283c0970&amp;ie=UTF8&amp;t=m&amp;ll=42.016843,-87.695704&amp;spn=0.023594,0.024719&amp;z=14&amp;output=embed"></iframe>
+				<iframe name="iframe" scrolling="no" marginheight="0" marginwidth="0" width="100%" src="https://maps.google.com/maps/ms?msa=0&amp;msid=202571910023296987417.0004dc89532dc283c0970&amp;ie=UTF8&amp;t=m&amp;ll=42.016843,-87.695704&amp;spn=0.023594,0.024719&amp;z=14&amp;output=embed"></iframe>
 			</div>
 		</div>
 		<div data-role="page" data-control-title="weather forecast" class="ui-icon-nodisc" id="weather">
