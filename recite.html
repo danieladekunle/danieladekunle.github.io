@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+		<meta name="viewport" content="user-scalable=no, initial-scale=1"/>
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<title>r e c i t e</title>
+		<link rel="stylesheet" href="theme.min.css"/>
+		<link rel="stylesheet" href="jquery.mobile.structure-1.3.2.min.css"/>
+		<script src="jquery-1.9.1.min.js"></script>
+		<script src="jquery.mobile-1.3.2.min.js"></script>
+		<script type="text/javascript" src="sisyphus.min.js"></script>
+		<link rel="stylesheet" href="customizations.css">
+		<!-- iPhone Startup Image-->
+		<link href="apple-touch-startup-image-320x460.png" media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 1)" rel="apple-touch-startup-image">
+		<!-- iPhone Icon -->
+		<link href="apple-touch-icon-57x57.png" sizes="57x57" rel="apple-touch-icon">
+		<!-- iPad Icon-->
+		<link href="apple-touch-icon-72x72.png" sizes="72x72" rel="apple-touch-icon">
+		<!-- iPhone (Retina) Icon-->
+		<link href="recite-114.png" sizes="114x114" rel="recite">
+		<!-- iPad (Retina) Icon-->
+		<link href="recite-144.png" sizes="144x144" rel="recite">
+		<!-- iDevice Add to Homescreen Popup-->	
+		<link rel="stylesheet" href="add2home.css">
+		<script type="application/javascript" src="add2home.js"></script>
+	</head>
+	<body>
+		<div data-role="page" data-control-title="home" data-theme="a" class="ui-icon-nodisc" id="menu">
+			<div data-theme="a" data-role="header" data-position="fixed">
+				<h3>
+					R&nbsp;E&nbsp;C&nbsp;I&nbsp;T&nbsp;E
+				</h3>
+			</div>
+			<div data-role="content" style="padding: 0px 12px">
+				<ul data-role="listview" data-divider-theme="a" data-inset="true">
+					<li data-theme="a" data-icon="right">
+						<a href="#book1" data-transition="fade"><img src="images/book1.jpg" alt="book1" id="b1">
+							<br>book one
+						</a>
+					</li>
+					<li data-theme="a" data-icon="right">
+						<a href="#book2" data-transition="fade"><img src="images/book2.jpg" alt="book2" id="b2">
+							<br>book two
+						</a>
+					</li>
+					<li data-theme="a" data-icon="right">
+						<a href="#book3" data-transition="fade"><img src="images/book3.jpg" alt="book3" >
+							<br>book three
+						</a>
+					</li>
+					<li data-theme="a" data-icon="right">
+						<a href="#book4" data-transition="fade"><img src="images/book4.jpg" alt="book4">
+							<br>book four
+						</a>
+					</li>
+					<li data-theme="a" data-icon="right">
+						<a href="#book5" data-transition="fade"><img src="images/book5.jpg" alt="book5">
+							<br>book five
+						</a>
+					</li>
+					<li data-theme="a" data-icon="right">
+						<a href="#book6" data-transition="fade"><img src="images/book6.jpg" alt="book6">
+							<br>book six
+						</a>
+					</li>
+					<li data-theme="a" data-icon="right">
+						<a href="#book7" data-transition="fade"><img src="images/book7.jpg" alt="book7">
+							<br>book seven
+						</a>
+					</li>
+				</ul>
+				<!-- <a data-role="button" data-theme="none" data-corners="false" data-shadow="false" data-inline="true" data-transition="fade" href="#book1"><img src="images/book1.png" alt="book1" /></a>
+				<a data-role="button" data-theme="none" data-corners="false" data-shadow="false" data-inline="true" data-transition="fade" href="#book2"><img src="/images/book2.png" alt="book2" /></a>
+				<a data-role="button" data-theme="none" data-corners="false" data-shadow="false" data-inline="true" data-transition="fade" href="#book3"><img src="/images/book3.png" alt="book3" /></a>
+				<a data-role="button" data-theme="none" data-corners="false" data-shadow="false" data-inline="true" data-transition="fade" href="#book4"><img src="/images/book4.png" alt="book4" /></a>
+				<a data-role="button" data-theme="none" data-corners="false" data-shadow="false" data-inline="true" data-transition="fade" href="#book5"><img src="/images/book5.png" alt="book5" /></a>
+				<a data-role="button" data-theme="none" data-corners="false" data-shadow="false" data-inline="true" data-transition="fade" href="#book6"><img src="/images/book6.png" alt="book6" /></a>
+				<a data-role="button" data-theme="none" data-corners="false" data-shadow="false" data-inline="true" data-transition="fade" href="#book7"><img src="/images/book7.png" alt="book7" /></a>-->
+			</div>
+		</div>
+		<div data-role="page" data-control-title="book1" class="ui-icon-nodisc" id="book1">
+			<div data-theme="a" data-role="header" data-position="fixed">
+				<a data-role="button" data-theme="a" href="#menu" data-icon="menu" data-iconpos="notext" class="ui-btn-left"></a>
+				<h3>
+					BOOK ONE
+				</h3>
+			</div>
+			<div data-role="content">
+				<div align="center">
+					<a href="book1.pdf" target="_blank"><i>open all quotations (pdf)</i></a>
+				</div>
+				<ul data-role="listview" data-divider-theme="a" data-inset="true">
+					<li data-theme="a" data-icon="right">
+						<a href="#b1q1" data-transition="fade">
+							<i>The betterment of the world...</i>
+							<br><small>Unit 1 ∙ Section 1</small>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div data-role="page" data-control-title="book2" class="ui-icon-nodisc" id="book2">
+			<div data-theme="a" data-role="header" data-position="fixed">
+				<a data-role="button" data-theme="a" href="#menu" data-icon="menu" data-iconpos="notext" class="ui-btn-left"></a>
+				<h3>
+					BOOK TWO
+				</h3>
+			</div>
+			<div data-role="content" align="center">
+				<div align="center">
+					<a href="book2.pdf" target="_blank"><i>open all quotations (pdf)</i></a>
+				</div>
+			</div>
+		</div>
+		<div data-role="page" data-control-title="book3" class="ui-icon-nodisc" id="book3">
+			<div data-theme="a" data-role="header" data-position="fixed">
+				<a data-role="button" data-theme="a" href="#menu" data-icon="menu" data-iconpos="notext" class="ui-btn-left"></a>
+				<h3>
+					BOOK THREE
+				</h3>
+			</div>
+			<div data-role="content" align="center">
+				<div align="center">
+					<a href="book3.pdf" target="_blank"><i>open all quotations (pdf)</i></a>
+				</div>
+			</div>
+		</div>
+		<div data-role="page" data-control-title="book4" class="ui-icon-nodisc" id="book4">
+			<div data-theme="a" data-role="header" data-position="fixed">
+				<a data-role="button" data-theme="a" href="#menu" data-icon="menu" data-iconpos="notext" class="ui-btn-left"></a>
+				<h3>
+					BOOK FOUR
+				</h3>
+			</div>
+			<div data-role="content" align="center">
+				<div align="center">
+					<a href="book4.pdf" target="_blank"><i>open all quotations (pdf)</i></a>
+				</div>
+			</div>
+		</div>
+		<div data-role="page" data-control-title="book5" class="ui-icon-nodisc" id="book5">
+			<div data-theme="a" data-role="header" data-position="fixed">
+				<a data-role="button" data-theme="a" href="#menu" data-icon="menu" data-iconpos="notext" class="ui-btn-left"></a>
+				<h3>
+					BOOK FIVE
+				</h3>
+			</div>
+			<div data-role="content" align="center">
+				coming soon...
+			</div>
+		</div>
+		<div data-role="page" data-control-title="book6"  class="ui-icon-nodisc" id="book6">
+			<div data-theme="a" data-role="header" data-position="fixed">
+				<a data-role="button" data-theme="a" href="#menu" data-icon="menu" data-iconpos="notext" class="ui-btn-left"></a>
+				<h3>
+					BOOK SIX
+				</h3>
+			</div>
+			<div data-role="content">
+				<div align="center">
+					<a href="book6.pdf" target="_blank"><i>open all quotations (pdf)</i></a>
+				</div>
+				<ul data-role="listview" data-divider-theme="a" data-inset="true">
+					<li data-theme="a" data-icon="right">
+						<a href="#b6q1" data-transition="fade">
+							<i>O thou lamp who art enkindled...</i>
+							<br><small>Unit 1 ∙ Section 7</small>
+						</a>
+					</li>
+					<li data-theme="a" data-icon="right">
+						<a href="#b6q2" data-transition="fade">
+							<i>Say: To assist Me is to teach...</i>
+							<br><small>Unit 1 ∙ Section 11</small>
+						</a>
+					</li>
+					<li data-theme="a" data-icon="right">
+						<a href="#b6q3" data-transition="fade">
+							<i>Be not dismayed, O peoples of the world...</i>
+							<br><small>Unit 1 ∙ Section 11</small>
+						</a>
+					</li>
+					<li data-theme="a" data-icon="right">
+						<a href="#b6q4" data-transition="fade">
+							<i>The Pen of the Most High hath decreed...</i>
+							<br><small>Unit 1 ∙ Section 11</small>
+						</a>
+					</li>
+					<li data-theme="a" data-icon="right">
+						<a href="#b6q5" data-transition="fade">
+							<i>God hath prescribed unto every one...</i>
+							<br><small>Unit 1 ∙ Section 11</small>
+						</a>
+					</li>
+					<li data-theme="a" data-icon="right">
+						<a href="#b6q6" data-transition="fade">
+							<i>O ye beloved of God! Repose not...</i>
+							<br><small>Unit 1 ∙ Section 11</small>
+						</a>
+					</li>
+					<li data-theme="a" data-icon="right">
+						<a href="#b6q7" data-transition="fade">
+							<i>If one teaches one whom he loves...</i>
+							<br><small>Unit 1 ∙ Section 13</small>
+						</a>
+					</li>
+					<li data-theme="a" data-icon="right">
+						<a href="#b6q8" data-transition="fade">
+							<i>This is the day in which to speak...</i>
+							<br><small>Unit 1 ∙ Section 23</small>
+						</a>
+					</li>
+					<li data-theme="a" data-icon="right">
+						<a href="#b6q9" data-transition="fade">
+							<i>O thou son of the Kingdom!...</i>
+							<br><small>Unit 1 ∙ Section 28</small>
+						</a>
+					</li>
+					
+				</ul>
+			</div>
+		</div>
+		<div data-role="page" data-control-title="book7" class="ui-icon-nodisc" id="book7">
+			<div data-theme="a" data-role="header" data-position="fixed">
+				<a data-role="button" data-theme="a" href="#menu" data-icon="menu" data-iconpos="notext" class="ui-btn-left"></a>
+				<h3>
+					BOOK SEVEN
+				</h3>
+			</div>
+			<div data-role="content" align="center">
+				<div align="center">
+					<a href="book7.pdf" target="_blank"><i>open all quotations (pdf)</i></a>
+				</div>
+			</div>
+		</div>
+		<div data-role="page" data-control-title="b1q1" class="ui-icon-nodisc" id="b1q1">
+			<div data-theme="a" data-role="header" data-position="fixed">
+				<a data-role="button" data-theme="a" href="#book1" data-icon="book1" data-iconpos="notext" class="ui-btn-left"></a>
+				<h3>
+					BOOK ONE
+				</h3>
+			</div>
+			<div data-role="content">
+				The betterment of the world can be accomplished through pure and goodly deeds, through commendable and seemly conduct....
+				<br><br><i>Bahá’u’lláh ∙ cited in The Advent of Divine Justice ∙ pp. 24-25</i>
+			</div>
+		</div>
+		<div data-role="page" data-control-title="b6q1" class="ui-icon-nodisc" id="b6q1">
+			<div data-theme="a" data-role="header" data-position="fixed">
+				<a data-role="button" data-theme="a" href="#book6" data-icon="book6" data-iconpos="notext" class="ui-btn-left"></a>
+				<h3>
+					BOOK SIX
+				</h3>
+			</div>
+			<div data-role="content">
+				O thou lamp who art enkindled with the fire of the Love of God! Verily, I read thy recent letter which showed thy strong love, thy being ablaze with the fire of the love of thy Lord, the Mighty, the Praised, and the penetration of the Spirit of Truth in thy limbs, nerves, veins, arteries, bones, blood and flesh, until it hath taken the reins of power from thy hands and moveth thee as it willeth, causeth thee to speak in what it willeth and attracteth thee as it willeth. This is becoming of whatever heart is replenished with the spirit of the love of God. Thou shalt surely behold wondrous traces and shalt discover the signs of thy Mighty Lord. 
+				<br><br><i>‘Abdu’l-Bahá ∙ Tablets of ‘Abdu’l-Bahá ∙ vol. 3 ∙ pp. 716-717</i>
+			</div>
+		</div>
+		<div data-role="page" data-control-title="b6q2" class="ui-icon-nodisc" id="b6q2">
+			<div data-theme="a" data-role="header" data-position="fixed">
+				<a data-role="button" data-theme="a" href="#book6" data-icon="book6" data-iconpos="notext" class="ui-btn-left"></a>
+				<h3>
+					BOOK SIX
+				</h3>
+			</div>
+			<div data-role="content">
+				Say: To assist Me is to teach My Cause. This is a theme with which whole Tablets are laden. This is the changeless commandment of God, eternal in the past, eternal in the future.   
+				<br><br><i>Bahá’u’lláh ∙ Tablets of Bahá’u’lláh ∙ p. 196</i>
+			</div>
+		</div>
+		<div data-role="page" data-control-title="b6q3" class="ui-icon-nodisc" id="b6q3">
+			<div data-theme="a" data-role="header" data-position="fixed">
+				<a data-role="button" data-theme="a" href="#book6" data-icon="book6" data-iconpos="notext" class="ui-btn-left"></a>
+				<h3>
+					BOOK SIX
+				</h3>
+			</div>
+			<div data-role="content">
+				<p>Be not dismayed, O peoples of the world, when the day star of My beauty is set, and the heaven of My tabernacle is concealed from your eyes. Arise to further My Cause, and to exalt My Word amongst men. We are with you at all times, and shall strengthen you through the power of truth.
+				</p><p><i>Bahá’u’lláh ∙ The Kitáb-i-Aqdas ∙ p. 34</i></p>
+			</div>
+		</div>
+		<div data-role="page" data-control-title="b6q4" class="ui-icon-nodisc" id="b6q4">
+			<div data-theme="a" data-role="header" data-position="fixed">
+				<a data-role="button" data-theme="a" href="#book6" data-icon="book6" data-iconpos="notext" class="ui-btn-left"></a>
+				<h3>
+					BOOK SIX
+				</h3>
+			</div>
+			<div data-role="content">
+				<p>The Pen of the Most High hath decreed and imposed upon every one the obligation to teach this Cause.... God will, no doubt, inspire whosoever detacheth himself from all else but Him, and will cause the pure waters of wisdom and utterance to gush out and flow copiously from his heart.
+				</p><p><i>Bahá’u’lláh ∙ Gleanings from the Writings of Bahá’u’lláh ∙ p. 314</i></p>
+			</div>
+		</div>
+		<div data-role="page" data-control-title="b6q5" class="ui-icon-nodisc" id="b6q5">
+			<div data-theme="a" data-role="header" data-position="fixed">
+				<a data-role="button" data-theme="a" href="#book6" data-icon="book6" data-iconpos="notext" class="ui-btn-left"></a>
+				<h3>
+					BOOK SIX
+				</h3>
+			</div>
+			<div data-role="content">
+				<p>God hath prescribed unto every one the duty of teaching His Cause. Whoever ariseth to discharge this duty, must needs, ere he proclaimeth His Message, adorn himself with the ornament of an upright and praiseworthy character, so that his words may attract the hearts of such as are receptive to his call.
+				</p><p><i>Bahá’u’lláh ∙ Gleanings from the Writings of Bahá’u’lláh ∙ p. 335</i></p>
+			</div>
+		</div>
+		<div data-role="page" data-control-title="b6q6" class="ui-icon-nodisc" id="b6q6">
+			<div data-theme="a" data-role="header" data-position="fixed">
+				<a data-role="button" data-theme="a" href="#book6" data-icon="book6" data-iconpos="notext" class="ui-btn-left"></a>
+				<h3>
+					BOOK SIX
+				</h3>
+			</div>
+			<div data-role="content">
+				<p>O ye beloved of God! Repose not yourselves on your couches, nay bestir yourselves as soon as ye recognize your Lord, the Creator, and hear of the things which have befallen Him, and hasten to His assistance. Unloose your tongues, and proclaim unceasingly His Cause. This shall be better for you than all the treasures of the past and of the future, if ye be of them that comprehend this truth.
+				</p><p><i>Bahá’u’lláh ∙ Gleanings from the Writings of Bahá’u’lláh ∙ p. 330</i></p>
+			</div>
+		</div>
+		<div data-role="page" data-control-title="b6q7" class="ui-icon-nodisc" id="b6q7">
+			<div data-theme="a" data-role="header" data-position="fixed">
+				<a data-role="button" data-theme="a" href="#book6" data-icon="book6" data-iconpos="notext" class="ui-btn-left"></a>
+				<h3>
+					BOOK SIX
+				</h3>
+			</div>
+			<div data-role="content">
+				<p>If one teaches one whom he loves because of his love for him, then he will not teach one whom he loves not; and that is not of God.  If one teaches in order to derive the promised benefit to himself, this too is not from God.   If he teaches because of God's Will that God may be known -- and for that reason only -- he will receive knowledge and wisdom, and his words will have effect -- being made powerful by the Holy Spirit -- and will take root in the souls of those who are in the right condition to receive them.  In such a case the benefit to the teacher in growth is as ninety percent compared to the ten percent of gain to the hearer, because he becomes like a tree bearing fruit through the power of God.
+				</p><p><i>‘Abdu’l-Bahá ∙ cited in Star of the West ∙ vol. III ∙ no. 19 (2 March 1913) p. 1</i></p>
+			</div>
+		</div>
+		<div data-role="page" data-control-title="b6q8" class="ui-icon-nodisc" id="b6q8">
+			<div data-theme="a" data-role="header" data-position="fixed">
+				<a data-role="button" data-theme="a" href="#book6" data-icon="book6" data-iconpos="notext" class="ui-btn-left"></a>
+				<h3>
+					BOOK SIX
+				</h3>
+			</div>
+			<div data-role="content">
+				<p>This is the day in which to speak. It is incumbent upon the people of Baha to strive, with the utmost patience and forbearance, to guide the peoples of the world to the Most Great Horizon. Every body calleth aloud for a soul. Heavenly souls must needs quicken, with the breath of the Word of God, the dead bodies with a fresh spirit.
+				</p><p><i>Bahá’u’lláh ∙ cited in The Advent of Divine Justice ∙ pp. 82-83</i></p>
+			</div>
+		</div>
+		<div data-role="page" data-control-title="b6q9" class="ui-icon-nodisc" id="b6q9">
+			<div data-theme="a" data-role="header" data-position="fixed">
+				<a data-role="button" data-theme="a" href="#book6" data-icon="book6" data-iconpos="notext" class="ui-btn-left"></a>
+				<h3>
+					BOOK SIX
+				</h3>
+			</div>
+			<div data-role="content">
+				<p>O thou son of the Kingdom! All things are beneficial if joined with the love of God; and without His love all things are harmful, and act as a veil between man and the Lord of the Kingdom. When His love is there, every bitterness turneth sweet, and every bounty rendereth a wholesome pleasure. For example, a melody, sweet to the ear, bringeth the very spirit of life to a heart in love with God, yet staineth with lust a soul engrossed in sensual desires. And every branch of learning, conjoined with the love of God, is approved and worthy of praise; but bereft of His love, learning is barren -- indeed, it bringeth on madness. Every kind of knowledge, every science, is as a tree: if the fruit of it be the love of God, then is it a blessed tree, but if not, that tree is but dried-up wood, and shall only feed the fire.
+				</p><p><i>‘Abdu’l-Bahá ∙ Selections from the Writings of ‘Abdu’l-Bahá ∙ p. 190</i></p>
+			</div>
+		</div>
+	</body>
+</html>
