@@ -119,3 +119,8 @@ a:active {text-decoration:none;}
   background-size: 18px;
   background-position: center;
 }
+.ui-icon-books {
+  background-image: url('images/books.png');
+  background-size: 18px;
+  background-position: center;
+}
