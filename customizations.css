@@ -99,6 +99,11 @@ a:active {text-decoration:none;}
   background-size: 13px 18px;
   background-position: center;
 }
+.ui-icon-book5 {
+  background-image: url('images/book5.jpg');
+  background-size: 13px 18px;
+  background-position: center;
+}
 .ui-icon-book6 {
   background-image: url('images/book6.jpg');
   background-size: 13px 18px;
@@ -107,5 +112,10 @@ a:active {text-decoration:none;}
 .ui-icon-book7 {
   background-image: url('images/book7.jpg');
   background-size: 13px 18px;
+  background-position: center;
+}
+.ui-icon-pdf {
+  background-image: url('images/pdf.png');
+  background-size: 18px;
   background-position: center;
 }
