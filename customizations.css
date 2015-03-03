@@ -77,7 +77,8 @@ a:active {text-decoration:none;}
 }
 .ui-icon-right {
   background-image: url('images/right.png');
-  background-size: 16px 16px;
+  background-size: 6px;
+  background-position: center;
 }
 .ui-icon-book1 {
   background-image: url('images/book1.jpg');
