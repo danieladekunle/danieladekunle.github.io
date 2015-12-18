@@ -16,6 +16,7 @@ a:active {text-decoration:none;}
 
 h3 {
     color: white;
+    text-shadow: none;
 }
 
 .ui-icon-notes {
