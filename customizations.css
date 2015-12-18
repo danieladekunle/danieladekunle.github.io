@@ -85,6 +85,41 @@ h3 {
   background-size: 6px;
   background-position: center;
 }
+.ui-icon-1 {
+  background-image: url('images/1.png');
+  background-size: 8px 8px;
+  background-position: center;
+}
+.ui-icon-2 {
+  background-image: url('images/2.png');
+  background-size: 8px 8px;
+  background-position: center;
+}
+.ui-icon-3 {
+  background-image: url('images/3.png');
+  background-size: 8px 8px;
+  background-position: center;
+}
+.ui-icon-4 {
+  background-image: url('images/4.png');
+  background-size: 8px 8px;
+  background-position: center;
+}
+.ui-icon-5 {
+  background-image: url('images/5.png');
+  background-size: 8px 8px;
+  background-position: center;
+}
+.ui-icon-6 {
+  background-image: url('images/6.png');
+  background-size: 8px 8px;
+  background-position: center;
+}
+.ui-icon-7 {
+  background-image: url('images/7.png');
+  background-size: 8px 8px;
+  background-position: center;
+}
 .ui-icon-book1 {
   background-image: url('images/book1.jpg');
   background-size: 13px 18px;
