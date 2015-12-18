@@ -82,7 +82,7 @@ h3 {
 }
 .ui-icon-right {
   background-image: url('images/right.png');
-  background-size: 6px;
+  background-size: 5px;
   background-position: center;
 }
 .ui-icon-1 {
@@ -119,6 +119,48 @@ h3 {
   background-image: url('images/7.png');
   background-size: 8px 8px;
   background-position: center;
+}
+.book1 {
+  background-image: url('images/1.png');
+  background-size: 7px;
+  background-position: left;
+  background-repeat: no-repeat;
+}
+.book2 {
+  background-image: url('images/2.png');
+  background-size: 7px;
+  background-position: left;
+  background-repeat: no-repeat;
+}
+.book3 {
+  background-image: url('images/3.png');
+  background-size: 7px;
+  background-position: left;
+  background-repeat: no-repeat;
+}
+.book4 {
+  background-image: url('images/4.png');
+  background-size: 7px;
+  background-position: left;
+  background-repeat: no-repeat;
+}
+.book5 {
+  background-image: url('images/5.png');
+  background-size: 7px;
+  background-position: left;
+  background-repeat: no-repeat;
+}
+.book6 {
+  background-image: url('images/6.png');
+  background-size: 7px;
+  background-position: left;
+  background-repeat: no-repeat;
+}
+.book7 {
+  background-image: url('images/7.png');
+  background-size: 7px;
+  background-position: left;
+  background-repeat: no-repeat;
 }
 .ui-icon-book1 {
   background-image: url('images/book1.jpg');
