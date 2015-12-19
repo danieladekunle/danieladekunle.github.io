@@ -25,6 +25,44 @@
 		<!-- iDevice Add to Homescreen Popup-->	
 		<link rel="stylesheet" href="add2home.css">
 		<script type="application/javascript" src="add2home.js"></script>
+		<script type="application/javascript">
+$( document ).on( "pageinit", "[data-role='page'].demo-page", function() {
+    var page = "#" + $( this ).attr( "id" ),
+        // Get the filename of the next page that we stored in the data-next attribute
+        next = $( this ).jqmData( "next" ),
+        // Get the filename of the previous page that we stored in the data-prev attribute
+        prev = $( this ).jqmData( "prev" );
+    // Check if we did set the data-next attribute
+    if ( next ) {
+        // Prefetch the next page
+        $.mobile.loadPage( next + ".html" );
+        // Navigate to next page on swipe left
+        $( document ).on( "swipeleft", page, function() {
+            $.mobile.changePage( next + ".html", { transition: "slide" });
+        });
+        // Navigate to next page when the "next" button is clicked
+        $( ".control .next", page ).on( "click", function() {
+            $.mobile.changePage( next + ".html", { transition: "slide" } );
+        });
+    }
+    // Disable the "next" button if there is no next page
+    else {
+        $( ".control .next", page ).addClass( "ui-disabled" );
+    }
+    // The same for the previous page (we set data-dom-cache="true" so there is no need to prefetch)
+    if ( prev ) {
+        $( document ).on( "swiperight", page, function() {
+            $.mobile.changePage( prev + ".html", { transition: "slide", reverse: true } );
+        });
+        $( ".control .prev", page ).on( "click", function() {
+            $.mobile.changePage( prev + ".html", { transition: "slide", reverse: true } );
+        });
+    }
+    else {
+        $( ".control .prev", page ).addClass( "ui-disabled" );
+    }
+});
+ </script>
 	</head>
 	<body>
 		<div data-role="page" data-control-title="home" data-theme="a" class="ui-icon-nodisc" id="menu">
@@ -91,7 +129,7 @@
 		</div>
 		<div data-role="page" data-control-title="book1" class="ui-icon-nodisc" id="book1">
 			<div data-theme="a" data-role="header" data-position="fixed">
-				<a data-role="button" data-theme="a" href="#menu" data-icon="books" data-iconpos="notext" class="ui-btn-left"></a>
+				<a data-role="button" data-theme="a" href="#menu" data-icon="left" data-iconpos="notext" class="ui-btn-left"></a>
 				<h3>
 					O&nbsp;N&nbsp;E
 				</h3>
@@ -212,7 +250,7 @@
 		</div>
 		<div data-role="page" data-control-title="book2" class="ui-icon-nodisc" id="book2">
 			<div data-theme="a" data-role="header" data-position="fixed">
-				<a data-role="button" data-theme="a" href="#menu" data-icon="books" data-iconpos="notext" class="ui-btn-left"></a>
+				<a data-role="button" data-theme="a" href="#menu" data-icon="left" data-iconpos="notext" class="ui-btn-left"></a>
 				<h3>
 					T&nbsp;W&nbsp;O
 				</h3>
@@ -555,7 +593,7 @@
 		</div>
 		<div data-role="page" data-control-title="book3" class="ui-icon-nodisc" id="book3">
 			<div data-theme="a" data-role="header" data-position="fixed">
-				<a data-role="button" data-theme="a" href="#menu" data-icon="books" data-iconpos="notext" class="ui-btn-left"></a>
+				<a data-role="button" data-theme="a" href="#menu" data-icon="left" data-iconpos="notext" class="ui-btn-left"></a>
 				<h3>
 					T&nbsp;H&nbsp;R&nbsp;E&nbsp;E
 				</h3>
@@ -712,7 +750,7 @@
 		</div>
 		<div data-role="page" data-control-title="book4" class="ui-icon-nodisc" id="book4">
 			<div data-theme="a" data-role="header" data-position="fixed">
-				<a data-role="button" data-theme="a" href="#menu" data-icon="books" data-iconpos="notext" class="ui-btn-left"></a>
+				<a data-role="button" data-theme="a" href="#menu" data-icon="left" data-iconpos="notext" class="ui-btn-left"></a>
 				<h3>
 					F&nbsp;O&nbsp;U&nbsp;R
 				</h3>
@@ -779,7 +817,7 @@
 		</div>
 		<div data-role="page" data-control-title="book5" class="ui-icon-nodisc" id="book5">
 			<div data-theme="a" data-role="header" data-position="fixed">
-				<a data-role="button" data-theme="a" href="#menu" data-icon="books" data-iconpos="notext" class="ui-btn-left"></a>
+				<a data-role="button" data-theme="a" href="#menu" data-icon="left" data-iconpos="notext" class="ui-btn-left"></a>
 				<h3>
 					F&nbsp;I&nbsp;V&nbsp;E
 				</h3>
@@ -790,7 +828,7 @@
 		</div>
 		<div data-role="page" data-control-title="book6"  class="ui-icon-nodisc" id="book6">
 			<div data-theme="a" data-role="header" data-position="fixed">
-				<a data-role="button" data-theme="a" href="#menu" data-icon="books" data-iconpos="notext" class="ui-btn-left"></a>
+				<a data-role="button" data-theme="a" href="#menu" data-icon="left" data-iconpos="notext" class="ui-btn-left"></a>
 				<h3>
 					S&nbsp;I&nbsp;X
 				</h3>
@@ -923,7 +961,7 @@
 		</div>
 		<div data-role="page" data-control-title="book7" class="ui-icon-nodisc" id="book7">
 			<div data-theme="a" data-role="header" data-position="fixed">
-				<a data-role="button" data-theme="a" href="#menu" data-icon="books" data-iconpos="notext" class="ui-btn-left"></a>
+				<a data-role="button" data-theme="a" href="#menu" data-icon="left" data-iconpos="notext" class="ui-btn-left"></a>
 				<h3>
 					S&nbsp;E&nbsp;V&nbsp;E&nbsp;N
 				</h3>
@@ -1018,33 +1056,9 @@
 				</ul>
 			</div>
 		</div>
-		<div data-role="page" data-control-title="b4q1" class="ui-icon-nodisc" id="b4q1">
-			<div data-theme="a" data-role="header" data-position="fixed">
-				<a data-role="button" data-theme="a" href="#book4" data-icon="book4" data-iconpos="notext" class="ui-btn-left"></a>
-				<h3>
-					BOOK FOUR
-				</h3>
-			</div>
-			<div data-role="content">
-				There is no time to lose. There is no room left for vacillation. Multitudes hunger for the Bread of Life. The stage is set. The firm and irrevocable Promise is given. God's own Plan has been set in motion. It is gathering momentum with every passing day. The powers of heaven and earth mysteriously assist in its execution. Such an opportunity is irreplaceable. Let the doubter arise and himself verify the truth of such assertions. To try, to persevere, is to ensure ultimate and complete victory.
-				<div align="center"><p><small><i>Shoghi Effendi ∙ Messages to America: Selected Letters and Cablegrams Addressed to the Bahá’ís of North America, 1932 - 1946 ∙ p. 17</i></small></p></div>
-			</div>
-		</div>
-		<div data-role="page" data-control-title="b4q" class="ui-icon-nodisc" id="b1q1">
-			<div data-theme="a" data-role="header" data-position="fixed">
-				<a data-role="button" data-theme="a" href="#book4" data-icon="book4" data-iconpos="notext" class="ui-btn-left"></a>
-				<h3>
-					BOOK FOUR
-				</h3>
-			</div>
-			<div data-role="content">
-			
-				<div align="center"><p><small><i> ∙  ∙ p. </i></small></p></div>
-			</div>
-		</div>
 		<div data-role="page" data-control-title="b1q1" class="ui-icon-nodisc" id="b1q1">
 			<div data-theme="a" data-role="header" data-position="fixed">
-				<a data-role="button" data-theme="a" href="#book1" data-icon="book1" data-iconpos="notext" class="ui-btn-left"></a>
+				<a data-role="button" data-theme="a" href="#book1" data-icon="left" data-iconpos="notext" class="ui-btn-left"></a>
 				<h3>
 					BOOK ONE
 				</h3>
@@ -1054,9 +1068,33 @@
 				<div align="center"><p><small><i>Bahá’u’lláh ∙ cited in The Advent of Divine Justice ∙ pp. 24-25</i></small></p></div>
 			</div>
 		</div>
+		<div data-role="page" data-control-title="b4q1" class="ui-icon-nodisc" id="b4q1">
+			<div data-theme="a" data-role="header" data-position="fixed">
+				<a data-role="button" data-theme="a" href="#book4" data-icon="left" data-iconpos="notext" class="ui-btn-left"></a>
+				<h3>
+					BOOK FOUR
+				</h3>
+			</div>
+			<div data-role="content">
+				There is no time to lose. There is no room left for vacillation. Multitudes hunger for the Bread of Life. The stage is set. The firm and irrevocable Promise is given. God's own Plan has been set in motion. It is gathering momentum with every passing day. The powers of heaven and earth mysteriously assist in its execution. Such an opportunity is irreplaceable. Let the doubter arise and himself verify the truth of such assertions. To try, to persevere, is to ensure ultimate and complete victory.
+				<div align="center"><p><small><i>Shoghi Effendi ∙ Messages to America: Selected Letters and Cablegrams Addressed to the Bahá’ís of North America, 1932 - 1946 ∙ p. 17</i></small></p></div>
+			</div>
+		</div>
+		<div data-role="page" data-control-title="b4q" class="ui-icon-nodisc" id="b4q">
+			<div data-theme="a" data-role="header" data-position="fixed">
+				<a data-role="button" data-theme="a" href="#book4" data-icon="left" data-iconpos="notext" class="ui-btn-left"></a>
+				<h3>
+					BOOK FOUR
+				</h3>
+			</div>
+			<div data-role="content">
+			
+				<div align="center"><p><small><i> ∙  ∙ p. </i></small></p></div>
+			</div>
+		</div>
 		<div data-role="page" data-control-title="b6q1" class="ui-icon-nodisc" id="b6q1">
 			<div data-theme="a" data-role="header" data-position="fixed">
-				<a data-role="button" data-theme="a" href="#book6" data-icon="book6" data-iconpos="notext" class="ui-btn-left"></a>
+				<a data-role="button" data-theme="a" href="#book6" data-icon="left" data-iconpos="notext" class="ui-btn-left"></a>
 				<h3>
 					BOOK SIX
 				</h3>
@@ -1068,7 +1106,7 @@
 		</div>
 		<div data-role="page" data-control-title="b6q2" class="ui-icon-nodisc" id="b6q2">
 			<div data-theme="a" data-role="header" data-position="fixed">
-				<a data-role="button" data-theme="a" href="#book6" data-icon="book6" data-iconpos="notext" class="ui-btn-left"></a>
+				<a data-role="button" data-theme="a" href="#book6" data-icon="left" data-iconpos="notext" class="ui-btn-left"></a>
 				<h3>
 					BOOK SIX
 				</h3>
@@ -1080,7 +1118,7 @@
 		</div>
 		<div data-role="page" data-control-title="b6q3" class="ui-icon-nodisc" id="b6q3">
 			<div data-theme="a" data-role="header" data-position="fixed">
-				<a data-role="button" data-theme="a" href="#book6" data-icon="book6" data-iconpos="notext" class="ui-btn-left"></a>
+				<a data-role="button" data-theme="a" href="#book6" data-icon="left" data-iconpos="notext" class="ui-btn-left"></a>
 				<h3>
 					BOOK SIX
 				</h3>
@@ -1092,7 +1130,7 @@
 		</div>
 		<div data-role="page" data-control-title="b6q4" class="ui-icon-nodisc" id="b6q4">
 			<div data-theme="a" data-role="header" data-position="fixed">
-				<a data-role="button" data-theme="a" href="#book6" data-icon="book6" data-iconpos="notext" class="ui-btn-left"></a>
+				<a data-role="button" data-theme="a" href="#book6" data-icon="left" data-iconpos="notext" class="ui-btn-left"></a>
 				<h3>
 					BOOK SIX
 				</h3>
@@ -1104,7 +1142,7 @@
 		</div>
 		<div data-role="page" data-control-title="b6q5" class="ui-icon-nodisc" id="b6q5">
 			<div data-theme="a" data-role="header" data-position="fixed">
-				<a data-role="button" data-theme="a" href="#book6" data-icon="book6" data-iconpos="notext" class="ui-btn-left"></a>
+				<a data-role="button" data-theme="a" href="#book6" data-icon="left" data-iconpos="notext" class="ui-btn-left"></a>
 				<h3>
 					BOOK SIX
 				</h3>
@@ -1116,7 +1154,7 @@
 		</div>
 		<div data-role="page" data-control-title="b6q6" class="ui-icon-nodisc" id="b6q6">
 			<div data-theme="a" data-role="header" data-position="fixed">
-				<a data-role="button" data-theme="a" href="#book6" data-icon="book6" data-iconpos="notext" class="ui-btn-left"></a>
+				<a data-role="button" data-theme="a" href="#book6" data-icon="left" data-iconpos="notext" class="ui-btn-left"></a>
 				<h3>
 					BOOK SIX
 				</h3>
@@ -1128,7 +1166,7 @@
 		</div>
 		<div data-role="page" data-control-title="b6q7" class="ui-icon-nodisc" id="b6q7">
 			<div data-theme="a" data-role="header" data-position="fixed">
-				<a data-role="button" data-theme="a" href="#book6" data-icon="book6" data-iconpos="notext" class="ui-btn-left"></a>
+				<a data-role="button" data-theme="a" href="#book6" data-icon="left" data-iconpos="notext" class="ui-btn-left"></a>
 				<h3>
 					BOOK SIX
 				</h3>
@@ -1140,7 +1178,7 @@
 		</div>
 		<div data-role="page" data-control-title="b6q8" class="ui-icon-nodisc" id="b6q8">
 			<div data-theme="a" data-role="header" data-position="fixed">
-				<a data-role="button" data-theme="a" href="#book6" data-icon="book6" data-iconpos="notext" class="ui-btn-left"></a>
+				<a data-role="button" data-theme="a" href="#book6" data-icon="left" data-iconpos="notext" class="ui-btn-left"></a>
 				<h3>
 					BOOK SIX
 				</h3>
@@ -1152,7 +1190,7 @@
 		</div>
 		<div data-role="page" data-control-title="b6q9" class="ui-icon-nodisc" id="b6q9">
 			<div data-theme="a" data-role="header" data-position="fixed">
-				<a data-role="button" data-theme="a" href="#book6" data-icon="book6" data-iconpos="notext" class="ui-btn-left"></a>
+				<a data-role="button" data-theme="a" href="#book6" data-icon="left" data-iconpos="notext" class="ui-btn-left"></a>
 				<h3>
 					BOOK SIX
 				</h3>
