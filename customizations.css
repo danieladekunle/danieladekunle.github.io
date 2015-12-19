@@ -1,7 +1,7 @@
 @import url(http://fonts.googleapis.com/css?family=Quicksand);
 
 * {
-font-family: 'Quicksand', sans-serif;
+	font-family: 'Quicksand', sans-serif;
 }
 
 #rogersparkmap {
@@ -18,25 +18,21 @@ h3 {
     color: white;
     text-shadow: none;
 }
-
 .ui-icon-notes {
   background-image: url('images/notes.png');
   background-size: 16px 16px;
   background-position: center;
 }
-
 .ui-icon-advanced {
   background-image: url('images/advanced.png');
   background-size: 16px 16px;
   background-position: center;
 }
-
 .ui-icon-search {
   background-image: url('images/search.png');
   background-size: 16px 16px;
   background-position: center;
 }
-
 .ui-icon-missions {
   background-image: url('images/missions.png');
   background-size: 18px 18px;
@@ -88,41 +84,6 @@ h3 {
 .ui-icon-left {
   background-image: url('images/left.png');
   background-size: 5px;
-  background-position: center;
-}
-.ui-icon-1 {
-  background-image: url('images/1.png');
-  background-size: 8px 8px;
-  background-position: center;
-}
-.ui-icon-2 {
-  background-image: url('images/2.png');
-  background-size: 8px 8px;
-  background-position: center;
-}
-.ui-icon-3 {
-  background-image: url('images/3.png');
-  background-size: 8px 8px;
-  background-position: center;
-}
-.ui-icon-4 {
-  background-image: url('images/4.png');
-  background-size: 8px 8px;
-  background-position: center;
-}
-.ui-icon-5 {
-  background-image: url('images/5.png');
-  background-size: 8px 8px;
-  background-position: center;
-}
-.ui-icon-6 {
-  background-image: url('images/6.png');
-  background-size: 8px 8px;
-  background-position: center;
-}
-.ui-icon-7 {
-  background-image: url('images/7.png');
-  background-size: 8px 8px;
   background-position: center;
 }
 .book1 {
