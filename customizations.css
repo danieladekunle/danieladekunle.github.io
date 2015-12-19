@@ -180,8 +180,8 @@ h3 {
   overflow: hidden;
 }
 .book7 {
-  background-image: url('images/7.png');
-  background-size: 7px;
+  background-image: url('images/book7.png');
+  background-size: 28px;
   background-position: left;
   background-repeat: no-repeat;
   text-overflow: inherit;
