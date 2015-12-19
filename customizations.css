@@ -126,8 +126,8 @@ h3 {
   background-position: center;
 }
 .book1 {
-  background-image: url('images/1.png');
-  background-size: 7px;
+  background-image: url('images/book1.png');
+  background-size: 28px;
   background-position: left;
   background-repeat: no-repeat;
   text-overflow: inherit;
@@ -135,8 +135,8 @@ h3 {
   overflow: hidden;
 }
 .book2 {
-  background-image: url('images/2.png');
-  background-size: 7px;
+  background-image: url('images/book2.png');
+  background-size: 28px;
   background-position: left;
   background-repeat: no-repeat;
   text-overflow: inherit;
@@ -144,8 +144,8 @@ h3 {
   overflow: hidden;
 }
 .book3 {
-  background-image: url('images/3.png');
-  background-size: 7px;
+  background-image: url('images/book3.png');
+  background-size: 28px;
   background-position: left;
   background-repeat: no-repeat;
   text-overflow: inherit;
@@ -153,8 +153,8 @@ h3 {
   overflow: hidden;
 }
 .book4 {
-  background-image: url('images/4.png');
-  background-size: 7px;
+  background-image: url('images/book4.png');
+  background-size: 28px;
   background-position: left;
   background-repeat: no-repeat;
   text-overflow: inherit;
@@ -162,8 +162,8 @@ h3 {
   overflow: hidden;
 }
 .book5 {
-  background-image: url('images/5.png');
-  background-size: 7px;
+  background-image: url('images/book5.png');
+  background-size: 28px;
   background-position: left;
   background-repeat: no-repeat;
   text-overflow: inherit;
@@ -171,8 +171,8 @@ h3 {
   overflow: hidden;
 }
 .book6 {
-  background-image: url('images/6.png');
-  background-size: 7px;
+  background-image: url('images/book6.png');
+  background-size: 28px;
   background-position: left;
   background-repeat: no-repeat;
   text-overflow: inherit;
