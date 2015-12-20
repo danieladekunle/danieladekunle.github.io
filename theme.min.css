@@ -187,12 +187,12 @@ a.ui-link-inherit{
 	text-decoration:none !important;
 }
 .ui-btn-active{
-	border:0px solid #cccccc ;
-	background:#cccccc ;
+	border:1px solid #ffffff ;
+	background:#d6d6d6 ;
 	font-weight:normal;
-	color:#cccccc ;
+	color:#333333 ;
 	cursor:pointer;
-	text-shadow:0  0px  0  #cccccc ;
+	text-shadow:0  0px  0  #ffffff ;
 	text-decoration:none;
 	background-image:-webkit-gradient(linear,left top,left bottom,from( #cccccc ),to( #cccccc )); 
 	background-image:-webkit-linear-gradient( #cccccc,#cccccc ); 
