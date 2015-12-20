@@ -188,9 +188,9 @@ a.ui-link-inherit{
 }
 .ui-btn-active{
 	border:1px solid #ffffff ;
-	background:#d6d6d6 ;
+	background:#cccccc ;
 	font-weight:normal;
-	color:#333333 ;
+	color:#ffffff ;
 	cursor:pointer;
 	text-shadow:0  0px  0  #ffffff ;
 	text-decoration:none;
