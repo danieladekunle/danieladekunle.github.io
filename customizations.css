@@ -4,6 +4,14 @@
 	font-family: 'Quicksand', sans-serif;
 }
 /* HEADING TEXT COLOR/SHADOW */
+h1 {
+    color: white;
+    text-shadow: none;
+}
+h2 {
+    color: white;
+    text-shadow: none;
+}
 h3 {
     color: white;
     text-shadow: none;
