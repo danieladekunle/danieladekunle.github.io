@@ -1,35 +1,16 @@
+/* FONT */
 @import url(http://fonts.googleapis.com/css?family=Quicksand);
-
 * {
 	font-family: 'Quicksand', sans-serif;
 }
-
-#rogersparkmap {
-	height:100%;
-	width:100%;
-}
-
-a:link {text-decoration:none;}
-a:visited {text-decoration:none;}
-a:hover {text-decoration:none;}
-a:active {text-decoration:none;}
-
+/* HEADING TEXT COLOR/SHADOW */
 h3 {
     color: white;
     text-shadow: none;
 }
+/* EXPAND ICONS */
 .ui-icon-notes {
   background-image: url('images/notes.png');
-  background-size: 16px 16px;
-  background-position: center;
-}
-.ui-icon-advanced {
-  background-image: url('images/advanced.png');
-  background-size: 16px 16px;
-  background-position: center;
-}
-.ui-icon-search {
-  background-image: url('images/search.png');
   background-size: 16px 16px;
   background-position: center;
 }
@@ -76,6 +57,58 @@ h3 {
   background-image: url('images/schedule.png');
   background-size: 18px 18px;
 }
+.ui-icon-book1 {
+  background-image: url('images/book1.jpg');
+  background-size: 13px 18px;
+  background-position: center;
+}
+.ui-icon-book2 {
+  background-image: url('images/book2.jpg');
+  background-size: 13px 18px;
+  background-position: center;
+}
+.ui-icon-book3 {
+  background-image: url('images/book3.jpg');
+  background-size: 13px 18px;
+  background-position: center;
+}
+.ui-icon-book4 {
+  background-image: url('images/book4.jpg');
+  background-size: 13px 18px;
+  background-position: center;
+}
+.ui-icon-book5 {
+  background-image: url('images/book5.jpg');
+  background-size: 13px 18px;
+  background-position: center;
+}
+.ui-icon-book6 {
+  background-image: url('images/book6.jpg');
+  background-size: 13px 18px;
+  background-position: center;
+}
+.ui-icon-book7 {
+  background-image: url('images/book7.jpg');
+  background-size: 13px 18px;
+  background-position: center;
+}
+/* EXPAND MAP */
+#rogersparkmap {
+	height:100%;
+	width:100%;
+}
+/* IMMERSE ICONS */
+.ui-icon-advanced {
+  background-image: url('images/advanced.png');
+  background-size: 16px 16px;
+  background-position: center;
+}
+.ui-icon-search {
+  background-image: url('images/search.png');
+  background-size: 16px 16px;
+  background-position: center;
+}
+/* RECITE ICONS */
 .ui-icon-right {
   background-image: url('images/right.png');
   background-size: 5px;
@@ -149,48 +182,21 @@ h3 {
   white-space: nowrap;
   overflow: hidden;
 }
-.ui-icon-book1 {
-  background-image: url('images/book1.jpg');
-  background-size: 13px 18px;
-  background-position: center;
-}
-.ui-icon-book2 {
-  background-image: url('images/book2.jpg');
-  background-size: 13px 18px;
-  background-position: center;
-}
-.ui-icon-book3 {
-  background-image: url('images/book3.jpg');
-  background-size: 13px 18px;
-  background-position: center;
-}
-.ui-icon-book4 {
-  background-image: url('images/book4.jpg');
-  background-size: 13px 18px;
-  background-position: center;
-}
-.ui-icon-book5 {
-  background-image: url('images/book5.jpg');
-  background-size: 13px 18px;
-  background-position: center;
-}
-.ui-icon-book6 {
-  background-image: url('images/book6.jpg');
-  background-size: 13px 18px;
-  background-position: center;
-}
-.ui-icon-book7 {
-  background-image: url('images/book7.jpg');
-  background-size: 13px 18px;
-  background-position: center;
-}
 .ui-icon-pdf {
   background-image: url('images/pdf.png');
   background-size: 16px;
   background-position: center;
 }
-.ui-icon-books {
-  background-image: url('images/books.png');
-  background-size: 18px;
-  background-position: center;
+/* UNKNOWN */
+a:link {
+	text-decoration:none;
+}
+a:visited {
+	text-decoration:none;
+}
+a:hover {
+	text-decoration:none;
+}
+a:active {
+	text-decoration:none;
 }
