@@ -11,17 +11,15 @@
 		<script src="jquery-1.9.1.min.js"></script>
 		<script src="jquery.mobile-1.3.2.min.js"></script>
 		<link rel="stylesheet" href="customizations.css">
-		<!-- iPhone Startup Image-->
-		<link href="apple-touch-startup-image-320x460.png" media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 1)" rel="apple-touch-startup-image">
 		<!-- iOS/Android Icons -->
 		<link rel="apple-touch-icon" href="images/immerse-60@2x.png" />
 		<link rel="apple-touch-icon" sizes="180x180" href="images/immerse-60@3x.png" />
 		<link rel="apple-touch-icon" sizes="76x76" href="images/immerse-76.png" />
 		<link rel="apple-touch-icon" sizes="152x152" href="images/immerse-76@2x.png" />
 		<link rel="apple-touch-icon" sizes="58x58" href="images/immerse-Small@2x.png" />
-		<!-- iDevice Add to Homescreen Popup-->	
-		<link rel="stylesheet" href="add2home.css">
-<!--		<script type="application/javascript" src="add2home.js"></script> -->
+		<!-- iOS Add to Home Screen Popup-->	
+<!-- 		<link rel="stylesheet" href="add2home.css">
+		<script type="application/javascript" src="add2home.js"></script> -->
 		<script type="text/javascript">
 			$(document).ready(function(e) {
 				$('#specify').click(function(e) {
@@ -90,12 +88,12 @@
 	<body>
 		<div data-role="page" data-control-title="search" class="ui-icon-nodisc" id="search">
 			<div data-theme="a" data-role="header">
-				<h3>
+				<h1>
 					I M M E R S E
-				</h3>
+				</h1>
 			</div>
 			<div data-role="content">
-				<div align="center">
+				<div class="center">
 						<p><i>"Immerse yourselves in the ocean of My words..."</i></p>
 				</div>
 				<form action="http://reference.bahai.org/search" method="get">
@@ -103,10 +101,11 @@
 					<input type="hidden" name="max" value="10">
 					<input type="hidden" name="lang" value="en">
 					<input type="hidden" name="first" value="1" />
-					<div align="center">
-						<small>all titles searched by default. click below to specify titles.</small>
-					</div>
-					<input type="button" name="specify" id="specify" value="Advanced" data-iconpos="right" data-icon="advanced">
+					<!-- <div class="center">
+						<small>all titles searched by default. click 'advanced' to specify titles.</small>
+					</div> -->
+					<input type="submit" id="submit" data-icon="search" value="search" data-iconpos="right"/>
+					<input type="button" name="specify" id="specify" value="advanced" data-iconpos="right" data-icon="advanced">
 					<div id="advanced" style="display: none;">
 						<div data-role="collapsible-set" id="set">
 							<div data-role="collapsible" id="Bahaullah">
@@ -210,9 +209,9 @@
 							</div>
 						</div>
 					</div>
-					<input type="submit" id="submit" data-icon="search" value="Search" data-iconpos="right"/>
-					<div align="center">
-						<small>results from reference.bahai.org</small>
+					
+					<div class="center">
+						<p><small>results from reference.bahai.org</small></p>
 					</div>
 				</form>
 <!-- 				<br>
