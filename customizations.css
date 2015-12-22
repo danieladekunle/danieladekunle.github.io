@@ -195,6 +195,9 @@ h3 {
   background-size: 16px;
   background-position: center;
 }
+.center {
+	text-align: center;
+}
 /* UNKNOWN */
 a:link {
 	text-decoration:none;
