@@ -33,12 +33,16 @@ h3 {
     color: white;
     text-shadow: none;
 }
-/* CENTER ALIGNMENT */
+/* CLASSES */
 .center {
 	text-align: center;
 }
 .passage {
 	text-align: justify;
+}
+.comment {
+	 font-style: italic;
+	 font-size: 90%;
 }
 /* EXPAND ICONS */
 .ui-icon-notes {
