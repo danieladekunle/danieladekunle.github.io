@@ -3,7 +3,20 @@
 * {
 	font-family: 'Quicksand', sans-serif;
 }
-/* HEADING TEXT COLOR/SHADOW */
+/* LINK UNDERLINES */
+a:link {
+	text-decoration:none;
+}
+a:visited {
+	text-decoration:none;
+}
+a:hover {
+	text-decoration:none;
+}
+a:active {
+	text-decoration:none;
+}
+/* HEADINGS*/
 h1 {
     color: white;
     text-shadow: none;
@@ -20,8 +33,13 @@ h3 {
     color: white;
     text-shadow: none;
 }
-/* [data-role=page]{height: 100% !important; position:relative !important;}
-[data-role=footer]{bottom:0; position:absolute !important; top: auto !important; width:100%;}   */
+/* CENTER ALIGNMENT */
+.center {
+	text-align: center;
+}
+.passage {
+	text-align: justify;
+}
 /* EXPAND ICONS */
 .ui-icon-notes {
   background-image: url('images/notes.png');
@@ -215,20 +233,4 @@ h3 {
   background-image: url('images/pdf.png');
   background-size: 16px;
   background-position: center;
-}
-.center {
-	text-align: center;
-}
-/* UNKNOWN */
-a:link {
-	text-decoration:none;
-}
-a:visited {
-	text-decoration:none;
-}
-a:hover {
-	text-decoration:none;
-}
-a:active {
-	text-decoration:none;
 }
