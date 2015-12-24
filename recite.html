@@ -3081,24 +3081,12 @@
 			</div>
 			<div data-role="content" class="center">
 					<!-- <p><small>comments, corrections, suggestions...</small></p> -->
-				<form action="feedback.php" name="myemailform" method="post">
-					<div>
-						<span>Name</span>
-						<input type="text" name="name" value="" placeholder="Your Name">
-					</div>
-
-					<div>
-						<span>Email</span>
-						<input type="email" name="email" autocapitalize="off" autocorrect="off" value="" placeholder="example@domain.com">
-					</div>
-
-					<div><textarea name="message" placeholder="Message"></textarea></div>
-
-					<div class="code">
-						<button><input type="submit" name='submit' value="Send"></button>
-					</div>
-					<i class="clear" style="display: block"></i>
-					</div>
+				<form action="email.php" method="post">
+					First Name: <input type="text" name="first_name"><br>
+					Last Name: <input type="text" name="last_name"><br>
+					Email: <input type="text" name="email"><br>
+					Message:<br><textarea rows="5" name="message" cols="30"></textarea><br>
+					<input type="submit" name="submit" value="Submit">
 				</form>
 			</div>
 		</div>
