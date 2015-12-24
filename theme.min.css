@@ -127,7 +127,19 @@
 	font-family:Helvetica,Arial,sans-serif ;
 	text-decoration:none;
 }
-
+.ui-btn-up-d{
+	border:1px solid #eeeeee ;
+	background:#ffffff ;
+	font-weight:normal;
+	color:#333333 ;
+	text-shadow:0  0px  0  #ffffff ;
+	background-image:-webkit-gradient(linear,left top,left bottom,from( #ffffff ),to( #ffffff )); 
+	background-image:-webkit-linear-gradient( #ffffff,#ffffff ); 
+	background-image:   -moz-linear-gradient( #ffffff,#ffffff ); 
+	background-image:    -ms-linear-gradient( #ffffff,#ffffff ); 
+	background-image:     -o-linear-gradient( #ffffff,#ffffff ); 
+	background-image:        linear-gradient( #ffffff,#ffffff );
+}
 .ui-bar-c{
 	border:1px solid #cccccc ;
 	background:#ffffff ;
