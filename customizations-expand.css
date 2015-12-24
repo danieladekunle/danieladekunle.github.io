@@ -1,0 +1,234 @@
+/* FONT */
+@import url(http://fonts.googleapis.com/css?family=Quicksand);
+* {
+	font-family: 'Quicksand', sans-serif;
+}
+/* LINK UNDERLINES */
+a:link {
+	text-decoration:none;
+}
+a:visited {
+	text-decoration:none;
+}
+a:hover {
+	text-decoration:none;
+}
+a:active {
+	text-decoration:none;
+}
+/* HEADINGS*/
+h1 {
+    color: white;
+    text-shadow: none;
+    text-transform: uppercase;
+	letter-spacing: 5px;
+}
+h2 {
+    color: white;
+    text-shadow: none;
+}
+h3 {
+    color: white;
+    text-shadow: none;
+}
+/* CENTER ALIGNMENT */
+.center {
+	text-align: center;
+}
+.passage {
+	text-align: justify;
+}
+/* EXPAND ICONS */
+.ui-icon-notes {
+  background-image: url('images/notes.png');
+  background-size: 16px 16px;
+  background-position: center;
+}
+.ui-icon-missions {
+  background-image: url('images/missions.png');
+  background-size: 18px 18px;
+  background-position: center;
+}
+.ui-icon-directory {
+  background-image: url('images/directory.png');
+  background-size: 18px 13px;
+  background-position: center;
+}
+.ui-icon-map {
+  background-image: url('images/map.png');
+  background-size: 18px 14px;
+}
+.ui-icon-weather {
+  background-image: url('images/weather.png');
+  background-size: 18px 18px;
+  background-position: center;
+}
+.ui-icon-quotations {
+  background-image: url('images/quotations.png');
+  background-size: 18px 16px;
+  background-position: center;
+}
+.ui-icon-guidance {
+  background-image: url('images/guidance.png');
+  background-size: 14px 18px;
+  background-position: center;
+}
+.ui-icon-prayers {
+  background-image: url('images/prayers.png');
+  background-size: 12px 18px;
+  background-position: center;
+}
+.ui-icon-menu {
+  background-image: url('images/menu.png');
+  background-size: 16px 16px;
+  background-position: center;
+}
+.ui-icon-schedule {
+  background-image: url('images/schedule.png');
+  background-size: 18px 18px;
+}
+.ui-icon-book1 {
+  background-image: url('images/book1.jpg');
+  background-size: 13px 18px;
+  background-position: center;
+}
+.ui-icon-book2 {
+  background-image: url('images/book2.jpg');
+  background-size: 13px 18px;
+  background-position: center;
+}
+.ui-icon-book3 {
+  background-image: url('images/book3.jpg');
+  background-size: 13px 18px;
+  background-position: center;
+}
+.ui-icon-book4 {
+  background-image: url('images/book4.jpg');
+  background-size: 13px 18px;
+  background-position: center;
+}
+.ui-icon-book5 {
+  background-image: url('images/book5.jpg');
+  background-size: 13px 18px;
+  background-position: center;
+}
+.ui-icon-book6 {
+  background-image: url('images/book6.jpg');
+  background-size: 13px 18px;
+  background-position: center;
+}
+.ui-icon-book7 {
+  background-image: url('images/book7.jpg');
+  background-size: 13px 18px;
+  background-position: center;
+}
+/* EXPAND MAP */
+#rogersparkmap {
+	height:100%;
+	width:100%;
+}
+/* IMMERSE ICONS */
+.ui-icon-advanced {
+  background-image: url('images/advanced.png');
+  background-size: 13px 13px;
+  background-position: center;
+}
+.ui-icon-search {
+  background-image: url('images/search.png');
+  background-size: 12px 12px;
+  background-position: center;
+}
+/* RECITE ICONS */
+.ui-icon-right {
+  background-image: url('images/right.png');
+  background-size: 5px;
+  background-position: center;
+}
+.ui-icon-left {
+  background-image: url('images/left-white.png');
+  background-size: 7px;
+  background-position: center;
+}
+.ui-icon-next {
+  background-image: url('images/right.png');
+  background-size: 7px;
+  background-position: center;
+}
+.ui-icon-previous {
+  background-image: url('images/left.png');
+  background-size: 7px;
+  background-position: center;
+}
+.ui-icon-more {
+  background-image: url('images/more.png');
+  background-size: 10px;
+  background-position: center;
+}
+.book1 {
+  background-image: url('images/book1.png');
+  background-size: 28px;
+  background-position: left;
+  background-repeat: no-repeat;
+  text-overflow: inherit;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.book2 {
+  background-image: url('images/book2.png');
+  background-size: 28px;
+  background-position: left;
+  background-repeat: no-repeat;
+  text-overflow: inherit;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.book3 {
+  background-image: url('images/book3.png');
+  background-size: 28px;
+  background-position: left;
+  background-repeat: no-repeat;
+  text-overflow: inherit;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.book4 {
+  background-image: url('images/book4.png');
+  background-size: 28px;
+  background-position: left;
+  background-repeat: no-repeat;
+  text-overflow: inherit;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.book5 {
+  background-image: url('images/book5.png');
+  background-size: 28px;
+  background-position: left;
+  background-repeat: no-repeat;
+  text-overflow: inherit;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.book6 {
+  background-image: url('images/book6.png');
+  background-size: 28px;
+  background-position: left;
+  background-repeat: no-repeat;
+  text-overflow: inherit;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.book7 {
+  background-image: url('images/book7.png');
+  background-size: 28px;
+  background-position: left;
+  background-repeat: no-repeat;
+  text-overflow: inherit;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.ui-icon-pdf {
+  background-image: url('images/pdf.png');
+  background-size: 16px;
+  background-position: center;
+}
