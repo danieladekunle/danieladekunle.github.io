@@ -127,6 +127,11 @@ h3 {
   background-size: 7px;
   background-position: center;
 }
+.ui-icon-more {
+  background-image: url('images/more.png');
+  background-size: 10px;
+  background-position: center;
+}
 .book1 {
   background-image: url('images/book1.png');
   background-size: 28px;

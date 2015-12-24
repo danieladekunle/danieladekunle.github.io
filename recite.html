@@ -30,9 +30,20 @@
 <!-- BOOK LIST -->
 		<div data-role="page" data-control-title="home" data-theme="a" class="ui-icon-nodisc" id="menu">
 			<div data-theme="a" data-role="header" data-position="fixed">
+				<a href="#more" data-theme="b" data-icon="more" data-iconpos="notext" class="ui-btn-left"></a>
 				<h1>
 					R E C I T E
 				</h1>
+			</div>
+			<div data-role="panel" id="more">
+				<ul data-role="listview" data-divider-theme="a" data-inset="true">
+					<li data-theme="a" data-icon="right">
+						<a href="#memorization" data-transition="fade">
+							On Memorization
+							<br><small><i>Value and Purpose</i></small>
+						</a>
+					</li>
+				</ul>
 			</div>
 			<div data-role="content" style="padding: 0px 12px">
 				<ul data-role="listview" data-divider-theme="a" data-inset="true">
@@ -2837,6 +2848,17 @@
 			<div data-role="content">
 				...and every breast which committeth His Words to memory, God shall cause, if it were that of a believer, to be filled with His love...
 				<div class="center"><p><small><i>The Báb ∙ Selections from the Writings of the Báb ∙ p. 99</i></small></p></div>
+			</div>
+		</div>
+		<div data-role="page" data-control-title="memorization" class="ui-icon-nodisc" id="memorization">
+			<div data-theme="a" data-role="header" data-position="fixed">
+				<a data-role="button" data-theme="b" href="#menu" data-icon="left" data-iconpos="notext" class="ui-btn-left"></a>
+				<h3>
+					R E C I T E
+				</h3>
+			</div>
+			<div data-role="content">
+				<div class="center">On the Value and Purpose of Memorizing Passages from the Writings</div>
 			</div>
 		</div>
 	</body>
