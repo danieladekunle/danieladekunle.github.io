@@ -1,0 +1,40 @@
+/* FONT */
+@import url(http://fonts.googleapis.com/css?family=Quicksand);
+* {
+	font-family: 'Quicksand', sans-serif;
+}
+/* LINK UNDERLINES */
+a:link {
+	text-decoration:none;
+}
+a:visited {
+	text-decoration:none;
+}
+a:hover {
+	text-decoration:none;
+}
+a:active {
+	text-decoration:none;
+}
+/* HEADINGS*/
+h1 {
+    color: white;
+    text-shadow: none;
+    text-transform: uppercase;
+	letter-spacing: 5px;
+}
+/* CLASSES */
+.center {
+	text-align: center;
+}
+/* IMMERSE ICONS */
+.ui-icon-advanced {
+  background-image: url('images/advanced.png');
+  background-size: 13px 13px;
+  background-position: center;
+}
+.ui-icon-search {
+  background-image: url('images/search.png');
+  background-size: 12px 12px;
+  background-position: center;
+}
