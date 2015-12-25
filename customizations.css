@@ -24,12 +24,12 @@ h3 {
 	 font-style: italic;
 	 font-size: 90%;
 }
-/* .ui-icon-right {
+.ui-icon-right {
   background-image: url('images/right.png');
   background-size: 5px;
   background-repeat: no-repeat;
   background-position: 95%;
-} */
+}
 .ui-icon-left {
   background-image: url('images/left-white.png');
   background-size: 7px;
