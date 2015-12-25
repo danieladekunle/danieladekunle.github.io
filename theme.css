@@ -322,7 +322,7 @@ html .ui-bar-a .ui-btn:hover,
 html .ui-body-a .ui-btn:hover,
 html body .ui-group-theme-a .ui-btn:hover,
 html head + body .ui-btn.ui-btn-a:hover {
-	background-color: #dfdfdf /*{a-bhover-background-color}*/;
+	background-color: #eeeeee /*{a-bhover-background-color}*/;
 	border-color: #ffffff /*{a-bhover-border}*/;
 	color: #333333 /*{a-bhover-color}*/;
 	text-shadow: 0 /*{a-bhover-shadow-x}*/ 0px /*{a-bhover-shadow-y}*/ 0 /*{a-bhover-shadow-radius}*/ #ffffff /*{a-bhover-shadow-color}*/;
