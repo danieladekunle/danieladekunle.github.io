@@ -46,13 +46,13 @@ h3 {
 }
 .ui-icon-next {
   background-image: url('images/next.png');
-  background-size: 7px;
+  background-size: 8px;
   background-repeat: no-repeat;
   background-position: top;
 }
 .ui-icon-previous {
   background-image: url('images/previous.png');
-  background-size: 7px;
+  background-size: 8px;
   background-repeat: no-repeat;
   background-position: top;
 }
