@@ -34,17 +34,24 @@
 		</script>
 		<!-- Next/Previous Passage Buttons Function -->
 		<script>
-			$(document).on("pagecreate", function(event){
+			$(document).ready( function(event){
 				$(".next").click(function(){
 					$.mobile.pageContainer.pagecontainer("change", $(this).closest('[data-role="page"]').next('[data-role="page"]'), {transition:"slide"});
-					location.reload();
 				});  
 				$(".previous").click(function(){
 					$.mobile.pageContainer.pagecontainer("change", $(this).closest('[data-role="page"]').prev('[data-role="page"]'), {transition:"slide", reverse:true,});
-					location.reload();
 				}); 
 			});
 		</script>
+<!-- 		<script>
+			$(document).on("pagecreate", function(event){
+				$(".next").click(function(){
+				});  
+				$(".previous").click(function(){
+					$(this).closest('[data-role="page"]').prev('[data-role="page"]').show();
+				}); 
+			});
+		</script> -->
 	</head>
 	<body>
 <!-- Book List -->
@@ -1400,7 +1407,6 @@
 				<div class="center"><p><small><i>Bahá’u’lláh ∙ Bahá’í Prayers ∙ p. 12</i></small></p></div>
 			</div>
 			<div class="footer" data-theme="c" data-role="footer" data-position="fixed" data-tap-toggle="true"><br><br>
-				<a data-role="button" class="next" data-theme="c" data-icon="next"></a>
 				<a data-role="button" class="previous" data-theme="c" data-icon="previous"></a>
 			</div>
 		</div>
