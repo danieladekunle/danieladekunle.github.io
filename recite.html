@@ -32,6 +32,17 @@
 		<script>
 			addToHomescreen();
 		</script>
+		<!-- Next/Previous Passage Buttons Function -->
+		<script>
+			$(document).on("pagecreate", function(event){
+				$(".next").click(function(){
+					$.mobile.pageContainer.pagecontainer("change", $(this).closest('[data-role="page"]').next('[data-role="page"]'), { reload:false, transition:'slide', changeHash:true });
+				});  
+				$(".previous").click(function(){
+					$.mobile.pageContainer.pagecontainer("change", $(this).closest('[data-role="page"]').prev('[data-role="page"]'), { reload:false, transition:'slide', changeHash:true });
+				}); 
+			});
+		</script>
 	</head>
 	<body>
 <!-- Book List -->
@@ -1197,7 +1208,7 @@
 				<div class="center"><p><small><i>Bahá’u’lláh ∙ The Hidden Words ∙ Persian no. 69</i></small></p></div>
 			</div>
 		</div> -->
-		<div data-role="page" data-control-title="b1q6" class="ui-icon-nodisc" id="b1q6">
+		<div data-role="page" data-control-title="b1q6" class="testingclass" id="b1q6">
 			<div data-theme="a" data-role="header" data-position="fixed">
 				<a data-role="button" data-theme="b" data-transition="slide" data-direction="reverse" href="#book1" data-icon="left" data-iconpos="notext" class="ui-btn-left"></a>
 				<h3>
@@ -1210,11 +1221,10 @@
 				<div class="center"><p><small><i>Bahá’u’lláh ∙ Gleanings from the Writings of Bahá’u’lláh ∙ CXXXII ∙ p. 289</i></small></p></div>
 			</div>
 			<div class="footer" data-theme="c" data-role="footer" data-position="fixed" data-tap-toggle="true"><br><br>
-				<!-- <a data-role="button" data-theme="c" href="#book1" data-icon="previous" data-transition="slide" data-direction="reverse" class="ui-btn-left"></a> -->
-				<a data-role="button" data-theme="c" href="#b1q7" data-icon="next" data-transition="slide" class="ui-btn-right"></a>
+				<a data-role="button" class="next" data-theme="c" data-icon="next"></a>
 			</div>
 		</div>
-		<div data-role="page" data-control-title="b1q7" class="ui-icon-nodisc" id="b1q7">
+		<div data-role="page" data-control-title="b1q7" class="testingclass" id="b1q7">
 			<div data-theme="a" data-role="header" data-position="fixed">
 				<a data-role="button" data-theme="b" data-transition="slide" data-direction="reverse" href="#book1" data-icon="left" data-iconpos="notext" class="ui-btn-left"></a>
 				<h3>
@@ -1224,6 +1234,10 @@
 			<div data-role="content" class="passage">
 				O ye beloved of the Lord! In this sacred Dispensation, conflict and contention are in no wise permitted. Every aggressor deprives himself of God's grace.
 				<div class="center"><p><small><i>‘Abdu’l-Bahá ∙ Bahá’í World Faith ∙ ‘Abdu’l-Bahá Section ∙ p. 445</i></small></p></div>
+			</div>
+			<div class="footer" data-theme="c" data-role="footer" data-position="fixed" data-tap-toggle="true"><br><br>
+				<a data-role="button" class="next" data-theme="c" data-icon="next"></a>
+				<a data-role="button" class="previous" data-theme="c" data-icon="previous"></a>
 			</div>
 		</div>
 		<div data-role="page" data-control-title="b1q8" class="ui-icon-nodisc" id="b1q8">
@@ -1237,6 +1251,10 @@
 				Nothing whatever can, in this Day, inflict a greater harm upon this Cause than dissension and strife, contention, estrangement and apathy, among the loved ones of God.
 				<div class="center"><p><small><i>Bahá’u’lláh ∙ Gleanings from the Writings of Bahá’u’lláh ∙ V ∙ p. 9</i></small></p></div>
 			</div>
+			<div class="footer" data-theme="c" data-role="footer" data-position="fixed" data-tap-toggle="true"><br><br>
+				<a data-role="button" class="next" data-theme="c" data-icon="next"></a>
+				<a data-role="button" class="previous" data-theme="c" data-icon="previous"></a>
+			</div>
 		</div>
 		<div data-role="page" data-control-title="b1q9" class="ui-icon-nodisc" id="b1q9">
 			<div data-theme="a" data-role="header" data-position="fixed">
@@ -1249,6 +1267,10 @@
 				Do not be content with showing friendship in words alone, let your heart burn with loving kindness for all who may cross your path.
 				<div class="center"><p><small><i>‘Abdu’l-Bahá ∙ Paris Talks ∙ p. 16</i></small></p></div>
 			</div>
+			<div class="footer" data-theme="c" data-role="footer" data-position="fixed" data-tap-toggle="true"><br><br>
+				<a data-role="button" class="next" data-theme="c" data-icon="next"></a>
+				<a data-role="button" class="previous" data-theme="c" data-icon="previous"></a>
+			</div>
 		</div>
 		<div data-role="page" data-control-title="b1q10" class="ui-icon-nodisc" id="b1q10">
 			<div data-theme="a" data-role="header" data-position="fixed">
@@ -1260,6 +1282,10 @@
 			<div data-role="content" class="passage">
 				When a thought of war comes, oppose it by a stronger thought of peace. A thought of hatred must be destroyed by a more powerful thought of love.
 				<div class="center"><p><small><i>‘Abdu’l-Bahá ∙ Paris Talks ∙ p. 29</i></small></p></div>
+			</div>
+			<div class="footer" data-theme="c" data-role="footer" data-position="fixed" data-tap-toggle="true"><br><br>
+				<a data-role="button" class="next" data-theme="c" data-icon="next"></a>
+				<a data-role="button" class="previous" data-theme="c" data-icon="previous"></a>
 			</div>
 		</div>
 		<div data-role="page" data-control-title="b1q11" class="ui-icon-nodisc" id="b1q11">
@@ -1274,6 +1300,10 @@
 				<p> -->...backbiting quencheth the light of the heart, and extinguisheth the life of the soul.<!-- </p> -->
 				<div class="center"><p><small><i>Bahá’u’lláh ∙ Gleanings from the Writings of Bahá’u’lláh ∙ CXXV ∙ p. 265</i></small></p></div>
 			</div>
+			<div class="footer" data-theme="c" data-role="footer" data-position="fixed" data-tap-toggle="true"><br><br>
+				<a data-role="button" class="next" data-theme="c" data-icon="next"></a>
+				<a data-role="button" class="previous" data-theme="c" data-icon="previous"></a>
+			</div>
 		</div>
 		<div data-role="page" data-control-title="b1q12" class="ui-icon-nodisc" id="b1q12">
 			<div data-theme="a" data-role="header" data-position="fixed">
@@ -1285,6 +1315,10 @@
 			<div data-role="content" class="passage">
 				Breathe not the sins of others so long as thou art thyself a sinner.
 				<div class="center"><p><small><i>Bahá’u’lláh ∙ The Hidden Words ∙ Arabic no. 27</i></small></p></div>
+			</div>
+			<div class="footer" data-theme="c" data-role="footer" data-position="fixed" data-tap-toggle="true"><br><br>
+				<a data-role="button" class="next" data-theme="c" data-icon="next"></a>
+				<a data-role="button" class="previous" data-theme="c" data-icon="previous"></a>
 			</div>
 		</div>
 		<div data-role="page" data-control-title="b1q13" class="ui-icon-nodisc" id="b1q13">
@@ -1298,6 +1332,10 @@
 				Speak no evil, that thou mayest not hear it spoken unto thee, and magnify not the faults of others that thine own faults may not appear great...
 				<div class="center"><p><small><i>Bahá’u’lláh ∙ The Hidden Words ∙ Persian no. 44</i></small></p></div>
 			</div>
+			<div class="footer" data-theme="c" data-role="footer" data-position="fixed" data-tap-toggle="true"><br><br>
+				<a data-role="button" class="next" data-theme="c" data-icon="next"></a>
+				<a data-role="button" class="previous" data-theme="c" data-icon="previous"></a>
+			</div>
 		</div>
 		<div data-role="page" data-control-title="b1q14" class="ui-icon-nodisc" id="b1q14">
 			<div data-theme="a" data-role="header" data-position="fixed">
@@ -1309,6 +1347,10 @@
 			<div data-role="content" class="passage">
 				O Son of Being! How couldst thou forget thine own faults and busy thyself with the faults of others? Whoso doeth this is accursed of Me.
 				<div class="center"><p><small><i>Bahá’u’lláh ∙ The Hidden Words ∙ Arabic no. 26</i></small></p></div>
+			</div>
+			<div class="footer" data-theme="c" data-role="footer" data-position="fixed" data-tap-toggle="true"><br><br>
+				<a data-role="button" class="next" data-theme="c" data-icon="next"></a>
+				<a data-role="button" class="previous" data-theme="c" data-icon="previous"></a>
 			</div>
 		</div>
 		<div data-role="page" data-control-title="b1q15" class="ui-icon-nodisc" id="b1q15">
@@ -1323,6 +1365,10 @@
 				<p> -->O God, my God! Look not upon my hopes and my doings, nay rather look upon Thy will that hath encompassed the heavens and the earth. By Thy Most Great Name, O Thou Lord of all nations! I have desired only what Thou didst desire, and love only what Thou dost love.<!-- </p> -->
 				<div class="center"><p><small><i>Bahá’u’lláh ∙ Bahá’í Prayers ∙ pp. 8-9</i></small></p></div>
 			</div>
+			<div class="footer" data-theme="c" data-role="footer" data-position="fixed" data-tap-toggle="true"><br><br>
+				<a data-role="button" class="next" data-theme="c" data-icon="next"></a>
+				<a data-role="button" class="previous" data-theme="c" data-icon="previous"></a>
+			</div>
 		</div>
 		<div data-role="page" data-control-title="b1q16" class="ui-icon-nodisc" id="b1q16">
 			<div data-theme="a" data-role="header" data-position="fixed">
@@ -1335,6 +1381,10 @@
 				Make my prayer, O my Lord, a fountain of living waters whereby I may live as long as Thy sovereignty endureth, and may make mention of Thee in every world of Thy worlds.
 				<div class="center"><p><small><i>Bahá’u’lláh ∙ Bahá’í Prayers ∙ p. 9</i></small></p></div>
 			</div>
+			<div class="footer" data-theme="c" data-role="footer" data-position="fixed" data-tap-toggle="true"><br><br>
+				<a data-role="button" class="next" data-theme="c" data-icon="next"></a>
+				<a data-role="button" class="previous" data-theme="c" data-icon="previous"></a>
+			</div>
 		</div>
 		<div data-role="page" data-control-title="b1q17" class="ui-icon-nodisc" id="b1q17">
 			<div data-theme="a" data-role="header" data-position="fixed">
@@ -1346,6 +1396,10 @@
 			<div data-role="content" class="passage">
 				Too high art Thou for the praise of those who are nigh unto Thee to ascend unto the heaven of Thy nearness, or for the birds of the hearts of them who are devoted to Thee to attain to the door of Thy gate. I testify that Thou hast been sanctified above all attributes and holy above all names. No God is there but Thee, the Most Exalted, the All-Glorious.
 				<div class="center"><p><small><i>Bahá’u’lláh ∙ Bahá’í Prayers ∙ p. 12</i></small></p></div>
+			</div>
+			<div class="footer" data-theme="c" data-role="footer" data-position="fixed" data-tap-toggle="true"><br><br>
+				<a data-role="button" class="next" data-theme="c" data-icon="next"></a>
+				<a data-role="button" class="previous" data-theme="c" data-icon="previous"></a>
 			</div>
 		</div>
 <!-- Book 2 Passages -->
@@ -2347,8 +2401,8 @@
 				<div class="center"><p><small><i>The Báb ∙ cited in The Dawn-Breakers ∙ pp. 92-94</i></small></p></div>
 			</div>
 			<div class="footer" data-theme="c" data-role="footer" data-position="fixed" data-tap-toggle="true"><br><br>
-				<a data-role="button" data-theme="c" href="#b4q4" data-icon="previous" data-transition="slide" data-direction="reverse" class="ui-btn-left"></a>
-				<a data-role="button" data-theme="c" href="#b4q6" data-icon="next" data-transition="slide" class="ui-btn-right"></a>
+				<a data-role="button" class="next" data-theme="c" data-icon="next"></a>
+				<a data-role="button" class="previous" data-theme="c" data-icon="previous"></a>
 			</div>
 		</div>
 		<div data-role="page" data-control-title="b4q6" class="ui-icon-nodisc" id="b4q6">
