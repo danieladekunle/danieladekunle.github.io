@@ -36,10 +36,10 @@
 		<script>
 			$(document).on("pagecreate", function(event){
 				$(".next").click(function(){
-					$.mobile.pageContainer.pagecontainer("change", $(this).closest('[data-role="page"]').next('[data-role="page"]'), { reload:false, transition:'slide', changeHash:true });
+					$.mobile.pageContainer.pagecontainer("change", $(this).parents('[data-role="page"]').next('[data-role="page"]'), {reload:true, transition:"slide"});
 				});  
 				$(".previous").click(function(){
-					$.mobile.pageContainer.pagecontainer("change", $(this).closest('[data-role="page"]').prev('[data-role="page"]'), { reload:false, transition:'slide', changeHash:true });
+					$.mobile.pageContainer.pagecontainer("change", $(this).parents('[data-role="page"]').prev('[data-role="page"]'), {reload:true, transition:"slide", reverse:true,});
 				}); 
 			});
 		</script>
