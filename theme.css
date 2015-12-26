@@ -474,10 +474,10 @@ html .ui-bar-b .ui-btn:hover,
 html .ui-body-b .ui-btn:hover,
 html body .ui-group-theme-b .ui-btn:hover,
 html head + body .ui-btn.ui-btn-b:hover {
-	background-color: #cccccc /*{b-bhover-background-color}*/;
-	border-color: #cccccc /*{b-bhover-border}*/;
+	background-color: #ffffff /*{b-bhover-background-color}*/;
+	border-color: #ffffff /*{b-bhover-border}*/;
 	color: #333333 /*{b-bhover-color}*/;
-	text-shadow: 0 /*{b-bhover-shadow-x}*/ 0px /*{b-bhover-shadow-y}*/ 0 /*{b-bhover-shadow-radius}*/ #cccccc /*{b-bhover-shadow-color}*/;
+	text-shadow: 0 /*{b-bhover-shadow-x}*/ 0px /*{b-bhover-shadow-y}*/ 0 /*{b-bhover-shadow-radius}*/ #ffffff /*{b-bhover-shadow-color}*/;
 }
 /* Button down */
 .ui-page-theme-b .ui-btn:active,
@@ -485,10 +485,10 @@ html .ui-bar-b .ui-btn:active,
 html .ui-body-b .ui-btn:active,
 html body .ui-group-theme-b .ui-btn:active,
 html head + body .ui-btn.ui-btn-b:active {
-	background-color: #cccccc /*{b-bdown-background-color}*/;
-	border-color: #cccccc /*{b-bdown-border}*/;
+	background-color: #ffffff /*{b-bdown-background-color}*/;
+	border-color: #ffffff /*{b-bdown-border}*/;
 	color: #333333 /*{b-bdown-color}*/;
-	text-shadow: 0 /*{b-bdown-shadow-x}*/ 0px /*{b-bdown-shadow-y}*/ 0 /*{b-bdown-shadow-radius}*/ #cccccc /*{b-bdown-shadow-color}*/;
+	text-shadow: 0 /*{b-bdown-shadow-x}*/ 0px /*{b-bdown-shadow-y}*/ 0 /*{b-bdown-shadow-radius}*/ #ffffff /*{b-bdown-shadow-color}*/;
 /* Structure */
 /* Disabled
 -----------------------------------------------------------------------------------------------------------*/
