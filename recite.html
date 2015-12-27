@@ -44,12 +44,10 @@
 			});
 		</script>
 		<script>
-			$(document).on("pagecreate",function(){
-				$('a').on('click', function(){          
-					localStorage.currentURL = this.href
+			$(document).ready( function(event){
+         
+					localStorage.currentURL = location.href
 				});
-
-			});
 			$(document).on("pagecreate",function(){
 				if (localStorage.currentURL && location.currentURL != location.href) {
 					location.href = localStorage.currentURL;
