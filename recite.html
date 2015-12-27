@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html manifest="cach-manifest.appcache">
 	<head>
@@ -43,19 +44,27 @@
 				}); 
 			});
 		</script>
-		<script>
+<!-- 		<script>
 			$(document).ready( function(event){
 				$('a').on('click', function(){          
 					localStorage.currentURL = this.href
 				});
-			}); 
-		</script>
-		<script>
-			$(document).on("pagebeforecreate",function(event){
 				if (localStorage.currentURL && location.currentURL != location.href) {
 					location.href = localStorage.currentURL;
 				}
 			});
+		</script> -->
+		<script>
+			$(document).ready( function(event){
+				console.log(page.name + ' initialized'); localStorage.lastPage=page.name; 
+			});
+		</script>
+		<script>
+			$(document).ready( function(event){
+					if (localStorage.lastPage && location.currentURL != location.href) {
+					location.href = localStorage.lastPage;
+				}
+			});	
 		</script>
 	</head>
 	<body>
@@ -119,7 +128,7 @@
 					</li>
 					<li data-theme="a" data-icon="right">
 						<a href="#book3" data-transition="slide">
-							<div class="book3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Teaching Children's Classes, Grade 1
+							<div class="book3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Teaching Children's Classes Grade 1
 							<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<small>B o o k&nbsp;&nbsp;&nbsp;T h r e e</small></div>
 						</a>
 					</li>
