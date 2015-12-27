@@ -44,27 +44,17 @@
 				}); 
 			});
 		</script>
-<!-- 		<script>
+		<script>
 			$(document).ready( function(event){
 				$('a').on('click', function(){          
 					localStorage.currentURL = this.href
 				});
-				if (localStorage.currentURL && location.currentURL != location.href) {
-					location.href = localStorage.currentURL;
-				}
-			});
-		</script> -->
-		<script>
-			$(document).ready( function(event){
-				console.log(page.name + ' initialized'); localStorage.lastPage=page.name; 
 			});
 		</script>
-		<script>
-			$(document).ready( function(event){
-					if (localStorage.lastPage && location.currentURL != location.href) {
-					location.href = localStorage.lastPage;
-				}
-			});	
+		<script>		
+			if (localStorage.currentURL && location.currentURL != location.href) {
+				window.location = localStorage.currentURL;
+			}
 		</script>
 	</head>
 	<body>
@@ -73,7 +63,7 @@
 			<div data-theme="a" data-role="header" data-position="fixed">
 				<a href="#more" data-theme="b" data-icon="more" data-iconpos="notext" class="ui-btn-right"></a>
 				<h1>
-					Recite
+					Recite (Test)
 				</h1>
 			</div>
 			<div data-role="panel" data-position="right" id="more">
