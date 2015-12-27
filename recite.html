@@ -52,7 +52,13 @@
 				$('.previous').on('click', function(){          
 					localStorage.currentURL = location.href
 				});
-				$('[href]').on('click', function(){          
+				$('.link').on('click', function(){          
+					localStorage.currentURL = this.href
+				});
+				$('.ui-btn-left').on('click', function(){          
+					localStorage.currentURL = this.href
+				});
+				$('.ui-btn-right').on('click', function(){          
 					localStorage.currentURL = this.href
 				});
 			});
@@ -78,7 +84,7 @@
 					R E S O U R C E S
 				</div>
 					<div style="padding: 5px 0px">
-						<a data-role="button" href="#memorization1" data-transition="slide">
+						<a data-role="button" class="link" href="#memorization1" data-transition="slide">
 							On the Value & Purpose
 							<br>of Memorizing Passages
 							<br>from the Writings
@@ -86,7 +92,7 @@
 							<br><small><i>Excerpts from Books 1 - 7
 							<br>of the Ruhi Institute</i></small>
 						</a>
-						<a data-role="button" href="#memorization2" data-transition="slide">
+						<a data-role="button" class="link" href="#memorization2" data-transition="slide">
 							On the Memorization &
 							<br>Recitation of Passages
 							<br>from the Writings
@@ -94,7 +100,7 @@
 							<br><small><i>Selections from the
 							<br>Bahá’í Writings</i></small>
 						</a>
-						<a data-role="button" href="#obligatoryprayer" data-transition="slide">
+						<a data-role="button" class="link" href="#obligatoryprayer" data-transition="slide">
 							The Long Obligatory
 							<br>Prayer Revealed by
 							<br>Bahá’u’lláh
@@ -104,7 +110,7 @@
 						</a>
 					</div>	
 				<div class="center" style="padding: 3px 0px">
-					<a href="#feedback" data-transition="slide" data-theme="c" style="color:gray;">
+					<a class="link" href="#feedback" data-transition="slide" data-theme="c" style="color:gray;">
 						<small>f e e d b a c k</small>
 					</a>
 				</div>
@@ -112,43 +118,43 @@
 			<div data-role="content" style="padding: 0px 12px">
 				<ul data-role="listview" data-divider-theme="a" data-inset="true">
 					<li data-theme="a" data-icon="right">
-						<a href="#book1" data-transition="slide">
+						<a class="link" href="#book1" data-transition="slide">
 							<div class="book1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reflections on the Life of the Spirit
 							<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<small>B o o k&nbsp;&nbsp;&nbsp;O n e</small></div>
 						</a>
 					</li>
 					<li data-theme="a" data-icon="right">
-						<a href="#book2" data-transition="slide">
+						<a class="link" href="#book2" data-transition="slide">
 							<div class="book2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Arising to Serve
 							<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<small>B o o k&nbsp;&nbsp;&nbsp;T w o</small></div>
 						</a>
 					</li>
 					<li data-theme="a" data-icon="right">
-						<a href="#book3" data-transition="slide">
+						<a class="link" href="#book3" data-transition="slide">
 							<div class="book3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Teaching Children's Classes Grade 1
 							<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<small>B o o k&nbsp;&nbsp;&nbsp;T h r e e</small></div>
 						</a>
 					</li>
 					<li data-theme="a" data-icon="right">
-						<a href="#book4" data-transition="slide">
+						<a class="link" href="#book4" data-transition="slide">
 							<div class="book4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The Twin Manifestations
 							<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<small>B o o k&nbsp;&nbsp;&nbsp;F o u r</small></div>
 						</a>
 					</li>
 					<li data-theme="a" data-icon="right">
-						<a href="#book5" data-transition="slide">
+						<a class="link" href="#book5" data-transition="slide">
 							<div class="book5">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Releasing the Powers of Junior Youth
 							<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<small>B o o k&nbsp;&nbsp;&nbsp;F i v e</small></div>
 						</a>
 					</li>
 					<li data-theme="a" data-icon="right">
-						<a href="#book6" data-transition="slide">
+						<a class="link" href="#book6" data-transition="slide">
 							<div class="book6">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Teaching the Cause
 							<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<small>B o o k&nbsp;&nbsp;&nbsp;S i x</small></div>
 						</a>
 					</li>
 					<li data-theme="a" data-icon="right">
-						<a href="#book7" data-transition="slide">
+						<a class="link" href="#book7" data-transition="slide">
 							<div class="book7">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Walking Together on a Path of Service
 							<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<small>B o o k&nbsp;&nbsp;&nbsp;S e v e n</small></div>
 						</a>
@@ -167,7 +173,7 @@
 			<div data-role="content" style="padding: 0px 12px">
 				<ul data-role="listview" data-divider-theme="a" data-inset="true">
 					<li data-theme="a" data-icon="pdf">
-						<a onClick="window.open('pdfs/Book 1.pdf','_blank');">
+						<a href="pdfs/Book 1.pdf" target="_blank">
 							All Passages
 							<br><small>PDF</small>
 						</a>
@@ -175,103 +181,103 @@
 				</ul>
 				<ul data-role="listview" data-divider-theme="a" data-inset="true">
 					<!-- <li data-theme="a" data-icon="right">
-						<a href="#b1q1" data-transition="slide">
+						<a class="link" href="#b1q1" data-transition="slide">
 							<i>The betterment of the world can be accomplished through pure and goodly deeds...</i>
 							<br><small>Unit 1 ∙ Section 1</small>
 						</a>
 					</li>
 					<li data-theme="a" data-icon="right">
-						<a href="#b1q2" data-transition="slide">
+						<a class="link" href="#b1q2" data-transition="slide">
 							<i>Beware, O people of Bahá, lest ye walk in the ways of them whose words differ from their deeds...</i>
 							<br><small>Unit 1 ∙ Section 1</small>
 						</a>
 					</li>
 					<li data-theme="a" data-icon="right">
-						<a href="#b1q3" data-transition="slide">
+						<a class="link" href="#b1q3" data-transition="slide">
 							<i>O Son of Being! Bring thyself to account each day ere thou art summoned to a reckoning...</i>
 							<br><small>Unit 1 ∙ Section 1</small>
 						</a>
 					</li>
 					<li data-theme="a" data-icon="right">
-						<a href="#b1q4" data-transition="slide">
+						<a class="link" href="#b1q4" data-transition="slide">
 							<i>Say, O brethren! Let deeds, not words, be your adorning.</i>
 							<br><small>Unit 1 ∙ Section 1</small>
 						</a>
 					</li>
 					<li data-theme="a" data-icon="right">
-						<a href="#b1q5" data-transition="slide">
+						<a class="link" href="#b1q5" data-transition="slide">
 							<i>Holy words and pure and goodly deeds ascend unto the heaven of celestial glory.</i>
 							<br><small>Unit 1 ∙ Section 1</small>
 						</a>
 					</li> -->
 					<li data-theme="a" data-icon="right">
-						<a href="#b1q6" data-transition="slide">
+						<a class="link" href="#b1q6" data-transition="slide">
 							<i>A kindly tongue is the lodestone of the hearts of men...</i>
 							<br><small>Unit 1 ∙ Section 5</small>
 						</a>
 					</li>
 					<li data-theme="a" data-icon="right">
-						<a href="#b1q7" data-transition="slide">
+						<a class="link" href="#b1q7" data-transition="slide">
 							<i>O ye beloved of the Lord! In this sacred Dispensation, conflict and contention are in no wise permitted...</i>
 							<br><small>Unit 1 ∙ Section 5</small>
 						</a>
 					</li>
 					<li data-theme="a" data-icon="right">
-						<a href="#b1q8" data-transition="slide">
+						<a class="link" href="#b1q8" data-transition="slide">
 							<i>Nothing whatever can, in this Day, inflict a greater harm upon this Cause than dissension and strife, contention, estrangement and apathy, among the loved ones of God.</i>
 							<br><small>Unit 1 ∙ Section 5</small>
 						</a>
 					</li>
 					<li data-theme="a" data-icon="right">
-						<a href="#b1q9" data-transition="slide">
+						<a class="link" href="#b1q9" data-transition="slide">
 							<i>Do not be content with showing friendship in words alone...</i>
 							<br><small>Unit 1 ∙ Section 5</small>
 						</a>
 					</li>
 					<li data-theme="a" data-icon="right">
-						<a href="#b1q10" data-transition="slide">
+						<a class="link" href="#b1q10" data-transition="slide">
 							<i>When a thought of war comes, oppose it by a stronger thought of peace...</i>
 							<br><small>Unit 1 ∙ Section 5</small>
 						</a>
 					</li>
 					<li data-theme="a" data-icon="right">
-						<a href="#b1q11" data-transition="slide">
+						<a class="link" href="#b1q11" data-transition="slide">
 							<i>...backbiting quencheth the light of the heart, and extinguisheth the life of the soul.</i>
 							<br><small>Unit 1 ∙ Section 7</small>
 						</a>
 					</li>
 					<li data-theme="a" data-icon="right">
-						<a href="#b1q12" data-transition="slide">
+						<a class="link" href="#b1q12" data-transition="slide">
 							<i>Breathe not the sins of others so long as thou art thyself a sinner.</i>
 							<br><small>Unit 1 ∙ Section 7</small>
 						</a>
 					</li>
 					<li data-theme="a" data-icon="right">
-						<a href="#b1q13" data-transition="slide">
+						<a class="link" href="#b1q13" data-transition="slide">
 							<i>Speak no evil, that thou mayest not hear it spoken unto thee...</i>
 							<br><small>Unit 1 ∙ Section 7</small>
 						</a>
 					</li>
 					<li data-theme="a" data-icon="right">
-						<a href="#b1q14" data-transition="slide">
+						<a class="link" href="#b1q14" data-transition="slide">
 							<i>O Son of Being! How couldst thou forget thine own faults and busy thyself with the faults of others?...</i>
 							<br><small>Unit 1 ∙ Section 7</small>
 						</a>
 					</li>
 					<li data-theme="a" data-icon="right">
-						<a href="#b1q15" data-transition="slide">
+						<a class="link" href="#b1q15" data-transition="slide">
 							<i>O God, my God! Look not upon my hopes and my doings...</i>
 							<br><small>Unit 2 ∙ Section 6</small>
 						</a>
 					</li>
 					<li data-theme="a" data-icon="right">
-						<a href="#b1q16" data-transition="slide">
+						<a class="link" href="#b1q16" data-transition="slide">
 							<i>Make my prayer, O my Lord, a fountain of living waters whereby I may live as long as Thy sovereignty endureth...</i>
 							<br><small>Unit 2 ∙ Section 6</small>
 						</a>
 					</li>
 					<li data-theme="a" data-icon="right">
-						<a href="#b1q17" data-transition="slide">
+						<a class="link" href="#b1q17" data-transition="slide">
 							<i>Too high art Thou for the praise of those who are nigh unto Thee to ascend unto the heaven of Thy nearness...</i>
 							<br><small>Unit 2 ∙ Section 6</small>
 						</a>
@@ -290,7 +296,7 @@
 			<div data-role="content" class="center" style="padding: 0px 12px">
 				<ul data-role="listview" data-divider-theme="a" data-inset="true">
 					<li data-theme="a" data-icon="pdf">
-						<a onClick="window.open('pdfs/Book 2.pdf','_blank');">
+						<a href="pdfs/Book 2.pdf" target="_blank">
 							All Passages
 							<br><small>PDF</small>
 						</a>
@@ -298,325 +304,325 @@
 				</ul>
 				<ul data-role="listview" data-divider-theme="a" data-inset="true">
 					<li data-theme="a" data-icon="right">
-						<a href="#b2q1" data-transition="slide">
+						<a class="link" href="#b2q1" data-transition="slide">
 							<i>O wayfarer in the path of God! Take thou thy portion of the ocean of His grace...</i>
 							<br><small>Unit 1 ∙ Section 1</small>
 						</a>
 					</li>
 					<li data-theme="a" data-icon="right">
-						<a href="#b2q2" data-transition="slide">
+						<a class="link" href="#b2q2" data-transition="slide">
 							<i>O Man of Two Visions! Close one eye and open the other...</i>
 							<br><small>Unit 1 ∙ Section 6</small>
 						</a>
 					</li>
 					<li data-theme="a" data-icon="right">
-						<a href="#b2q3" data-transition="slide">
+						<a class="link" href="#b2q3" data-transition="slide">
 							<i>O Friends! Abandon not the everlasting beauty for a beauty that must die...</i>
 							<br><small>Unit 1 ∙ Section 6</small>
 						</a>
 					</li>
 					<li data-theme="a" data-icon="right">
-						<a href="#b2q4" data-transition="slide">
+						<a class="link" href="#b2q4" data-transition="slide">
 							<i>O Son of Utterance! Turn thy face unto Mine and renounce all save Me...</i>
 							<br><small>Unit 1 ∙ Section 6</small>
 						</a>
 					</li>
 					<li data-theme="a" data-icon="right">
-						<a href="#b2q5" data-transition="slide">
+						<a class="link" href="#b2q5" data-transition="slide">
 							<i>O Befriended Stranger! The candle of thine heart is lighted by the hand of My power...</i>
 							<br><small>Unit 1 ∙ Section 6</small>
 						</a>
 					</li>
 					<li data-theme="a" data-icon="right">
-						<a href="#b2q6" data-transition="slide">
+						<a class="link" href="#b2q6" data-transition="slide">
 							<i>Detachment is as the sun...</i>
 							<br><small>Unit 1 ∙ Section 6</small>
 						</a>
 					</li>
 					<li data-theme="a" data-icon="right">
-						<a href="#b2q7" data-transition="slide">
+						<a class="link" href="#b2q7" data-transition="slide">
 							<i>Gird up the loins of thine endeavor, that haply thou mayest guide thy neighbor to the law of God, the Most Merciful...</i>
 							<br><small>Unit 1 ∙ Section 9</small>
 						</a>
 					</li>
 					<li data-theme="a" data-icon="right">
-						<a href="#b2q8" data-transition="slide">
+						<a class="link" href="#b2q8" data-transition="slide">
 							<i>By the righteousness of God! Whoso openeth his lips in this Day and maketh mention of the name of his Lord...</i>
 							<br><small>Unit 1 ∙ Section 9</small>
 						</a>
 					</li>
 					<li data-theme="a" data-icon="right">
-						<a href="#b2q9" data-transition="slide">
+						<a class="link" href="#b2q9" data-transition="slide">
 							<i>Whoso ariseth to teach Our Cause must needs detach himself from all earthly things...</i>
 							<br><small>Unit 1 ∙ Section 9</small>
 						</a>
 					</li>
 					<li data-theme="a" data-icon="right">
-						<a href="#b2q10" data-transition="slide">
+						<a class="link" href="#b2q10" data-transition="slide">
 							<i>Be unrestrained as the wind, while carrying the Message of Him Who hath caused the Dawn of Divine Guidance to break.</i>
 							<br><small>Unit 1 ∙ Section 9</small>
 						</a>
 					</li>
 					<li data-theme="a" data-icon="right">
-						<a href="#b2q11" data-transition="slide">
+						<a class="link" href="#b2q11" data-transition="slide">
 							<i>When the victory arriveth, every man shall profess himself as believer and shall hasten to the shelter of God's Faith...</i>
 							<br><small>Unit 1 ∙ Section 9</small>
 						</a>
 					</li>
 					<li data-theme="a" data-icon="right">
-						<a href="#b2q12" data-transition="slide">
+						<a class="link" href="#b2q12" data-transition="slide">
 							<i>O Son of Being!  Make mention of Me on My earth, that in My heaven I may remember thee...</i>
 							<br><small>Unit 1 ∙ Section 9</small>
 						</a>
 					</li>
 					<li data-theme="a" data-icon="right">
-						<a href="#b2q13" data-transition="slide">
+						<a class="link" href="#b2q13" data-transition="slide">
 							<i>Illumine our hearts, grant us discerning eyes and attentive ears.</i>
 							<br><small>Unit 2 ∙ Section 2</small>
 						</a>
 					</li>
 					<li data-theme="a" data-icon="right">
-						<a href="#b2q14" data-transition="slide">
+						<a class="link" href="#b2q14" data-transition="slide">
 							<i>O Lord! Grant Thine infinite bestowals, and let the light of Thy guidance shine.</i>
 							<br><small>Unit 2 ∙ Section 2</small>
 						</a>
 					</li>
 					<li data-theme="a" data-icon="right">
-						<a href="#b2q15" data-transition="slide">
+						<a class="link" href="#b2q15" data-transition="slide">
 							<i>Unlock the gates of true understanding and let the light of faith shine resplendent.</i>
 							<br><small>Unit 2 ∙ Section 2</small>
 						</a>
 					</li>
 					<li data-theme="a" data-icon="right">
-						<a href="#b2q16" data-transition="slide">
+						<a class="link" href="#b2q16" data-transition="slide">
 							<i>Illumine, O Lord, the faces of Thy servants, that they may behold Thee...</i>
 							<br><small>Unit 2 ∙ Section 2</small>
 						</a>
 					</li>
 					<li data-theme="a" data-icon="right">
-						<a href="#b2q17" data-transition="slide">
+						<a class="link" href="#b2q17" data-transition="slide">
 							<i>O our Lord! Turn our faces unto Thy merciful countenance...</i>
 							<br><small>Unit 2 ∙ Section 2</small>
 						</a>
 					</li>
 					<li data-theme="a" data-icon="right">
-						<a href="#b2q18" data-transition="slide">
+						<a class="link" href="#b2q18" data-transition="slide">
 							<i>They who are the beloved of God, in whatever place they gather and whomsoever they may meet, must evince...</i>
 							<br><small>Unit 2 ∙ Section 3</small>
 						</a>
 					</li>
 					<li data-theme="a" data-icon="right">
-						<a href="#b2q19" data-transition="slide">
+						<a class="link" href="#b2q19" data-transition="slide">
 							<i>My name is ‘Abdu’l-Bahá...</i>
 							<br><small>Unit 3 ∙ Section 2</small>
 						</a>
 					</li>
 					<li data-theme="a" data-icon="right">
-						<a href="#b2q20" data-transition="slide">
+						<a class="link" href="#b2q20" data-transition="slide">
 							<i>All men have been created to carry forward an ever-advancing civilization.</i>
 							<br><small>Unit 3 ∙ Section 3</small>
 						</a>
 					</li>
 					<li data-theme="a" data-icon="right">
-						<a href="#b2q21" data-transition="slide">
+						<a class="link" href="#b2q21" data-transition="slide">
 							<i>The Purpose of the one true God, exalted be His glory, in revealing Himself unto men...</i>
 							<br><small>Unit 3 ∙ Section 3</small>
 						</a>
 					</li>
 					<li data-theme="a" data-icon="right">
-						<a href="#b2q22" data-transition="slide">
+						<a class="link" href="#b2q22" data-transition="slide">
 							<i>God's purpose in sending His Prophets unto men is twofold...</i>
 							<br><small>Unit 3 ∙ Section 3</small>
 						</a>
 					</li>
 					<li data-theme="a" data-icon="right">
-						<a href="#b2q23" data-transition="slide">
+						<a class="link" href="#b2q23" data-transition="slide">
 							<i>Men at all times and under all conditions stand in need of one to exhort them, guide them and to instruct and teach them.</i>
 							<br><small>Unit 3 ∙ Section 3</small>
 						</a>
 					</li>
 					<li data-theme="a" data-icon="right">
-						<a href="#b2q24" data-transition="slide">
+						<a class="link" href="#b2q24" data-transition="slide">
 							<i>There can be no doubt whatever that the peoples of the world, of whatever race or religion, derive their inspiration from one heavenly Source, and are the subjects of one God.</i>
 							<br><small>Unit 3 ∙ Section 4</small>
 						</a>
 					</li>
 					<li data-theme="a" data-icon="right">
-						<a href="#b2q25" data-transition="slide">
+						<a class="link" href="#b2q25" data-transition="slide">
 							<i>Consort with the followers of all religions in a spirit of friendliness and fellowship.</i>
 							<br><small>Unit 3 ∙ Section 4</small>
 						</a>
 					</li>
 					<li data-theme="a" data-icon="right">
-						<a href="#b2q26" data-transition="slide">
+						<a class="link" href="#b2q26" data-transition="slide">
 							<i>The fundamental purpose animating the Faith of God and His Religion is to safeguard the interests and promote the unity of the human race...</i>
 							<br><small>Unit 3 ∙ Section 4</small>
 						</a>
 					</li>
 					<li data-theme="a" data-icon="right">
-						<a href="#b2q27" data-transition="slide">
+						<a class="link" href="#b2q27" data-transition="slide">
 							<i>The religion of God is for love and unity...</i>
 							<br><small>Unit 3 ∙ Section 4</small>
 						</a>
 					</li>
 					<li data-theme="a" data-icon="right">
-						<a href="#b2q28" data-transition="slide">
+						<a class="link" href="#b2q28" data-transition="slide">
 							<i>The knowledge of Him, Who is the Origin of all things, and attainment unto Him, are impossible save through knowledge of, and attainment unto, these luminous Beings who proceed from the Sun of Truth.</i>
 							<br><small>Unit 3 ∙ Section 5</small>
 						</a>
 					</li>
 					<li data-theme="a" data-icon="right">
-						<a href="#b2q29" data-transition="slide">
+						<a class="link" href="#b2q29" data-transition="slide">
 							<i>No man, however acute his perception, can ever hope to reach the heights which the wisdom and understanding of the Divine Physician have attained.</i>
 							<br><small>Unit 3 ∙ Section 5</small>
 						</a>
 					</li>
 					<li data-theme="a" data-icon="right">
-						<a href="#b2q30" data-transition="slide">
+						<a class="link" href="#b2q30" data-transition="slide">
 							<i>The Person of the Manifestation hath ever been the representative and mouthpiece of God...</i>
 							<br><small>Unit 3 ∙ Section 5</small>
 						</a>
 					</li>
 					<li data-theme="a" data-icon="right">
-						<a href="#b2q31" data-transition="slide">
+						<a class="link" href="#b2q31" data-transition="slide">
 							<i>Be ye assured, moreover, that the works and acts of each and every one of these Manifestations of God, nay whatever pertaineth unto them, and whatsoever they may manifest in the future, are all ordained by God, and are a reflection of His Will and Purpose.</i>
 							<br><small>Unit 3 ∙ Section 5</small>
 						</a>
 					</li>
 					<li data-theme="a" data-icon="right">
-						<a href="#b2q32" data-transition="slide">
+						<a class="link" href="#b2q32" data-transition="slide">
 							<i>The Eternal Truth is now come...</i>
 							<br><small>Unit 3 ∙ Section 6</small>
 						</a>
 					</li>
 					<li data-theme="a" data-icon="right">
-						<a href="#b2q33" data-transition="slide">
+						<a class="link" href="#b2q33" data-transition="slide">
 							<i>He it is Who is the Manifestation of Him Who is the Unknowable, the Invisible of the Invisibles, could ye but perceive it.</i>
 							<br><small>Unit 3 ∙ Section 6</small>
 						</a>
 					</li>
 					<li data-theme="a" data-icon="right">
-						<a href="#b2q34" data-transition="slide">
+						<a class="link" href="#b2q34" data-transition="slide">
 							<i>This is the Day whereon the All-Merciful hath come down in the clouds of knowledge, clothed with manifest sovereignty.</i>
 							<br><small>Unit 3 ∙ Section 6</small>
 						</a>
 					</li>
 					<li data-theme="a" data-icon="right">
-						<a href="#b2q35" data-transition="slide">
+						<a class="link" href="#b2q35" data-transition="slide">
 							<i>Every age hath its own problem...</i>
 							<br><small>Unit 3 ∙ Section 7</small>
 						</a>
 					</li>
 					<li data-theme="a" data-icon="right">
-						<a href="#b2q36" data-transition="slide">
+						<a class="link" href="#b2q36" data-transition="slide">
 							<i>Be anxiously concerned with the needs of the age ye live in...</i>
 							<br><small>Unit 3 ∙ Section 7</small>
 						</a>
 					</li>
 					<li data-theme="a" data-icon="right">
-						<a href="#b2q37" data-transition="slide">
+						<a class="link" href="#b2q37" data-transition="slide">
 							<i>A new life is, in this age, stirring within all the peoples of the earth...</i>
 							<br><small>Unit 3 ∙ Section 7</small>
 						</a>
 					</li>
 					<li data-theme="a" data-icon="right">
-						<a href="#b2q38" data-transition="slide">
+						<a class="link" href="#b2q38" data-transition="slide">
 							<i>The progress of the world, the development of nations, the tranquillity of peoples, and the peace of all who dwell on earth are among the principles and ordinances of God.</i>
 							<br><small>Unit 3 ∙ Section 8</small>
 						</a>
 					</li>
 					<li data-theme="a" data-icon="right">
-						<a href="#b2q39" data-transition="slide">
+						<a class="link" href="#b2q39" data-transition="slide">
 							<i>Religion is, verily, the chief instrument for the establishment of order in the wotrld, and of tranquillity amongst its peoples.</i>
 							<br><small>Unit 3 ∙ Section 8</small>
 						</a>
 					</li>
 					<li data-theme="a" data-icon="right">
-						<a href="#b2q40" data-transition="slide">
+						<a class="link" href="#b2q40" data-transition="slide">
 							<i>The well-being of mankind, its peace and security, are unattainable unless and until its unity is firmly established.</i>
 							<br><small>Unit 3 ∙ Section 8</small>
 						</a>
 					</li>
 					<li data-theme="a" data-icon="right">
-						<a href="#b2q41" data-transition="slide">
+						<a class="link" href="#b2q41" data-transition="slide">
 							<i>The tabernacle of unity hath been raised...</i>
 							<br><small>Unit 3 ∙ Section 9</small>
 						</a>
 					</li>
 					<li data-theme="a" data-icon="right">
-						<a href="#b2q42" data-transition="slide">
+						<a class="link" href="#b2q42" data-transition="slide">
 							<i>So powerful is the light of unity that it can illuminate the whole earth.</i>
 							<br><small>Unit 3 ∙ Section 9</small>
 						</a>
 					</li>
 					<li data-theme="a" data-icon="right">
-						<a href="#b2q43" data-transition="slide">
+						<a class="link" href="#b2q43" data-transition="slide">
 							<i>Set your faces towards unity...</i>
 							<br><small>Unit 3 ∙ Section 9</small>
 						</a>
 					</li>
 					<li data-theme="a" data-icon="right">
-						<a href="#b2q44" data-transition="slide">
+						<a class="link" href="#b2q44" data-transition="slide">
 							<i>It behoveth man to adhere tenaciously unto that which will promote fellowship, kindliness and unity.</i>
 							<br><small>Unit 3 ∙ Section 9</small>
 						</a>
 					</li>
 					<li data-theme="a" data-icon="right">
-						<a href="#b2q45" data-transition="slide">
+						<a class="link" href="#b2q45" data-transition="slide">
 							<i>The light of men is Justice...</i>
 							<br><small>Unit 3 ∙ Section 10</small>
 						</a>
 					</li>
 					<li data-theme="a" data-icon="right">
-						<a href="#b2q46" data-transition="slide">
+						<a class="link" href="#b2q46" data-transition="slide">
 							<i>No radiance can compare with that of justice...</i>
 							<br><small>Unit 3 ∙ Section 10</small>
 						</a>
 					</li>
 					<li data-theme="a" data-icon="right">
-						<a href="#b2q47" data-transition="slide">
+						<a class="link" href="#b2q47" data-transition="slide">
 							<i>That which traineth the world is Justice, for it is upheld by two pillars, reward and punishment...</i>
 							<br><small>Unit 3 ∙ Section 10</small>
 						</a>
 					</li>
 					<li data-theme="a" data-icon="right">
-						<a href="#b2q48" data-transition="slide">
+						<a class="link" href="#b2q48" data-transition="slide">
 							<i>Women and men have been and will always be equal in the sight of God.</i>
 							<br><small>Unit 3 ∙ Section 11</small>
 						</a>
 					</li>
 					<li data-theme="a" data-icon="right">
-						<a href="#b2q49" data-transition="slide">
+						<a class="link" href="#b2q49" data-transition="slide">
 							<i>Know ye not why We created you all from the same dust?...</i>
 							<br><small>Unit 3 ∙ Section 11</small>
 						</a>
 					</li>
 					<li data-theme="a" data-icon="right">
-						<a href="#b2q50" data-transition="slide">
+						<a class="link" href="#b2q50" data-transition="slide">
 							<i>In this Day the Hand of divine grace hath removed all distinctions.</i>
 							<br><small>Unit 3 ∙ Section 11</small>
 						</a>
 					</li>
 					<li data-theme="a" data-icon="right">
-						<a href="#b2q51" data-transition="slide">
+						<a class="link" href="#b2q51" data-transition="slide">
 							<i>It is not desirable that a man be left without knowledge or skills...</i>
 							<br><small>Unit 3 ∙ Section 12</small>
 						</a>
 					</li>
 					<li data-theme="a" data-icon="right">
-						<a href="#b2q52" data-transition="slide">
+						<a class="link" href="#b2q52" data-transition="slide">
 							<i>Bend your minds and wills to the education of the peoples and kindreds of the earth...</i>
 							<br><small>Unit 3 ∙ Section 12</small>
 						</a>
 					</li>
 					<li data-theme="a" data-icon="right">
-						<a href="#b2q53" data-transition="slide">
+						<a class="link" href="#b2q53" data-transition="slide">
 							<i>Arts, crafts and sciences uplift the world of being, and are conducive to its exaltation...</i>
 							<br><small>Unit 3 ∙ Section 12</small>
 						</a>
 					</li>
 					<li data-theme="a" data-icon="right">
-						<a href="#b2q54" data-transition="slide">
+						<a class="link" href="#b2q54" data-transition="slide">
 							<i>In truth, knowledge is a veritable treasure for man, and a source of glory, of bounty, of joy, of exaltation, of cheer and gladness unto him.</i>
 							<br><small>Unit 3 ∙ Section 12</small>
 						</a>
@@ -635,7 +641,7 @@
 			<div data-role="content" class="center" style="padding: 0px 12px">
 				<ul data-role="listview" data-divider-theme="a" data-inset="true">
 					<li data-theme="a" data-icon="pdf">
-						<a onClick="window.open('pdfs/Book 3.pdf','_blank');">
+						<a href="pdfs/Book 3.pdf" target="_blank">
 							All Passages
 							<br><small>PDF</small>
 						</a>
@@ -643,145 +649,145 @@
 				</ul>
 				<ul data-role="listview" data-divider-theme="a" data-inset="true">
 					<li data-theme="a" data-icon="right">
-						<a href="#b3q1" data-transition="slide">
+						<a class="link" href="#b3q1" data-transition="slide">
 							<i>Blessed is that teacher who shall arise to instruct the children...</i>
 							<br><small>Unit 1 ∙ Section 1</small>
 						</a>
 					</li>
 					<li data-theme="a" data-icon="right">
-						<a href="#b3q2" data-transition="slide">
+						<a class="link" href="#b3q2" data-transition="slide">
 							<i>Among the greatest of all services that can possibly be rendered by man to Almighty God is the education and training of children...</i>
 							<br><small>Unit 1 ∙ Section 1</small>
 						</a>
 					</li>
 					<li data-theme="a" data-icon="right">
-						<a href="#b3q3" data-transition="slide">
+						<a class="link" href="#b3q3" data-transition="slide">
 							<i>According to the explicit divine Text, teaching the children is indispensable and obligatory...</i>
 							<br><small>Unit 1 ∙ Section 1</small>
 						</a>
 					</li>
 					<li data-theme="a" data-icon="right">
-						<a href="#b3q4" data-transition="slide">
+						<a class="link" href="#b3q4" data-transition="slide">
 							<i>Regard man as a mine rich in gems of inestimable value...</i>
 							<br><small>Unit 1 ∙ Section 4</small>
 						</a>
 					</li>
 					<li data-theme="a" data-icon="right">
-						<a href="#b3q5" data-transition="slide">
+						<a class="link" href="#b3q5" data-transition="slide">
 							<i>Whoso ariseth among you to teach the Cause of his Lord, let him, before all else, teach his own self...</i>
 							<br><small>Unit 1 ∙ Section 8</small>
 						</a>
 					</li>
 					<li data-theme="a" data-icon="right">
-						<a href="#b3q6" data-transition="slide">
+						<a class="link" href="#b3q6" data-transition="slide">
 							<i>Let God be your fear, O people...</i>
 							<br><small>Unit 1 ∙ Section 10</small>
 						</a>
 					</li>
 					<li data-theme="a" data-icon="right">
-						<a href="#b3q7" data-transition="slide">
+						<a class="link" href="#b3q7" data-transition="slide">
 							<i>O God, guide me...</i>
 							<br><small>Unit 2 ∙ Lesson 1</small>
 						</a>
 					</li>
 					<li data-theme="a" data-icon="right">
-						<a href="#b3q8" data-transition="slide">
+						<a class="link" href="#b3q8" data-transition="slide">
 							<i>So powerful is the light of unity that it can illumine the whole earth.</i>
 							<br><small>Unit 2 ∙ Lesson 1</small>
 						</a>
 					</li>
 					<li data-theme="a" data-icon="right">
-						<a href="#b3q9" data-transition="slide">
+						<a class="link" href="#b3q9" data-transition="slide">
 							<i>O Son of Spirit! My first counsel is this:  Possess a pure, kindly and radiant heart...</i>
 							<br><small>Unit 2 ∙ Lesson 2</small>
 						</a>
 					</li>
 					<li data-theme="a" data-icon="right">
-						<a href="#b3q10" data-transition="slide">
+						<a class="link" href="#b3q10" data-transition="slide">
 							<i>Tread ye the path of justice...</i>
 							<br><small>Unit 2 ∙ Lesson 3</small>
 						</a>
 					</li>
 					<li data-theme="a" data-icon="right">
-						<a href="#b3q24" data-transition="slide">
+						<a class="link" href="#b3q24" data-transition="slide">
 							<i>O Thou kind Lord! I am a little child...</i>
 							<br><small>Unit 2 ∙ Lesson 4</small>
 						</a>
 					</li>
 					<li data-theme="a" data-icon="right">
-						<a href="#b3q11" data-transition="slide">
+						<a class="link" href="#b3q11" data-transition="slide">
 							<i>O Friend! In the garden of thy heart plant naught but the rose of love...</i>
 							<br><small>Unit 2 ∙ Lesson 4</small>
 						</a>
 					</li>
 					<li data-theme="a" data-icon="right">
-						<a href="#b3q12" data-transition="slide">
+						<a class="link" href="#b3q12" data-transition="slide">
 							<i>That one indeed is a man who, today, dedicateth himself to the service of the entire human race.</i>
 							<br><small>Unit 2 ∙ Lesson 5</small>
 						</a>
 					</li>
 					<li data-theme="a" data-icon="right">
-						<a href="#b3q13" data-transition="slide">
+						<a class="link" href="#b3q13" data-transition="slide">
 							<i>Truthfulness is the foundation of all human virtues.</i>
 							<br><small>Unit 2 ∙ Lesson 6</small>
 						</a>
 					</li>
 					<li data-theme="a" data-icon="right">
-						<a href="#b3q14" data-transition="slide">
+						<a class="link" href="#b3q14" data-transition="slide">
 							<i>Supremely lofty will be thy station...</i>
 							<br><small>Unit 2 ∙ Lesson 7</small>
 						</a>
 					</li>
 					<li data-theme="a" data-icon="right">
-						<a href="#b3q15" data-transition="slide">
+						<a class="link" href="#b3q15" data-transition="slide">
 							<i>O Son of Man! Humble thyself before Me...</i>
 							<br><small>Unit 2 ∙ Lesson 8</small>
 						</a>
 					</li>
 					<li data-theme="a" data-icon="right">
-						<a href="#b3q16" data-transition="slide">
+						<a class="link" href="#b3q16" data-transition="slide">
 							<i>Blessed is he who preferreth his brother before himself...</i>
 							<br><small>Unit 2 ∙ Lesson 9</small>
 						</a>
 					</li>
 					<li data-theme="a" data-icon="right">
-						<a href="#b3q17" data-transition="slide">
+						<a class="link" href="#b3q17" data-transition="slide">
 							<i>Beautify your tongues, O people, with truthfulness...</i>
 							<br><small>Unit 2 ∙ Lesson 10</small>
 						</a>
 					</li>
 					<li data-theme="a" data-icon="right">
-						<a href="#b3q18" data-transition="slide">
+						<a class="link" href="#b3q18" data-transition="slide">
 							<i>O my Lord!  O my Lord!  I am a child of tender years...</i>
 							<br><small>Unit 2 ∙ Lesson 11</small>
 						</a>
 					</li>
 					<li data-theme="a" data-icon="right">
-						<a href="#b3q19" data-transition="slide">
+						<a class="link" href="#b3q19" data-transition="slide">
 							<i>To give and be generous are attributes of Mine...</i>
 							<br><small>Unit 2 ∙ Lesson 11</small>
 						</a>
 					</li>
 					<li data-theme="a" data-icon="right">
-						<a href="#b3q20" data-transition="slide">
+						<a class="link" href="#b3q20" data-transition="slide">
 							<i>Blessed is he who mingleth with all men in a spirit of utmost kindliness and love.</i>
 							<br><small>Unit 2 ∙ Lesson 12</small>
 						</a>
 					</li>
 					<li data-theme="a" data-icon="right">
-						<a href="#b3q21" data-transition="slide">
+						<a class="link" href="#b3q21" data-transition="slide">
 							<i>The sign of love is fortitude under My decree and patience under My trials.</i>
 							<br><small>Unit 2 ∙ Lesson 13</small>
 						</a>
 					</li>
 					<li data-theme="a" data-icon="right">
-						<a href="#b3q22" data-transition="slide">
+						<a class="link" href="#b3q22" data-transition="slide">
 							<i>O Son of Being! My love is My stronghold...</i>
 							<br><small>Unit 2 ∙ Lesson 14</small>
 						</a>
 					</li>
 					<li data-theme="a" data-icon="right">
-						<a href="#b3q23" data-transition="slide">
+						<a class="link" href="#b3q23" data-transition="slide">
 							<i>Put your trust in God...</i>
 							<br><small>Unit 2 ∙ Lesson 15</small>
 						</a>
@@ -800,7 +806,7 @@
 			<div data-role="content" class="center" style="padding: 0px 12px">
 				<ul data-role="listview" data-divider-theme="a" data-inset="true">
 					<li data-theme="a" data-icon="pdf">
-						<a onClick="window.open('pdfs/Book 4.pdf','_blank');">
+						<a href="pdfs/Book 4.pdf" target="_blank">
 							All Passages
 							<br><small>PDF</small>
 						</a>
@@ -808,49 +814,49 @@
 				</ul>
 				<ul data-role="listview" data-divider-theme="a" data-inset="true">
 					<li data-theme="a" data-icon="right">
-						<a href="#b4q1" data-transition="slide">
+						<a class="link" href="#b4q1" data-transition="slide">
 							<i>There is no time to lose...</i>
 							<br><small>Unit 1 ∙ Section 8</small>
 						</a>
 					</li>
 					<li data-theme="a" data-icon="right">
-						<a href="#b4q2" data-transition="slide">
+						<a class="link" href="#b4q2" data-transition="slide">
 							<i>Beseech almighty Providence that He may graciously enable you to attain, in that capital, the seat of true sovereignty...</i>
 							<br><small>Unit 2 ∙ Section 3</small>
 						</a>
 					</li>
 					<li data-theme="a" data-icon="right">
-						<a href="#b4q3" data-transition="slide">
+						<a class="link" href="#b4q3" data-transition="slide">
 							<i>Is there any Remover of difficulties save God?...</i>
 							<br><small>Unit 2 ∙ Section 11</small>
 						</a>
 					</li>
 					<li data-theme="a" data-icon="right">
-						<a href="#b4q4" data-transition="slide">
+						<a class="link" href="#b4q4" data-transition="slide">
 							<i>Say: God sufficeth all things above all things...</i>
 							<br><small>Unit 2 ∙ Section 11</small>
 						</a>
 					</li>
 					<li data-theme="a" data-icon="right">
-						<a href="#b4q5" data-transition="slide">
+						<a class="link" href="#b4q5" data-transition="slide">
 							<i>O My beloved friends! You are the bearers of the name of God in this Day...</i>
 							<br><small>Unit 2 ∙ Section 11</small>
 						</a>
 					</li>
 					<li data-theme="a" data-icon="right">
-						<a href="#b4q6" data-transition="slide">
+						<a class="link" href="#b4q6" data-transition="slide">
 							<i>No man shall attain the shores of the ocean of true understanding except he be detached from all that is in heaven and on earth...</i>
 							<br><small>Unit 3 ∙ Section 21</small>
 						</a>
 					</li>
 					<li data-theme="a" data-icon="right">
-						<a href="#b4q7" data-transition="slide">
+						<a class="link" href="#b4q7" data-transition="slide">
 							<i>This is that which hath descended from the realm of glory...</i>
 							<br><small>Unit 3 ∙ Section 21</small>
 						</a>
 					</li>
 					<li data-theme="a" data-icon="right">
-						<a href="#b4q8" data-transition="slide">
+						<a class="link" href="#b4q8" data-transition="slide">
 							<i>The first duty prescribed by God for His servants is the recognition of Him Who is the Dayspring of His Revelation and the Fountain of His laws...</i>
 							<br><small>Unit 3 ∙ Section 28</small>
 						</a>
@@ -869,7 +875,7 @@
 			<div data-role="content" class="center" style="padding: 0px 12px">
 				<ul data-role="listview" data-divider-theme="a" data-inset="true">
 					<li data-theme="a" data-icon="pdf">
-						<a onClick="window.open('pdfs/Book 5.pdf','_blank');">
+						<a href="pdfs/Book 5.pdf" target="_blank">
 							All Passages
 							<br><small>PDF</small>
 						</a>
@@ -877,49 +883,49 @@
 				</ul>
 				<ul data-role="listview" data-divider-theme="a" data-inset="true">
 					<li data-theme="a" data-icon="right">
-						<a href="#b5q1" data-transition="slide">
+						<a class="link" href="#b5q1" data-transition="slide">
 							<i>O Lord! Make this youth radiant...</i>
 							<br><small>Unit 1 ∙ Section 5</small>
 						</a>
 					</li>
 					<li data-theme="a" data-icon="right">
-						<a href="#b5q2" data-transition="slide">
+						<a class="link" href="#b5q2" data-transition="slide">
 							<i>Inspire them, O my Lord, with a sense of their own powerlessness...</i>
 							<br><small>Unit 2 ∙ Section 9</small>
 						</a>
 					</li>
 					<li data-theme="a" data-icon="right">
-						<a href="#b5q3" data-transition="slide">
+						<a class="link" href="#b5q3" data-transition="slide">
 							<i>Divest, then, Thy servants, O my God, of the garments of self and desire...</i>
 							<br><small>Unit 2 ∙ Section 9</small>
 						</a>
 					</li>
 					<li data-theme="a" data-icon="right">
-						<a href="#b5q4" data-transition="slide">
+						<a class="link" href="#b5q4" data-transition="slide">
 							<i>Know thou, verily, there are many veils in which the Truth is enveloped...</i>
 							<br><small>Unit 3 ∙ Section 7</small>
 						</a>
 					</li>
 					<li data-theme="a" data-icon="right">
-						<a href="#b5q5" data-transition="slide">
+						<a class="link" href="#b5q5" data-transition="slide">
 							<i>The Day-Star of utterance, shining resplendent from the dayspring of divine Revelation, hath so illumined the Scrolls and Tablets...</i>
 							<br><small>Unit 3 ∙ Section 14</small>
 						</a>
 					</li>
 					<li data-theme="a" data-icon="right">
-						<a href="#b5q6" data-transition="slide">
+						<a class="link" href="#b5q6" data-transition="slide">
 							<i>Say: We have caused the rivers of Divine utterance to proceed out of Our throne...</i>
 							<br><small>Unit 3 ∙ Section 14</small>
 						</a>
 					</li>
 					<li data-theme="a" data-icon="right">
-						<a href="#b5q7" data-transition="slide">
+						<a class="link" href="#b5q7" data-transition="slide">
 							<i>Through the breaths of Thine utterance the heaven of understanding hath been adorned...</i>
 							<br><small>Unit 3 ∙ Section 14</small>
 						</a>
 					</li>
 					<li data-theme="a" data-icon="right">
-						<a href="#b5q8" data-transition="slide">
+						<a class="link" href="#b5q8" data-transition="slide">
 							<i>It is clear and evident, therefore, that the first bestowal of God is the Word...</i>
 							<br><small>Unit 3 ∙ Section 14</small>
 						</a>
@@ -938,7 +944,7 @@
 			<div data-role="content" class="center" style="padding: 0px 12px">
 				<ul data-role="listview" data-divider-theme="a" data-inset="true">
 					<li data-theme="a" data-icon="pdf">
-						<a onClick="window.open('pdfs/Book 6.pdf','_blank');">
+						<a href="pdfs/Book 6.pdf" target="_blank">
 							All Passages
 							<br><small>PDF</small>
 						</a>
@@ -946,115 +952,115 @@
 				</ul>
 				<ul data-role="listview" data-divider-theme="a" data-inset="true">
 					<li data-theme="a" data-icon="right">
-						<a href="#b6q1" data-transition="slide">
+						<a class="link" href="#b6q1" data-transition="slide">
 							<i>O thou lamp who art enkindled with the fire of the Love of God!...</i>
 							<br><small>Unit 1 ∙ Section 7</small>
 						</a>
 					</li>
 					<li data-theme="a" data-icon="right">
-						<a href="#b6q2" data-transition="slide">
+						<a class="link" href="#b6q2" data-transition="slide">
 							<i>Say: To assist Me is to teach My Cause...</i>
 							<br><small>Unit 1 ∙ Section 11</small>
 						</a>
 					</li>
 					<li data-theme="a" data-icon="right">
-						<a href="#b6q3" data-transition="slide">
+						<a class="link" href="#b6q3" data-transition="slide">
 							<i>Be not dismayed, O peoples of the world, when the day star of My beauty is set, and the heaven of My tabernacle is concealed from your eyes...</i>
 							<br><small>Unit 1 ∙ Section 11</small>
 						</a>
 					</li>
 					<li data-theme="a" data-icon="right">
-						<a href="#b6q4" data-transition="slide">
+						<a class="link" href="#b6q4" data-transition="slide">
 							<i>The Pen of the Most High hath decreed and imposed upon every one the obligation to teach this Cause...</i>
 							<br><small>Unit 1 ∙ Section 11</small>
 						</a>
 					</li>
 					<li data-theme="a" data-icon="right">
-						<a href="#b6q5" data-transition="slide">
+						<a class="link" href="#b6q5" data-transition="slide">
 							<i>God hath prescribed unto every one the duty of teaching His Cause...</i>
 							<br><small>Unit 1 ∙ Section 11</small>
 						</a>
 					</li>
 					<li data-theme="a" data-icon="right">
-						<a href="#b6q6" data-transition="slide">
+						<a class="link" href="#b6q6" data-transition="slide">
 							<i>O ye beloved of God! Repose not yourselves on your couches...</i>
 							<br><small>Unit 1 ∙ Section 11</small>
 						</a>
 					</li>
 					<li data-theme="a" data-icon="right">
-						<a href="#b6q7" data-transition="slide">
+						<a class="link" href="#b6q7" data-transition="slide">
 							<i>If one teaches one whom he loves because of his love for him, then he will not teach one whom he loves not...</i>
 							<br><small>Unit 1 ∙ Section 13</small>
 						</a>
 					</li>
 					<li data-theme="a" data-icon="right">
-						<a href="#b6q8" data-transition="slide">
+						<a class="link" href="#b6q8" data-transition="slide">
 							<i>This is the day in which to speak...</i>
 							<br><small>Unit 1 ∙ Section 23</small>
 						</a>
 					</li>
 					<li data-theme="a" data-icon="right">
-						<a href="#b6q9" data-transition="slide">
+						<a class="link" href="#b6q9" data-transition="slide">
 							<i>O thou son of the Kingdom! All things are beneficial if joined with the love of God...</i>
 							<br><small>Unit 1 ∙ Section 28</small>
 						</a>
 					</li>
 					<li data-theme="a" data-icon="right">
-						<a href="#b6q10" data-transition="slide">
+						<a class="link" href="#b6q10" data-transition="slide">
 							<i>By the righteousness of God! Whoso openeth his lips in this Day and maketh mention of the name of his Lord, the hosts of Divine inspiration shall descend upon him ...</i>
 							<br><small>Unit 1 ∙ Section 29</small>
 						</a>
 					</li>
 					<li data-theme="a" data-icon="right">
-						<a href="#b6q11" data-transition="slide">
+						<a class="link" href="#b6q11" data-transition="slide">
 							<i>They that have forsaken their country for the purpose of teaching Our Cause - these shall the Faithful Spirit strengthen through its power...</i>
 							<br><small>Unit 1 ∙ Section 29</small>
 						</a>
 					</li>
 					<li data-theme="a" data-icon="right">
-						<a href="#b6q12" data-transition="slide">
+						<a class="link" href="#b6q12" data-transition="slide">
 							<i>He, verily, will aid everyone that aideth Him...</i>
 							<br><small>Unit 1 ∙ Section 29</small>
 						</a>
 					</li>
 					<li data-theme="a" data-icon="right">
-						<a href="#b6q13" data-transition="slide">
+						<a class="link" href="#b6q13" data-transition="slide">
 							<i>Say: Beware, O people of Bahá, lest the strong ones of the earth rob you of your strength, or they who rule the world fill you with fear...</i>
 							<br><small>Unit 1 ∙ Section 29</small>
 						</a>
 					</li>
 					<li data-theme="a" data-icon="right">
-						<a href="#b6q14" data-transition="slide">
+						<a class="link" href="#b6q14" data-transition="slide">
 							<i>By God besides Whom is none other God! Should any one arise for the triumph of our Cause, him will God render victorious...</i>
 							<br><small>Unit 1 ∙ Section 29</small>
 						</a>
 					</li>
 					<li data-theme="a" data-icon="right">
-						<a href="#b6q15" data-transition="slide">
+						<a class="link" href="#b6q15" data-transition="slide">
 							<i>He will come to your aid with invisible hosts...</i>
 							<br><small>Unit 1 ∙ Section 29</small>
 						</a>
 					</li>
 					<li data-theme="a" data-icon="right">
-						<a href="#b6q16" data-transition="slide">
+						<a class="link" href="#b6q16" data-transition="slide">
 							<i>O ye servants of the Sacred Threshold! The triumphant hosts of the Celestial Concourse, arrayed and marshaled in the Realms above, stand ready and expectant...</i>
 							<br><small>Unit 1 ∙ Section 29</small>
 						</a>
 					</li>
 					<li data-theme="a" data-icon="right">
-						<a href="#b6q17" data-transition="slide">
+						<a class="link" href="#b6q17" data-transition="slide">
 							<i>Let us too bear in mind the example which our beloved Master has clearly set before us...</i>
 							<br><small>Unit 2 ∙ Section 17</small>
 						</a>
 					</li>
 					<li data-theme="a" data-icon="right">
-						<a href="#b6q18" data-transition="slide">
+						<a class="link" href="#b6q18" data-transition="slide">
 							<i>As for you, O ye lovers of God, make firm your steps in His Cause...</i>
 							<br><small>Unit 2 ∙ Section 18</small>
 						</a>
 					</li>
 					<li data-theme="a" data-icon="right">
-						<a href="#b6q19" data-transition="slide">
+						<a class="link" href="#b6q19" data-transition="slide">
 							<i>The opportunities which the turmoil of the present age presents...</i>
 							<br><small>Unit 3 ∙ Section 2</small>
 						</a>
@@ -1073,7 +1079,7 @@
 			<div data-role="content" class="center" style="padding: 0px 12px">
 				<ul data-role="listview" data-divider-theme="a" data-inset="true">
 					<li data-theme="a" data-icon="pdf">
-						<a onClick="window.open('pdfs/Book 7.pdf','_blank');">
+						<a href="pdfs/Book 7.pdf" target="_blank">
 							All Passages
 							<br><small>PDF</small>
 						</a>
@@ -1081,85 +1087,85 @@
 				</ul>
 				<ul data-role="listview" data-divider-theme="a" data-inset="true">
 					<li data-theme="a" data-icon="right">
-						<a href="#b7q1" data-transition="slide">
+						<a class="link" href="#b7q1" data-transition="slide">
 							<i>O My servants! Were ye to discover the hidden, the shoreless oceans of My incorruptible wealth, ye would, of a certainty, esteem as nothing the world...</i>
 							<br><small>Unit 1 ∙ Section 3</small>
 						</a>
 					</li>
 					<li data-theme="a" data-icon="right">
-						<a href="#b7q2" data-transition="slide">
+						<a class="link" href="#b7q2" data-transition="slide">
 							<i>He is the Compassionate, the All-Bountiful! O God, my God! Thou seest me...</i>
 							<br><small>Unit 1 ∙ Section 8</small>
 						</a>
 					</li>
 					<li data-theme="a" data-icon="right">
-						<a href="#b7q3" data-transition="slide">
+						<a class="link" href="#b7q3" data-transition="slide">
 							<i>Thus I exhort each of you...to sacrifice all your thoughts, words and actions...</i>
 							<br><small>Unit 1 ∙ Section 11</small>
 						</a>
 					</li>
 					<li data-theme="a" data-icon="right">
-						<a href="#b7q4" data-transition="slide">
+						<a class="link" href="#b7q4" data-transition="slide">
 							<i>...ye must in this matter—that is, the serving of humankind—lay down your very lives...</i>
 							<br><small>Unit 1 ∙ Section 12</small>
 						</a>
 					</li>
 					<li data-theme="a" data-icon="right">
-						<a href="#b7q5" data-transition="slide">
+						<a class="link" href="#b7q5" data-transition="slide">
 							<i>If only thou couldst know what a high station is destined for those souls who are severed from the world...</i>
 							<br><small>Unit 1 ∙ Section 12</small>
 						</a>
 					</li>
 					<li data-theme="a" data-icon="right">
-						<a href="#b7q6" data-transition="slide">
+						<a class="link" href="#b7q6" data-transition="slide">
 							<i>Hold ye fast to the hem of God's garment...</i>
 							<br><small>Unit 1 ∙ Section 12</small>
 						</a>
 					</li>
 					<li data-theme="a" data-icon="right">
-						<a href="#b7q7" data-transition="slide">
+						<a class="link" href="#b7q7" data-transition="slide">
 							<i>Let us put aside all thoughts of self...</i>
 							<br><small>Unit 1 ∙ Section 12</small>
 						</a>
 					</li>
 					<li data-theme="a" data-icon="right">
-						<a href="#b7q8" data-transition="slide">
+						<a class="link" href="#b7q8" data-transition="slide">
 							<i>Ye are the angels...</i>
 							<br><small>Unit 1 ∙ Section 12</small>
 						</a>
 					</li>
 					<li data-theme="a" data-icon="right">
-						<a href="#b7q9" data-transition="slide">
+						<a class="link" href="#b7q9" data-transition="slide">
 							<i>At all times do I speak of you and call you to mind...</i>
 							<br><small>Unit 1 ∙ Section 12</small>
 						</a>
 					</li>
 					<li data-theme="a" data-icon="right">
-						<a href="#b7q10" data-transition="slide">
+						<a class="link" href="#b7q10" data-transition="slide">
 							<i>My only joy in this swiftly-passing world was to tread the stony path of God...</i>
 							<br><small>Unit 1 ∙ Section 12</small>
 						</a>
 					</li>
 					<li data-theme="a" data-icon="right">
-						<a href="#b7q11" data-transition="slide">
+						<a class="link" href="#b7q11" data-transition="slide">
 							<i>Then rose the Sun of Truth...</i>
 							<br><small>Unit 1 ∙ Section 12</small>
 						</a>
 					</li>
 					<li data-theme="a" data-icon="right">
-						<a href="#b7q12" data-transition="slide">
+						<a class="link" href="#b7q12" data-transition="slide">
 							<i>O God, O Thou Who hast cast Thy splendour over the luminous realities of men...</i>
 							<br><small>Unit 2 ∙ Section 4</small>
 						</a>
 					</li>
 					<li data-theme="a" data-icon="right">
-						<a href="#b7q13" data-transition="slide">
+						<a class="link" href="#b7q13" data-transition="slide">
 							<i>Apart from these provisions Bahá’u’lláh exhorts His followers to consort...</i>
 							<br><small>Unit 2 ∙ Section 7</small>
 						</a>
 					</li>
 					<li data-theme="a" data-icon="right">
-						<a href="#b7q14" data-transition="slide">
+						<a class="link" href="#b7q14" data-transition="slide">
 							<i>...and every breast which committeth His Words to memory, God shall cause, if it were that of a believer, to be filled with His love...</i>
 							<br><small>Unit 2 ∙ Section 25</small>
 						</a>
@@ -3470,7 +3476,7 @@
 					R E S O U R C E S
 				</div>
 					<div style="padding: 5px 0px">
-						<a data-role="button" href="#memorization1" data-transition="slide">
+						<a data-role="button" class="link" href="#memorization1" data-transition="slide">
 							On the Value & Purpose
 							<br>of Memorizing Passages
 							<br>from the Writings
@@ -3478,7 +3484,7 @@
 							<br><small><i>Excerpts from Books 1 - 7
 							<br>of the Ruhi Institute</i></small>
 						</a>
-						<a data-role="button" href="#memorization2" data-transition="slide">
+						<a data-role="button" class="link" href="#memorization2" data-transition="slide">
 							On the Memorization &
 							<br>Recitation of Passages
 							<br>from the Writings
@@ -3486,7 +3492,7 @@
 							<br><small><i>Selections from the
 							<br>Bahá’í Writings</i></small>
 						</a>
-						<a data-role="button" href="#obligatoryprayer" data-transition="slide">
+						<a data-role="button" class="link" href="#obligatoryprayer" data-transition="slide">
 							The Long Obligatory
 							<br>Prayer Revealed by
 							<br>Bahá’u’lláh
@@ -3496,7 +3502,7 @@
 						</a>
 					</div>	
 				<div class="center" style="padding: 3px 0px">
-					<a href="#feedback" data-transition="slide" data-theme="c" style="color:gray;">
+					<a class="link" href="#feedback" data-transition="slide" data-theme="c" style="color:gray;">
 						<small>f e e d b a c k</small>
 					</a>
 				</div>
@@ -3565,7 +3571,7 @@
 					R E S O U R C E S
 				</div>
 					<div style="padding: 5px 0px">
-						<a data-role="button" href="#memorization1" data-transition="slide">
+						<a data-role="button" class="link" href="#memorization1" data-transition="slide">
 							On the Value & Purpose
 							<br>of Memorizing Passages
 							<br>from the Writings
@@ -3573,7 +3579,7 @@
 							<br><small><i>Excerpts from Books 1 - 7
 							<br>of the Ruhi Institute</i></small>
 						</a>
-						<a data-role="button" href="#memorization2" data-transition="slide">
+						<a data-role="button" class="link" href="#memorization2" data-transition="slide">
 							On the Memorization &
 							<br>Recitation of Passages
 							<br>from the Writings
@@ -3581,7 +3587,7 @@
 							<br><small><i>Selections from the
 							<br>Bahá’í Writings</i></small>
 						</a>
-						<a data-role="button" href="#obligatoryprayer" data-transition="slide">
+						<a data-role="button" class="link" href="#obligatoryprayer" data-transition="slide">
 							The Long Obligatory
 							<br>Prayer Revealed by
 							<br>Bahá’u’lláh
@@ -3591,7 +3597,7 @@
 						</a>
 					</div>	
 				<div class="center" style="padding: 3px 0px">
-					<a href="#feedback" data-transition="slide" data-theme="c" style="color:gray;">
+					<a class="link" href="#feedback" data-transition="slide" data-theme="c" style="color:gray;">
 						<small>f e e d b a c k</small>
 					</a>
 				</div>
@@ -3616,7 +3622,7 @@
 					R E S O U R C E S
 				</div>
 					<div style="padding: 5px 0px">
-						<a data-role="button" href="#memorization1" data-transition="slide">
+						<a data-role="button" class="link" href="#memorization1" data-transition="slide">
 							On the Value & Purpose
 							<br>of Memorizing Passages
 							<br>from the Writings
@@ -3624,7 +3630,7 @@
 							<br><small><i>Excerpts from Books 1 - 7
 							<br>of the Ruhi Institute</i></small>
 						</a>
-						<a data-role="button" href="#memorization2" data-transition="slide">
+						<a data-role="button" class="link" href="#memorization2" data-transition="slide">
 							On the Memorization &
 							<br>Recitation of Passages
 							<br>from the Writings
@@ -3632,7 +3638,7 @@
 							<br><small><i>Selections from the
 							<br>Bahá’í Writings</i></small>
 						</a>
-						<a data-role="button" href="#obligatoryprayer" data-transition="slide">
+						<a data-role="button" class="link" href="#obligatoryprayer" data-transition="slide">
 							The Long Obligatory
 							<br>Prayer Revealed by
 							<br>Bahá’u’lláh
@@ -3642,7 +3648,7 @@
 						</a>
 					</div>	
 				<div class="center" style="padding: 3px 0px">
-					<a href="#feedback" data-transition="slide" data-theme="c" style="color:gray;">
+					<a class="link" href="#feedback" data-transition="slide" data-theme="c" style="color:gray;">
 						<small>f e e d b a c k</small>
 					</a>
 				</div>
@@ -3764,7 +3770,7 @@
 					R E S O U R C E S
 				</div>
 					<div style="padding: 5px 0px">
-						<a data-role="button" href="#memorization1" data-transition="slide">
+						<a data-role="button" class="link" href="#memorization1" data-transition="slide">
 							On the Value & Purpose
 							<br>of Memorizing Passages
 							<br>from the Writings
@@ -3772,7 +3778,7 @@
 							<br><small><i>Excerpts from Books 1 - 7
 							<br>of the Ruhi Institute</i></small>
 						</a>
-						<a data-role="button" href="#memorization2" data-transition="slide">
+						<a data-role="button" class="link" href="#memorization2" data-transition="slide">
 							On the Memorization &
 							<br>Recitation of Passages
 							<br>from the Writings
@@ -3780,7 +3786,7 @@
 							<br><small><i>Selections from the
 							<br>Bahá’í Writings</i></small>
 						</a>
-						<a data-role="button" href="#obligatoryprayer" data-transition="slide">
+						<a data-role="button" class="link" href="#obligatoryprayer" data-transition="slide">
 							The Long Obligatory
 							<br>Prayer Revealed by
 							<br>Bahá’u’lláh
@@ -3790,7 +3796,7 @@
 						</a>
 					</div>	
 				<div class="center" style="padding: 3px 0px">
-					<a href="#feedback" data-transition="slide" data-theme="c" style="color:gray;">
+					<a class="link" href="#feedback" data-transition="slide" data-theme="c" style="color:gray;">
 						<small>f e e d b a c k</small>
 					</a>
 				</div>
@@ -3798,7 +3804,8 @@
 			<div data-role="content" class="center">
 				<form action="recite.php" method="post">
 					<p>comments ∙ corrections ∙ suggestions...</p>
-					<a data-role="button" data-inline="true" data-theme="a" onClick="location.href='mailto:danieladekunle@gmail.com?Subject=recite%20feedback'">mail</a>
+					<a data-role="button" data-inline="true" data-theme="a" href="mailto:danieladekunle@gmail.com?Subject=recite%20feedback">mail</a>
+					<!-- <a data-role="button" data-inline="true" data-theme="a" onClick="location.href='mailto:danieladekunle@gmail.com?Subject=recite%20feedback'">mail</a> -->
 				</form>
 			</div>
 		</div>
