@@ -45,10 +45,13 @@
 		</script>
 		<script>
 			$(document).ready( function(event){
-         
-					localStorage.currentURL = location.href
+				$('a').on('click', function(){          
+					localStorage.currentURL = this.href
 				});
-			$(document).on("pagecreate",function(){
+			}); 
+		</script>
+		<script>
+			$(document).on("pagebeforecreate",function(event){
 				if (localStorage.currentURL && location.currentURL != location.href) {
 					location.href = localStorage.currentURL;
 				}
@@ -116,7 +119,7 @@
 					</li>
 					<li data-theme="a" data-icon="right">
 						<a href="#book3" data-transition="slide">
-							<div class="book3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Teaching Children's Classes Grade 1
+							<div class="book3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Teaching Children's Classes, Grade 1
 							<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<small>B o o k&nbsp;&nbsp;&nbsp;T h r e e</small></div>
 						</a>
 					</li>
