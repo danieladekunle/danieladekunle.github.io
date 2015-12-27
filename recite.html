@@ -1,3 +1,11 @@
+<?php
+	// Start or resume session
+	session_start(); 
+
+	// Extend cookie life time by an amount of your liking
+	$cookieLifetime = 365 * 24 * 60 * 60; // A year in seconds
+	setcookie(session_name(),session_id(),time()+$cookieLifetime);
+?>
 <!DOCTYPE html>
 <html manifest="cach-manifest.appcache">
 	<head>
@@ -42,14 +50,6 @@
 					$.mobile.pageContainer.pagecontainer("change", $(this).closest('[data-role="page"]').prev('[data-role="page"]'), {transition:"slide", reverse:true,});
 				}); 
 			});
-		</script>
-		<script>
-			// Start or resume session
-			session_start(); 
-
-			// Extend cookie life time by an amount of your liking
-			$cookieLifetime = 365 * 24 * 60 * 60; // A year in seconds
-			setcookie(session_name(),session_id(),time()+$cookieLifetime);
 		</script>
 	</head>
 	<body>
