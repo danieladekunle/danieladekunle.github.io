@@ -19,16 +19,16 @@
 	font-family: Quicksand;
 	src: url(fonts/Quicksand-Regular.otf);
 }
-@font-face {
+/* @font-face {
 	font-family: Quicksand;
 	src: url(fonts/Quicksand-Bold.otf);
 	font-weight: bold;
-}
-@font-face {
+} */
+/* @font-face {
 	font-family: Quicksand;
 	src: url(fonts/Quicksand-Italic.otf);
 	font-style: italic;
-}
+} */
 
 html {
 	font-size: 100%;
