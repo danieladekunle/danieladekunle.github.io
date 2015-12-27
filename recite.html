@@ -46,8 +46,10 @@
 		</script>
 		<!-- Save Current Location in Local Storage -->
 		<script>
-			$(document).ready( function(event){      
+			$(document).ready( function(event){
+				$('a').on('click', function(){          
 					localStorage.currentURL = location.href
+				});
 			});
 		</script>
 		<!-- Load Last Location Saved in Local Storage on Restart -->
@@ -63,7 +65,7 @@
 			<div data-theme="a" data-role="header" data-position="fixed">
 				<a href="#more" data-theme="b" data-icon="more" data-iconpos="notext" class="ui-btn-right"></a>
 				<h1>
-					Recite
+					Recite (Test)
 				</h1>
 			</div>
 			<div data-role="panel" data-position="right" id="more">
