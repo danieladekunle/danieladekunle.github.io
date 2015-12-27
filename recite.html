@@ -8,7 +8,7 @@
 		<!-- iOS Standalone Mode -->
 		<meta name="apple-mobile-web-app-capable" content="yes">
 		<!-- iOS Status Bar Appearance -->
-		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
 		<title>Recite</title>
 		<!-- jQuery -->
 		<script src="jquery-1.11.3.min.js"></script>
@@ -47,7 +47,10 @@
 		<!-- Save Current Location in Local Storage -->
 		<script>
 			$(document).ready( function(event){
-				$('a').on('click', function(){          
+				$('.next').on('click', function(){          
+					localStorage.currentURL = location.href
+				});
+				$('.previous').on('click', function(){          
 					localStorage.currentURL = location.href
 				});
 			});
@@ -65,7 +68,7 @@
 			<div data-theme="a" data-role="header" data-position="fixed">
 				<a href="#more" data-theme="b" data-icon="more" data-iconpos="notext" class="ui-btn-right"></a>
 				<h1>
-					Recite (Test)
+					Recite
 				</h1>
 			</div>
 			<div data-role="panel" data-position="right" id="more">
