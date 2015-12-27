@@ -33,36 +33,7 @@
 			addToHomescreen();
 		</script>
 		<!-- Next/Previous Passage Buttons -->
-		<script>
-			$(document).ready( function(event){
-				$(".next").click(function(){
-					$.mobile.pageContainer.pagecontainer("change", $(this).closest('[data-role="page"]').next('[data-role="page"]'), {transition:"slide"});
-				});  
-				$(".previous").click(function(){
-					$.mobile.pageContainer.pagecontainer("change", $(this).closest('[data-role="page"]').prev('[data-role="page"]'), {transition:"slide", reverse:true,});
-				}); 
-			});
-		</script>
-		<!-- Save Current Location to Local Storage When Navigation Buttons Clicked -->
-		<script>
-			$(document).ready( function(event){
-				$('.next').on('click', function(){          
-					localStorage.currentURL = location.href
-				});
-				$('.previous').on('click', function(){          
-					localStorage.currentURL = location.href
-				});
-				$('[href]').on('click', function(){          
-					localStorage.currentURL = this.href
-				});
-			});
-		</script>
-		<!-- Load Last Location Saved in Local Storage on Restart -->
-		<script>		
-			if (localStorage.currentURL && location.currentURL != location.href) {
-				window.location = localStorage.currentURL;
-			}
-		</script>
+
 	</head>
 	<body>
 <!-- Book List -->

@@ -15,7 +15,7 @@
 -----------------------------------------------------------------------------------------------------------*/
 @import url(http://fonts.googleapis.com/css?family=Quicksand);
 
-@font-face {
+/* @font-face {
 	font-family: Quicksand;
 	src: url(fonts/Quicksand-Regular.ttf);
 }
@@ -28,7 +28,7 @@
 	font-family: Quicksand;
 	src: url(fonts/Quicksand-Italic.ttf);
 	font-style: italic;
-}
+} */
 
 html {
 	font-size: 100%;
