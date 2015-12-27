@@ -6,9 +6,9 @@ jquery.mobile-1.4.5.min.js
 jquery-1.11.3.min.js
 recite.html
 theme.css
-fonts/Quicksand-Bold.ttf
-fonts/Quicksand-Italic.ttf
-fonts/Quicksand-Regular.ttf
+fonts/Quicksand-Bold.otf
+fonts/Quicksand-Italic.otf
+fonts/Quicksand-Regular.otf
 images/ajax-loader.gif
 images/book1.png
 images/book2.png
