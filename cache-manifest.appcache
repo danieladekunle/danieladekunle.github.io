@@ -1,6 +1,6 @@
 CACHE MANIFEST
 
-# Version T
+# Version S
 
 customizations.css
 fastclick.js
@@ -18,10 +18,8 @@ images/book4.png
 images/book5.png
 images/book6.png
 images/book7.png
-images/left.png
-images/left-dark.png
+images/left-white.png
 images/more.png
-images/more-dark.png
 images/next.png
 images/pdf.png
 images/previous.png
