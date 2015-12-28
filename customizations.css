@@ -153,13 +153,12 @@ h3 {
   background-image: url('images/left-white.png');
   background-size: 7px;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: 16px 11px;
 }
 .ui-icon-more {
   background-image: url('images/more.png');
   background-size: 9px;
-  background-position: center;
-  padding-bottom: 3px;
+  background-position: 5px 10px;
   background-repeat: no-repeat;
 }
 .ui-icon-next {
