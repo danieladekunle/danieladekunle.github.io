@@ -47,6 +47,12 @@
 				history.forward({transition:"slide"});
 			});
 		</script>
+		<script>
+			$(document).on('swipeleft swiperight', '[data-role="panel"]', function(event) {
+				event.stopPropagation();
+				event.preventDefault();
+			});
+		</script>
 		<!-- Next/Previous Passage Buttons -->
 		<script>
 			$(document).ready( function(event){
