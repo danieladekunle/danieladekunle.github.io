@@ -35,6 +35,11 @@
 			   displayPace: 0 <!-- minutes before the message is shown again (0: display every time) -->
 			});
 		</script>
+		<script>
+			$(document).bind('swiperight', function () {
+				history.back();
+			});
+		</script>
 		<!-- Next/Previous Passage Buttons -->
 		<script>
 			$(document).ready( function(event){
