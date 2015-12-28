@@ -85,7 +85,7 @@
 }
 
 /* close icon */
-.ath-container:before {
+/* .ath-container:before {
 	content: '';
 	position: relative;
 	display: block;
@@ -102,7 +102,7 @@
 	overflow: hidden;
 	color: #a33;
 	z-index: 2147483642;
-}
+} */
 
 .ath-container.ath-icon:before {
 	position: absolute;
