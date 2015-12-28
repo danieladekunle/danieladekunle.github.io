@@ -78,6 +78,19 @@ h3 {
   white-space: nowrap;
   overflow: hidden;
 }
+.book-number {
+	padding-left: 42px;
+	font-size: small;
+	letter-spacing: 3px;
+	padding-top: 4px;
+	padding-bottom: 2px;
+}
+.book-title {
+	padding-left: 42px;
+	text-overflow: inherit;
+	white-space: nowrap;
+	overflow: hidden;
+}
 .center {
 	text-align: center;
 }
@@ -104,11 +117,6 @@ h3 {
 	bottom:0;
 	left:0;
 }
-.number {
-	font-size: small;
-	letter-spacing: 3px;
-	line-height: 23px;
-}
 .panel-feedback {
 	text-align: center;
 	letter-spacing: 4px;
@@ -119,8 +127,8 @@ h3 {
 	text-align: center;
     text-transform: uppercase;
 	letter-spacing: 5px;
-	padding-top: 3px;
-	padding-bottom: 8px;
+	padding-top: 2px;
+	padding-bottom: 9px;
 }
 .panel-title {
 	text-align: center;
@@ -139,12 +147,6 @@ h3 {
 }
 .passage {
 	text-align: justify;
-}
-.title {
-	padding-left: 42px;
-	text-overflow: inherit;
-	white-space: nowrap;
-	overflow: hidden;
 }
 .ui-icon-left {
   background-image: url('images/left-white.png');
