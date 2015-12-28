@@ -38,13 +38,13 @@
 		<!-- Swipe Right to Go Back in History -->
 		<script>
 			$(document).bind('swiperight', function () {
-				history.back();
+				history.back({transition:"slide", reverse:true,});
 			});
 		</script>
 		<!-- Swipe Left to Go Forward in History -->
 		<script>
 			$(document).bind('swipeleft', function () {
-				history.forward();
+				history.forward({transition:"slide"});
 			});
 		</script>
 		<!-- Next/Previous Passage Buttons -->
