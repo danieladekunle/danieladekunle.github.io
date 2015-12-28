@@ -1,12 +1,5 @@
 /* Add to Homescreen v3.2.2 ~ (c) 2015 Matteo Spinelli ~ @license: http://cubiq.org/license */
 (function (window, document) {
-/*
-       _   _ _____     _____
- ___ _| |_| |_   _|___|  |  |___ _____ ___ ___ ___ ___ ___ ___ ___
-| .'| . | . | | | | . |     | . |     | -_|_ -|  _|  _| -_| -_|   |
-|__,|___|___| |_| |___|__|__|___|_|_|_|___|___|___|_| |___|___|_|_|
-                              by Matteo Spinelli ~ http://cubiq.org
-*/
 
 // Check for addEventListener browser support (prevent errors in IE<9)
 var _eventListener = 'addEventListener' in window;
@@ -49,7 +42,7 @@ ath.intl = {
 	},
 
 	en_us: {
-		ios: 'to download as a standalone app: tap %icon then <strong>add to home screen</strong>.',
+		ios: 'Download as a standalone app: tap %icon and then <strong>Add to Home Screen</strong>.',
 		android: 'To add this web app to the home screen open the browser option menu and tap on <strong>Add to homescreen</strong>. <small>The menu can be accessed by pressing the menu hardware button if your device has one, or by tapping the top right menu icon %icon.</small>'
 	},
 
