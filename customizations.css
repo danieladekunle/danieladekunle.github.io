@@ -146,25 +146,12 @@ h3 {
 .passage {
 	text-align: justify;
 }
-.passage-test {
-	text-align: justify;
-	margin-top: 10px;
-	margin-left: 10px;
-	margin-right: 10px;
-	margin-bottom: 10px;
-}
 .heading {
 	text-align: center;
 	font-weight: bold;
 }
 .ui-icon-left {
   background-image: url('images/left-white.png');
-  background-size: 7px;
-  background-repeat: no-repeat;
-  background-position: 16px 11px;
-}
-.ui-icon-left-dark {
-  background-image: url('images/left.png');
   background-size: 7px;
   background-repeat: no-repeat;
   background-position: 16px 11px;

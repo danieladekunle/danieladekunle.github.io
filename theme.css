@@ -492,26 +492,6 @@ html head + body .ui-btn.ui-btn-c:active {
 	border-color: #ffffff /*{b-bdown-border}*/;
 	color: #333333 /*{b-bdown-color}*/;
 	text-shadow: 0 /*{b-bdown-shadow-x}*/ 0px /*{b-bdown-shadow-y}*/ 0 /*{b-bdown-shadow-radius}*/ #ffffff /*{b-bdown-shadow-color}*/;
-}
-
-/* D
------------------------------------------------------------------------------------------------------------*/
-/* Bar: Toolbars, dividers, slider track */
-.ui-bar-d,
-.ui-page-theme-d .ui-bar-inherit,
-html .ui-bar-d .ui-bar-inherit,
-html .ui-body-d .ui-bar-inherit,
-html body .ui-group-theme-d .ui-bar-inherit {
-	background-color: #ffffff /*{a-bar-background-color}*/;
-	border-color: #cccccc /*{a-bar-border}*/;
-	color: #ffffff /*{a-bar-color}*/;
-	text-shadow: 0 /*{a-bar-shadow-x}*/ 0px /*{a-bar-shadow-y}*/ 0 /*{a-bar-shadow-radius}*/ #ffffff /*{a-bar-shadow-color}*/;
-	font-weight: normal;
-}
-.ui-bar-d {
-	border-width: 0px;
-	border-style: solid;
-}	
 /* Structure */
 /* Disabled
 -----------------------------------------------------------------------------------------------------------*/
