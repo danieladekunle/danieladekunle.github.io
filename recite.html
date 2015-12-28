@@ -38,15 +38,16 @@
 		<!-- Swipe Right to Go Back in History -->
 		<script>
 			$(document).bind('swiperight', function () {
-				history.back({transition:"slide", reverse:true,});
+				history.back({transition:"fade"});
 			});
 		</script>
 		<!-- Swipe Left to Go Forward in History -->
 		<script>
 			$(document).bind('swipeleft', function () {
-				history.forward({transition:"slide"});
+				history.forward({transition:"fade"});
 			});
 		</script>
+		<!-- Disable Forward/Back Swipes When Panel Open -->
 		<script>
 			$(document).on('swipeleft swiperight', '[data-role="panel"]', function(event) {
 				event.stopPropagation();
