@@ -38,7 +38,7 @@
 		<!-- Swipe Right from Edge to Go Back in History -->
 		<script>
 			$(document).bind('swiperight', function (event) {
-				if ( event.swipestart.coords[0] <50) {
+				if ( event.swipestart.coords[0] <10) {
 					history.back({transition:"slide", reverse:true,});
 				}
 			});
