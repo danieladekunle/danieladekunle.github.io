@@ -35,7 +35,7 @@
 			   displayPace: 0 <!-- minutes before the message is shown again (0: display every time) -->
 			});
 		</script>
-		<!-- Swipe Right to Go Back in History -->
+		<!-- Swipe Right from Edge to Go Back in History -->
 		<script>
 			$(document).bind('swiperight', function (event) {
 				if ( event.swipestart.coords[0] <50) {
@@ -44,12 +44,12 @@
 			});
 		</script>
 		<!-- Swipe Left to Go Forward in History -->
-		<script>
+		<!-- <script>
 			$(document).bind('swipeleft', function () {
 				history.forward({transition:"slide"});
 			});
-		</script>
-		<!-- Disable Forward/Back Swipes When Panel Open -->
+		</script> -->
+		<!-- Disable Forward/Back Swipes on Panel -->
 		<script>
 			$(document).on('swipeleft swiperight', '[data-role="panel"]', function(event) {
 				event.stopPropagation();
