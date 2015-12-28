@@ -115,6 +115,7 @@ h3 {
 	text-align: center;
     text-transform: uppercase;
 	letter-spacing: 5px;
+	padding-top: 18px;
 	color: #333333;
 }
 .instructions {
@@ -183,7 +184,7 @@ h3 {
 .ui-icon-more-dark {
   background-image: url('images/more-dark.png');
   background-size: 9px;
-  background-position: 5px;
+  background-position: 5px 17px;
   background-repeat: no-repeat;
 }
 .ui-icon-next {
