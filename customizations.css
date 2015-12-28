@@ -111,6 +111,13 @@ h3 {
 	bottom:0;
 	left:0;
 }
+.header {
+	text-align: center;
+    text-transform: uppercase;
+	letter-spacing: 5px;
+	padding-top: 18px;
+	color: #333333;
+}
 .instructions {
 	font-style: italic;
 	font-size: 90%;
@@ -147,24 +154,23 @@ h3 {
 	text-align: justify;
 }
 .passage-test {
+	padding-top: 4px;
+	margin-left: 8px;
+	margin-right: 8px;
 	text-align: justify;
-	margin-top: 10px;
-	margin-left: 10px;
-	margin-right: 10px;
-	margin-bottom: 10px;
 }
 .heading {
 	text-align: center;
 	font-weight: bold;
 }
 .ui-icon-left {
-  background-image: url('images/left-white.png');
+  background-image: url('images/left.png');
   background-size: 7px;
   background-repeat: no-repeat;
   background-position: 16px 11px;
 }
 .ui-icon-left-dark {
-  background-image: url('images/left.png');
+  background-image: url('images/left-dark.png');
   background-size: 7px;
   background-repeat: no-repeat;
   background-position: 16px 11px;
@@ -173,6 +179,12 @@ h3 {
   background-image: url('images/more.png');
   background-size: 9px;
   background-position: 5px 9px;
+  background-repeat: no-repeat;
+}
+.ui-icon-more-dark {
+  background-image: url('images/more-dark.png');
+  background-size: 9px;
+  background-position: 5px 17px;
   background-repeat: no-repeat;
 }
 .ui-icon-next {
