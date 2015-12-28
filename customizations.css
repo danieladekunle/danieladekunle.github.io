@@ -81,9 +81,21 @@ h3 {
 .center {
 	text-align: center;
 }
+.citation {
+	text-align: center;
+	font-style: italic;
+	font-size: small;
+	padding-top: 5px;
+}
+.citation-b {
+	text-align: center;
+	font-style: italic;
+	padding-top: 5px;
+	font-size: 90%;
+}
 .comment {
-	 font-style: italic;
-	 font-size: 90%;
+	font-style: italic;
+	font-size: 90%;
 }
 .footer {
 	width:100%;
@@ -92,8 +104,47 @@ h3 {
 	bottom:0;
 	left:0;
 }
+.number {
+	font-size: small;
+	letter-spacing: 3px;
+	line-height: 23px;
+}
+.panel-feedback {
+	text-align: center;
+	letter-spacing: 4px;
+	font-size: small;
+	padding-top: 13px;
+}
+.panel-header {
+	text-align: center;
+    text-transform: uppercase;
+	letter-spacing: 5px;
+	padding-top: 3px;
+	padding-bottom: 8px;
+}
+.panel-title {
+	text-align: center;
+	white-space: normal;
+	padding-top: 5px;
+}
+.panel-subtitle {
+	text-align: center;
+	font-size: small;
+	font-style: italic;
+	letter-spacing: 0px;
+	padding-top: 10px;
+	padding-bottom: 5px;
+	white-space: normal;
+	line-height: 18px;
+}
 .passage {
 	text-align: justify;
+}
+.title {
+	padding-left: 42px;
+	text-overflow: inherit;
+	white-space: nowrap;
+	overflow: hidden;
 }
 .ui-icon-left {
   background-image: url('images/left-white.png');
