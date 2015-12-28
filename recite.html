@@ -35,9 +35,16 @@
 			   displayPace: 0 <!-- minutes before the message is shown again (0: display every time) -->
 			});
 		</script>
+		<!-- Swipe Right to Go Back in History -->
 		<script>
 			$(document).bind('swiperight', function () {
 				history.back();
+			});
+		</script>
+		<!-- Swipe Left to Go Forward in History -->
+		<script>
+			$(document).bind('swipeleft', function () {
+				history.forward();
 			});
 		</script>
 		<!-- Next/Previous Passage Buttons -->
