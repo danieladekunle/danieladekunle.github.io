@@ -37,14 +37,16 @@
 		</script>
 		<!-- Swipe Right to Go Back in History -->
 		<script>
-			$(document).bind('swiperight', function () {
-				history.back({transition:"fade"});
+			$(document).bind('swiperight', function (event) {
+				if ( event.swipestart.coords[0] <50) {
+					history.back({transition:"slide", reverse:true,});
+				}
 			});
 		</script>
 		<!-- Swipe Left to Go Forward in History -->
 		<script>
 			$(document).bind('swipeleft', function () {
-				history.forward({transition:"fade"});
+				history.forward({transition:"slide"});
 			});
 		</script>
 		<!-- Disable Forward/Back Swipes When Panel Open -->
