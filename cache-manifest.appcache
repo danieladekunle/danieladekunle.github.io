@@ -1,6 +1,6 @@
 CACHE MANIFEST
 
-# version c
+# Version D
 
 customizations.css
 jquery.mobile.structure-1.4.5.css
@@ -8,7 +8,7 @@ jquery.mobile-1.4.5.min.js
 jquery-1.11.3.min.js
 recite.html
 theme.css
-fonts/Quicksand-Regular.otf
+quicksand.otf
 images/ajax-loader.gif
 images/book1.png
 images/book2.png
