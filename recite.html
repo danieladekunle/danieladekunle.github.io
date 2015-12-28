@@ -13,6 +13,7 @@
 		<script src="jquery-1.11.3.min.js"></script>
 		<!-- jQuery Mobile -->
 		<script src="jquery.mobile-1.4.5.min.js"></script>
+		<!-- jQuery Mobile Structure without Theme-->
 		<link rel="stylesheet" href="jquery.mobile.structure-1.4.5.css"/>
 		<!-- Custom Theme -->
 		<link rel="stylesheet" href="theme.css"/>
@@ -35,7 +36,7 @@
 			   displayPace: 0 <!-- minutes before the message is shown again (0: display every time) -->
 			});
 		</script>
-		<!-- Swipe Right from Edge to Go Back in History -->
+		<!-- Swipe Right from Edge to Go Back in History with Reverse Slide Transition-->
 		<script>
 			$(document).bind('swiperight', function (event) {
 				if ( event.swipestart.coords[0] <10) {
@@ -363,7 +364,7 @@
 					Book 2
 				</h2>
 			</div>
-			<div data-role="content" class="center" style="padding: 0px 12px">
+			<div data-role="content" style="padding: 0px 12px">
 				<ul data-role="listview" data-divider-theme="a" data-inset="true">
 					<li data-theme="a" data-icon="pdf">
 						<a href="pdfs/Book%202.pdf" target="_blank">
@@ -708,7 +709,7 @@
 					Book 3
 				</h2>
 			</div>
-			<div data-role="content" class="center" style="padding: 0px 12px">
+			<div data-role="content" style="padding: 0px 12px">
 				<ul data-role="listview" data-divider-theme="a" data-inset="true">
 					<li data-theme="a" data-icon="pdf">
 						<a href="pdfs/Book%203.pdf" target="_blank">
@@ -873,7 +874,7 @@
 					Book 4
 				</h2>
 			</div>
-			<div data-role="content" class="center" style="padding: 0px 12px">
+			<div data-role="content" style="padding: 0px 12px">
 				<ul data-role="listview" data-divider-theme="a" data-inset="true">
 					<li data-theme="a" data-icon="pdf">
 						<a href="pdfs/Book%204.pdf" target="_blank">
@@ -942,7 +943,7 @@
 					Book 5
 				</h2>
 			</div>
-			<div data-role="content" class="center" style="padding: 0px 12px">
+			<div data-role="content" style="padding: 0px 12px">
 				<ul data-role="listview" data-divider-theme="a" data-inset="true">
 					<li data-theme="a" data-icon="pdf">
 						<a href="pdfs/Book%205.pdf" target="_blank">
@@ -1011,7 +1012,7 @@
 					Book 6
 				</h2>
 			</div>
-			<div data-role="content" class="center" style="padding: 0px 12px">
+			<div data-role="content" style="padding: 0px 12px">
 				<ul data-role="listview" data-divider-theme="a" data-inset="true">
 					<li data-theme="a" data-icon="pdf">
 						<a href="pdfs/Book%206.pdf" target="_blank">
@@ -1146,7 +1147,7 @@
 					Book 7
 				</h2>
 			</div>
-			<div data-role="content" class="center" style="padding: 0px 12px">
+			<div data-role="content" style="padding: 0px 12px">
 				<ul data-role="listview" data-divider-theme="a" data-inset="true">
 					<li data-theme="a" data-icon="pdf">
 						<a href="pdfs/Book%207.pdf" target="_blank">
@@ -1312,7 +1313,7 @@
 				</h3>
 			</div>
 			<div data-role="content" class="passage">
-				A kindly tongue is the lodestone of the hearts of men. It is the bread of the spirit, it clotheth the words with meaning, it is the fountain of the light of wisdom and understanding.<!-- </p> -->
+				A kindly tongue is the lodestone of the hearts of men. It is the bread of the spirit, it clotheth the words with meaning, it is the fountain of the light of wisdom and understanding.
 				<p class="citation">Bahá’u’lláh ∙ Gleanings from the Writings of Bahá’u’lláh ∙ CXXXII ∙ p. 289</p>
 			</div>
 			<div data-role="footer" class="footer" data-theme="c" data-position="fixed">
@@ -1391,8 +1392,7 @@
 				</h3>
 			</div>
 			<div data-role="content" class="passage">
-				<!-- <div class="center"><small><i>Study the quotations below and memorize them:</i></small></div>
-				<p> -->...backbiting quencheth the light of the heart, and extinguisheth the life of the soul.<!-- </p> -->
+				...backbiting quencheth the light of the heart, and extinguisheth the life of the soul.
 				<p class="citation">Bahá’u’lláh ∙ Gleanings from the Writings of Bahá’u’lláh ∙ CXXV ∙ p. 265</p>
 			</div>
 			<div data-role="footer" class="footer" data-theme="c" data-position="fixed">
@@ -1456,8 +1456,7 @@
 				</h3>
 			</div>
 			<div data-role="content" class="passage">
-				<!-- <div class="center"><small><i>Memorize the following passages from the Long Obligatory Prayer revealed by Bahá’u’lláh:</i></small></div>
-				<p> -->O God, my God! Look not upon my hopes and my doings, nay rather look upon Thy will that hath encompassed the heavens and the earth. By Thy Most Great Name, O Thou Lord of all nations! I have desired only what Thou didst desire, and love only what Thou dost love.<!-- </p> -->
+				O God, my God! Look not upon my hopes and my doings, nay rather look upon Thy will that hath encompassed the heavens and the earth. By Thy Most Great Name, O Thou Lord of all nations! I have desired only what Thou didst desire, and love only what Thou dost love.
 				<p class="citation">Bahá’u’lláh ∙ Bahá’í Prayers ∙ pp. 8-9</p>
 			</div>
 			<div data-role="footer" class="footer" data-theme="c" data-position="fixed">
@@ -3489,8 +3488,7 @@
 				</h3>
 			</div>
 			<div data-role="content" class="passage">
-				<!-- <div class="center"><small><i>In the same Tablet presented to you [in Section 3], ‘Abdu’l-Bahá reveals a prayer of particular beauty. You may wish to memorize it and call it to mind each time you take on the function of a tutor in a study circle.</i></small></div>
-				<p> -->O God, O Thou Who hast cast Thy splendour over the luminous realities of men, shedding upon them the resplendent lights of knowledge and guidance, and hast chosen them out of all created things for this supernal grace, and hast caused them to encompass all things, to understand their inmost essence, and to disclose their mysteries, bringing them forth out of darkness into the visible world! 'He verily showeth His special mercy to whomsoever He will.'<!-- </p> -->
+				O God, O Thou Who hast cast Thy splendour over the luminous realities of men, shedding upon them the resplendent lights of knowledge and guidance, and hast chosen them out of all created things for this supernal grace, and hast caused them to encompass all things, to understand their inmost essence, and to disclose their mysteries, bringing them forth out of darkness into the visible world! 'He verily showeth His special mercy to whomsoever He will.'
 				<p>O Lord, help Thou Thy loved ones to acquire knowledge and the sciences and arts, and to unravel the secrets that are treasured up in the inmost reality of all created beings. Make them to hear the hidden truths that are written and embedded in the heart of all that is. Make them to be ensigns of guidance amongst all creatures, and piercing rays of the mind shedding forth their light in this, the 'first life'. Make them to be leaders unto Thee, guides unto Thy path, runners urging men on to Thy Kingdom.</p>
 				<p>Thou verily art the Powerful, the Protector, the Potent, the Defender, the Mighty, the Most Generous.</p>
 				<p class="citation">‘Abdu’l-Bahá ∙ The Compilation of Compilations ∙ vol. 1 ∙ p. 252</p>
@@ -3583,46 +3581,46 @@
 			<div data-role="content" class="passage">
 				<!-- <ul data-role="listview" data-divider-theme="a" data-inset="true">
 					<li data-theme="a" data-icon="pdf">
-						<a href="pdfs/On Memorization.pdf" target="_blank">
+						<a href="pdfs/On%20Memorization.pdf" target="_blank">
 							All Excerpts
 							<br><small>PDF</small>
 						</a>
 					</li>
 				</ul> -->
-				<div class="center" style="font-weight:bold; padding-top:6px;">1 ∙ 1 ∙ 5</div>
+				<div class="heading" style="padding-top:6px;">1 ∙ 1 ∙ 5</div>
 				<p>Memorizing quotations from the Writings is highly rewarding, and you should make every effort to do so. Yet there are some people who, for various reasons, find memorization almost impossible. If you happen to have such a difficulty, then you should try to learn the quotations so well that you can express the ideas with words as close to the original text as possible.</p>
-				<div class="center" style="font-weight:bold;"><p>2 ∙ 2 ∙ 2</p></div>
+				<p class="heading">2 ∙ 2 ∙ 2</p>
 				There are many phrases and sentences from prayers that you can memorize and let run through your mind.
-				<div class="center" style="font-weight:bold;"><p>2 ∙ 3 ∙ 1</p></div>
+				<p class="heading">2 ∙ 3 ∙ 1</p>
 				You should realize...that the study on which you are now to embark will not be a substitute for memorizing the Creative Word, which has a special power and penetrates the hearts of men. Therefore, you will want to be able to quote passages from the Writings often when you teach. But quoting the Writings excessively can be counterproductive. As in so many aspects of Bahá’í life, what is needed is moderation—in this case, balance between quoting directly from the Writings and using your own words to explain the Faith. To achieve this balance, of course, you need to devote much time and energy to the study of the Writings and allow them to shape your thoughts and feelings.
-				<div class="center" style="font-weight:bold;"><p>2 ∙ 3 ∙ 2</p></div>
+				<p class="heading">2 ∙ 3 ∙ 2</p>
 				The following words of ‘Abdu’l-Bahá are the expression of His ardent desire to serve, and if you memorize them, they will be a guide to you as you walk your own path of service...
-				<div class="center" style="font-weight:bold;"><p>2 ∙ 3 ∙ 3</p></div>
+				<p class="heading">2 ∙ 3 ∙ 3</p>
 				Below are a few quotations from the Writings of Bahá’u’lláh... Reflect on them and make every effort to memorize them. In this way, you will be able to weave passages from the Writings into your speech and thus influence the hearts of your listeners.
-				<div class="center" style="font-weight:bold;"><p>2 ∙ 3 ∙ 4</p></div>
+				<p class="heading">2 ∙ 3 ∙ 4</p>
 				It is suggested that you memorize the following quotations from the Writings of Bahá’u’lláh in order that you may work some or all of them into your speech...
-				<div class="center" style="font-weight:bold;"><p>2 ∙ 3 ∙ 5</p></div>
+				<p class="heading">2 ∙ 3 ∙ 5</p>
 				You may wish to memorize the following passages from the Writings of Bahá’u’lláh so that you can quote them when you speak to friends...
-				<div class="center" style="font-weight:bold;"><p>2 ∙ 3 ∙ 6</p></div>
+				<p class="heading">2 ∙ 3 ∙ 6</p>
 				It is suggested that you memorize the following passages so that you can quote them when you speak of Bahá’u’lláh...
-				<div class="center" style="font-weight:bold;"><p>2 ∙ 3 ∙ 9</p></div>
+				<p class="heading">2 ∙ 3 ∙ 9</p>
 				You may wish to memorize the following quotations so that you can refer to them when you speak...with your friends...
-				<div class="center" style="font-weight:bold;"><p>3 ∙ 1 ∙ 1</p></div>
+				<p class="heading">3 ∙ 1 ∙ 1</p>
 				It will help you to memorize these words and have them always in mind when you teach.
-				<div class="center" style="font-weight:bold;"><p>4 ∙ 1 ∙ 8</p></div>
+				<p class="heading">4 ∙ 1 ∙ 8</p>
 				So as to not lose sight of the urgency with which you must engage in acts of service to the Cause, commit to memory the following passage from a letter dated 28 January 1939 written by the Guardian...
-				<div class="center" style="font-weight:bold;"><p>6 ∙ 1 ∙ 7</p></div>
+				<p class="heading">6 ∙ 1 ∙ 7</p>
 				Commit to memory the following passage from the Writings of ‘Abdu’l-Bahá, and let it remind you always of the need to feed the flame of the love of God in your heart so that its warmth can be felt by all those who come into contact with you and its light may illumine their minds...
-				<div class="center" style="font-weight:bold;"><p>7 ∙ 2 ∙ 4</p></div>
+				<p class="heading">7 ∙ 2 ∙ 4</p>
 				In the same Tablet presented to you above, ‘Abdu’l-Bahá reveals a prayer of particular beauty. You may wish to memorize it and call it to mind each time you take on the function of a tutor in a study circle.
-				<div class="center" style="font-weight:bold;"><p>7 ∙ 2 ∙ 25</p></div>
+				<p class="heading">7 ∙ 2 ∙ 25</p>
 				<i>[Tutor A]: I have a question about Section 6. There the participants are asked to memorize three passages from the Long Obligatory Prayer. Should I have encouraged them to memorize the entire prayer?</i>
 				<p><i>[Resource Person]: Like so many other things, this depends on the participants. Some will have only just begun to acquire the habit of praying every day, so memorizing the three passages suggested will be sufficient. Later, they can learn the entire prayer. Of course, others may already know the Long Obligatory Prayer by heart. In any case, I have a feeling that, as tutors of the course, it would be a good idea for each of us to memorize it, if we have not already done so.</i></p>
-				<div class="center" style="font-weight:bold;"><p>7 ∙ 2 ∙ 25</p></div>
+				<p class="heading">7 ∙ 2 ∙ 25</p>
 				We have talked about the importance of memorization on numerous occasions. By now you yourself have learned many passages by heart and know the value of being able to draw upon the power of the Creative Word, whether in moments of personal reflection, in times of difficulty, or in teaching the Cause. You may have also taught small children how to memorize quotations from the Writings as one element of a Bahá’í children’s class. Much of the experience you have acquired will be helpful to you now in working with the members of your study circles. At this point, it would be worthwhile for you to explore some of the ways you can help them succeed in memorization. After having done so, you may wish to memorize the following short passage:
 				<p style="font-weight:bold;">“...and every breast which committeth His Words to memory, God shall cause, if it were that of a believer, to be filled with His love...”</p>
-				<div class="center"><small>[The Báb ∙ Selections from the Writings of the Báb ∙ p. 99]</small></div>
-				<div class="center" style="font-weight:bold;"><p>7 ∙ 2 ∙ 28</p></div>
+				<p>[The Báb ∙ Selections from the Writings of the Báb ∙ p. 99]</p>
+				<p class="heading">7 ∙ 2 ∙ 28</p>
 				The various features of the study circles that you establish, and the activity that characterizes them, contribute to the development of [the attributes to be acquired by those set on the path of moral and spiritual empowerment]. Write a few sentences as to how these features nurture one or more of the attributes listed above. In each case, an example is given to assist you.
 				<p>...</p>
 				<p>7. Memorizing prayers and passages from the Writings:</p>
@@ -3680,7 +3678,7 @@
 				</div>
 			</div>
 			<div data-role="content" class="passage">
-				<div class="center" style="font-weight:bold;">From the Writings of Bahá’u’lláh</div>
+				<div class="heading">From the Writings of Bahá’u’lláh</div>
 				<p>The sanctified souls should ponder and meditate in their hearts regarding the methods of teaching. From the texts of the wondrous, heavenly Scriptures they should memorize phrases and passages bearing on various instances, so that in the course of their speech they may recite divine verses whenever the occasion demandeth it, inasmuch as these holy verses are the most potent elixir, the greatest and mightiest talisman. So potent is their influence that the hearer will have no cause for vacillation. I swear by My life! This Revelation is endowed with such a power that it will act as the lodestone for all nations and kindreds of the earth. Should one pause to meditate attentively he would recognize that no place is there, nor can there be, for anyone to flee to.</p>
 				<p class="citation">Bahá’u’lláh ∙ Tablets of Bahá’u’lláh Revealed after the Kitáb-i-Aqdas</p>
 			</div>
@@ -3737,12 +3735,12 @@
 			<div data-role="content" class="passage">
 				<div style="font-weight:bold; text-transform: uppercase; text-align: center;">Long Obligatory Prayer</div>
 				<p style="text-transform: uppercase; font-size: 90%; text-align: center;">To be recited once in twenty-four hours</p>
-				<p class="comment">Whoso wisheth to recite this prayer, let him stand up and turn unto God and, as he standeth in his place, 
+				<p class="instructions">Whoso wisheth to recite this prayer, let him stand up and turn unto God and, as he standeth in his place, 
 				let him gaze to the right and to the left, as if awaiting the mercy of his Lord, the Most Merciful, the Compassionate.  Then let him say:</p>
 				<p>O Thou Who art the Lord of all names and the Maker of the heavens!&nbsp; 
 				I beseech Thee by them Who are the Daysprings of Thine invisible Essence, the Most Exalted, the All-Glorious, to make of my prayer a 
 				fire that will burn away the veils which have shut me out from Thy beauty, and a light that will lead me unto the ocean of Thy Presence.</p>
-				<p class="comment">Let him then raise his hands in supplication toward God—blessed and exalted be He—and say:</p>
+				<p class="instructions">Let him then raise his hands in supplication toward God—blessed and exalted be He—and say:</p>
 				<p>O Thou the Desire of the world and the Beloved of the nations!&nbsp;
 				Thou seest me turning toward Thee, and rid of all attachment to any one save Thee, and clinging to Thy cord, 
 				through whose movement the whole creation hath been stirred up.&nbsp;
@@ -3755,12 +3753,12 @@
 				Look not upon my hopes and my doings, nay rather look upon Thy will that hath encompassed the heavens and the earth.&nbsp;
 				By Thy Most Great Name, O Thou Lord of all nations!&nbsp;
 				I have desired only what Thou didst desire, and love only what Thou dost love.&nbsp;</p>
-				<p class="comment">Let him then kneel, and bowing his forehead to the ground, let him say:</p>
+				<p class="instructions">Let him then kneel, and bowing his forehead to the ground, let him say:</p>
 				<p>Exalted art Thou above the description of any one save Thyself, and the comprehension of aught else except Thee.</p>
-				<p class="comment">Let him then stand and say:</p>
+				<p class="instructions">Let him then stand and say:</p>
 				<p>Make my prayer, O my Lord, a fountain of living waters whereby I may live as long as Thy sovereignty endureth, 
 				and may make mention of Thee in every world of Thy worlds.</p>
-				<p class="comment">Let him again raise his hands in supplication, and say:</p>
+				<p class="instructions">Let him again raise his hands in supplication, and say:</p>
 				<p>O Thou in separation from Whom hearts and souls have melted, and by the fire of Whose love the whole world hath been set aflame!&nbsp;
 				I implore Thee by Thy Name through which Thou hast subdued the whole creation, not to withhold from me that which is with Thee, 
 				O Thou Who rulest over all men!&nbsp;
@@ -3769,14 +3767,14 @@
 				and this poor creature the orient of Thy wealth.&nbsp;
 				Thine is the authority to command whatsoever Thou willest.&nbsp;
 				I bear witness that Thou art to be praised in Thy doings, and to be obeyed in Thy behests, and to remain unconstrained in Thy bidding.</p>
-				<p class="comment">Let him then raise his hands, and repeat three times the Greatest Name (Alláh-u-Abhá).&nbsp;
+				<p class="instructions">Let him then raise his hands, and repeat three times the Greatest Name (Alláh-u-Abhá).&nbsp;
 				Let him then bend down with hands resting on the knees before God—blessed and exalted be He—and say:</p>
 				<p>Thou seest, O my God, how my spirit hath been stirred up within my limbs and members, in its longing to worship Thee, 
 				and in its yearning to remember Thee and extol Thee; how it testifieth to that whereunto the tongue of Thy Commandment 
 				hath testified in the kingdom of Thine utterance and the heaven of Thy knowledge.&nbsp;
 				I love in this state, O my Lord, to beg of Thee all that is with Thee, that I may demonstrate my poverty, and magnify 
 				Thy bounty and Thy riches, and may declare my powerlessness, and manifest Thy power and Thy might.&nbsp;</p>
-				<p class="comment">Let him then stand and raise his hands twice in supplication, and say:</p>
+				<p class="instructions">Let him then stand and raise his hands twice in supplication, and say:</p>
 				<p>There is no God but Thee, the Almighty, the All-Bountiful.&nbsp;
 				There is no God but Thee, the Ordainer, both in the beginning and in the end.&nbsp;
 				O God, my God!&nbsp;
@@ -3788,21 +3786,21 @@
 				river of everlasting life from the hands of Thy bounty.&nbsp;
 				Thine is the command at all times, O Thou Who art the Lord of all names; and mine is resignation and willing submission 
 				to Thy will, O Creator of the heavens!&nbsp;</p>
-				<p class="comment">Let him then raise his hands thrice, and say:</p>
+				<p class="instructions">Let him then raise his hands thrice, and say:</p>
 				<p>Greater is God than every great one!</p>
-				<p class="comment">Let him then kneel, and bowing his forehead to the ground, say:</p>
+				<p class="instructions">Let him then kneel, and bowing his forehead to the ground, say:</p>
 				<p>Too high art Thou for the praise of those who are nigh unto Thee to ascend unto the heaven of Thy nearness, or for the 
 				birds of the hearts of them who are devoted to Thee to attain to the door of Thy gate.&nbsp;
 				I testify that Thou hast been sanctified above all attributes and holy above all names.&nbsp;
 				No God is there but Thee, the Most Exalted, the All-Glorious.&nbsp;</p>
-				<p class="comment">Let him then seat himself and say:</p>
+				<p class="instructions">Let him then seat himself and say:</p>
 				<p>I testify unto that whereunto have testified all created things, and the Concourse on high, and the inmates of the all-highest 
 				Paradise, and beyond them the Tongue of Grandeur itself from the all-glorious Horizon, that Thou art God, that there is no God but Thee, 
 				and that He Who hath been manifested is the Hidden Mystery, the Treasured Symbol, through Whom the letters B and E (Be) have been joined 
 				and knit together.&nbsp;
 				I testify that it is He Whose name hath been set down by the Pen of the Most High, and Who hath been mentioned in the Books of God, 
 				the Lord of the Throne on high and of earth below.&nbsp;</p>
-				<p class="comment">Let him then stand erect and say:</p>
+				<p class="instructions">Let him then stand erect and say:</p>
 				<p>O Lord of all being and Possessor of all things visible and invisible!&nbsp;
 				Thou dost perceive my tears and the sighs I utter, and hearest my groaning, and my wailing, and the lamentation of my heart.&nbsp;
 				By Thy might!&nbsp;
@@ -3811,11 +3809,11 @@
 				I entreat Thee by Thy footsteps in this wilderness, and by the words 'Here am I. Here am I,' which Thy chosen Ones have 
 				uttered in this immensity, and by the breaths of Thy Revelation, and the gentle winds of the Dawn of Thy Manifestation, to 
 				ordain that I may gaze on Thy beauty and observe whatsoever is in Thy Book.&nbsp;</p>
-				<p class="comment">Let him then repeat the Greatest Name thrice, and bend down with hands resting on the knees, and say:</p>
+				<p class="instructions">Let him then repeat the Greatest Name thrice, and bend down with hands resting on the knees, and say:</p>
 				<p>Praise be to Thee, O my God, that Thou hast aided me to remember Thee and to praise Thee, and hast made known unto me Him 
 				Who is the Dayspring of Thy signs, and hast caused me to bow down before Thy Lordship, and humble myself before Thy Godhead, 
 				and to acknowledge that which hath been uttered by the Tongue of Thy grandeur.&nbsp;</p>
-				<p class="comment">Let him then rise and say:</p>
+				<p class="instructions">Let him then rise and say:</p>
 				<p>O God, my God!&nbsp;
 				My back is bowed by the burden of my sins, and my heedlessness hath destroyed me.&nbsp;
 				Whenever I ponder my evil doings and Thy benevolence, my heart melteth within me, and my blood boileth in my veins.&nbsp;
@@ -3825,12 +3823,12 @@
 				Throne on high and of earth below!&nbsp;
 				I implore Thee by the signs of Thy Kingdom and the mysteries of Thy Dominion to do with Thy loved ones as becometh Thy bounty, 
 				O Lord of all being, and is worthy of Thy grace, O King of the seen and the unseen!&nbsp;</p>
-				<p class="comment">Let him then repeat the Greatest Name thrice, and kneel with his forehead to the ground, and say:</p>
+				<p class="instructions">Let him then repeat the Greatest Name thrice, and kneel with his forehead to the ground, and say:</p>
 				<p>Praise be unto Thee, O our God, that Thou has sent down unto us that which draweth us nigh unto Thee, and 
 				supplieth us with every good thing sent down by Thee in Thy Books and Thy Scriptures.&nbsp;
 				Protect us, we beseech Thee, O my Lord, from the hosts of idle fancies and vain imaginations.&nbsp;
 				Thou, in truth, art the Mighty, the All-Knowing.&nbsp;</p>
-				<p class="comment">Let him then raise his head, and seat himself, and say:</p>
+				<p class="instructions">Let him then raise his head, and seat himself, and say:</p>
 				<p>I testify, O my God, to that whereunto Thy chosen Ones have testified, and acknowledge that which the inmates of the 
 				all-highest Paradise and those who have circled round Thy mighty Throne have acknowledged.&nbsp;
 				The kingdoms of earth and heaven are Thine, O Lord of the worlds!&nbsp;</p>
@@ -3886,12 +3884,9 @@
 					</a>
 				</div>
 			</div>
-			<div data-role="content" class="center">
-				<form action="recite.php" method="post">
-					<p>comments ∙ corrections ∙ suggestions...</p>
-					<a data-role="button" data-inline="true" data-theme="a" href="mailto:danieladekunle@gmail.com?Subject=recite%20feedback">mail</a>
-					<!-- <a data-role="button" data-inline="true" data-theme="a" onClick="location.href='mailto:danieladekunle@gmail.com?Subject=recite%20feedback'">mail</a> -->
-				</form>
+			<div data-role="content" style="text-align:center;">
+				<p>comments ∙ corrections ∙ suggestions...</p>
+				<a data-role="button" data-inline="true" data-theme="a" href="mailto:danieladekunle@gmail.com?Subject=recite%20feedback">mail</a>
 			</div>
 		</div>
 	</body>
