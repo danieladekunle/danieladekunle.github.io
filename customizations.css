@@ -15,6 +15,13 @@ h3 {
     text-shadow: none;
 	letter-spacing: 7px;
 }
+h5 {
+    color: #333333;
+    text-shadow: none;
+	text-transform: uppercase;
+	letter-spacing: 5px;
+	font-weight: normal;
+}
 .book1 {
   background-image: url('images/1.png');
   background-size: 28px;
@@ -111,6 +118,17 @@ h3 {
 	bottom:0;
 	left:0;
 }
+.header {
+	text-align: center;
+    text-transform: uppercase;
+	letter-spacing: 6px;
+	padding-top:16px;
+	padding-bottom:0px;
+}
+.heading {
+	text-align: center;
+	font-weight: bold;
+}
 .instructions {
 	font-style: italic;
 	font-size: 90%;
@@ -146,10 +164,17 @@ h3 {
 .passage {
 	text-align: justify;
 }
-.heading {
+.subheader {
 	text-align: center;
-	font-weight: bold;
+	font-size: small;
+	letter-spacing: 3.5px;
+	padding-top: 5px;
+	padding-bottom: px;
+	line-height:px;
 }
+/* .ui-content {
+    padding-top: 0 !important;   
+} */
 .ui-icon-left {
   background-image: url('images/left-white.png');
   background-size: 7px;
@@ -158,6 +183,12 @@ h3 {
 }
 .ui-icon-more {
   background-image: url('images/dots-white.png');
+  background-size: 9px;
+  background-position: 5px 9px;
+  background-repeat: no-repeat;
+}
+.ui-icon-more-black {
+  background-image: url('images/dots-black.png');
   background-size: 9px;
   background-position: 5px 9px;
   background-repeat: no-repeat;

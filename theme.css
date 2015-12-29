@@ -493,6 +493,24 @@ html head + body .ui-btn.ui-btn-c:active {
 	color: #333333 /*{b-bdown-color}*/;
 	text-shadow: 0 /*{b-bdown-shadow-x}*/ 0px /*{b-bdown-shadow-y}*/ 0 /*{b-bdown-shadow-radius}*/ #ffffff /*{b-bdown-shadow-color}*/;
 }
+/* D (For white headers only)
+-----------------------------------------------------------------------------------------------------------*/
+/* Bar: Toolbars, dividers, slider track */
+.ui-bar-d,
+.ui-page-theme-d .ui-bar-inherit,
+html .ui-bar-d .ui-bar-inherit,
+html .ui-body-d .ui-bar-inherit,
+html body .ui-group-theme-d .ui-bar-inherit {
+	background-color: #ffffff /*{d-bar-background-color}*/;
+	border-color: #cccccc /*{d-bar-border}*/;
+	color: #333333 /*{d-bar-color}*/;
+	text-shadow: 0 /*{d-bar-shadow-x}*/ 0px /*{d-bar-shadow-y}*/ 0 /*{d-bar-shadow-radius}*/ #ffffff /*{d-bar-shadow-color}*/;
+	font-weight: normal;
+}
+.ui-bar-d {
+	border-width: 0px;
+	border-style: solid;
+}
 /* Structure */
 /* Disabled
 -----------------------------------------------------------------------------------------------------------*/
