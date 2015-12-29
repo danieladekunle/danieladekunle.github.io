@@ -16,7 +16,7 @@ h3 {
 	letter-spacing: 7px;
 }
 .book1 {
-  background-image: url('images/book1.png');
+  background-image: url('images/1.png');
   background-size: 28px;
   background-position: left;
   background-repeat: no-repeat;
@@ -25,7 +25,7 @@ h3 {
   overflow: hidden;
 }
 .book2 {
-  background-image: url('images/book2.png');
+  background-image: url('images/2.png');
   background-size: 28px;
   background-position: left;
   background-repeat: no-repeat;
@@ -34,7 +34,7 @@ h3 {
   overflow: hidden;
 }
 .book3 {
-  background-image: url('images/book3.png');
+  background-image: url('images/3.png');
   background-size: 28px;
   background-position: left;
   background-repeat: no-repeat;
@@ -43,7 +43,7 @@ h3 {
   overflow: hidden;
 }
 .book4 {
-  background-image: url('images/book4.png');
+  background-image: url('images/4.png');
   background-size: 28px;
   background-position: left;
   background-repeat: no-repeat;
@@ -52,7 +52,7 @@ h3 {
   overflow: hidden;
 }
 .book5 {
-  background-image: url('images/book5.png');
+  background-image: url('images/5.png');
   background-size: 28px;
   background-position: left;
   background-repeat: no-repeat;
@@ -61,7 +61,7 @@ h3 {
   overflow: hidden;
 }
 .book6 {
-  background-image: url('images/book6.png');
+  background-image: url('images/6.png');
   background-size: 28px;
   background-position: left;
   background-repeat: no-repeat;
@@ -70,7 +70,7 @@ h3 {
   overflow: hidden;
 }
 .book7 {
-  background-image: url('images/book7.png');
+  background-image: url('images/7.png');
   background-size: 28px;
   background-position: left;
   background-repeat: no-repeat;
@@ -157,13 +157,13 @@ h3 {
   background-position: 16px 11px;
 }
 .ui-icon-more {
-  background-image: url('images/more.png');
+  background-image: url('images/dots-white.png');
   background-size: 9px;
   background-position: 5px 9px;
   background-repeat: no-repeat;
 }
 .ui-icon-next {
-  background-image: url('images/next.png');
+  background-image: url('images/right-gray.png');
   background-size: 8px;
   background-repeat: no-repeat;
   background-position: top;
@@ -175,13 +175,13 @@ h3 {
   background-repeat: no-repeat;
 }
 .ui-icon-previous {
-  background-image: url('images/previous.png');
+  background-image: url('images/left-gray.png');
   background-size: 8px;
   background-repeat: no-repeat;
   background-position: top;
 }
 .ui-icon-right {
-  background-image: url('images/right.png');
+  background-image: url('images/right-black.png');
   background-size: 5px;
   background-repeat: no-repeat;
   background-position: right 20px center;
