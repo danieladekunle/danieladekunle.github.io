@@ -110,6 +110,20 @@
 				window.location = localStorage.currentURL;
 			}
 		</script> -->
+		<script>
+			$( document ).on( "pageinit", "#menu", function() {
+				$( document ).on( "swipeleft", "#menu", function( e ) {
+					// We check if there is no open panel on the page because otherwise
+					// a swipe to close the left panel would also open the right panel (and v.v.).
+					// We do this by checking the data that the framework stores on the page element (panel: open).
+					if ( $.mobile.activePage.jqmData( "panel" ) !== "open" ) {
+						if ( e.type === "swipeleft"  ) {
+							$( "#panel1" ).panel( "open" );
+						} 
+					}
+				});
+			});
+	</script>
 	</head>
 	<body>
 <!-- Book List -->
@@ -167,7 +181,7 @@
 					</a>
 				</div>
 			</div>
-			<div data-role="content" style="padding: 0px 6px">
+			<div data-role="content" style="padding: 0px 6px;">
 				<!-- <div class="header">Passages for Memorization</div>
 				<div class="subheader">- ruhi institute main sequence of courses -</div> -->
 				<div class="header">Quotations</div>
