@@ -1,6 +1,6 @@
 CACHE MANIFEST
 
-# Version 5
+# Version 6
 
 customizations.css
 customizations-light.css
@@ -26,6 +26,8 @@ images/left-black.png
 images/left-gray.png
 images/left-white.png
 images/one.png
+images/five.png
+images/four.png
 images/pdf.png
 images/right-black.png
 images/right-gray.png
