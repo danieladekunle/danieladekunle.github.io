@@ -1,8 +1,9 @@
 CACHE MANIFEST
 
-# Version 3
+# Version 4
 
 customizations.css
+customizations-light.css
 fastclick.js
 jquery.mobile.structure-1.4.5.css
 jquery.mobile-1.4.5.min.js
@@ -24,6 +25,7 @@ images/dots-white.png
 images/left-black.png
 images/left-gray.png
 images/left-white.png
+images/one.png
 images/pdf.png
 images/right-black.png
 images/right-gray.png
