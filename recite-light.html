@@ -87,8 +87,11 @@
 		<script>
 			$(document).ready(function() {
 				$('.passage-test').click(function() {
-					$('[data-role="button"]').toggle("show");
+					$('.next-test').toggle("show");
+					$('.previous-test').toggle("show");
+					$('.left-test').toggle("show");
 					$('.section-test-bottom').toggle("show");
+					$('.section-test-top').toggle("show");
 				});
 			});
 		</script>
@@ -96,28 +99,28 @@
 		<script>
 			$(document).ready( function(event){
 				$('.next').on('click', function(){          
-					localStorage.currentURL = location.href
+					localStorage.lastPage = location.href
 				});
 				$('.previous').on('click', function(){          
-					localStorage.currentURL = location.href
+					localStorage.lastPage = location.href
 				});
 				$('.link').on('click', function(){          
-					localStorage.currentURL = this.href
+					localStorage.lastPage = this.href
 				});
 				$('.ui-btn-left').on('click', function(){          
-					localStorage.currentURL = this.href
+					localStorage.lastPage = this.href
 				});
 				$('.ui-btn-right').on('click', function(){          
-					localStorage.currentURL = this.href
+					localStorage.lastPage = this.href
 				});
 			});
 		</script>
 		<!-- Load Last Location Saved in Local Storage on Restart -->
-		<!-- <script>		
-			if (localStorage.currentURL && location.currentURL != location.href) {
-				window.location = localStorage.currentURL;
+		<script>		
+			if (localStorage.lastPage && location.currentURL != location.href) {
+				window.location = localStorage.lastPage;
 			}
-		</script> -->
+		</script>
 		<script>
 			$( document ).on( "pageinit", "#menu", function() {
 				$( document ).on( "swipeleft", "#menu", function( e ) {
@@ -2872,8 +2875,8 @@
 		</div> -->
 		<div data-role="page" data-control-title="b4q5" class="ui-icon-nodisc" id="b4q5">
 			<div data-theme="d" data-role="header" data-position="fixed" data-tap-toggle="false" class="header-test">
-				<a style="display:none" data-role="button" data-theme="c" data-transition="slide" data-direction="reverse" href="#book4" data-icon="left-test" data-iconpos="notext" class="ui-btn-left"></a>
-				<div style="display:none" class="section-test">4∙2∙11</div>
+				<a style="display:none" class="left-test" data-role="button" data-theme="c" data-transition="slide" data-direction="reverse" href="#book4" data-icon="left-test"></a>
+				<div style="display:none" class="section-test-top">4∙2∙11</div>
 			</div>
 			<div data-role="content" class="passage-test">
 				<!-- <div class="heading">4 ∙ 2 ∙ 11</div> -->
@@ -2881,9 +2884,9 @@
 				<p class="citation">The Báb ∙ cited in The Dawn-Breakers ∙ pp. 92-94</p>
 			</div>
 			<div data-role="footer" class="footer-test" data-theme="c" data-position="fixed" data-tap-toggle="false">
-				<a style="display:none" data-role="button" class="next" data-theme="c" data-icon="next-test"></a>
+				<a style="display:none" data-role="button" class="next-test" data-theme="c" data-icon="next-test"></a>
 				<div style="display:none" class="section-test-bottom">4∙2∙11</div>
-				<a style="display:none" data-role="button" class="previous" data-theme="c" data-icon="previous-test"></a>
+				<a style="display:none" data-role="button" class="previous-test" data-theme="c" data-icon="previous-test"></a>
 			</div>
 		</div>
 		<div data-role="page" data-control-title="b4q6" class="ui-icon-nodisc" id="b4q6">
