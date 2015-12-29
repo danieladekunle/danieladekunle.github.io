@@ -26,20 +26,20 @@ h3 {
   text-align:center;
 }
 .book2 {
-/*   background-image: url('images/2.png');
-  background-size: 28px;
-  background-position: left;
-  background-repeat: no-repeat; */
+  background-image: url('images/two.png');
+  background-size: 48px 19px;
+  background-position: top, center;
+  background-repeat: no-repeat;
   text-overflow: inherit;
   white-space: nowrap;
   overflow: hidden;
   text-align:center;
 }
 .book3 {
-  /* background-image: url('images/3.png');
-  background-size: 28px;
-  background-position: left;
-  background-repeat: no-repeat; */
+  background-image: url('images/three.png');
+  background-size: 70px 20px;
+  background-position: top, center;
+  background-repeat: no-repeat;
   text-overflow: inherit;
   white-space: nowrap;
   overflow: hidden;
@@ -271,8 +271,8 @@ h5 {
 	font-size: small;
 	padding-left: 2px;
 	letter-spacing: 3px;
-	padding-top: 0px;
-	padding-bottom: 8.5px;
+	padding-top: 1px;
+	padding-bottom: 7.5px;
 	text-transform: uppercase;
 }
 .footer-test {

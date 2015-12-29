@@ -1,6 +1,6 @@
 CACHE MANIFEST
 
-# Version 4
+# Version 5
 
 customizations.css
 customizations-light.css
@@ -29,3 +29,5 @@ images/one.png
 images/pdf.png
 images/right-black.png
 images/right-gray.png
+images/three.png
+images/two.png
