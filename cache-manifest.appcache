@@ -1,6 +1,6 @@
 CACHE MANIFEST
 
-# Version 9
+# Version 10
 
 customizations.css
 customizations-light.css
@@ -12,7 +12,6 @@ recite.html
 recite-light.html
 theme.css
 quicksand.otf
-images/ajax-loader.gif
 images/1.png
 images/2.png
 images/3.png
@@ -20,6 +19,8 @@ images/4.png
 images/5.png
 images/6.png
 images/7.png
+images/ajax-loader.gif
+images/border.png
 images/dots-black.png
 images/dots-white.png
 images/left-black.png
