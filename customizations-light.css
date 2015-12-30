@@ -15,7 +15,7 @@ h3 {
     text-shadow: none;
 	letter-spacing: 7px;
 }
-.book1 {
+/* .book1 {
   background-image: url('images/five.png');
   background-size: 45px 19px;
   background-position: top, center;
@@ -24,8 +24,8 @@ h3 {
   white-space: nowrap;
   overflow: hidden;
   text-align:center;
-}
-.book2 {
+} */
+/* .book2 {
   background-image: url('images/five.png');
   background-size: 48px 19px;
   background-position: top, center;
@@ -78,6 +78,76 @@ h3 {
 .book7 {
   background-image: url('images/five.png');
   background-size: 66px 20px;
+  background-position: top, center;
+  background-repeat: no-repeat;
+  text-overflow: inherit;
+  white-space: nowrap;
+  overflow: hidden;
+  text-align:center;
+} */
+.book1 {
+  background-image: url('images/1.png');
+  background-size: 21px;
+  background-position: top, center;
+  background-repeat: no-repeat;
+  text-overflow: inherit;
+  white-space: nowrap;
+  overflow: hidden;
+  text-align:center;
+}
+.book2 {
+  background-image: url('images/2.png');
+  background-size: 21px;
+  background-position: top, center;
+  background-repeat: no-repeat;
+  text-overflow: inherit;
+  white-space: nowrap;
+  overflow: hidden;
+  text-align:center;
+}
+.book3 {
+  background-image: url('images/3.png');
+  background-size: 21px;
+  background-position: top, center;
+  background-repeat: no-repeat;
+  text-overflow: inherit;
+  white-space: nowrap;
+  overflow: hidden;
+  text-align:center;
+}
+.book4 {
+  background-image: url('images/4.png');
+  background-size: 21px;
+  background-position: top, center;
+  background-repeat: no-repeat;
+  text-overflow: inherit;
+  white-space: nowrap;
+  overflow: hidden;
+  text-align:center;
+}
+.book5 {
+  background-image: url('images/5.png');
+  background-size: 21px;
+  background-position: top, center;
+  background-repeat: no-repeat;
+  text-overflow: inherit;
+  white-space: nowrap;
+  overflow: hidden;
+  text-align:center;
+}
+.book6 {
+  background-image: url('images/6.png');
+  background-size: 21px;
+  background-position: top, center;
+  background-repeat: no-repeat;
+  text-overflow: inherit;
+  white-space: nowrap;
+  overflow: hidden;
+  text-align:center;
+}
+.book7 {
+  background-image: url('images/7.png');
+  background-size: 21px;
   background-position: top, center;
   background-repeat: no-repeat;
   text-overflow: inherit;
