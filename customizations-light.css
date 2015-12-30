@@ -15,7 +15,7 @@ h3 {
     text-shadow: none;
 	letter-spacing: 7px;
 }
-.book1 {
+/* .book1 {
   background-image: url('images/line.png');
   background-size: 35px 1px;
   background-position: center, center;
@@ -84,79 +84,78 @@ h3 {
   white-space: nowrap;
   overflow: hidden;
   text-align:center;
-}
+} */
 .book1 {
- /*  background-image: url('images/1.png');
-  background-size: 21px;
+  background-image: url('images/1.png');
+  background-size: 32px;
   background-position: top, center;
-  background-repeat: no-repeat; */
+  background-repeat: no-repeat;
   text-overflow: inherit;
   white-space: nowrap;
   overflow: hidden;
   text-align:center;
 }
 .book2 {
-  /* background-image: url('images/2.png');
-  background-size: 21px;
+  background-image: url('images/2.png');
+  background-size: 32px;
   background-position: top, center;
-  background-repeat: no-repeat; */
+  background-repeat: no-repeat;
   text-overflow: inherit;
   white-space: nowrap;
   overflow: hidden;
   text-align:center;
 }
 .book3 {
- /*  background-image: url('images/3.png');
-  background-size: 21px;
+  background-image: url('images/3.png');
+  background-size: 32px;
   background-position: top, center;
-  background-repeat: no-repeat; */
+  background-repeat: no-repeat;
   text-overflow: inherit;
   white-space: nowrap;
   overflow: hidden;
   text-align:center;
 }
 .book4 {
-  /* background-image: url('images/4.png');
-  background-size: 21px;
+  background-image: url('images/4.png');
+  background-size: 32px;
   background-position: top, center;
-  background-repeat: no-repeat; */
+  background-repeat: no-repeat;
   text-overflow: inherit;
   white-space: nowrap;
   overflow: hidden;
   text-align:center;
 }
 .book5 {
- /*  background-image: url('images/5.png');
-  background-size: 21px;
+  background-image: url('images/5.png');
+  background-size: 32px;
   background-position: top, center;
-  background-repeat: no-repeat; */
+  background-repeat: no-repeat;
   text-overflow: inherit;
   white-space: nowrap;
   overflow: hidden;
   text-align:center;
 }
 .book6 {
-  /* background-image: url('images/6.png');
-  background-size: 21px;
+  background-image: url('images/6.png');
+  background-size: 32px;
   background-position: top, center;
-  background-repeat: no-repeat; */
+  background-repeat: no-repeat;
   text-overflow: inherit;
   white-space: nowrap;
   overflow: hidden;
   text-align:center;
 }
 .book7 {
-/*   background-image: url('images/7.png');
-  background-size: 21px;
+  background-image: url('images/7.png');
+  background-size: 32px;
   background-position: top, center;
-  background-repeat: no-repeat; */
+  background-repeat: no-repeat;
   text-overflow: inherit;
   white-space: nowrap;
   overflow: hidden;
   text-align:center;
 }
 .book-number {
-	/* padding-left: 42px; */
 	font-size: 100%;
 	letter-spacing: 4px;
 	text-transform: uppercase;
@@ -165,12 +164,17 @@ h3 {
 	padding-bottom: 4.5px;
 }
 .book-title {
-	/* padding-left: 42px; */
+	padding-top: 15px;
+	padding-bottom: 7px;
 	text-overflow: inherit;
 	white-space: nowrap;
 	overflow: hidden;
-	font-size: small;
+	font-size: 88%;
 	color:gray;
+}
+.books {
+	background-color: #ffffff !important;
+	padding: 0 0 0 0;
 }
 .citation {
 	text-align: center;
@@ -355,10 +359,10 @@ h5 {
 	bottom:0;
 	left:0;
 	padding-bottom: 0px;
-background: -moz-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,0.9) 20%, rgba(255,255,255,1) 30%, rgba(255,255,255,1) 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%,rgba(255,255,255,0.9) 20%,rgba(255,255,255,1) 30%,rgba(255,255,255,1) 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(to bottom, rgba(255,255,255,0) 0%,rgba(255,255,255,0.9) 20%,rgba(255,255,255,1) 30%,rgba(255,255,255,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+	background: -moz-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,0.9) 20%, rgba(255,255,255,1) 30%, rgba(255,255,255,1) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%,rgba(255,255,255,0.9) 20%,rgba(255,255,255,1) 30%,rgba(255,255,255,1) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, rgba(255,255,255,0) 0%,rgba(255,255,255,0.9) 20%,rgba(255,255,255,1) 30%,rgba(255,255,255,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
 }
 .header {
 	font-size: 108%;
@@ -370,10 +374,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', e
 }
 .header-test {
 	height:50px;
-background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 70%, rgba(255,255,255,0.9) 80%, rgba(255,255,255,0) 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(255,255,255,1) 70%,rgba(255,255,255,0.9) 80%,rgba(255,255,255,0) 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(255,255,255,1) 70%,rgba(255,255,255,0.9) 80%,rgba(255,255,255,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=0 ); /* IE6-9 */
+	background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 70%, rgba(255,255,255,0.9) 80%, rgba(255,255,255,0) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(255,255,255,1) 70%,rgba(255,255,255,0.9) 80%,rgba(255,255,255,0) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(255,255,255,1) 70%,rgba(255,255,255,0.9) 80%,rgba(255,255,255,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=0 ); /* IE6-9 */
 }
 .left-test {
 	height: 20px;
