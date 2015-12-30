@@ -1,6 +1,6 @@
 CACHE MANIFEST
 
-# Version 15
+# Version 16
 
 customizations.css
 customizations-light.css
@@ -12,13 +12,13 @@ recite.html
 recite-light.html
 theme.css
 quicksand.otf
-images/1.png
-images/2.png
-images/3.png
-images/4.png
-images/5.png
-images/6.png
-images/7.png
+images/1-outline.png
+images/2-outline.png
+images/3-outline.png
+images/4-outline.png
+images/5-outline.png
+images/6-outline.png
+images/7-outline.png
 images/ajax-loader.gif
 images/dots-black.png
 images/dots-white.png

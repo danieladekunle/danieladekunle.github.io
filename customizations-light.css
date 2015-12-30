@@ -86,8 +86,8 @@ h3 {
   text-align:center;
 } */
 .book1 {
-  background-image: url('images/1.png');
-  background-size: 32px;
+  background-image: url('images/1-outline.png');
+  background-size: 36px;
   background-position: top, center;
   background-repeat: no-repeat;
   text-overflow: inherit;
@@ -96,8 +96,8 @@ h3 {
   text-align:center;
 }
 .book2 {
-  background-image: url('images/2.png');
-  background-size: 32px;
+  background-image: url('images/2-outline.png');
+  background-size: 36px;
   background-position: top, center;
   background-repeat: no-repeat;
   text-overflow: inherit;
@@ -106,8 +106,8 @@ h3 {
   text-align:center;
 }
 .book3 {
-  background-image: url('images/3.png');
-  background-size: 32px;
+  background-image: url('images/3-outline.png');
+  background-size: 36px;
   background-position: top, center;
   background-repeat: no-repeat;
   text-overflow: inherit;
@@ -116,8 +116,8 @@ h3 {
   text-align:center;
 }
 .book4 {
-  background-image: url('images/4.png');
-  background-size: 32px;
+  background-image: url('images/4-outline.png');
+  background-size: 36px;
   background-position: top, center;
   background-repeat: no-repeat;
   text-overflow: inherit;
@@ -126,8 +126,8 @@ h3 {
   text-align:center;
 }
 .book5 {
-  background-image: url('images/5.png');
-  background-size: 32px;
+  background-image: url('images/5-outline.png');
+  background-size: 36px;
   background-position: top, center;
   background-repeat: no-repeat;
   text-overflow: inherit;
@@ -136,8 +136,8 @@ h3 {
   text-align:center;
 }
 .book6 {
-  background-image: url('images/6.png');
-  background-size: 32px;
+  background-image: url('images/6-outline.png');
+  background-size: 36px;
   background-position: top, center;
   background-repeat: no-repeat;
   text-overflow: inherit;
@@ -146,8 +146,8 @@ h3 {
   text-align:center;
 }
 .book7 {
-  background-image: url('images/7.png');
-  background-size: 32px;
+  background-image: url('images/7-outline.png');
+  background-size: 36px;
   background-position: top, center;
   background-repeat: no-repeat;
   text-overflow: inherit;
@@ -160,12 +160,12 @@ h3 {
 	letter-spacing: 4px;
 	text-transform: uppercase;
 	padding-left: 0px;
-	padding-top: 0px;
+	padding-top: 1px;
 	padding-bottom: 4.5px;
 }
 .book-title {
-	padding-top: 15px;
-	padding-bottom: 7px;
+	padding-top: 12px;
+	padding-bottom: 6.5px;
 	text-overflow: inherit;
 	white-space: nowrap;
 	overflow: hidden;
@@ -344,14 +344,13 @@ h5 {
 	font-weight: normal;
 }
 .book-number-test {
-	/* padding-left: 42px; */
-	font-size: 85%;
-	padding-left: 2px;
+	font-size: 110%;
+	padding-left: 4px;
 	letter-spacing: 3px;
-	padding-top: 1px;
-	padding-bottom: 6px;
+	padding-top: 6px;
+	padding-bottom: 0px;
 	text-transform: uppercase;
-	color: #484848;
+	color: gray;
 }
 .footer-test {
 	width:100%;
@@ -369,7 +368,7 @@ h5 {
 	text-align: center;
     text-transform: uppercase;
 	letter-spacing: 6px;
-	padding-top:16px;
+	padding-top:15px;
 	padding-bottom:0px;
 }
 .header-test {
