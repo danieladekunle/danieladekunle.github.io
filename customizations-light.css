@@ -20,140 +20,161 @@ h3 {
   background-size: 36px;
   background-position: top, center;
   background-repeat: no-repeat;
+  color: rgba(191,30,98,1);
+  text-align:center;
   text-overflow: inherit;
   white-space: nowrap;
   overflow: hidden;
-  text-align:center;
 }
 .book2-outline {
   background-image: url('images/2-outline.png');
   background-size: 36px;
   background-position: top, center;
   background-repeat: no-repeat;
+  color: rgba(213,58,54,1);
+  text-align:center;
   text-overflow: inherit;
   white-space: nowrap;
   overflow: hidden;
-  text-align:center;
 }
 .book3-outline {
   background-image: url('images/3-outline.png');
   background-size: 36px;
   background-position: top, center;
   background-repeat: no-repeat;
+  color: rgba(234,118,35,1);
+  text-align:center;
   text-overflow: inherit;
   white-space: nowrap;
   overflow: hidden;
-  text-align:center;
 }
 .book4-outline {
   background-image: url('images/4-outline.png');
   background-size: 36px;
   background-position: top, center;
   background-repeat: no-repeat;
+  color: rgba(247,164,46,1);
+  text-align:center;
   text-overflow: inherit;
   white-space: nowrap;
   overflow: hidden;
-  text-align:center;
 }
 .book5-outline {
   background-image: url('images/5-outline.png');
   background-size: 36px;
   background-position: top, center;
   background-repeat: no-repeat;
+  color: rgba(255,210,3,1);
+  text-align:center;
   text-overflow: inherit;
   white-space: nowrap;
   overflow: hidden;
-  text-align:center;
 }
 .book6-outline {
   background-image: url('images/6-outline.png');
   background-size: 36px;
   background-position: top, center;
   background-repeat: no-repeat;
+  color: rgba(255,226,96,1);
+  text-align:center;
   text-overflow: inherit;
   white-space: nowrap;
   overflow: hidden;
-  text-align:center;
 }
 .book7-outline {
   background-image: url('images/7-outline.png');
   background-size: 36px;
   background-position: top, center;
   background-repeat: no-repeat;
+  color: rgba(224,226,93,1);
+  text-align:center;
   text-overflow: inherit;
   white-space: nowrap;
   overflow: hidden;
-  text-align:center;
 }
 .book1-solid {
   background-image: url('images/1-solid.png');
   background-size: 36px;
   background-position: top, center;
   background-repeat: no-repeat;
+  color: white;
+  font-weight: bold;
+  text-align:center;
   text-overflow: inherit;
   white-space: nowrap;
   overflow: hidden;
-  text-align:center;
 }
 .book2-solid {
   background-image: url('images/2-solid.png');
   background-size: 36px;
   background-position: top, center;
   background-repeat: no-repeat;
+  color: white;
+  font-weight: bold;
+  text-align:center;
   text-overflow: inherit;
   white-space: nowrap;
   overflow: hidden;
-  text-align:center;
 }
 .book3-solid {
   background-image: url('images/3-solid.png');
   background-size: 36px;
   background-position: top, center;
   background-repeat: no-repeat;
+  color: white;
+  font-weight: bold;
+  text-align:center;
   text-overflow: inherit;
   white-space: nowrap;
   overflow: hidden;
-  text-align:center;
 }
 .book4-solid {
   background-image: url('images/4-solid.png');
   background-size: 36px;
   background-position: top, center;
   background-repeat: no-repeat;
+  color: white;
+  font-weight: bold;
+  text-align:center;
   text-overflow: inherit;
   white-space: nowrap;
   overflow: hidden;
-  text-align:center;
 }
 .book5-solid {
   background-image: url('images/5-solid.png');
   background-size: 36px;
   background-position: top, center;
   background-repeat: no-repeat;
+  color: white;
+  font-weight: bold;
+  text-align:center;
   text-overflow: inherit;
   white-space: nowrap;
   overflow: hidden;
-  text-align:center;
 }
 .book6-solid {
   background-image: url('images/6-solid.png');
   background-size: 36px;
   background-position: top, center;
   background-repeat: no-repeat;
+  color: white;
+  font-weight: bold;
+  text-align:center;
   text-overflow: inherit;
   white-space: nowrap;
   overflow: hidden;
-  text-align:center;
 }
 .book7-solid {
   background-image: url('images/7-solid.png');
   background-size: 36px;
   background-position: top, center;
   background-repeat: no-repeat;
+  color: white;
+  font-weight: bold;
+  text-align:center;
   text-overflow: inherit;
   white-space: nowrap;
   overflow: hidden;
-  text-align:center;
 }
 .book-number {
 	font-size: 110%;
@@ -162,8 +183,8 @@ h3 {
 	padding-top: 6px;
 	padding-bottom: 0px;
 	text-transform: uppercase;
-	color: white;
-	font-weight: bold; /* for solid only */
+	font-weight: bold;
+	/* color: gray; */
 }
 .book-title {
 	padding-top: 13px;
@@ -249,8 +270,9 @@ h3 {
 	text-align: center;
 	font-size: 84%;
 	letter-spacing: 3.5px;
-	padding-top: 5px;
+	padding-top: 4px;
 	color: gray;
+	padding-bottom: 0px;
 }
 .ui-icon-left {
   background-image: url('images/left-white.png');
