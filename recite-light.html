@@ -95,6 +95,13 @@
 				});
 			});
 		</script>
+		<script>
+			$(document).ready(function() {
+				$('.books').on('click', function(){
+					$('.book-1-title').toggle("show");
+				}); 
+			});
+		</script>
 		<!-- Save Current Location to Local Storage When Navigation Buttons Clicked -->
 		<script>
 			$(document).ready( function(event){
@@ -199,14 +206,14 @@
 				<div class="subheading">for&nbsp;memorization</div>
 				<ul data-role="listview" data-divider-theme="a" data-inset="true">
 					<li data-theme="a" data-icon="false">
-						<a class="books" href="#book1" data-transition="slide"> <!-- style="background-color:rgba(191,30,98,0.8);"> -->
+						<a class="books"> <!-- style="background-color:rgba(191,30,98,0.8);"> -->
 							<div class="book1-outline">
 								<div class="book-number">
 									1
 								</div>
-								<div class="book-title">
+								<a href="#book1" class="book-1-title" data-transition="slide">
 									Reflections on the<br>Life of the Spirit
-								</div>
+								</a>
 							</div>
 						</a>
 					</li>
