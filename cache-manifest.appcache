@@ -1,6 +1,6 @@
 CACHE MANIFEST
 
-# Version 20
+# Version 21
 
 customizations.css
 customizations-light.css
@@ -35,6 +35,7 @@ images/6-solid.png
 images/7-solid.png
 images/ajax-loader.gif
 images/dots-black.png
+images/dots-gray.png
 images/dots-white.png
 images/left-black.png
 images/left-gray.png
@@ -42,3 +43,4 @@ images/left-white.png
 images/pdf.png
 images/right-black.png
 images/right-gray.png
+images/settings.png

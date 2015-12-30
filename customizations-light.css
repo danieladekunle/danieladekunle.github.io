@@ -184,7 +184,6 @@ h3 {
 	padding-bottom: 20px;
 	text-transform: uppercase;
 	font-weight: bold;
-	/* color: gray; */
 }
 .book-title {
 	padding-top: 20px;
@@ -222,6 +221,15 @@ h3 {
 	padding-top: 5px;
 	font-size: 90%;
 }
+.divider {
+	text-align: center;
+	font-size: 60%;
+	letter-spacing: 1px;
+	padding-top: 7px;
+	color: gray;
+	padding-bottom: 0px;
+	font-style: italic;
+}
 /* Placing footer at bottom of all pages */
 .footer {
 	width: 100%;
@@ -231,12 +239,13 @@ h3 {
 	left: 0;
 }
 .header {
-	font-size: 108%;
+	font-size: 115%;
 	text-align: center;
     text-transform: uppercase;
 	letter-spacing: 6px;
-	padding-top: 18px;
+	padding-top: 17px;
 	padding-bottom: 0px;
+	font-weight: 550;
 }
 .heading {
 	text-align: center;
@@ -245,6 +254,24 @@ h3 {
 .instructions {
 	font-style: italic;
 	font-size: 90%;
+}
+.right {
+	height: 40px;
+	width: 10px;
+	position: relative;
+  /* top: 3px;
+  right: 8px; */
+  float: right;
+ /*  display: block; */
+}
+.left {
+	height: 40px;
+	width: 10px;
+	position: relative;
+  /* top: 3px;
+  right: 8px; */
+  float: left;
+ /*  display: block; */
 }
 .panel-feedback {
 	text-align: center;
@@ -279,7 +306,7 @@ h3 {
 }
 .subheading {
 	text-align: center;
-	font-size: 84%;
+	font-size: 89%;
 	letter-spacing: 3.5px;
 	padding-top: 4px;
 	color: gray;
@@ -298,15 +325,15 @@ h3 {
   background-position: 16px 11px;
 }
 .ui-icon-more {
-  background-image: url('images/dots-white.png');
-  background-size: 9px;
-  background-position: 5px 9px;
+  background-image: url('images/dots-gray.png');
+  background-size: 18px;
+  background-position: center 20px;
   background-repeat: no-repeat;
 }
 .ui-icon-more-black {
   background-image: url('images/dots-black.png');
-  background-size: 9px;
-  background-position: 5px 9px;
+  background-size: 12px;
+  background-position: center 22px;
   background-repeat: no-repeat;
 }
 .ui-icon-next {
@@ -333,7 +360,12 @@ h3 {
   background-repeat: no-repeat;
   background-position: right 20px center;
 }
-
+.ui-icon-settings {
+  background-image: url('images/settings.png');
+  background-size: 28px;
+  background-position: center 20px;
+  background-repeat: no-repeat;
+}
 /* (Changed .ui-btn-left/right styles to .previous/next) */
 /* To ensure same top and left/right position when previous/right are added to something other than buttons. */
 .ui-header .previous,

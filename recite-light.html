@@ -97,7 +97,7 @@
 		</script>
 		<script>
 			$(document).ready(function() {
-				$('.books').on('click', function(){
+				$('.books').click(function() {
 					$('.book-1-title').toggle("show");
 				}); 
 			});
@@ -153,12 +153,12 @@
 					Recite
 				</h1>
 			</div> -->
-			<!-- <div data-theme="d" data-role="header" data-position="fixed">
-				<a href="#panel1" data-theme="c" data-icon="more-black" data-iconpos="notext" class="ui-btn-right"></a>
-				<h5>
-					Recite
-				</h5>
-			</div> -->
+			<div data-theme="d" data-role="header" data-position="fixed">
+				<a href="" data-theme="c" data-icon="settings" class="left"></a>
+				<a href="#panel1" data-theme="c" data-icon="more" class="right"></a>
+				<div class="header">Quotations</div>
+				<div class="subheading">for&nbsp;memorization</div>
+			</div>
 			<!-- Side Panel -->
 			<div data-role="panel" data-position="right" id="panel1">
 				<div class="panel-header">
@@ -200,15 +200,15 @@
 				</div>
 			</div>
 			<div data-role="content" style="padding: 0 0 0 0;">
-				<!-- <div class="header">Passages for Memorization</div>
-				<div class="subheader">- ruhi institute main sequence of courses -</div> -->
-				<div class="header">Quotations</div>
-				<div class="subheading">for&nbsp;memorization</div>
+				<!-- <div class="header">Passages for Memorization</div> -->
+				<!-- <div class="header">Quotations</div>
+				<div class="subheading">for&nbsp;memorization</div> -->
+				<!-- <div class="divider">from the main sequence of courses of the ruhi institute</div> -->
 				<ul data-role="listview" data-divider-theme="a" data-inset="true">
 					<li data-theme="a" data-icon="false">
-						<a class="books"> <!-- style="background-color:rgba(191,30,98,0.8);"> -->
+						<a class="books" href="" data-transition="slide"> <!-- style="background-color:rgba(191,30,98,0.8);"> -->
 							<div class="book1-outline">
-								<div class="book-number">
+								<div class="book-number" style="color:rgba(191,30,98,0.8);">
 									1
 								</div>
 								<a href="#book1" class="book-1-title" data-transition="slide">
