@@ -16,20 +16,20 @@ h3 {
 	letter-spacing: 7px;
 }
 .book1 {
-  /* background-image: url('images/five.png');
+  background-image: url('images/five.png');
   background-size: 45px 19px;
   background-position: top, center;
-  background-repeat: no-repeat; */
+  background-repeat: no-repeat;
   text-overflow: inherit;
   white-space: nowrap;
   overflow: hidden;
   text-align:center;
 }
 .book2 {
-  /* background-image: url('images/five.png');
+  background-image: url('images/five.png');
   background-size: 48px 19px;
   background-position: top, center;
-  background-repeat: no-repeat; */
+  background-repeat: no-repeat;
   text-overflow: inherit;
   white-space: nowrap;
   overflow: hidden;
@@ -88,13 +88,11 @@ h3 {
 .book-number {
 	/* padding-left: 42px; */
 	font-size: 100%;
-	font-weight: bold;
-	padding-left: 2px;
 	letter-spacing: 4px;
-	padding-top: 1px;
-	padding-bottom: 7.5px;
 	text-transform: uppercase;
-	color: white;
+	padding-left: 0px;
+	padding-top: 0px;
+	padding-bottom: 4.5px;
 }
 .book-title {
 	/* padding-left: 42px; */
@@ -102,8 +100,6 @@ h3 {
 	white-space: nowrap;
 	overflow: hidden;
 	font-size: small;
-	color: white;
-	font-weight: bold;
 }
 .citation {
 	text-align: center;
