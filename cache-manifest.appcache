@@ -1,6 +1,6 @@
 CACHE MANIFEST
 
-# Version 12
+# Version 13
 
 customizations.css
 customizations-light.css
@@ -25,7 +25,6 @@ images/dots-white.png
 images/left-black.png
 images/left-gray.png
 images/left-white.png
-images/line.png
 images/pdf.png
 images/right-black.png
 images/right-gray.png

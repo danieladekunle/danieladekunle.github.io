@@ -170,6 +170,7 @@ h3 {
 	white-space: nowrap;
 	overflow: hidden;
 	font-size: small;
+	color:gray;
 }
 .citation {
 	text-align: center;
@@ -340,12 +341,13 @@ h5 {
 }
 .book-number-test {
 	/* padding-left: 42px; */
-	font-size: small;
+	font-size: 85%;
 	padding-left: 2px;
 	letter-spacing: 3px;
 	padding-top: 1px;
-	padding-bottom: 7.5px;
+	padding-bottom: 6.5px;
 	text-transform: uppercase;
+	color: #484848;
 }
 .footer-test {
 	width:100%;
