@@ -17,7 +17,7 @@ h3 {
 }
 .book1-outline {
   background-image: url('images/1-outline.png');
-  background-size: 36px;
+  background-size: 38px;
   background-position: top, center;
   background-repeat: no-repeat;
   color: rgba(191,30,98,1);
@@ -28,7 +28,7 @@ h3 {
 }
 .book2-outline {
   background-image: url('images/2-outline.png');
-  background-size: 36px;
+  background-size: 38px;
   background-position: top, center;
   background-repeat: no-repeat;
   color: rgba(213,58,54,1);
@@ -39,7 +39,7 @@ h3 {
 }
 .book3-outline {
   background-image: url('images/3-outline.png');
-  background-size: 36px;
+  background-size: 38px;
   background-position: top, center;
   background-repeat: no-repeat;
   color: rgba(234,118,35,1);
@@ -50,7 +50,7 @@ h3 {
 }
 .book4-outline {
   background-image: url('images/4-outline.png');
-  background-size: 36px;
+  background-size: 38px;
   background-position: top, center;
   background-repeat: no-repeat;
   color: rgba(247,164,46,1);
@@ -61,7 +61,7 @@ h3 {
 }
 .book5-outline {
   background-image: url('images/5-outline.png');
-  background-size: 36px;
+  background-size: 38px;
   background-position: top, center;
   background-repeat: no-repeat;
   color: rgba(255,210,3,1);
@@ -72,7 +72,7 @@ h3 {
 }
 .book6-outline {
   background-image: url('images/6-outline.png');
-  background-size: 36px;
+  background-size: 38px;
   background-position: top, center;
   background-repeat: no-repeat;
   color: rgba(255,226,96,1);
@@ -83,7 +83,7 @@ h3 {
 }
 .book7-outline {
   background-image: url('images/7-outline.png');
-  background-size: 36px;
+  background-size: 38px;
   background-position: top, center;
   background-repeat: no-repeat;
   color: rgba(224,226,93,1);
@@ -94,7 +94,7 @@ h3 {
 }
 .book1-solid {
   background-image: url('images/1-solid.png');
-  background-size: 36px;
+  background-size: 38px;
   background-position: top, center;
   background-repeat: no-repeat;
   color: white;
@@ -106,7 +106,7 @@ h3 {
 }
 .book2-solid {
   background-image: url('images/2-solid.png');
-  background-size: 36px;
+  background-size: 38px;
   background-position: top, center;
   background-repeat: no-repeat;
   color: white;
@@ -118,7 +118,7 @@ h3 {
 }
 .book3-solid {
   background-image: url('images/3-solid.png');
-  background-size: 36px;
+  background-size: 38px;
   background-position: top, center;
   background-repeat: no-repeat;
   color: white;
@@ -130,7 +130,7 @@ h3 {
 }
 .book4-solid {
   background-image: url('images/4-solid.png');
-  background-size: 36px;
+  background-size: 38px;
   background-position: top, center;
   background-repeat: no-repeat;
   color: white;
@@ -142,7 +142,7 @@ h3 {
 }
 .book5-solid {
   background-image: url('images/5-solid.png');
-  background-size: 36px;
+  background-size: 38px;
   background-position: top, center;
   background-repeat: no-repeat;
   color: white;
@@ -154,7 +154,7 @@ h3 {
 }
 .book6-solid {
   background-image: url('images/6-solid.png');
-  background-size: 36px;
+  background-size: 38px;
   background-position: top, center;
   background-repeat: no-repeat;
   color: white;
@@ -166,7 +166,7 @@ h3 {
 }
 .book7-solid {
   background-image: url('images/7-solid.png');
-  background-size: 36px;
+  background-size: 38px;
   background-position: top, center;
   background-repeat: no-repeat;
   color: white;
@@ -177,7 +177,7 @@ h3 {
   overflow: hidden;
 }
 .book-number {
-	font-size: 110%;
+	font-size: 125%;
 	padding-left: 4px;
 	letter-spacing: 3px;
 	padding-top: 6px;
@@ -187,13 +187,14 @@ h3 {
 	/* color: gray; */
 }
 .book-title {
-	padding-top: 13px;
-	padding-bottom: 4px;
+	padding-top: 20px;
+	padding-bottom: 11px;
 	text-overflow: inherit;
 	white-space: nowrap;
 	overflow: hidden;
-	font-size: 88%;
-	color:gray;
+	font-size: 92%;
+	color: #606060;
+	/* letter-spacing: 1px; */
 }
 .books {
 	background-color: #ffffff !important;
@@ -213,19 +214,19 @@ h3 {
 }
 /* Placing footer at bottom of all pages */
 .footer {
-	width:100%;
-	height:40px;
-	position:absolute;
-	bottom:0;
-	left:0;
+	width: 100%;
+	height: 40px;
+	position: absolute;
+	bottom: 0;
+	left: 0;
 }
 .header {
 	font-size: 108%;
 	text-align: center;
     text-transform: uppercase;
 	letter-spacing: 6px;
-	padding-top:15px;
-	padding-bottom:0px;
+	padding-top: 18px;
+	padding-bottom: 0px;
 }
 .heading {
 	text-align: center;
