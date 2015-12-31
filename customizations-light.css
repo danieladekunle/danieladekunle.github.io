@@ -191,27 +191,59 @@ h3 {
 	background-position: top, center;
 	background-repeat: no-repeat;
 	padding-top: 8px;
-	/* background-color: #cccccc !important; */
 }
 .book-1-title-wrapper {
 	padding-top: 3px;
 	padding-bottom: 3px;
 	padding-right: 22px;
-	font-size: 90%;
-	color: #909090;
 	display: inline-block;
 	margin-left: 10px;
-	background-image: url('images/right-black.png');
+	background-image: url('images/right-gray.png');
 	background-size: 5px;
 	background-position: right, center;
 	background-repeat: no-repeat;
-	/* background-color: #cccccc !important; */
+	width: 150px;
+}
+.book-2-number {
+	font-size: 130%;
+	font-weight: bold !important;
+	color: rgba(213,58,54,1) !important;
+}
+.book-2-number-wrapper {
+	display: inline-block;
+	vertical-align: top;
+	width: 45px;
+	height: 37px;
+	background-image: url('images/2-outline.png');
+	background-size: 44px;
+	background-position: top, center;
+	background-repeat: no-repeat;
+	padding-top: 8px;
+}
+.book-2-title-wrapper {
+	line-height:45px;
+	padding-right: 22px;
+	display: inline-block;
+	margin-left: 10px;
+	background-image: url('images/right-gray.png');
+	background-size: 5px;
+	background-position: right, center;
+	background-repeat: no-repeat;
+	width: 150px;
 }
 .book-wrapper {
-  text-align:center;
-  /* background-color: #eeeeee !important; */
+	text-align:center;
+	/* background-color: #F8F8F8;
+	border-color: #E8E8E8;
+	border-width: 1px;
+	border-style: solid; */
+	margin-bottom: 12px;
 }
-.book-number {
+.book-title {
+	font-size: 90%;
+	color: #404040 !important;
+}
+/* .book-number {
 	font-size: 130%;
 	padding-left: 4px;
 	letter-spacing: 3px;
@@ -229,11 +261,7 @@ h3 {
 	overflow: hidden;
 	font-size: 90%;
 	color: #606060;
-}
-.books {
-	background-color: #cccccc !important;
-	padding: 0 0 0 0;
-}
+} */
 .citation {
 	text-align: center;
 	font-style: italic;
