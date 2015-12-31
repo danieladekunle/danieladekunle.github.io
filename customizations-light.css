@@ -176,6 +176,41 @@ h3 {
   white-space: nowrap;
   overflow: hidden;
 }
+.book-1-number {
+	font-size: 130%;
+	font-weight: bold !important;
+	color: rgba(191,30,98,1) !important;
+}
+.book-1-number-wrapper {
+	display: inline-block;
+	vertical-align: top;
+	width: 45px;
+	height: 37px;
+	background-image: url('images/1-outline.png');
+	background-size: 44px;
+	background-position: top, center;
+	background-repeat: no-repeat;
+	padding-top: 8px;
+	/* background-color: #cccccc !important; */
+}
+.book-1-title-wrapper {
+	padding-top: 3px;
+	padding-bottom: 3px;
+	padding-right: 22px;
+	font-size: 90%;
+	color: #909090;
+	display: inline-block;
+	margin-left: 10px;
+	background-image: url('images/right-black.png');
+	background-size: 5px;
+	background-position: right, center;
+	background-repeat: no-repeat;
+	/* background-color: #cccccc !important; */
+}
+.book-wrapper {
+  text-align:center;
+  /* background-color: #eeeeee !important; */
+}
 .book-number {
 	font-size: 130%;
 	padding-left: 4px;
@@ -184,29 +219,19 @@ h3 {
 	padding-bottom: 20px;
 	text-transform: uppercase;
 	font-weight: bold;
+	float: left;
 }
 .book-title {
-	padding-top: 20px;
-	padding-bottom: 11px;
-	text-overflow: inherit;
-	white-space: nowrap;
-	overflow: hidden;
-	font-size: 90%;
-	color: #606060;
-	display: none;
-}
-.book-1-title {
 	padding-top: 0px;
 	padding-bottom: 11px;
 	text-overflow: inherit;
 	white-space: nowrap;
 	overflow: hidden;
 	font-size: 90%;
-	color:  #909090;
-	display: none;
+	color: #606060;
 }
 .books {
-	background-color: #ffffff !important;
+	background-color: #cccccc !important;
 	padding: 0 0 0 0;
 }
 .citation {
@@ -250,10 +275,11 @@ h3 {
 }
 .header {
 	height:85px;
-	background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 70%, rgba(255,255,255,0.9) 80%, rgba(255,255,255,0) 100%); /* FF3.6-15 */
-	background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(255,255,255,1) 70%,rgba(255,255,255,0.9) 80%,rgba(255,255,255,0) 100%); /* Chrome10-25,Safari5.1-6 */
-	background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(255,255,255,1) 70%,rgba(255,255,255,0.9) 80%,rgba(255,255,255,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=0 ); /* IE6-9 */
+	background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 70%, rgba(255,255,255,0.9) 80%, rgba(255,255,255,0) 100%);
+	background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(255,255,255,1) 70%,rgba(255,255,255,0.9) 80%,rgba(255,255,255,0) 100%); 
+	background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(255,255,255,1) 70%,rgba(255,255,255,0.9) 80%,rgba(255,255,255,0) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=0 ); 
+	/* background-color: #dddddd !important; */
 }
 .instructions {
 	font-style: italic;

@@ -97,8 +97,9 @@
 		</script>
 		<script>
 			$(document).ready(function() {
-				$('.books').click(function() {
-					$('.book-1-title').toggle("show");
+				$('.book-1-title-wrapper').hide();
+				$('.book-1-number').click(function() {
+					$('.book-1-title-wrapper').toggle("show");
 				}); 
 			});
 		</script>
@@ -146,7 +147,7 @@
 	<body>
 <!-- Book List -->
 		<div data-role="page" data-control-title="home" data-theme="a" class="ui-icon-nodisc" id="menu">
-			<div data-theme="a" data-role="header" data-position="fixed" data-tap-toggle="false" class="header">
+			<div data-theme="d" data-role="header" data-position="fixed" data-tap-toggle="false" class="header">
 				<a href="" data-theme="c" data-icon="settings" class="left"></a>
 				<a href="#panel1" data-theme="c" data-icon="more" class="right"></a>
 				<div class="heading">Quotations</div>
@@ -193,21 +194,24 @@
 				</div>
 			</div>
 			<div data-role="content" style="padding: 0 0 0 0;">
-				<ul data-role="listview" data-divider-theme="a" data-inset="true">
-					<li data-theme="a" data-icon="false">
-						<a class="books" href="" data-transition="slide"> <!-- style="background-color:rgba(191,30,98,0.8);"> -->
-							<div class="book1-outline">
-								<div class="book-number" style="color:rgba(191,30,98,0.8);">
-									1
+				<!-- <ul data-role="listview" data-divider-theme="a" data-inset="true">
+					<li data-theme="a" data-icon="false"> -->
+							<div class="book-wrapper">
+								<div class="book-1-number-wrapper">
+									<div class="book-1-number" "data-transition="slide">
+										1
+									</div>
 								</div>
-								<a href="#book1" class="book-1-title" data-transition="slide">
-									Reflections on the<br>Life of the Spirit
-								</a>
+								<div class="book-1-title-wrapper">
+									<a href="#book1" data-transition="slide">
+										Reflections on the<br>Life of the Spirit
+									</a>
+								</div>
 							</div>
-						</a>
-					</li>
-					<li data-theme="a" data-icon="false">
-						<a class="books" href="#book2" data-transition="slide"> <!-- style="background-color:rgba(213,58,54,0.8);"> -->
+						
+					<!-- </li> -->
+					<!-- <li data-theme="a" data-icon="false">
+						<a class="books" href="#book2" data-transition="slide">
 							<div class="book2-outline">
 								<div class="book-number">
 									2
@@ -219,7 +223,7 @@
 						</a>
 					</li>
 					<li data-theme="a" data-icon="false">
-						<a class="books" href="#book3" data-transition="slide"> <!-- style="background-color:rgba(234,118,35,0.8);"> -->
+						<a class="books" href="#book3" data-transition="slide">
 							<div class="book3-outline">
 								<div class="book-number">
 									3
@@ -231,7 +235,7 @@
 						</a>
 					</li>
 					<li data-theme="a" data-icon="false">
-						<a class="books" href="#book4" data-transition="slide"> <!-- style="background-color:rgba(247,164,46,0.8);"> -->
+						<a class="books" href="#book4" data-transition="slide">
 							<div class="book4-outline">
 								<div class="book-number">
 									4
@@ -243,7 +247,7 @@
 						</a>
 					</li>
 					<li data-theme="a" data-icon="false">
-						<a class="books" href="#book5" data-transition="slide"> <!-- style="background-color:rgba(255,210,3,0.8);"> -->
+						<a class="books" href="#book5" data-transition="slide">
 							<div class="book5-outline">
 								<div class="book-number">
 									5
@@ -255,7 +259,7 @@
 						</a>
 					</li>
 					<li data-theme="a" data-icon="false">
-						<a class="books" href="#book6" data-transition="slide"> <!-- style="background-color:rgba(255,226,96,0.8);"> -->
+						<a class="books" href="#book6" data-transition="slide">
 							<div class="book6-outline">
 								<div class="book-number">
 									6
@@ -267,7 +271,7 @@
 						</a>
 					</li>
 					<li data-theme="a" data-icon="false">
-						<a class="books" href="#book7" data-transition="slide"> <!-- style="background-color:rgba(224,226,93,0.8);"> -->
+						<a class="books" href="#book7" data-transition="slide">
 							<div class="book7-outline">
 								<div class="book-number">
 									7
@@ -277,8 +281,8 @@
 								</div>
 							</div>
 						</a>
-					</li>
-				</ul>
+					</li> -->
+				<!-- </ul> -->
 			</div>
 		</div>
 <!-- Book 1 List -->
