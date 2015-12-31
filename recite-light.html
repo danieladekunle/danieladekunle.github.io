@@ -105,6 +105,26 @@
 				$('.book-2-number').click(function() {
 					$('.book-2-title-wrapper').toggle("fast");
 				}); 
+				$('.book-3-title-wrapper').hide();
+				$('.book-3-number').click(function() {
+					$('.book-3-title-wrapper').toggle("fast");
+				}); 
+				$('.book-4-title-wrapper').hide();
+				$('.book-4-number').click(function() {
+					$('.book-4-title-wrapper').toggle("fast");
+				}); 
+				$('.book-5-title-wrapper').hide();
+				$('.book-5-number').click(function() {
+					$('.book-5-title-wrapper').toggle("fast");
+				}); 
+				$('.book-6-title-wrapper').hide();
+				$('.book-6-number').click(function() {
+					$('.book-6-title-wrapper').toggle("fast");
+				}); 
+				$('.book-7-title-wrapper').hide();
+				$('.book-7-number').click(function() {
+					$('.book-7-title-wrapper').toggle("fast");
+				}); 
 			});
 		</script>
 		<!-- Save Current Location to Local Storage When Navigation Buttons Clicked -->
@@ -154,8 +174,8 @@
 			<div data-theme="d" data-role="header" data-position="fixed" data-tap-toggle="false" class="header">
 				<a href="" data-theme="c" data-icon="settings" class="left"></a>
 				<a href="#panel1" data-theme="c" data-icon="more" class="right"></a>
-				<div class="heading">Quotations</div>
-				<div class="subheading">for&nbsp;memorization</div>
+				<div class="menu-heading">Quotations</div>
+				<div class="menu-subheading">for&nbsp;memorization</div>
 			</div>
 			<!-- Side Panel -->
 			<div data-role="panel" data-position="right" id="panel1">
@@ -198,106 +218,90 @@
 				</div>
 			</div>
 			<div data-role="content" style="padding: 0 0 0 0;">
-				<!-- <ul data-role="listview" data-divider-theme="a" data-inset="true">
-					<li data-theme="a" data-icon="false"> -->
-							<div class="book-wrapper">
-								<div class="book-1-number-wrapper">
-									<div class="book-1-number" data-transition="slide">
-										1
-									</div>
-								</div>
-								<div class="book-1-title-wrapper">
-									<a href="#book1" class="book-title" data-transition="slide">
-										Reflections on the<br>Life of the Spirit
-									</a>
-								</div>
-							</div>
-							<div class="book-wrapper">
-								<div class="book-2-number-wrapper">
-									<div class="book-2-number" data-transition="slide">
-										2
-									</div>
-								</div>
-								<div class="book-2-title-wrapper">
-									<a href="#book2" class="book-title" data-transition="slide">
-										Arising to Serve
-									</a>
-								</div>
-							</div>
-					<!-- </li> -->
-					<!-- <li data-theme="a" data-icon="false">
-						<a class="books" href="#book2" data-transition="slide">
-							<div class="book2-outline">
-								<div class="book-number">
-									2
-								</div>
-								<div class="book-title">
-									Arising to Serve
-								</div>
-							</div>
+				<div class="book-wrapper">
+					<div class="book-1-number-wrapper">
+						<div class="book-1-number" data-transition="slide">
+							1
+						</div>
+					</div>
+					<div class="book-1-title-wrapper">
+						<a href="#book1" class="book-title" data-transition="slide">
+							Reflections on the<br>Life of the Spirit
 						</a>
-					</li>
-					<li data-theme="a" data-icon="false">
-						<a class="books" href="#book3" data-transition="slide">
-							<div class="book3-outline">
-								<div class="book-number">
-									3
-								</div>
-								<div class="book-title">
-									Teaching Children's<br>Classes, Grade 1
-								</div>
-							</div>
+					</div>
+				</div>
+				<div class="book-wrapper">
+					<div class="book-2-number-wrapper">
+						<div class="book-2-number" data-transition="slide">
+							2
+						</div>
+					</div>
+					<div class="book-2-title-wrapper">
+						<a href="#book2" class="book-title" data-transition="slide">
+							Arising to Serve
 						</a>
-					</li>
-					<li data-theme="a" data-icon="false">
-						<a class="books" href="#book4" data-transition="slide">
-							<div class="book4-outline">
-								<div class="book-number">
-									4
-								</div>
-								<div class="book-title">
-									The Twin Manifestations
-								</div>
-							</div>
+					</div>
+				</div>
+				<div class="book-wrapper">
+					<div class="book-3-number-wrapper">
+						<div class="book-3-number" data-transition="slide">
+							3
+						</div>
+					</div>
+					<div class="book-3-title-wrapper">
+						<a href="#book3" class="book-title" data-transition="slide">
+							Teaching Children's Classes<br>Grade 1
 						</a>
-					</li>
-					<li data-theme="a" data-icon="false">
-						<a class="books" href="#book5" data-transition="slide">
-							<div class="book5-outline">
-								<div class="book-number">
-									5
-								</div>
-								<div class="book-title">
-									Releasing the Powers<br>of Junior Youth
-								</div>
-							</div>
+					</div>
+				</div>
+				<div class="book-wrapper">
+					<div class="book-4-number-wrapper">
+						<div class="book-4-number" data-transition="slide">
+							4
+						</div>
+					</div>
+					<div class="book-4-title-wrapper">
+						<a href="#book4" class="book-title" data-transition="slide">
+							The Twin Manifestations
 						</a>
-					</li>
-					<li data-theme="a" data-icon="false">
-						<a class="books" href="#book6" data-transition="slide">
-							<div class="book6-outline">
-								<div class="book-number">
-									6
-								</div>
-								<div class="book-title">
-									Teaching the Cause
-								</div>
-							</div>
+					</div>
+				</div>
+				<div class="book-wrapper">
+					<div class="book-5-number-wrapper">
+						<div class="book-5-number" data-transition="slide">
+							5
+						</div>
+					</div>
+					<div class="book-5-title-wrapper">
+						<a href="#book5" class="book-title" data-transition="slide">
+							Releasing the Powers<br>of Junior Youth
 						</a>
-					</li>
-					<li data-theme="a" data-icon="false">
-						<a class="books" href="#book7" data-transition="slide">
-							<div class="book7-outline">
-								<div class="book-number">
-									7
-								</div>
-								<div class="book-title" style="padding-bottom:0px;">
-									Walking Together on<br>a Path of Service
-								</div>
-							</div>
+					</div>
+				</div>
+				<div class="book-wrapper">
+					<div class="book-6-number-wrapper">
+						<div class="book-6-number" data-transition="slide">
+							6
+						</div>
+					</div>
+					<div class="book-6-title-wrapper">
+						<a href="#book6" class="book-title" data-transition="slide">
+							Teaching the Cause
 						</a>
-					</li> -->
-				<!-- </ul> -->
+					</div>
+				</div>
+				<div class="book-wrapper">
+					<div class="book-7-number-wrapper">
+						<div class="book-7-number" data-transition="slide">
+							7
+						</div>
+					</div>
+					<div class="book-7-title-wrapper">
+						<a href="#book7" class="book-title" data-transition="slide">
+							Walking Together<br>on a Path of Service
+						</a>
+					</div>
+				</div>
 			</div>
 		</div>
 <!-- Book 1 List -->

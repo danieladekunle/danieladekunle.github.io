@@ -1,180 +1,71 @@
-h1 {
+/* Main Menu */
+
+.header {
+	height:85px;
+	background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 70%, rgba(255,255,255,0.9) 80%, rgba(255,255,255,0) 100%);
+	background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(255,255,255,1) 70%,rgba(255,255,255,0.9) 80%,rgba(255,255,255,0) 100%); 
+	background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(255,255,255,1) 70%,rgba(255,255,255,0.9) 80%,rgba(255,255,255,0) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=0 );
+}
+.menu-heading {
+	font-size: 18px;
+	text-align: center;
+    text-transform: uppercase;
+	letter-spacing: 5px;
+	padding-top: 15px;
+	padding-bottom: 0px;
+	font-weight: 900;
+	color: #B0B0B0;
+}
+/* h1 {
     color: white;
     text-shadow: none;
     text-transform: uppercase;
 	letter-spacing: 5px;
+} */
+.menu-subheading {
+	text-align: center;
+	font-size: 13px;
+	letter-spacing: 4px;
+	padding-top: 4px;
+	color: #606060;
+	padding-bottom: 0px;
 }
-h2 {
-    color: white;
-    text-shadow: none;
-	text-transform: uppercase;
-	letter-spacing: 5px;
+.left {
+	height: 40px;
+	width: 10px;
+	position: relative;
+	float: left;
 }
-h3 {
-    color: white;
-    text-shadow: none;
-	letter-spacing: 7px;
-}
-.book1-outline {
-  background-image: url('images/1-outline.png');
-  background-size: 44px;
-  background-position: top, center;
+.ui-icon-settings {
+  background-image: url('images/settings.png');
+  background-size: 28px;
+  background-position: center 20px;
   background-repeat: no-repeat;
-  color: rgba(191,30,98,1);
-  text-align:center;
-  text-overflow: inherit;
-  white-space: nowrap;
-  overflow: hidden;
 }
-.book2-outline {
-  background-image: url('images/2-outline.png');
-  background-size: 44px;
-  background-position: top, center;
-  background-repeat: no-repeat;
-  color: rgba(213,58,54,1);
-  text-align:center;
-  text-overflow: inherit;
-  white-space: nowrap;
-  overflow: hidden;
+.right {
+	height: 40px;
+	width: 10px;
+	position: relative;
+	float: right;
 }
-.book3-outline {
-  background-image: url('images/3-outline.png');
-  background-size: 44px;
-  background-position: top, center;
+.ui-icon-more {
+  background-image: url('images/dots-gray.png');
+  background-size: 12px;
+  background-position: center 25px;
   background-repeat: no-repeat;
-  color: rgba(234,118,35,1);
-  text-align:center;
-  text-overflow: inherit;
-  white-space: nowrap;
-  overflow: hidden;
 }
-.book4-outline {
-  background-image: url('images/4-outline.png');
-  background-size: 44px;
-  background-position: top, center;
-  background-repeat: no-repeat;
-  color: rgba(247,164,46,1);
-  text-align:center;
-  text-overflow: inherit;
-  white-space: nowrap;
-  overflow: hidden;
+.book-wrapper {
+	text-align:center;
+	margin-bottom: 15px;
+	/* background-color: #F8F8F8;
+	border-color: #E8E8E8;
+	border-width: 1px;
+	border-style: solid; */
 }
-.book5-outline {
-  background-image: url('images/5-outline.png');
-  background-size: 44px;
-  background-position: top, center;
-  background-repeat: no-repeat;
-  color: rgba(255,210,3,1);
-  text-align:center;
-  text-overflow: inherit;
-  white-space: nowrap;
-  overflow: hidden;
-}
-.book6-outline {
-  background-image: url('images/6-outline.png');
-  background-size: 44px;
-  background-position: top, center;
-  background-repeat: no-repeat;
-  color: rgba(255,226,96,1);
-  text-align:center;
-  text-overflow: inherit;
-  white-space: nowrap;
-  overflow: hidden;
-}
-.book7-outline {
-  background-image: url('images/7-outline.png');
-  background-size: 44px;
-  background-position: top, center;
-  background-repeat: no-repeat;
-  color: rgba(224,226,93,1);
-  text-align:center;
-  text-overflow: inherit;
-  white-space: nowrap;
-  overflow: hidden;
-}
-.book1-solid {
-  background-image: url('images/1-solid.png');
-  background-size: 44px;
-  background-position: top, center;
-  background-repeat: no-repeat;
-  color: white;
-  font-weight: bold;
-  text-align:center;
-  text-overflow: inherit;
-  white-space: nowrap;
-  overflow: hidden;
-}
-.book2-solid {
-  background-image: url('images/2-solid.png');
-  background-size: 44px;
-  background-position: top, center;
-  background-repeat: no-repeat;
-  color: white;
-  font-weight: bold;
-  text-align:center;
-  text-overflow: inherit;
-  white-space: nowrap;
-  overflow: hidden;
-}
-.book3-solid {
-  background-image: url('images/3-solid.png');
-  background-size: 44px;
-  background-position: top, center;
-  background-repeat: no-repeat;
-  color: white;
-  font-weight: bold;
-  text-align:center;
-  text-overflow: inherit;
-  white-space: nowrap;
-  overflow: hidden;
-}
-.book4-solid {
-  background-image: url('images/4-solid.png');
-  background-size: 44px;
-  background-position: top, center;
-  background-repeat: no-repeat;
-  color: white;
-  font-weight: bold;
-  text-align:center;
-  text-overflow: inherit;
-  white-space: nowrap;
-  overflow: hidden;
-}
-.book5-solid {
-  background-image: url('images/5-solid.png');
-  background-size: 44px;
-  background-position: top, center;
-  background-repeat: no-repeat;
-  color: white;
-  font-weight: bold;
-  text-align:center;
-  text-overflow: inherit;
-  white-space: nowrap;
-  overflow: hidden;
-}
-.book6-solid {
-  background-image: url('images/6-solid.png');
-  background-size: 44px;
-  background-position: top, center;
-  background-repeat: no-repeat;
-  color: white;
-  font-weight: bold;
-  text-align:center;
-  text-overflow: inherit;
-  white-space: nowrap;
-  overflow: hidden;
-}
-.book7-solid {
-  background-image: url('images/7-solid.png');
-  background-size: 44px;
-  background-position: top, center;
-  background-repeat: no-repeat;
-  color: white;
-  font-weight: bold;
-  text-align:center;
-  text-overflow: inherit;
-  white-space: nowrap;
-  overflow: hidden;
+.book-title {
+	font-size: 90%;
+	color: #404040 !important;
 }
 .book-1-number {
 	font-size: 130%;
@@ -202,7 +93,7 @@ h3 {
 	background-size: 5px;
 	background-position: right, center;
 	background-repeat: no-repeat;
-	width: 150px;
+	/* width: 150px; */
 }
 .book-2-number {
 	font-size: 130%;
@@ -229,120 +120,149 @@ h3 {
 	background-size: 5px;
 	background-position: right, center;
 	background-repeat: no-repeat;
-	width: 150px;
 }
-.book-wrapper {
-	text-align:center;
-	/* background-color: #F8F8F8;
-	border-color: #E8E8E8;
-	border-width: 1px;
-	border-style: solid; */
-	margin-bottom: 12px;
-}
-.book-title {
-	font-size: 90%;
-	color: #404040 !important;
-}
-/* .book-number {
+.book-3-number {
 	font-size: 130%;
-	padding-left: 4px;
-	letter-spacing: 3px;
+	font-weight: bold !important;
+	color: rgba(234,118,35,1) !important;
+}
+.book-3-number-wrapper {
+	display: inline-block;
+	vertical-align: top;
+	width: 45px;
+	height: 37px;
+	background-image: url('images/3-outline.png');
+	background-size: 44px;
+	background-position: top, center;
+	background-repeat: no-repeat;
 	padding-top: 8px;
-	padding-bottom: 20px;
-	text-transform: uppercase;
-	font-weight: bold;
-	float: left;
 }
-.book-title {
-	padding-top: 0px;
-	padding-bottom: 11px;
-	text-overflow: inherit;
-	white-space: nowrap;
-	overflow: hidden;
-	font-size: 90%;
-	color: #606060;
-} */
-.citation {
-	text-align: center;
-	font-style: italic;
-	font-size: small;
-	padding-top: 5px;
+.book-3-title-wrapper {
+	padding-top: 3px;
+	padding-bottom: 3px;
+	padding-right: 22px;
+	display: inline-block;
+	margin-left: 10px;
+	background-image: url('images/right-gray.png');
+	background-size: 5px;
+	background-position: right, center;
+	background-repeat: no-repeat;
 }
-.citation-b {
-	text-align: center;
-	font-style: italic;
-	padding-top: 5px;
-	font-size: 90%;
+.book-4-number {
+	font-size: 130%;
+	font-weight: bold !important;
+	color: rgba(247,164,46,1) !important;
 }
-.divider {
-	text-align: center;
-	font-size: 60%;
-	letter-spacing: 1px;
-	padding-top: 7px;
-	color: gray;
-	padding-bottom: 0px;
-	font-style: italic;
+.book-4-number-wrapper {
+	display: inline-block;
+	vertical-align: top;
+	width: 45px;
+	height: 37px;
+	background-image: url('images/4-outline.png');
+	background-size: 44px;
+	background-position: top, center;
+	background-repeat: no-repeat;
+	padding-top: 8px;
 }
-/* Placing footer at bottom of all pages */
-.footer {
-	width: 100%;
-	height: 40px;
-	position: absolute;
-	bottom: 0;
-	left: 0;
+.book-4-title-wrapper {
+	line-height:45px;
+	padding-right: 22px;
+	display: inline-block;
+	margin-left: 10px;
+	background-image: url('images/right-gray.png');
+	background-size: 5px;
+	background-position: right, center;
+	background-repeat: no-repeat;
 }
-.heading {
-	font-size: 19px;
-	text-align: center;
-    text-transform: uppercase;
-	letter-spacing: 5px;
-	padding-top: 17px;
-	padding-bottom: 0px;
-	font-weight: 900;
-	color: #B0B0B0;
+.book-5-number {
+	font-size: 130%;
+	font-weight: bold !important;
+	color: rgba(255,210,3,1) !important;
 }
-.header {
-	height:85px;
-	background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 70%, rgba(255,255,255,0.9) 80%, rgba(255,255,255,0) 100%);
-	background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(255,255,255,1) 70%,rgba(255,255,255,0.9) 80%,rgba(255,255,255,0) 100%); 
-	background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(255,255,255,1) 70%,rgba(255,255,255,0.9) 80%,rgba(255,255,255,0) 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=0 ); 
-	/* background-color: #dddddd !important; */
+.book-5-number-wrapper {
+	display: inline-block;
+	vertical-align: top;
+	width: 45px;
+	height: 37px;
+	background-image: url('images/5-outline.png');
+	background-size: 44px;
+	background-position: top, center;
+	background-repeat: no-repeat;
+	padding-top: 8px;
 }
-.instructions {
-	font-style: italic;
-	font-size: 90%;
+.book-5-title-wrapper {
+	padding-top: 3px;
+	padding-bottom: 3px;
+	padding-right: 22px;
+	display: inline-block;
+	margin-left: 10px;
+	background-image: url('images/right-gray.png');
+	background-size: 5px;
+	background-position: right, center;
+	background-repeat: no-repeat;
 }
-.right {
-	height: 40px;
-	width: 10px;
-	position: relative;
-  /* top: 3px;
-  right: 8px; */
-  float: right;
- /*  display: block; */
+.book-6-number {
+	font-size: 130%;
+	font-weight: bold !important;
+	color: rgba(255,226,96,1) !important;
 }
-.left {
-	height: 40px;
-	width: 10px;
-	position: relative;
-  /* top: 3px;
-  right: 8px; */
-  float: left;
- /*  display: block; */
+.book-6-number-wrapper {
+	display: inline-block;
+	vertical-align: top;
+	width: 45px;
+	height: 37px;
+	background-image: url('images/6-outline.png');
+	background-size: 44px;
+	background-position: top, center;
+	background-repeat: no-repeat;
+	padding-top: 8px;
 }
-.panel-feedback {
-	text-align: center;
-	letter-spacing: 4px;
-	font-size: small;
-	padding-top: 13px;
+.book-6-title-wrapper {
+	line-height:45px;
+	padding-right: 22px;
+	display: inline-block;
+	margin-left: 10px;
+	background-image: url('images/right-gray.png');
+	background-size: 5px;
+	background-position: right, center;
+	background-repeat: no-repeat;
 }
+.book-7-number {
+	font-size: 130%;
+	font-weight: bold !important;
+	color: rgba(224,226,93,1) !important;
+}
+.book-7-number-wrapper {
+	display: inline-block;
+	vertical-align: top;
+	width: 45px;
+	height: 37px;
+	background-image: url('images/7-outline.png');
+	background-size: 44px;
+	background-position: top, center;
+	background-repeat: no-repeat;
+	padding-top: 8px;
+}
+.book-7-title-wrapper {
+	padding-top: 3px;
+	padding-bottom: 3px;
+	padding-right: 22px;
+	display: inline-block;
+	margin-left: 10px;
+	background-image: url('images/right-gray.png');
+	background-size: 5px;
+	background-position: right, center;
+	background-repeat: no-repeat;
+}
+
+/* Panel */
+
 .panel-header {
 	text-align: center;
     text-transform: uppercase;
 	letter-spacing: 5px;
-	padding-top: 2px;
-	padding-bottom: 9px;
+	padding-top: 12px;
+	padding-bottom: 16px;
 }
 .panel-title {
 	text-align: center;
@@ -359,20 +279,20 @@ h3 {
 	white-space: normal;
 	line-height: 18px;
 }
-.passage {
-	text-align: justify;
-}
-.section-heading {
+.panel-feedback {
 	text-align: center;
-	font-weight: bold;
-}
-.subheading {
-	text-align: center;
-	font-size: 13px;
 	letter-spacing: 4px;
-	padding-top: 4px;
-	color: #606060;
-	padding-bottom: 0px;
+	font-size: small;
+	padding-top: 13px;
+}
+
+/* Passage Menus */
+
+h2 {
+    color: white;
+    text-shadow: none;
+	text-transform: uppercase;
+	letter-spacing: 5px;
 }
 .ui-icon-left {
   background-image: url('images/left-white.png');
@@ -386,35 +306,11 @@ h3 {
   background-repeat: no-repeat;
   background-position: 16px 11px;
 }
-.ui-icon-more {
-  background-image: url('images/dots-gray.png');
-  background-size: 12px;
-  background-position: center 25px;
-  background-repeat: no-repeat;
-}
-.ui-icon-more-black {
-  background-image: url('images/dots-black.png');
-  background-size: 12px;
-  background-position: center 22px;
-  background-repeat: no-repeat;
-}
-.ui-icon-next {
-  background-image: url('images/right-gray.png');
-  background-size: 8px;
-  background-repeat: no-repeat;
-  background-position: top;
-}
 .ui-icon-pdf {
   background-image: url('images/pdf.png');
   background-size: 16px;
   background-position: right 15px center;
   background-repeat: no-repeat;
-}
-.ui-icon-previous {
-  background-image: url('images/left-gray.png');
-  background-size: 8px;
-  background-repeat: no-repeat;
-  background-position: top;
 }
 .ui-icon-right {
   background-image: url('images/right-black.png');
@@ -422,55 +318,59 @@ h3 {
   background-repeat: no-repeat;
   background-position: right 20px center;
 }
-.ui-icon-settings {
-  background-image: url('images/settings.png');
-  background-size: 28px;
-  background-position: center 20px;
-  background-repeat: no-repeat;
+
+/* Passages */
+
+h3 {
+    color: white;
+    text-shadow: none;
+	letter-spacing: 7px;
 }
-/* (Changed .ui-btn-left/right styles to .previous/next) */
-/* To ensure same top and left/right position when previous/right are added to something other than buttons. */
-.ui-header .previous,
-.ui-header .next {
-	font-size: 12.5px;
+.passage {
+	text-align: justify;
 }
-/* Buttons in header position classes */
-.ui-header .previous,
-.ui-header .next,
-.previous > [class*="ui-"],
-.next > [class*="ui-"] {
-	margin: 0;
+.citation {
+	text-align: center;
+	font-style: italic;
+	font-size: small;
+	padding-top: 5px;
 }
-.previous,
-.next {
+.footer {
+	width: 100%;
+	height: 40px;
 	position: absolute;
-	top: .24em;
+	bottom: 0;
+	left: 0;
 }
-.previous {
-	left: .4em;
+.ui-icon-previous {
+  background-image: url('images/left-gray.png');
+  background-size: 8px;
+  background-repeat: no-repeat;
+  background-position: top;
 }
-.next {
-	right: .4em;
+.ui-icon-next {
+  background-image: url('images/right-gray.png');
+  background-size: 8px;
+  background-repeat: no-repeat;
+  background-position: top;
 }
-.ui-btn-icon-notext.previous {
-	top: .3125em;
-	left: .3125em;
+.section-heading {
+	text-align: center;
+	font-weight: bold;
 }
-.ui-btn-icon-notext.next {
-	top: .3125em;
-	right: .3125em;
+.instructions {
+	font-style: italic;
+	font-size: 90%;
 }
-/* fixed page header & footer configuration */
-.ui-header-fixed .previous,
-.ui-header-fixed .next {
-	margin-top: 1px;
-}
-.ui-header-fixed.ui-fixed-hidden .previous,
-.ui-header-fixed.ui-fixed-hidden .next {
-	margin-top: 0;
+.citation-b {
+	text-align: center;
+	font-style: italic;
+	padding-top: 5px;
+	font-size: 90%;
 }
 
-/* Passage Pages Test */
+/* Passages Test */
+
 h4 {
     color: #333333;
     text-shadow: none;
@@ -565,134 +465,46 @@ h5 {
   background-repeat: no-repeat;
   background-position: center 8px;
 }
-/* Lines Under Book Numbers */
-/* .book1 {
-  background-image: url('images/line.png');
-  background-size: 35px 1px;
-  background-position: center, center;
-  background-repeat: no-repeat;
-  text-overflow: inherit;
-  white-space: nowrap;
-  overflow: hidden;
-  text-align:center;
+
+/* (Changed .ui-btn-left/right styles to .previous/next) */
+
+/* To ensure same top and left/right position when left/right are added to something other than buttons. */
+.ui-header .previous,
+.ui-header .next {
+	font-size: 12.5px;
 }
-.book2 {
-  background-image: url('images/line.png');
-  background-size: 38px 1px;
-  background-position: center, center;
-  background-repeat: no-repeat;
-  text-overflow: inherit;
-  white-space: nowrap;
-  overflow: hidden;
-  text-align:center;
+/* Buttons in header position classes */
+.ui-header .previous,
+.ui-header .next,
+.previous > [class*="ui-"],
+.next > [class*="ui-"] {
+	margin: 0;
 }
-.book3 {
-  background-image: url('images/line.png');
-  background-size: 54px 1px;
-  background-position: center, center;
-  background-repeat: no-repeat;
-  text-overflow: inherit;
-  white-space: nowrap;
-  overflow: hidden;
-  text-align:center;
+.previous,
+.next {
+	position: absolute;
+	top: .24em;
 }
-.book4 {
-  background-image: url('images/line.png');
-  background-size: 48px 1px;
-  background-position: center, center;
-  background-repeat: no-repeat;
-  text-overflow: inherit;
-  white-space: nowrap;
-  overflow: hidden;
-  text-align:center;
+.previous {
+	left: .4em;
 }
-.book5 {
-  background-image: url('images/line.png');
-  background-size: 40px 1px;
-  background-position: center, center;
-  background-repeat: no-repeat;
-  text-overflow: inherit;
-  white-space: nowrap;
-  overflow: hidden;
-  text-align:center;
+.next {
+	right: .4em;
 }
-.book6 {
-  background-image: url('images/line.png');
-  background-size: 30px 1px;
-  background-position: center, center;
-  background-repeat: no-repeat;
-  text-overflow: inherit;
-  white-space: nowrap;
-  overflow: hidden;
-  text-align:center;
+.ui-btn-icon-notext.previous {
+	top: .3125em;
+	left: .3125em;
 }
-.book7 {
-  background-image: url('images/line.png');
-  background-size: 56px 1px;
-  background-position: center, center;
-  background-repeat: no-repeat;
-  text-overflow: inherit;
-  white-space: nowrap;
-  overflow: hidden;
-  text-align:center;
-} */
-/* .book-2-title {
-	padding-top: 20px;
-	padding-bottom: 11px;
-	text-overflow: inherit;
-	white-space: nowrap;
-	overflow: hidden;
-	font-size: 90%;
-	color: #606060;
-	display: none;
+.ui-btn-icon-notext.next {
+	top: .3125em;
+	right: .3125em;
 }
-.book-3-title {
-	padding-top: 20px;
-	padding-bottom: 11px;
-	text-overflow: inherit;
-	white-space: nowrap;
-	overflow: hidden;
-	font-size: 90%;
-	color: #606060;
-	display: none;
+/* fixed page header & footer configuration */
+.ui-header-fixed .previous,
+.ui-header-fixed .next {
+	margin-top: 1px;
 }
-.book-4-title {
-	padding-top: 20px;
-	padding-bottom: 11px;
-	text-overflow: inherit;
-	white-space: nowrap;
-	overflow: hidden;
-	font-size: 90%;
-	color: #606060;
-	display: none;
+.ui-header-fixed.ui-fixed-hidden .previous,
+.ui-header-fixed.ui-fixed-hidden .next {
+	margin-top: 0;
 }
-.book-5-title {
-	padding-top: 20px;
-	padding-bottom: 11px;
-	text-overflow: inherit;
-	white-space: nowrap;
-	overflow: hidden;
-	font-size: 90%;
-	color: #606060;
-	display: none;
-}
-.book-6-title {
-	padding-top: 20px;
-	padding-bottom: 11px;
-	text-overflow: inherit;
-	white-space: nowrap;
-	overflow: hidden;
-	font-size: 90%;
-	color: #606060;
-	display: none;
-}
-.book-7-title {
-	padding-top: 20px;
-	padding-bottom: 11px;
-	text-overflow: inherit;
-	white-space: nowrap;
-	overflow: hidden;
-	font-size: 90%;
-	color: #606060;
-	display: none; 
-}*/
