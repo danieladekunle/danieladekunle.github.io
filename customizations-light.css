@@ -239,7 +239,7 @@ h3 {
 	left: 0;
 }
 .heading {
-	font-size: 125%;
+	font-size: 19px;
 	text-align: center;
     text-transform: uppercase;
 	letter-spacing: 5px;
@@ -314,7 +314,7 @@ h3 {
 }
 .subheading {
 	text-align: center;
-	font-size: 90%;
+	font-size: 13px;
 	letter-spacing: 4px;
 	padding-top: 4px;
 	color: #606060;
