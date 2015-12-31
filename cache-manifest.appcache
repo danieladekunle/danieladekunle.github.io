@@ -1,24 +1,16 @@
 CACHE MANIFEST
 
-# Version 35
+# Version 36
 
 customizations.css
-customizations-light.css
 fastclick.js
 jquery.mobile.structure-1.4.5.css
 jquery.mobile-1.4.5.min.js
 jquery-1.11.3.min.js
 recite.html
-recite-light.html
+quotations.html
 theme.css
 quicksand.otf
-images/1.png
-images/2.png
-images/3.png
-images/4.png
-images/5.png
-images/6.png
-images/7.png
 images/1-outline.png
 images/2-outline.png
 images/3-outline.png
@@ -44,3 +36,17 @@ images/pdf.png
 images/right-black.png
 images/right-gray.png
 images/settings.png
+recite/customizations.css
+recite/images/1.png
+recite/images/2.png
+recite/images/3.png
+recite/images/4.png
+recite/images/5.png
+recite/images/6.png
+recite/images/7.png
+recite/images/dots-white.png
+recite/images/left-gray.png
+recite/images/left-white.png
+recite/images/pdf.png
+recite/images/right-black.png
+recite/images/right-gray.png
