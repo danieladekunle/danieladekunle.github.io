@@ -1,7 +1,7 @@
 /* Main Menu */
 
 .header {
-	height:85px;
+	height:100px;
 	background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 70%, rgba(255,255,255,0.9) 80%, rgba(255,255,255,0) 100%);
 	background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(255,255,255,1) 70%,rgba(255,255,255,0.9) 80%,rgba(255,255,255,0) 100%); 
 	background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(255,255,255,1) 70%,rgba(255,255,255,0.9) 80%,rgba(255,255,255,0) 100%);
@@ -12,7 +12,7 @@
 	text-align: center;
     text-transform: uppercase;
 	letter-spacing: 5px;
-	padding-top: 15px;
+	padding-top: 18px;
 	padding-bottom: 0px;
 	font-weight: 900;
 	color: #B0B0B0;
@@ -68,17 +68,17 @@
 	color: #404040 !important;
 }
 .book-1-number {
-	font-size: 130%;
+	font-size: 140%;
 	font-weight: bold !important;
 	color: rgba(191,30,98,1) !important;
 }
 .book-1-number-wrapper {
 	display: inline-block;
 	vertical-align: top;
-	width: 45px;
-	height: 37px;
+	width: 49px;
+	height: 41px;
 	background-image: url('images/1-outline.png');
-	background-size: 44px;
+	background-size: 48px;
 	background-position: top, center;
 	background-repeat: no-repeat;
 	padding-top: 8px;
@@ -96,17 +96,17 @@
 	/* width: 150px; */
 }
 .book-2-number {
-	font-size: 130%;
+	font-size: 140%;
 	font-weight: bold !important;
 	color: rgba(213,58,54,1) !important;
 }
 .book-2-number-wrapper {
 	display: inline-block;
 	vertical-align: top;
-	width: 45px;
-	height: 37px;
+	width: 49px;
+	height: 41px;
 	background-image: url('images/2-outline.png');
-	background-size: 44px;
+	background-size: 48px;
 	background-position: top, center;
 	background-repeat: no-repeat;
 	padding-top: 8px;
@@ -122,17 +122,17 @@
 	background-repeat: no-repeat;
 }
 .book-3-number {
-	font-size: 130%;
+	font-size: 140%;
 	font-weight: bold !important;
 	color: rgba(234,118,35,1) !important;
 }
 .book-3-number-wrapper {
 	display: inline-block;
 	vertical-align: top;
-	width: 45px;
-	height: 37px;
+	width: 49px;
+	height: 41px;
 	background-image: url('images/3-outline.png');
-	background-size: 44px;
+	background-size: 48px;
 	background-position: top, center;
 	background-repeat: no-repeat;
 	padding-top: 8px;
@@ -149,17 +149,17 @@
 	background-repeat: no-repeat;
 }
 .book-4-number {
-	font-size: 130%;
+	font-size: 140%;
 	font-weight: bold !important;
 	color: rgba(247,164,46,1) !important;
 }
 .book-4-number-wrapper {
 	display: inline-block;
 	vertical-align: top;
-	width: 45px;
-	height: 37px;
+	width: 49px;
+	height: 41px;
 	background-image: url('images/4-outline.png');
-	background-size: 44px;
+	background-size: 48px;
 	background-position: top, center;
 	background-repeat: no-repeat;
 	padding-top: 8px;
@@ -175,17 +175,17 @@
 	background-repeat: no-repeat;
 }
 .book-5-number {
-	font-size: 130%;
+	font-size: 140%;
 	font-weight: bold !important;
 	color: rgba(255,210,3,1) !important;
 }
 .book-5-number-wrapper {
 	display: inline-block;
 	vertical-align: top;
-	width: 45px;
-	height: 37px;
+	width: 49px;
+	height: 41px;
 	background-image: url('images/5-outline.png');
-	background-size: 44px;
+	background-size: 48px;
 	background-position: top, center;
 	background-repeat: no-repeat;
 	padding-top: 8px;
@@ -202,17 +202,17 @@
 	background-repeat: no-repeat;
 }
 .book-6-number {
-	font-size: 130%;
+	font-size: 140%;
 	font-weight: bold !important;
 	color: rgba(255,226,96,1) !important;
 }
 .book-6-number-wrapper {
 	display: inline-block;
 	vertical-align: top;
-	width: 45px;
-	height: 37px;
+	width: 49px;
+	height: 41px;
 	background-image: url('images/6-outline.png');
-	background-size: 44px;
+	background-size: 48px;
 	background-position: top, center;
 	background-repeat: no-repeat;
 	padding-top: 8px;
@@ -228,17 +228,17 @@
 	background-repeat: no-repeat;
 }
 .book-7-number {
-	font-size: 130%;
+	font-size: 140%;
 	font-weight: bold !important;
 	color: rgba(224,226,93,1) !important;
 }
 .book-7-number-wrapper {
 	display: inline-block;
 	vertical-align: top;
-	width: 45px;
-	height: 37px;
+	width: 49px;
+	height: 41px;
 	background-image: url('images/7-outline.png');
-	background-size: 44px;
+	background-size: 48px;
 	background-position: top, center;
 	background-repeat: no-repeat;
 	padding-top: 8px;
