@@ -15,7 +15,7 @@
 	padding-top: 17px;
 	padding-bottom: 0px;
 	font-weight: 900;
-	color: #686868;
+	color: #707070;
 }
 /* h1 {
     color: white;
@@ -64,7 +64,8 @@
 	border-style: solid; */
 }
 .book-title {
-	font-size: 90%;
+	font-size: 86%;
+	letter-spacing: 1px;
 	color: #404040 !important;
 }
 .book-1-number {
@@ -90,7 +91,7 @@
 	padding-right: 22px;
 	display: inline-block;
 	margin-left: 10px;
-	background-image: url('images/right-gray.png');
+	background-image: url('images/');
 	background-size: 5px;
 	background-position: right, center;
 	background-repeat: no-repeat;
@@ -118,7 +119,7 @@
 	padding-right: 22px;
 	display: inline-block;
 	margin-left: 10px;
-	background-image: url('images/right-gray.png');
+	background-image: url('images/');
 	background-size: 5px;
 	background-position: right, center;
 	background-repeat: no-repeat;
@@ -146,7 +147,7 @@
 	padding-right: 22px;
 	display: inline-block;
 	margin-left: 10px;
-	background-image: url('images/right-gray.png');
+	background-image: url('images/');
 	background-size: 5px;
 	background-position: right, center;
 	background-repeat: no-repeat;
@@ -172,7 +173,7 @@
 	padding-right: 22px;
 	display: inline-block;
 	margin-left: 10px;
-	background-image: url('images/right-gray.png');
+	background-image: url('images/');
 	background-size: 5px;
 	background-position: right, center;
 	background-repeat: no-repeat;
@@ -200,7 +201,7 @@
 	padding-right: 22px;
 	display: inline-block;
 	margin-left: 10px;
-	background-image: url('images/right-gray.png');
+	background-image: url('images/');
 	background-size: 5px;
 	background-position: right, center;
 	background-repeat: no-repeat;
@@ -227,7 +228,7 @@
 	padding-right: 22px;
 	display: inline-block;
 	margin-left: 10px;
-	background-image: url('images/right-gray.png');
+	background-image: url('images/');
 	background-size: 5px;
 	background-position: right, center;
 	background-repeat: no-repeat;
@@ -255,7 +256,7 @@
 	padding-right: 22px;
 	display: inline-block;
 	margin-left: 10px;
-	background-image: url('images/right-gray.png');
+	background-image: url('images/');
 	background-size: 5px;
 	background-position: right, center;
 	background-repeat: no-repeat;
