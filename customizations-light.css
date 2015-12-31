@@ -202,7 +202,7 @@ h3 {
 	white-space: nowrap;
 	overflow: hidden;
 	font-size: 90%;
-	color: #606060;
+	color:  #909090;
 	display: none;
 }
 .books {
@@ -239,13 +239,14 @@ h3 {
 	left: 0;
 }
 .header {
-	font-size: 115%;
+	font-size: 129%;
 	text-align: center;
     text-transform: uppercase;
-	letter-spacing: 6px;
+	letter-spacing: 5px;
 	padding-top: 17px;
 	padding-bottom: 0px;
-	font-weight: 550;
+	font-weight: 900;
+	color: #B0B0B0;
 }
 .heading {
 	text-align: center;
@@ -306,10 +307,10 @@ h3 {
 }
 .subheading {
 	text-align: center;
-	font-size: 89%;
-	letter-spacing: 3.5px;
+	font-size: 90%;
+	letter-spacing: 4px;
 	padding-top: 4px;
-	color: gray;
+	color: #606060;
 	padding-bottom: 0px;
 }
 .ui-icon-left {
@@ -326,8 +327,8 @@ h3 {
 }
 .ui-icon-more {
   background-image: url('images/dots-gray.png');
-  background-size: 18px;
-  background-position: center 20px;
+  background-size: 12px;
+  background-position: center 25px;
   background-repeat: no-repeat;
 }
 .ui-icon-more-black {
