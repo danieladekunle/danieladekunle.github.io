@@ -20,13 +20,13 @@
 		<!-- Custom Styles -->
 		<link rel="stylesheet" href="customizations-light.css">
 		<!-- Favicon -->
-		<link rel="icon" href='images/recite-favicon.ico' type='image/x-icon'/>
+		<link rel="icon" href='images/quotations-favicon.ico' type='image/x-icon'/>
 		<!-- iOS/Android Icons -->
-		<link rel="apple-touch-icon" href="images/recite-60@2x.png" />
-		<link rel="apple-touch-icon" sizes="180x180" href="images/recite-60@3x.png"/>
-		<link rel="apple-touch-icon" sizes="76x76" href="images/recite-76.png"/>
-		<link rel="apple-touch-icon" sizes="152x152" href="images/recite-76@2x.png"/>
-		<link rel="apple-touch-icon" sizes="58x58" href="images/recite-Small@2x.png"/>
+		<link rel="apple-touch-icon" href="images/quotations-120.png" />
+		<link rel="apple-touch-icon" sizes="180x180" href="images/quotations-180.png"/>
+		<link rel="apple-touch-icon" sizes="76x76" href="images/quotations-76.png"/>
+		<link rel="apple-touch-icon" sizes="152x152" href="images/quotations-152.png"/>
+		<link rel="apple-touch-icon" sizes="58x58" href="images/quotations-58.png"/>
 		<!-- Border between list items (Increased from 3px to 5px, disabled) -->
 		<!-- <style>
 			.ui-listview > .ui-li-static,
@@ -57,7 +57,7 @@
 			$(document).ready(function() {
 				$('.book-1-title-wrapper').hide();
 				$('.book-1-number').click(function() {
-					$('.book-1-title-wrapper').toggle();
+					$('.book-1-title-wrapper').toggle("fast");
 					$('.book-2-title-wrapper').hide();
 					$('.book-3-title-wrapper').hide();
 					$('.book-4-title-wrapper').hide();
@@ -67,7 +67,7 @@
 				});
 				$('.book-2-title-wrapper').hide();
 				$('.book-2-number').click(function() {
-					$('.book-2-title-wrapper').toggle("linear");
+					$('.book-2-title-wrapper').toggle("fast");
 					$('.book-1-title-wrapper').hide();
 					$('.book-3-title-wrapper').hide();
 					$('.book-4-title-wrapper').hide();
@@ -77,7 +77,7 @@
 				}); 
 				$('.book-3-title-wrapper').hide();
 				$('.book-3-number').click(function() {
-					$('.book-3-title-wrapper').toggle("linear");
+					$('.book-3-title-wrapper').toggle("fast");
 					$('.book-1-title-wrapper').hide();
 					$('.book-2-title-wrapper').hide();
 					$('.book-4-title-wrapper').hide();
@@ -107,7 +107,7 @@
 				}); 
 				$('.book-6-title-wrapper').hide();
 				$('.book-6-number').click(function() {
-					$('.book-6-title-wrapper').toggle("fast","linear");
+					$('.book-6-title-wrapper').toggle("fast");
 					$('.book-1-title-wrapper').hide();
 					$('.book-2-title-wrapper').hide();
 					$('.book-3-title-wrapper').hide();
@@ -117,7 +117,7 @@
 				}); 
 				$('.book-7-title-wrapper').hide();
 				$('.book-7-number').click(function() {
-					$('.book-7-title-wrapper').toggle("fast","linear");
+					$('.book-7-title-wrapper').toggle("fast");
 					$('.book-1-title-wrapper').hide();
 					$('.book-2-title-wrapper').hide();
 					$('.book-3-title-wrapper').hide();
