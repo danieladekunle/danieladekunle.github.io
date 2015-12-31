@@ -198,26 +198,26 @@
 		<script>
 			$(document).ready( function(event){
 				$('.next').on('click', function(){          
-					localStorage.lastPage = location.href
+					localStorage.lastlocation = location.href
 				});
 				$('.previous').on('click', function(){          
-					localStorage.lastPage = location.href
+					localStorage.lastlocation = location.href
 				});
 				$('.link').on('click', function(){          
-					localStorage.lastPage = this.href
+					localStorage.lastlocation = this.href
 				});
 				$('.ui-btn-left').on('click', function(){          
-					localStorage.lastPage = this.href
+					localStorage.lastlocation = this.href
 				});
 				$('.ui-btn-right').on('click', function(){          
-					localStorage.lastPage = this.href
+					localStorage.lastlocation = this.href
 				});
 			});
 		</script>
 		<!-- Load last location saved in local storage on restart -->
 		<script>		
-			if (localStorage.lastPage && location.currentURL != location.href) {
-				window.location = localStorage.lastPage;
+			if (localStorage.lastlocation && location.currentURL != location.href) {
+				window.location = localStorage.lastlocation;
 			}
 		</script>
 	</head>
