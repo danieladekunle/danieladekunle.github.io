@@ -27,15 +27,15 @@
 		<link rel="apple-touch-icon" sizes="76x76" href="images/recite-76.png"/>
 		<link rel="apple-touch-icon" sizes="152x152" href="images/recite-76@2x.png"/>
 		<link rel="apple-touch-icon" sizes="58x58" href="images/recite-Small@2x.png"/>
-		<!-- Border between List Items (Increased from 3px to 5px) -->
-		<style>
+		<!-- Border between list items (Increased from 3px to 5px, disabled) -->
+		<!-- <style>
 			.ui-listview > .ui-li-static,
 			.ui-listview > .ui-li-divider,
 			.ui-listview > li > a.ui-btn {
 				border-width: 5px 0 0 0;
 				border-style: solid;
 			}
-		</style>
+		</style> -->
 		<!-- FastClick -->
 		<script src="fastclick.js"></script>
 		<script>
@@ -43,37 +43,124 @@
 				FastClick.attach(document.body);
 			});
 		</script>
-		<!-- Add to Home Screen Popup -->	
+		<!-- Add to home screen popup -->	
 		<link rel="stylesheet" href="addtohomescreen.css">
 		<script type="application/javascript" src="addtohomescreen.js"></script>
 		<script>
 			addToHomescreen({
-			   icon: false, <!-- add touch icon to the message -->
-			   displayPace: 0 <!-- minutes before the message is shown again (0: display every time) -->
+			   icon: false, <!-- Add touch icon to the message -->
+			   displayPace: 0 <!-- Minutes before the message is shown again (0: display every time) -->
 			});
 		</script>
-		<!-- Swipe Right from Edge to Go Back in History with Reverse Slide Transition-->
+		<!-- Hide all book titles by default. When number clicked show title and hide any others -->
 		<script>
-			$(document).bind('swiperight', function (event) {
-				if ( event.swipestart.coords[0] <10) {
-					history.back({transition:"slide", reverse:true,});
-				}
+			$(document).ready(function() {
+				$('.book-1-title-wrapper').hide();
+				$('.book-1-number').click(function() {
+					$('.book-1-title-wrapper').toggle("fast");
+					$('.book-2-title-wrapper').hide();
+					$('.book-3-title-wrapper').hide();
+					$('.book-4-title-wrapper').hide();
+					$('.book-5-title-wrapper').hide();
+					$('.book-6-title-wrapper').hide();
+					$('.book-7-title-wrapper').hide();
+				});
+				$('.book-2-title-wrapper').hide();
+				$('.book-2-number').click(function() {
+					$('.book-2-title-wrapper').toggle("fast");
+					$('.book-1-title-wrapper').hide();
+					$('.book-3-title-wrapper').hide();
+					$('.book-4-title-wrapper').hide();
+					$('.book-5-title-wrapper').hide();
+					$('.book-6-title-wrapper').hide();
+					$('.book-7-title-wrapper').hide();
+				}); 
+				$('.book-3-title-wrapper').hide();
+				$('.book-3-number').click(function() {
+					$('.book-3-title-wrapper').toggle("fast");
+					$('.book-1-title-wrapper').hide();
+					$('.book-2-title-wrapper').hide();
+					$('.book-4-title-wrapper').hide();
+					$('.book-5-title-wrapper').hide();
+					$('.book-6-title-wrapper').hide();
+					$('.book-7-title-wrapper').hide();
+				}); 
+				$('.book-4-title-wrapper').hide();
+				$('.book-4-number').click(function() {
+					$('.book-4-title-wrapper').toggle("fast");
+					$('.book-1-title-wrapper').hide();
+					$('.book-2-title-wrapper').hide();
+					$('.book-3-title-wrapper').hide();
+					$('.book-5-title-wrapper').hide();
+					$('.book-6-title-wrapper').hide();
+					$('.book-7-title-wrapper').hide();
+				}); 
+				$('.book-5-title-wrapper').hide();
+				$('.book-5-number').click(function() {
+					$('.book-5-title-wrapper').toggle("fast");
+					$('.book-1-title-wrapper').hide();
+					$('.book-2-title-wrapper').hide();
+					$('.book-3-title-wrapper').hide();
+					$('.book-4-title-wrapper').hide();
+					$('.book-6-title-wrapper').hide();
+					$('.book-7-title-wrapper').hide();
+				}); 
+				$('.book-6-title-wrapper').hide();
+				$('.book-6-number').click(function() {
+					$('.book-6-title-wrapper').toggle("fast");
+					$('.book-1-title-wrapper').hide();
+					$('.book-2-title-wrapper').hide();
+					$('.book-3-title-wrapper').hide();
+					$('.book-4-title-wrapper').hide();
+					$('.book-5-title-wrapper').hide();
+					$('.book-7-title-wrapper').hide();
+				}); 
+				$('.book-7-title-wrapper').hide();
+				$('.book-7-number').click(function() {
+					$('.book-7-title-wrapper').toggle("fast");
+					$('.book-1-title-wrapper').hide();
+					$('.book-2-title-wrapper').hide();
+					$('.book-3-title-wrapper').hide();
+					$('.book-4-title-wrapper').hide();
+					$('.book-5-title-wrapper').hide();
+					$('.book-6-title-wrapper').hide();
+				}); 
 			});
 		</script>
-		<!-- Swipe Left to Go Forward in History -->
-		<!-- <script>
-			$(document).bind('swipeleft', function () {
-				history.forward({transition:"slide"});
+		<!-- Swipe left to open panel -->
+		<script>
+			$( document ).on( "pageinit", "#menu", function() {
+				$( document ).on( "swipeleft", "#menu", function( e ) {
+					// We check if there is no open panel on the page because otherwise
+					// a swipe to close the left panel would also open the right panel (and v.v.).
+					// We do this by checking the data that the framework stores on the page element (panel: open).
+					if ( $.mobile.activePage.jqmData( "panel" ) !== "open" ) {
+						if ( e.type === "swipeleft"  ) {
+							$( "#panel1" ).panel( "open" );
+						} 
+					}
+				});
 			});
-		</script> -->
-		<!-- Disable Forward/Back Swipes on Panel -->
+		</script>
+		<!-- Disable forward/back swipes on panel -->
 		<script>
 			$(document).on('swipeleft swiperight', '[data-role="panel"]', function(event) {
 				event.stopPropagation();
 				event.preventDefault();
 			});
 		</script>
-		<!-- Next/Previous Passage Buttons -->
+		<!-- Hide all header/footer items on passage pages when body clicked -->
+		<script>
+			$(document).ready(function() {
+				$('.passage-test').click(function() {
+					$('.next-test').toggle("show");
+					$('.previous-test').toggle("show");
+					$('.left-test').toggle("show");
+					$('.section-test-top').toggle("show");
+				});
+			});
+		</script>
+		<!-- Open next/previous passage when right/left arrow buttons clicked -->
 		<script>
 			$(document).ready( function(event){
 				$(".next").click(function(){
@@ -84,50 +171,21 @@
 				}); 
 			});
 		</script>
+		<!-- Go back in history with reverse slide transition on right swipe from edge of screen -->
 		<script>
-			$(document).ready(function() {
-				$('.passage-test').click(function() {
-					$('.next-test').toggle("show");
-					$('.previous-test').toggle("show");
-					$('.left-test').toggle("show");
-					<!-- $('.section-test-bottom').toggle("show"); -->
-					$('.section-test-top').toggle("show");
-				});
+			$(document).bind('swiperight', function (event) {
+				if ( event.swipestart.coords[0] <10) {
+					history.back({transition:"slide", reverse:true,});
+				}
 			});
 		</script>
-		<script>
-			$(document).ready(function() {
-				$('.book-1-title-wrapper').hide();
-				$('.book-1-number').click(function() {
-					$('.book-1-title-wrapper').toggle("fast");
-				});
-				$('.book-2-title-wrapper').hide();
-				$('.book-2-number').click(function() {
-					$('.book-2-title-wrapper').toggle("fast");
-				}); 
-				$('.book-3-title-wrapper').hide();
-				$('.book-3-number').click(function() {
-					$('.book-3-title-wrapper').toggle("fast");
-				}); 
-				$('.book-4-title-wrapper').hide();
-				$('.book-4-number').click(function() {
-					$('.book-4-title-wrapper').toggle("fast");
-				}); 
-				$('.book-5-title-wrapper').hide();
-				$('.book-5-number').click(function() {
-					$('.book-5-title-wrapper').toggle("fast");
-				}); 
-				$('.book-6-title-wrapper').hide();
-				$('.book-6-number').click(function() {
-					$('.book-6-title-wrapper').toggle("fast");
-				}); 
-				$('.book-7-title-wrapper').hide();
-				$('.book-7-number').click(function() {
-					$('.book-7-title-wrapper').toggle("fast");
-				}); 
+		<!-- Go forward in history on left swipe (Disabled) -->
+		<!-- <script>
+			$(document).bind('swipeleft', function () {
+				history.forward({transition:"slide"});
 			});
-		</script>
-		<!-- Save Current Location to Local Storage When Navigation Buttons Clicked -->
+		</script> -->
+		<!-- Save current location to local storage when navigation buttons clicked -->
 		<script>
 			$(document).ready( function(event){
 				$('.next').on('click', function(){          
@@ -147,26 +205,12 @@
 				});
 			});
 		</script>
-		<!-- Load Last Location Saved in Local Storage on Restart -->
+		<!-- Load last location saved in local storage on restart -->
 		<script>		
 			if (localStorage.lastPage && location.currentURL != location.href) {
 				window.location = localStorage.lastPage;
 			}
 		</script>
-		<script>
-			$( document ).on( "pageinit", "#menu", function() {
-				$( document ).on( "swipeleft", "#menu", function( e ) {
-					// We check if there is no open panel on the page because otherwise
-					// a swipe to close the left panel would also open the right panel (and v.v.).
-					// We do this by checking the data that the framework stores on the page element (panel: open).
-					if ( $.mobile.activePage.jqmData( "panel" ) !== "open" ) {
-						if ( e.type === "swipeleft"  ) {
-							$( "#panel1" ).panel( "open" );
-						} 
-					}
-				});
-			});
-	</script>
 	</head>
 	<body>
 <!-- Book List -->
