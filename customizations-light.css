@@ -15,7 +15,7 @@
 	padding-top: 15px;
 	padding-bottom: 0px;
 	font-weight: 900;
-	color: #B0B0B0;
+	color: #808080;
 }
 /* h1 {
     color: white;
@@ -28,7 +28,7 @@
 	font-size: 13px;
 	letter-spacing: 4px;
 	padding-top: 4px;
-	color: #606060;
+	color: #989898;
 	padding-bottom: 0px;
 }
 .left {
@@ -263,7 +263,7 @@
 .menu-footer-a {
 	text-align: center;
 	letter-spacing: 2px;
-	font-size: 82%;
+	font-size: 83%;
 	color: gray;
 	padding-top: 4px;
 }
@@ -272,6 +272,7 @@
 	letter-spacing: 1.5px;
 	font-size: 81%;
 	color: gray;
+	padding-bottom: 19px;
 }
 
 /* Panel */
@@ -280,8 +281,10 @@
 	text-align: center;
     text-transform: uppercase;
 	letter-spacing: 5px;
-	padding-top: 12px;
-	padding-bottom: 16px;
+	padding-top: 1px;
+	padding-bottom: 11px;
+	line-height: 25px;
+	font-size: 17px;
 }
 .panel-title {
 	text-align: center;
@@ -302,7 +305,7 @@
 	text-align: center;
 	letter-spacing: 4px;
 	font-size: small;
-	padding-top: 13px;
+	padding-top: 8px;
 }
 
 /* Passage Menus */
