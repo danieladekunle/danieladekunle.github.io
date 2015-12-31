@@ -8,7 +8,7 @@
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=0 );
 }
 .menu-heading {
-	font-size: 18px;
+	font-size: 19.5px;
 	text-align: center;
     text-transform: uppercase;
 	letter-spacing: 5px;
@@ -17,15 +17,9 @@
 	font-weight: 900;
 	color: #707070;
 }
-/* h1 {
-    color: white;
-    text-shadow: none;
-    text-transform: uppercase;
-	letter-spacing: 5px;
-} */
 .menu-subheading {
 	text-align: center;
-	font-size: 13px;
+	font-size: 14px;
 	letter-spacing: 4px;
 	padding-top: 4px;
 	color: #909090;
@@ -88,7 +82,7 @@
 .book-1-title-wrapper {
 	padding-top: 3px;
 	padding-bottom: 3px;
-	padding-right: 22px;
+	padding-right: 0px;
 	display: inline-block;
 	margin-left: 10px;
 	background-image: url('images/');
@@ -111,12 +105,12 @@
 	background-size: 48px;
 	background-position: top, center;
 	background-repeat: no-repeat;
-	padding-top: 8px;
-	padding-left: 1px;
+	padding-top: 9px;
+	padding-left: 2px;
 }
 .book-2-title-wrapper {
 	line-height:45px;
-	padding-right: 22px;
+	padding-right: 0px;
 	display: inline-block;
 	margin-left: 10px;
 	background-image: url('images/');
@@ -144,7 +138,7 @@
 .book-3-title-wrapper {
 	padding-top: 3px;
 	padding-bottom: 3px;
-	padding-right: 22px;
+	padding-right: 0px;
 	display: inline-block;
 	margin-left: 10px;
 	background-image: url('images/');
@@ -166,11 +160,11 @@
 	background-size: 48px;
 	background-position: top, center;
 	background-repeat: no-repeat;
-	padding-top: 7px;
+	padding-top: 8px;
 }
 .book-4-title-wrapper {
 	line-height:45px;
-	padding-right: 22px;
+	padding-right: 0px;
 	display: inline-block;
 	margin-left: 10px;
 	background-image: url('images/');
@@ -192,13 +186,13 @@
 	background-size: 48px;
 	background-position: top, center;
 	background-repeat: no-repeat;
-	padding-top: 8px;
+	padding-top: 9px;
 	padding-left: 2px;
 }
 .book-5-title-wrapper {
 	padding-top: 3px;
 	padding-bottom: 3px;
-	padding-right: 22px;
+	padding-right: 0px;
 	display: inline-block;
 	margin-left: 10px;
 	background-image: url('images/');
@@ -225,7 +219,7 @@
 }
 .book-6-title-wrapper {
 	line-height:45px;
-	padding-right: 22px;
+	padding-right: 0px;
 	display: inline-block;
 	margin-left: 10px;
 	background-image: url('images/');
@@ -247,13 +241,13 @@
 	background-size: 48px;
 	background-position: top, center;
 	background-repeat: no-repeat;
-	padding-top: 8px;
+	padding-top: 9px;
 	padding-left: 2px;
 }
 .book-7-title-wrapper {
 	padding-top: 3px;
 	padding-bottom: 3px;
-	padding-right: 22px;
+	padding-right: 0px;
 	display: inline-block;
 	margin-left: 10px;
 	background-image: url('images/');
