@@ -342,11 +342,32 @@
 
 /* Passage Menus */
 
+
+.passage-menu-header {
+	height:50px;
+	background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 90%, rgba(255,255,255,0.9) 95%, rgba(255,255,255,0) 100%);
+	background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(255,255,255,1) 90%,rgba(255,255,255,0.9) 95%,rgba(255,255,255,0) 100%); 
+	background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(255,255,255,1) 90%,rgba(255,255,255,0.9) 95%,rgba(255,255,255,0) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=0 );
+}
 h2 {
-    color: white;
+	font-weight: normal;
+	font-size: 115%;
     text-shadow: none;
 	text-transform: uppercase;
 	letter-spacing: 5px;
+}
+.menu-icon-left {
+	height: 22px;
+	width: 10px;
+	position: relative;
+	float: left;
+}
+.ui-icon-left-gray {
+  background-image: url('images/left-gray.png');
+  background-size: 7px;
+  background-repeat: no-repeat;
+  background-position: 16px 11px;
 }
 .ui-icon-left {
   background-image: url('images/left-white.png');
@@ -356,9 +377,9 @@ h2 {
 }
 .ui-icon-left-black {
   background-image: url('images/left-black.png');
-  background-size: 7px;
+  background-size: 8px;
   background-repeat: no-repeat;
-  background-position: 16px 11px;
+  background-position: 16px 12px;
 }
 .ui-icon-pdf {
   background-image: url('images/pdf.png');
