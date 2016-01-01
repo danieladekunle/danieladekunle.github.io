@@ -56,7 +56,7 @@
 		<script>
 			$(document).ready(function() {
 				$('.book-1-title-wrapper').hide();
-				$('.book-1-number').click(function() {
+				$('.book-1-number-wrapper').click(function() {
 					$('.book-1-title-wrapper').toggle("fast");
 					$('.book-2-title-wrapper').hide();
 					$('.book-3-title-wrapper').hide();
@@ -66,7 +66,7 @@
 					$('.book-7-title-wrapper').hide();
 				});
 				$('.book-2-title-wrapper').hide();
-				$('.book-2-number').click(function() {
+				$('.book-2-number-wrapper').click(function() {
 					$('.book-2-title-wrapper').toggle("fast");
 					$('.book-1-title-wrapper').hide();
 					$('.book-3-title-wrapper').hide();
@@ -76,7 +76,7 @@
 					$('.book-7-title-wrapper').hide();
 				}); 
 				$('.book-3-title-wrapper').hide();
-				$('.book-3-number').click(function() {
+				$('.book-3-number-wrapper').click(function() {
 					$('.book-3-title-wrapper').toggle("fast");
 					$('.book-1-title-wrapper').hide();
 					$('.book-2-title-wrapper').hide();
@@ -86,7 +86,7 @@
 					$('.book-7-title-wrapper').hide();
 				}); 
 				$('.book-4-title-wrapper').hide();
-				$('.book-4-number').click(function() {
+				$('.book-4-number-wrapper').click(function() {
 					$('.book-4-title-wrapper').toggle("fast");
 					$('.book-1-title-wrapper').hide();
 					$('.book-2-title-wrapper').hide();
@@ -96,7 +96,7 @@
 					$('.book-7-title-wrapper').hide();
 				}); 
 				$('.book-5-title-wrapper').hide();
-				$('.book-5-number').click(function() {
+				$('.book-5-number-wrapper').click(function() {
 					$('.book-5-title-wrapper').toggle("fast");
 					$('.book-1-title-wrapper').hide();
 					$('.book-2-title-wrapper').hide();
@@ -106,7 +106,7 @@
 					$('.book-7-title-wrapper').hide();
 				}); 
 				$('.book-6-title-wrapper').hide();
-				$('.book-6-number').click(function() {
+				$('.book-6-number-wrapper').click(function() {
 					$('.book-6-title-wrapper').toggle("fast");
 					$('.book-1-title-wrapper').hide();
 					$('.book-2-title-wrapper').hide();
@@ -116,7 +116,7 @@
 					$('.book-7-title-wrapper').hide();
 				}); 
 				$('.book-7-title-wrapper').hide();
-				$('.book-7-number').click(function() {
+				$('.book-7-number-wrapper').click(function() {
 					$('.book-7-title-wrapper').toggle("fast");
 					$('.book-1-title-wrapper').hide();
 					$('.book-2-title-wrapper').hide();
@@ -226,7 +226,7 @@
 		<div data-role="page" data-control-title="home" data-theme="a" class="ui-icon-nodisc" id="menu">
 			<div data-theme="d" data-role="header" data-position="fixed" data-tap-toggle="false" class="menu-header">
 				<h1 style="display:none;">Quotations</h1>
-				<a data-theme="c" data-icon="quotation-mark" class="menu-icon-left"></a>
+				<a href="#feedback" data-theme="c" data-icon="quotation-mark" class="menu-icon-left"></a>
 				<a href="#panel1" data-theme="c" data-icon="more" class="menu-icon-right"></a>
 				<div class="menu-heading">Quotations</div>
 				<div class="menu-subheading">for&nbsp;memorization</div>
@@ -266,11 +266,11 @@
 							</div>
 						</a>
 					</div>	
-				<div class="panel-feedback">
+				<!-- <div class="panel-feedback">
 					<a class="link" href="#feedback" data-transition="slide" data-theme="c" style="color:gray;">
 						feedback
 					</a>
-				</div>
+				</div> -->
 			</div>
 			<div data-role="content" style="padding: 0 0 0 0;">
 				<div class="book-wrapper">
