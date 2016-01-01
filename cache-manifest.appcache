@@ -1,6 +1,6 @@
 CACHE MANIFEST
 
-# Version 37
+# Version 38
 
 customizations.css
 fastclick.js
@@ -33,6 +33,7 @@ images/left-black.png
 images/left-gray.png
 images/left-white.png
 images/pdf.png
+images/quotation-mark.png
 images/right-black.png
 images/right-gray.png
 images/settings.png
