@@ -185,6 +185,8 @@
 					$('.previous-passage').toggle("show");
 					$('.passage-icon-left').toggle("show");
 					$('.section-number').toggle("show");
+					$('.resource-heading').toggle("show");
+					$('.passage-icon-right').toggle("show");
 				});
 			});
 		</script>
@@ -235,6 +237,9 @@
 					localStorage.lastlocation = this.href
 				});
 				$('.passage-icon-left').on('click', function(){          
+					localStorage.lastlocation = this.href
+				});
+				$('.passage-icon-right').on('click', function(){          
 					localStorage.lastlocation = this.href
 				});
 				$('.next-passage').on('click', function(){          
@@ -3615,11 +3620,11 @@
 <!-- Excerpts on Memorization -->
 		<div data-role="page"  data-theme="a" data-control-title="excerpts" class="ui-icon-nodisc" id="excerpts">
 			<div data-theme="d" data-role="header" data-position="fixed" data-tap-toggle="false" class="passage-header">
-				<a data-role="button" data-theme="b" href="#menu" data-transition="slide" data-direction="reverse" data-icon="left" data-iconpos="notext" class="ui-btn-left"></a>
-				<a href="#panel2" data-theme="b" data-icon="more" data-iconpos="notext" class="ui-btn-right"></a>
-				<h2>
-					Recite
-				</h2>
+				<a class="passage-icon-left" data-theme="c" data-transition="slide" data-direction="reverse" href="#menu" data-icon="passage-left"></a>
+				<a href="#panel2" data-theme="c" data-icon="more-b" class="passage-icon-right"></a>
+				<div class="resource-heading">
+					On Memorization
+				</div>
 			</div>
 			<!-- Side Panel -->
 			<div data-role="panel" data-position="right" id="panel2">
@@ -3714,11 +3719,11 @@
 <!-- Selections on Memorization -->
 		<div data-role="page"  data-theme="a" data-control-title="selections" class="ui-icon-nodisc" id="selections">
 			<div data-theme="d" data-role="header" data-position="fixed" data-tap-toggle="false" class="passage-header">
-				<a href="#panel3" data-theme="b" data-icon="more" data-iconpos="notext" class="ui-btn-right"></a>
-				<a data-role="button" data-theme="b" href="#menu" data-transition="slide" data-direction="reverse" data-icon="left" data-iconpos="notext" class="ui-btn-left"></a>
-				<h2>
-					Recite
-				</h2>
+				<a class="passage-icon-left" data-theme="c" data-transition="slide" data-direction="reverse" href="#menu" data-icon="passage-left"></a>
+				<a href="#panel3" data-theme="c" data-icon="more-b" class="passage-icon-right"></a>
+				<div class="resource-heading">
+					On Memorization
+				</div>
 			</div>
 			<!-- Side Panel -->
 			<div data-role="panel" data-position="right" id="panel3">
@@ -3769,11 +3774,11 @@
 <!-- Long Obligatory Prayer -->
 		<div data-role="page" data-theme="a" data-control-title="obligatoryprayer" class="ui-icon-nodisc" id="obligatoryprayer">
 			<div data-theme="d" data-role="header" data-position="fixed" data-tap-toggle="false" class="passage-header">
-				<a href="#panel4" data-theme="b" data-icon="more" data-iconpos="notext" class="ui-btn-right"></a>
-				<a data-role="button" data-theme="b" href="#menu" data-transition="slide" data-direction="reverse" data-icon="left" data-iconpos="notext" class="ui-btn-left"></a>
-				<h2>
-					Recite
-				</h2>
+				<a class="passage-icon-left" data-theme="c" data-transition="slide" data-direction="reverse" href="#menu" data-icon="passage-left"></a>
+				<a href="#panel4" data-theme="c" data-icon="more-b" class="passage-icon-right"></a>
+				<div class="resource-heading">
+					Obligatory Prayer
+				</div>
 			</div>
 			<!-- Side Panel -->
 			<div data-role="panel" data-position="right" id="panel4">
@@ -3921,11 +3926,11 @@
 <!-- Feedback Form -->
 		<div data-role="page" data-theme="a" data-control-title="feedback" class="ui-icon-nodisc" id="feedback">
 			<div data-theme="d" data-role="header" data-position="fixed" data-tap-toggle="false" class="passage-header">
-				<a href="#panel5" data-theme="b" data-icon="more" data-iconpos="notext" class="ui-btn-right"></a>
-				<a data-role="button" data-theme="b" href="#menu" data-transition="slide" data-direction="reverse" data-icon="left" data-iconpos="notext" class="ui-btn-left"></a>
-				<h2>
-					Recite
-				</h2>
+				<a class="passage-icon-left" data-theme="c" data-transition="slide" data-direction="reverse" href="#menu" data-icon="passage-left"></a>
+				<a href="#panel5" data-theme="c" data-icon="more-b" class="passage-icon-right"></a>
+				<div class="resource-heading">
+					Feedback
+				</div>
 			</div>
 			<!-- Side Panel -->
 			<div data-role="panel" data-position="right" id="panel5">
