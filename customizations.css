@@ -365,6 +365,9 @@
 	background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(255,255,255,1) 90%,rgba(255,255,255,0.9) 95%,rgba(255,255,255,0) 100%); 
 	background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(255,255,255,1) 90%,rgba(255,255,255,0.9) 95%,rgba(255,255,255,0) 100%);
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=0 );
+	/* border-bottom-color: #cccccc !important;
+	border-bottom-width: 1px !important;
+	border-bottom-style: solid !important; */
 }
 .passage-menu-heading {
 	font-size: 17px;
@@ -408,6 +411,12 @@ h2 {
 	width: 10px;
 	position: relative;
 	float: right;
+}
+.ui-icon-blank {
+  background-image: url('images/blank.png');
+  background-size: 9px;
+  background-repeat: no-repeat;
+  background-position: 16px 19px;
 }
 .ui-icon-left {
   background-image: url('images/left-white.png');
