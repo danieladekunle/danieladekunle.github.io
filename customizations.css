@@ -416,15 +416,94 @@
   background-position: right 20px center;
 }
 
-/* Old Passage Menus */
+/* Passages */
 
+.passage-header {
+	height:50px;
+	background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 80%, rgba(255,255,255,0.9) 90%, rgba(255,255,255,0) 100%);
+	background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(255,255,255,1) 80%,rgba(255,255,255,0.9) 90%,rgba(255,255,255,0) 100%); 
+	background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(255,255,255,1) 80%,rgba(255,255,255,0.9) 90%,rgba(255,255,255,0) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=0 );
+}
+.passage-icon-left {
+	height: 22px;
+	width: 10px;
+	position: relative;
+	float: left;
+}
+.ui-icon-passage-left {
+  background-image: url('images/left-gray.png');
+  background-size: 8px;
+  background-repeat: no-repeat;
+  background-position: 22px 15px;
+}
+.section-number {
+	text-align: center;
+	font-size: 90%;
+	padding-top: 16px;
+	color: gray;
+	letter-spacing: 2.5px;
+}
+.passage-icon-right {
+	height: 22px;
+	width: 10px;
+	position: relative;
+	float: right;
+}
+.ui-icon-passage-blank {
+  background-image: url('images/blank.png');
+  background-size: 8px;
+  background-repeat: no-repeat;
+  background-position: 16px 14px;
+}
+.passage {
+	padding-top: 0px;
+	margin-left: 14px;
+	margin-right: 14px;
+	text-align: justify;
+}
+.passage-footer {
+	width:100%;
+	height:50px;
+	bottom:0;
+	left:0;
+	padding-bottom: 0px;
+	background: -moz-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,0.9) 10%, rgba(255,255,255,1) 20%, rgba(255,255,255,1) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%,rgba(255,255,255,0.9) 10%,rgba(255,255,255,1) 20%,rgba(255,255,255,1) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, rgba(255,255,255,0) 0%,rgba(255,255,255,0.9) 10%,rgba(255,255,255,1) 20%,rgba(255,255,255,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+}
+.previous-passage {
+	height: 30px;
+	position: absolute;
+	left:10px;
+	top: 8px;
+}
+.ui-icon-previous-passage {
+  background-image: url('images/left-gray.png');
+  background-size: 8px;
+  background-repeat: no-repeat;
+  background-position: center 5px;
+}
+.next-passage {
+	height: 30px;
+	position: absolute;
+	right:10px;
+	top: 8px;
+}
+.ui-icon-next-passage {
+  background-image: url('images/right-gray.png');
+  background-size: 8px;
+  background-repeat: no-repeat;
+  background-position: center 5px;
+}
 
-h2 {
-	font-weight: normal;
-	font-size: 115%;
+/* Obselete */
+
+h3 {
+    color: white;
     text-shadow: none;
-	text-transform: uppercase;
-	letter-spacing: 5px;
+	letter-spacing: 7px;
 }
 .ui-icon-left {
   background-image: url('images/left-white.png');
@@ -432,21 +511,7 @@ h2 {
   background-repeat: no-repeat;
   background-position: 16px 11px;
 }
-.ui-icon-left-black {
-  background-image: url('images/left-black.png');
-  background-size: 8px;
-  background-repeat: no-repeat;
-  background-position: 16px 12px;
-}
-
-/* Passages */
-
-h3 {
-    color: white;
-    text-shadow: none;
-	letter-spacing: 7px;
-}
-.passage {
+.passage-old {
 	text-align: justify;
 }
 .citation {
@@ -488,9 +553,6 @@ h3 {
 	padding-top: 5px;
 	font-size: 90%;
 }
-
-/* Passages Test */
-
 h4 {
     color: #333333;
     text-shadow: none;
@@ -503,47 +565,11 @@ h5 {
 	letter-spacing: 5px;
 	font-weight: normal;
 }
-.footer-test {
-	width:100%;
-	height:50px;
-	bottom:0;
-	left:0;
-	padding-bottom: 0px;
-	background: -moz-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,0.9) 20%, rgba(255,255,255,1) 30%, rgba(255,255,255,1) 100%); /* FF3.6-15 */
-	background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%,rgba(255,255,255,0.9) 20%,rgba(255,255,255,1) 30%,rgba(255,255,255,1) 100%); /* Chrome10-25,Safari5.1-6 */
-	background: linear-gradient(to bottom, rgba(255,255,255,0) 0%,rgba(255,255,255,0.9) 20%,rgba(255,255,255,1) 30%,rgba(255,255,255,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
-}
-.header-test {
-	height:50px;
-	background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 70%, rgba(255,255,255,0.9) 80%, rgba(255,255,255,0) 100%); /* FF3.6-15 */
-	background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(255,255,255,1) 70%,rgba(255,255,255,0.9) 80%,rgba(255,255,255,0) 100%); /* Chrome10-25,Safari5.1-6 */
-	background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(255,255,255,1) 70%,rgba(255,255,255,0.9) 80%,rgba(255,255,255,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=0 ); /* IE6-9 */
-}
 .left-test {
 	height: 20px;
 	position:;
 	left:10px;
 	top: 0px
-}
-.next-test {
-	height: 30px;
-	position: absolute;
-	right:10px;
-	top: 8px
-}
-.passage-test {
-	padding-top: 0px;
-	margin-left: 14px;
-	margin-right: 14px;
-	text-align: justify;
-}
-.previous-test {
-	height: 30px;
-	position: absolute;
-	left:10px;
-	top: 8px
 }
 .section-test {
 	text-align: right;
@@ -560,31 +586,13 @@ h5 {
 	color: gray;
 	letter-spacing: 2.5px;
 }
-.section-test-top {
-	text-align: center;
-	font-size: 88%;
-	padding-top: 11px;
-	color: gray;
-	letter-spacing: 2.5px;
-}
 .ui-icon-left-test {
   background-image: url('images/left-gray.png');
   background-size: 7px;
   background-repeat: no-repeat;
   background-position: 17px 14px;
 }
-.ui-icon-next-test {
-  background-image: url('images/right-gray.png');
-  background-size: 7px;
-  background-repeat: no-repeat;
-  background-position: center 8px;
-}
-.ui-icon-previous-test {
-  background-image: url('images/left-gray.png');
-  background-size: 7px;
-  background-repeat: no-repeat;
-  background-position: center 8px;
-}
+
 
 /* (Changed .ui-btn-left/right styles to .previous/next) */
 
