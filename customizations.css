@@ -440,9 +440,10 @@
 .section-number {
 	text-align: center;
 	font-size: 92%;
-	padding-top: 17px;
+	padding-top: 16px !important;
 	color: gray;
 	letter-spacing: 2.5px;
+	font-weight: normal;
 }
 .passage-icon-right {
 	height: 22px;
@@ -461,6 +462,12 @@
 	margin-left: 14px;
 	margin-right: 14px;
 	text-align: justify;
+}
+.citation {
+	text-align: center;
+	font-style: italic;
+	font-size: small;
+	padding-top: 5px;
 }
 .passage-footer {
 	width:100%;
@@ -497,6 +504,20 @@
   background-repeat: no-repeat;
   background-position: center 5px;
 }
+.section-heading {
+	text-align: center;
+	font-weight: bold;
+}
+.instructions {
+	font-style: italic;
+	font-size: 90%;
+}
+.citation-b {
+	text-align: center;
+	font-style: italic;
+	padding-top: 5px;
+	font-size: 90%;
+}
 
 /* Obselete */
 
@@ -513,12 +534,6 @@ h3 {
 }
 .passage-old {
 	text-align: justify;
-}
-.citation {
-	text-align: center;
-	font-style: italic;
-	font-size: small;
-	padding-top: 5px;
 }
 .footer {
 	width: 100%;
@@ -538,20 +553,6 @@ h3 {
   background-size: 8px;
   background-repeat: no-repeat;
   background-position: top;
-}
-.section-heading {
-	text-align: center;
-	font-weight: bold;
-}
-.instructions {
-	font-style: italic;
-	font-size: 90%;
-}
-.citation-b {
-	text-align: center;
-	font-style: italic;
-	padding-top: 5px;
-	font-size: 90%;
 }
 h4 {
     color: #333333;
