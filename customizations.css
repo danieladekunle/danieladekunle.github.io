@@ -379,21 +379,6 @@
 	font-weight: 900;
 	color: #707070;
 }
-.passage-menu-subheading {
-	text-align: center;
-	font-size: 12px;
-	letter-spacing: 1px;
-	padding-top: 4px;
-	color: #909090;
-	padding-bottom: 0px;
-}
-h2 {
-	font-weight: normal;
-	font-size: 115%;
-    text-shadow: none;
-	text-transform: uppercase;
-	letter-spacing: 5px;
-}
 .passage-menu-icon-left {
 	height: 22px;
 	width: 10px;
@@ -418,18 +403,6 @@ h2 {
   background-repeat: no-repeat;
   background-position: 16px 19px;
 }
-.ui-icon-left {
-  background-image: url('images/left-white.png');
-  background-size: 7px;
-  background-repeat: no-repeat;
-  background-position: 16px 11px;
-}
-.ui-icon-left-black {
-  background-image: url('images/left-black.png');
-  background-size: 8px;
-  background-repeat: no-repeat;
-  background-position: 16px 12px;
-}
 .ui-icon-pdf {
   background-image: url('images/pdf.png');
   background-size: 16px;
@@ -441,6 +414,29 @@ h2 {
   background-size: 5px;
   background-repeat: no-repeat;
   background-position: right 20px center;
+}
+
+/* Old Passage Menus */
+
+
+h2 {
+	font-weight: normal;
+	font-size: 115%;
+    text-shadow: none;
+	text-transform: uppercase;
+	letter-spacing: 5px;
+}
+.ui-icon-left {
+  background-image: url('images/left-white.png');
+  background-size: 7px;
+  background-repeat: no-repeat;
+  background-position: 16px 11px;
+}
+.ui-icon-left-black {
+  background-image: url('images/left-black.png');
+  background-size: 8px;
+  background-repeat: no-repeat;
+  background-position: 16px 12px;
 }
 
 /* Passages */
