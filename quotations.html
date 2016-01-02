@@ -52,13 +52,24 @@
 			   displayPace: 0 <!-- Minutes before the message is shown again (0: display every time) -->
 			});
 		</script>
+		<!-- If window height greater than 568 (iPhone 5/s) center numbers in menu between header/footer. If height resized to greater than 568 center numbers. If height resized to less than 568 return to default. -->
 		<script>
 			$(document).ready(function() {
 				if($(window).height() > 568) {
 					$("#menu-wrapper-parent").addClass("menu-wrapper-parent");
 					$("#menu-wrapper-child").addClass("menu-wrapper-child");
 				}
-			}); 
+				window.addEventListener("resize", function() {
+					if($(window).height() > 568) {
+						$("#menu-wrapper-parent").addClass("menu-wrapper-parent");
+						$("#menu-wrapper-child").addClass("menu-wrapper-child");
+					}
+					else {
+						$("#menu-wrapper-parent").removeClass("menu-wrapper-parent");
+						$("#menu-wrapper-child").removeClass("menu-wrapper-child");
+					}
+				}, true);
+			});
 		</script>
 		<!-- Hide all book titles by default. When number clicked show title and hide any others. When title clicked hide all titles. -->
 		<script>
@@ -205,19 +216,16 @@
 		<!-- Save current location to local storage when navigation buttons clicked -->
 		<script>
 			$(document).ready( function(event){
-				$('.next').on('click', function(){          
-					localStorage.lastlocation = location.href
-				});
-				$('.previous').on('click', function(){          
-					localStorage.lastlocation = location.href
-				});
 				$('.link').on('click', function(){          
 					localStorage.lastlocation = this.href
 				});
-				$('.passage-menu-icon-left').on('click', function(){          
+				$('.menu-icon-left').on('click', function(){          
 					localStorage.lastlocation = this.href
 				});
-				$('.menu-icon-left').on('click', function(){          
+				$('.book-title').on('click', function(){          
+					localStorage.lastlocation = this.href
+				});
+				$('.passage-menu-icon-left').on('click', function(){          
 					localStorage.lastlocation = this.href
 				});
 				$('.ui-btn-left').on('click', function(){          
@@ -225,6 +233,12 @@
 				});
 				$('.ui-btn-right').on('click', function(){          
 					localStorage.lastlocation = this.href
+				});
+				$('.next').on('click', function(){          
+					localStorage.lastlocation = location.href
+				});
+				$('.previous').on('click', function(){          
+					localStorage.lastlocation = location.href
 				});
 			});
 		</script>
