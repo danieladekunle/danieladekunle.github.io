@@ -1,5 +1,20 @@
 /* Main Menu */
 
+/* Vertically center numbers between header/footer */
+.menu-wrapper-child {
+	position: relative;
+}
+.menu-wrapper-child {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 300px;
+	height: 424px;
+	margin-bottom: 0;
+	margin-top: -212px;
+	margin-left: -150px;
+	margin-right:0;
+}
 .menu-header {
 	height:78px;
 	background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 90%, rgba(255,255,255,0.9) 95%, rgba(255,255,255,0) 100%);
@@ -34,7 +49,7 @@
 .ui-icon-quotation-mark {
   background-image: url('images/quotation-mark.png');
   background-size: 17px;
-  background-position: 12px 19px;
+  background-position: 15px 19px;
   background-repeat: no-repeat;
 }
 .menu-icon-right {
@@ -344,11 +359,30 @@
 
 
 .passage-menu-header {
-	height:50px;
+	height: 50px;
+	text-align: center;
 	background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 90%, rgba(255,255,255,0.9) 95%, rgba(255,255,255,0) 100%);
 	background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(255,255,255,1) 90%,rgba(255,255,255,0.9) 95%,rgba(255,255,255,0) 100%); 
 	background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(255,255,255,1) 90%,rgba(255,255,255,0.9) 95%,rgba(255,255,255,0) 100%);
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=0 );
+}
+.passage-menu-heading {
+	font-size: 17px;
+	text-align: center;
+    text-transform: uppercase;
+	letter-spacing: 5px;
+	padding-top: 15px;
+	padding-bottom: 0px;
+	font-weight: 900;
+	color: #707070;
+}
+.passage-menu-subheading {
+	text-align: center;
+	font-size: 12px;
+	letter-spacing: 1px;
+	padding-top: 4px;
+	color: #909090;
+	padding-bottom: 0px;
 }
 h2 {
 	font-weight: normal;
@@ -365,9 +399,15 @@ h2 {
 }
 .ui-icon-left-gray {
   background-image: url('images/left-gray.png');
-  background-size: 7px;
+  background-size: 9px;
   background-repeat: no-repeat;
-  background-position: 16px 11px;
+  background-position: 16px 16px;
+}
+.passage-menu-icon-right {
+	height: 22px;
+	width: 10px;
+	position: relative;
+	float: right;
 }
 .ui-icon-left {
   background-image: url('images/left-white.png');

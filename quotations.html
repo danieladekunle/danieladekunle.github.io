@@ -52,6 +52,14 @@
 			   displayPace: 0 <!-- Minutes before the message is shown again (0: display every time) -->
 			});
 		</script>
+		<script>
+			$(document).ready(function() {
+				if($(window).height() >= 1136) {
+					$("#menu-wrapper-parent").addClass("menu-wrapper-parent");
+					$("#menu-wrapper-child").addClass("menu-wrapper-child");
+				}
+			}); 
+		</script>
 		<!-- Hide all book titles by default. When number clicked show title and hide any others. When title clicked hide all titles. -->
 		<script>
 			$(document).ready(function() {
@@ -273,6 +281,8 @@
 				</div> -->
 			</div>
 			<div data-role="content" style="padding: 0 0 0 0;">
+				<div id="menu-wrapper-parent">
+				<div id="menu-wrapper-child">
 				<div class="book-wrapper">
 					<div class="book-1-number-wrapper">
 						<div class="book-1-number" data-transition="slide">
@@ -361,7 +371,8 @@
 						</a>
 					</div>
 				</div>
-				
+				</div>
+				</div>
 			</div>
 			<div data-theme="c" data-role="footer" data-position="fixed" data-tap-toggle="false" class="menu-footer">
 				<div class="menu-footer-a">
@@ -374,11 +385,18 @@
 		</div>
 <!-- Book 1 List -->
 		<div data-role="page" data-control-title="book1" class="ui-icon-nodisc" id="book1">
-			<div data-theme="d" data-role="header" data-position="fixed" class="passage-menu-header">
+			<!-- <div data-theme="d" data-role="header" data-position="fixed" class="passage-menu-header">
 				<a data-role="button" data-theme="c" href="#menu" data-transition="slide" data-direction="reverse" data-icon="left-black" class="passage-menu-icon-left"></a>
 				<h2>
 					Book 1
 				</h2>
+			</div> -->
+			<div data-theme="d" data-role="header" data-position="fixed" data-tap-toggle="false" class="menu-header">
+				<h2 style="display:none;">Book 1</h2>
+				<a href="#feedback" data-theme="c" data-icon="left-gray" class="menu-icon-left"></a>
+				<a href="#panel1" data-theme="c" data-icon="more" class="menu-icon-right"></a>
+				<div class="passage-menu-heading">Book 1</div>
+				<div class="passage-menu-subheading">Reflections on the Life...</div>
 			</div>
 			<div data-role="content" style="padding: 0px 12px">
 				<ul data-role="listview" data-divider-theme="a" data-inset="true">
