@@ -440,11 +440,9 @@
 .section-number {
 	text-align: center;
 	font-size: 92%;
-	padding-top: 16px !important;
+	padding-top: 16px;
 	color: gray;
 	letter-spacing: 2.5px;
-	font-weight: normal;
-	position: relative;
 }
 .passage-icon-right {
 	height: 22px;
