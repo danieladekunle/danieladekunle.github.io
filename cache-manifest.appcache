@@ -1,6 +1,6 @@
 CACHE MANIFEST
 
-# Version 62
+# Version 63
 
 customizations.css
 fastclick.js
@@ -21,6 +21,7 @@ images/7-outline.png
 images/ajax-loader.gif
 images/blank.png
 images/dots-gray.png
+images/dots-light-gray.png
 images/left-gray.png
 images/pdf.png
 images/quotation-mark.png

@@ -58,8 +58,8 @@
 	position: relative;
 	float: right;
 }
-.ui-icon-more {
-  background-image: url('images/dots-gray.png');
+.ui-icon-menu-more {
+  background-image: url('images/dots-light-gray.png');
   background-size: 4.5px;
   background-position: center 16px;
   background-repeat: no-repeat;
@@ -505,10 +505,10 @@
 
 .resource-heading {
 	text-align: center;
-	font-size: 92%;
+	font-size: 90%;
 	padding-top: 16px;
 	color: gray;
-	letter-spacing: 1px;
+	letter-spacing: 0px;
 	/* text-transform: uppercase; */
 }
 .ui-icon-more-b {
