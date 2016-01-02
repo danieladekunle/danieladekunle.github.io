@@ -438,7 +438,7 @@
   background-position: 22px 15px;
 }
 .section-number {
-	text-align: center;
+	/* text-align: center; */
 	font-size: 92%;
 	padding-top: 16px !important;
 	color: gray;
@@ -518,82 +518,6 @@
 	padding-top: 5px;
 	font-size: 90%;
 }
-
-/* Obselete */
-
-h3 {
-    color: white;
-    text-shadow: none;
-	letter-spacing: 7px;
-}
-.ui-icon-left {
-  background-image: url('images/left-white.png');
-  background-size: 7px;
-  background-repeat: no-repeat;
-  background-position: 16px 11px;
-}
-.passage-old {
-	text-align: justify;
-}
-.footer {
-	width: 100%;
-	height: 40px;
-	position: absolute;
-	bottom: 0;
-	left: 0;
-}
-.ui-icon-previous {
-  background-image: url('images/left-gray.png');
-  background-size: 8px;
-  background-repeat: no-repeat;
-  background-position: top;
-}
-.ui-icon-next {
-  background-image: url('images/right-gray.png');
-  background-size: 8px;
-  background-repeat: no-repeat;
-  background-position: top;
-}
-h4 {
-    color: #333333;
-    text-shadow: none;
-	letter-spacing: 7px;
-}
-h5 {
-    color: #333333;
-    text-shadow: none;
-	text-transform: uppercase;
-	letter-spacing: 5px;
-	font-weight: normal;
-}
-.left-test {
-	height: 20px;
-	position:;
-	left:10px;
-	top: 0px
-}
-.section-test {
-	text-align: right;
-	font-size: 85%;
-	padding-top: 5px;
-	padding-right: 22px;
-	color: gray;
-	letter-spacing: 0.5px;
-}
-.section-test-bottom {
-	text-align: center;
-	font-size: 84%;
-	padding-top: 19px;
-	color: gray;
-	letter-spacing: 2.5px;
-}
-.ui-icon-left-test {
-  background-image: url('images/left-gray.png');
-  background-size: 7px;
-  background-repeat: no-repeat;
-  background-position: 17px 14px;
-}
-
 
 /* (Changed .ui-btn-left/right styles to .previous/next) */
 
