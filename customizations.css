@@ -376,6 +376,13 @@
 	font-weight: 900;
 	color: #707070;
 }
+.pdf {
+	text-align: left;
+	background-image: url('images/pdf.png');
+	background-size: 16px;
+	background-position: right 15px center;
+	background-repeat: no-repeat;
+}
 .passage-menu-icon-left {
 	height: 22px;
 	width: 10px;
