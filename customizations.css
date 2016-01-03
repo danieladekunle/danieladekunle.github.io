@@ -514,8 +514,8 @@
 }
 .ui-icon-more-b {
   background-image: url('images/dots-gray.png');
-  background-size: 4.5px;
-  background-position: center 13px;
+  background-size: 4px;
+  background-position: center 13.5px;
   background-repeat: no-repeat;
 }
 .section-heading {
@@ -525,53 +525,4 @@
 .instructions {
 	font-style: italic;
 	font-size: 90%;
-}
-.citation-b {
-	text-align: center;
-	font-style: italic;
-	padding-top: 5px;
-	font-size: 90%;
-}
-
-/* (Changed .ui-btn-left/right styles to .previous/next) */
-
-/* To ensure same top and left/right position when left/right are added to something other than buttons. */
-.ui-header .previous,
-.ui-header .next {
-	font-size: 12.5px;
-}
-/* Buttons in header position classes */
-.ui-header .previous,
-.ui-header .next,
-.previous > [class*="ui-"],
-.next > [class*="ui-"] {
-	margin: 0;
-}
-.previous,
-.next {
-	position: absolute;
-	top: .24em;
-}
-.previous {
-	left: .4em;
-}
-.next {
-	right: .4em;
-}
-.ui-btn-icon-notext.previous {
-	top: .3125em;
-	left: .3125em;
-}
-.ui-btn-icon-notext.next {
-	top: .3125em;
-	right: .3125em;
-}
-/* fixed page header & footer configuration */
-.ui-header-fixed .previous,
-.ui-header-fixed .next {
-	margin-top: 1px;
-}
-.ui-header-fixed.ui-fixed-hidden .previous,
-.ui-header-fixed.ui-fixed-hidden .next {
-	margin-top: 0;
 }
