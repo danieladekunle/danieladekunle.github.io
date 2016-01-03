@@ -373,7 +373,7 @@
 	letter-spacing: 1.5px;
 	padding-top: 15px;
 	padding-bottom: 0px;
-	font-weight: 550;
+	font-weight: 650;
 	color: #707070;
 }
 .pdf {
@@ -405,7 +405,7 @@
   background-image: url('images/menu-solid.png');
   background-size: 22px;
   background-repeat: no-repeat;
-  background-position: 16px 12px;
+  background-position: 16px 11px;
 }
 .passage-menu-icon-right {
 	height: 22px;
