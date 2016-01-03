@@ -1,6 +1,6 @@
 CACHE MANIFEST
 
-# Version 80
+# Version 81
 
 customizations.css
 fastclick.js
@@ -25,6 +25,7 @@ images/dots-light-gray.png
 images/external.png
 images/left-gray.png
 images/menu-outline.png
+images/menu-solid.png
 images/quotation-mark.png
 images/right-black.png
 images/right-gray.png
