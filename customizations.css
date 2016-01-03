@@ -391,6 +391,7 @@
 	padding-top: 0px;
 	padding-bottom: 10px;
 	color: #707070;
+	font-weight: 500;
 }
 .panel-title {
 	text-align: center;
@@ -435,30 +436,17 @@
 	font-weight: 700;
 	color: #707070;
 }
-.pdf {
-	text-align: left;
-	background-image: url('images/external.png');
-	background-size: 16px;
-	background-position: right 14px center;
-	background-repeat: no-repeat;
-}
 .passage-menu-icon-left {
 	height: 22px;
 	width: 10px;
 	position: relative;
 	float: left;
 }
-.ui-icon-left-gray {
-  background-image: url('images/left-gray.png');
-  background-size: 8px;
-  background-repeat: no-repeat;
-  background-position: 16px 16px;
-}
 .ui-icon-menu-outline {
   background-image: url('images/menu-outline.png');
   background-size: 22px;
   background-repeat: no-repeat;
-  background-position: 16px 12px;
+  background-position: 16px 11px;
 }
 .ui-icon-menu-solid {
   background-image: url('images/menu-solid.png');
@@ -478,11 +466,12 @@
   background-repeat: no-repeat;
   background-position: 16px 19px;
 }
-.ui-icon-pdf {
-  background-image: url('images/pdf.png');
-  background-size: 16px;
-  background-position: right 15px center;
-  background-repeat: no-repeat;
+.pdf {
+	text-align: left;
+	background-image: url('images/external.png');
+	background-size: 16px;
+	background-position: right 14px center;
+	background-repeat: no-repeat;
 }
 .ui-icon-right {
   background-image: url('images/right-black.png');
