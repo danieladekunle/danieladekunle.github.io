@@ -204,14 +204,18 @@
 				}); 
 			});
 		</script>
-		<!-- Go back in history with reverse slide transition on right swipe from edge of screen (disabled) -->
-		<!-- <script>
+		<!-- If in standalone mode and panel is not open go back in history with reverse slide transition on right swipe from edge of screen -->
+		<script>
 			$(document).bind('swiperight', function (event) {
-				if ( event.swipestart.coords[0] <10) {
-					history.back({transition:"slide", reverse:true,});
+				if (window.navigator.standalone == true) {
+					if ( $.mobile.activePage.jqmData( "panel" ) !== "open" ) {
+						if ( event.swipestart.coords[0] <10) {
+							history.back({transition:"slide", reverse:true,});
+						}
+					}
 				}
 			});
-		</script> -->
+		</script>
 		<!-- Go forward in history on left swipe (disabled) -->
 		<!-- <script>
 			$(document).bind('swipeleft', function () {
@@ -265,7 +269,7 @@
 				<div class="menu-subheading">for&nbsp;memorization</div>
 			</div>
 			<!-- Side Panel -->
-			<div data-role="panel" data-position="right" id="panel1">
+			<div data-role="panel" data-position="right" data-display="overlay" data-dismissible="true" data-position-fixed="true" id="panel1">
 				<div class="panel-header">
 					Additional
 					<br>Resources
