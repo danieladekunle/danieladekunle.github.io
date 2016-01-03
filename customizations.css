@@ -28,22 +28,21 @@
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=0 );
 }
 .menu-heading {
-	font-size: 20px;
+	font-size: 19.5px;
 	text-align: center;
     text-transform: uppercase;
-	letter-spacing: 5.5px;
+	letter-spacing: 5px;
 	padding-top: 15px;
 	padding-bottom: 0px;
-	/* font-weight: 900; */
-	color: #909090;
-	font-family: Lato;
+	font-weight: 900;
+	color: #707070;
 }
 .menu-subheading {
 	text-align: center;
 	font-size: 14px;
 	letter-spacing: 4px;
 	padding-top: 4px;
-	color: #A8A8A8;
+	color: #909090;
 	padding-bottom: 0px;
 }
 .menu-icon-left {
@@ -427,15 +426,14 @@
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=0 );
 }
 .passage-menu-heading {
-	font-size: 18px;
-	font-family: Lato;
+	font-size: 17px;
 	text-align: center;
     text-transform: lowercase;
-	letter-spacing: 4px;
+	letter-spacing: 2px;
 	padding-top: 15px;
 	padding-bottom: 0px;
-	font-weight:;
-	color: #909090;
+	font-weight: 600;
+	color: #707070;
 }
 .pdf {
 	text-align: left;
