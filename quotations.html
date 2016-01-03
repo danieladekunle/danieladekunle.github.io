@@ -97,79 +97,121 @@
 			});
 		</script>
 		<!-- Hide all book titles by default. 
-		When number clicked show title and hide any others. 
+		When number clicked if title hidden show title and hide any others, otherwise open book page. 
 		When title clicked hide all titles. -->
 		<script>
 			$(document).ready(function() {
 				$('.book-1-title-wrapper').hide();
 				$('.book-1-number-wrapper').click(function() {
-					$('.book-1-title-wrapper').fadeToggle("linear");
-					$('.book-2-title-wrapper').hide();
-					$('.book-3-title-wrapper').hide();
-					$('.book-4-title-wrapper').hide();
-					$('.book-5-title-wrapper').hide();
-					$('.book-6-title-wrapper').hide();
-					$('.book-7-title-wrapper').hide();
+					if($('.book-1-title-wrapper').is(':hidden')){
+						$('.book-1-title-wrapper').fadeToggle("linear");
+						$('.book-2-title-wrapper').hide();
+						$('.book-3-title-wrapper').hide();
+						$('.book-4-title-wrapper').hide();
+						$('.book-5-title-wrapper').hide();
+						$('.book-6-title-wrapper').hide();
+						$('.book-7-title-wrapper').hide();
+					}
+					else {
+						location.href='#book1';
+						$('.book-1-title-wrapper').fadeToggle("linear");
+					}
 				});
 				$('.book-2-title-wrapper').hide();
 				$('.book-2-number-wrapper').click(function() {
-					$('.book-2-title-wrapper').fadeToggle("linear");
-					$('.book-1-title-wrapper').hide();
-					$('.book-3-title-wrapper').hide();
-					$('.book-4-title-wrapper').hide();
-					$('.book-5-title-wrapper').hide();
-					$('.book-6-title-wrapper').hide();
-					$('.book-7-title-wrapper').hide();
+					if($('.book-2-title-wrapper').is(':hidden')){
+						$('.book-2-title-wrapper').fadeToggle("linear");
+						$('.book-1-title-wrapper').hide();
+						$('.book-3-title-wrapper').hide();
+						$('.book-4-title-wrapper').hide();
+						$('.book-5-title-wrapper').hide();
+						$('.book-6-title-wrapper').hide();
+						$('.book-7-title-wrapper').hide();
+					}
+					else {
+						location.href='#book2';
+						$('.book-2-title-wrapper').fadeToggle("linear");
+					}
 				}); 
 				$('.book-3-title-wrapper').hide();
 				$('.book-3-number-wrapper').click(function() {
-					$('.book-3-title-wrapper').fadeToggle("linear");
-					$('.book-1-title-wrapper').hide();
-					$('.book-2-title-wrapper').hide();
-					$('.book-4-title-wrapper').hide();
-					$('.book-5-title-wrapper').hide();
-					$('.book-6-title-wrapper').hide();
-					$('.book-7-title-wrapper').hide();
+					if($('.book-3-title-wrapper').is(':hidden')){
+						$('.book-3-title-wrapper').fadeToggle("linear");
+						$('.book-1-title-wrapper').hide();
+						$('.book-2-title-wrapper').hide();
+						$('.book-4-title-wrapper').hide();
+						$('.book-5-title-wrapper').hide();
+						$('.book-6-title-wrapper').hide();
+						$('.book-7-title-wrapper').hide();
+					}
+					else {
+						location.href='#book3';
+						$('.book-3-title-wrapper').fadeToggle("linear");
+					}
 				}); 
 				$('.book-4-title-wrapper').hide();
 				$('.book-4-number-wrapper').click(function() {
-					$('.book-4-title-wrapper').fadeToggle("linear");
-					$('.book-1-title-wrapper').hide();
-					$('.book-2-title-wrapper').hide();
-					$('.book-3-title-wrapper').hide();
-					$('.book-5-title-wrapper').hide();
-					$('.book-6-title-wrapper').hide();
-					$('.book-7-title-wrapper').hide();
+					if($('.book-4-title-wrapper').is(':hidden')){
+						$('.book-4-title-wrapper').fadeToggle("linear");
+						$('.book-1-title-wrapper').hide();
+						$('.book-2-title-wrapper').hide();
+						$('.book-3-title-wrapper').hide();
+						$('.book-5-title-wrapper').hide();
+						$('.book-6-title-wrapper').hide();
+						$('.book-7-title-wrapper').hide();
+					}
+					else {
+						location.href='#book4';
+						$('.book-4-title-wrapper').fadeToggle("linear");
+					}
 				}); 
 				$('.book-5-title-wrapper').hide();
 				$('.book-5-number-wrapper').click(function() {
-					$('.book-5-title-wrapper').fadeToggle("linear");
-					$('.book-1-title-wrapper').hide();
-					$('.book-2-title-wrapper').hide();
-					$('.book-3-title-wrapper').hide();
-					$('.book-4-title-wrapper').hide();
-					$('.book-6-title-wrapper').hide();
-					$('.book-7-title-wrapper').hide();
+					if($('.book-5-title-wrapper').is(':hidden')){
+						$('.book-5-title-wrapper').fadeToggle("linear");
+						$('.book-1-title-wrapper').hide();
+						$('.book-2-title-wrapper').hide();
+						$('.book-3-title-wrapper').hide();
+						$('.book-4-title-wrapper').hide();
+						$('.book-6-title-wrapper').hide();
+						$('.book-7-title-wrapper').hide();
+					}
+					else {
+						location.href='#book5';
+						$('.book-5-title-wrapper').fadeToggle("linear");
+					}
 				}); 
 				$('.book-6-title-wrapper').hide();
 				$('.book-6-number-wrapper').click(function() {
-					$('.book-6-title-wrapper').fadeToggle("linear");
-					$('.book-1-title-wrapper').hide();
-					$('.book-2-title-wrapper').hide();
-					$('.book-3-title-wrapper').hide();
-					$('.book-4-title-wrapper').hide();
-					$('.book-5-title-wrapper').hide();
-					$('.book-7-title-wrapper').hide();
+					if($('.book-6-title-wrapper').is(':hidden')){
+						$('.book-6-title-wrapper').fadeToggle("linear");
+						$('.book-1-title-wrapper').hide();
+						$('.book-2-title-wrapper').hide();
+						$('.book-3-title-wrapper').hide();
+						$('.book-4-title-wrapper').hide();
+						$('.book-5-title-wrapper').hide();
+						$('.book-7-title-wrapper').hide();
+					}
+					else {
+						location.href='#book6';
+						$('.book-6-title-wrapper').fadeToggle("linear");
+					}
 				}); 
 				$('.book-7-title-wrapper').hide();
 				$('.book-7-number-wrapper').click(function() {
-					$('.book-7-title-wrapper').fadeToggle("linear");
-					$('.book-1-title-wrapper').hide();
-					$('.book-2-title-wrapper').hide();
-					$('.book-3-title-wrapper').hide();
-					$('.book-4-title-wrapper').hide();
-					$('.book-5-title-wrapper').hide();
-					$('.book-6-title-wrapper').hide();
+					if($('.book-7-title-wrapper').is(':hidden')){
+						$('.book-7-title-wrapper').fadeToggle("linear");
+						$('.book-1-title-wrapper').hide();
+						$('.book-2-title-wrapper').hide();
+						$('.book-3-title-wrapper').hide();
+						$('.book-4-title-wrapper').hide();
+						$('.book-5-title-wrapper').hide();
+						$('.book-6-title-wrapper').hide();
+					}
+					else {
+						location.href='#book7';
+						$('.book-7-title-wrapper').fadeToggle("linear");
+					}
 				}); 
 				$('.book-title').click(function() {
 					$('.book-1-title-wrapper').hide("slow");
@@ -182,28 +224,6 @@
 				});
 			});
 		</script>
-		<!-- Swipe left to open panel (disabled) -->
-		<!-- <script>
-			$( document ).on( "pageinit", "#menu", function() {
-				$( document ).on( "swipeleft", "#menu", function( e ) {
-					// We check if there is no open panel on the page because otherwise
-					// a swipe to close the left panel would also open the right panel (and v.v.).
-					// We do this by checking the data that the framework stores on the page element (panel: open).
-					if ( $.mobile.activePage.jqmData( "panel" ) !== "open" ) {
-						if ( e.type === "swipeleft"  ) {
-							$( "#panel1" ).panel( "open" );
-						} 
-					}
-				});
-			});
-		</script> -->
-		<!-- Disable forward/back swipes on panel (disabled)-->
-		<!-- <script>
-			$(document).on('swipeleft swiperight', '[data-role="panel"]', function(event) {
-				event.stopPropagation();
-				event.preventDefault();
-			});
-		</script> -->
 		<!-- Hide all header/footer items on passage/additional resource pages when page clicked. 
 		Reshow items when panel button clicked. -->
 		<script>
@@ -264,6 +284,27 @@
 		<!-- Save current location to local storage when navigation buttons clicked -->
 		<script>
 			$(document).ready( function(event){
+				$('.book-1-number-wrapper').on('click', function(){          
+					localStorage.lastlocation = location.href
+				});
+				$('.book-2-number-wrapper').on('click', function(){          
+					localStorage.lastlocation = location.href
+				});
+				$('.book-3-number-wrapper').on('click', function(){          
+					localStorage.lastlocation = location.href
+				});
+				$('.book-4-number-wrapper').on('click', function(){          
+					localStorage.lastlocation = location.href
+				});
+				$('.book-5-number-wrapper').on('click', function(){          
+					localStorage.lastlocation = location.href
+				});
+				$('.book-6-number-wrapper').on('click', function(){          
+					localStorage.lastlocation = location.href
+				});
+				$('.book-7-number-wrapper').on('click', function(){          
+					localStorage.lastlocation = location.href
+				});
 				$('.link').on('click', function(){          
 					localStorage.lastlocation = this.href
 				});
@@ -493,7 +534,7 @@
 			</div>
 			<div data-role="content" style="padding: 0px 12px">
 				<a data-role="button" class="pdf" href="pdfs/Book%201.pdf" target="_blank">
-					All passages
+					all passages
 					<br><small>PDF</small>
 				</a>
 				<ul data-role="listview" data-divider-theme="a" data-inset="true">
