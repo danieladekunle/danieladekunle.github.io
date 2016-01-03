@@ -1,3 +1,8 @@
+@font-face {
+	font-family: Lato;
+	src: url(lato-heavy.ttf);
+}
+
 /* Main Menu */
 
 /* Vertically center numbers between header/footer */
@@ -23,21 +28,22 @@
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=0 );
 }
 .menu-heading {
-	font-size: 19.5px;
+	font-size: 20px;
 	text-align: center;
     text-transform: uppercase;
-	letter-spacing: 5px;
+	letter-spacing: 5.5px;
 	padding-top: 15px;
 	padding-bottom: 0px;
-	font-weight: 900;
-	color: #707070;
+	/* font-weight: 900; */
+	color: #909090;
+	font-family: Lato;
 }
 .menu-subheading {
 	text-align: center;
 	font-size: 14px;
 	letter-spacing: 4px;
 	padding-top: 4px;
-	color: #909090;
+	color: #A8A8A8;
 	padding-bottom: 0px;
 }
 .menu-icon-left {
@@ -421,14 +427,15 @@
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=0 );
 }
 .passage-menu-heading {
-	font-size: 17px;
+	font-size: 18px;
+	font-family: Lato;
 	text-align: center;
     text-transform: lowercase;
-	letter-spacing: 1.5px;
+	letter-spacing: 4px;
 	padding-top: 15px;
 	padding-bottom: 0px;
-	font-weight: 650;
-	color: #707070;
+	font-weight:;
+	color: #909090;
 }
 .pdf {
 	text-align: left;

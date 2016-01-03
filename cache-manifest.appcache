@@ -1,12 +1,13 @@
 CACHE MANIFEST
 
-# Version 89
+# Version 90
 
 customizations.css
 fastclick.js
 jquery.mobile.structure-1.4.5.css
 jquery.mobile-1.4.5.min.js
 jquery-1.11.3.min.js
+lato-heavy.ttf
 recite.html
 quotations.html
 theme.css
