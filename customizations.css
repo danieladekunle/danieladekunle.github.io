@@ -458,8 +458,8 @@
 	margin-left: 14px;
 	margin-right: 14px;
 	text-align: justify;
-	position: absolute;
-	height: calc(100% - 100px);
+/* 	position: absolute;
+	height: calc(100% - 100px); */
 }
 .citation {
 	text-align: center;
@@ -511,7 +511,6 @@
 	padding-top: 16px;
 	color: gray;
 	letter-spacing: 0px;
-	/* text-transform: uppercase; */
 }
 .ui-icon-more-b {
   background-image: url('images/dots-gray.png');

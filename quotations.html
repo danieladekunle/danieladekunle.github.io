@@ -177,32 +177,19 @@
 				event.preventDefault();
 			});
 		</script>
-		<!-- Hide all header/footer items on passage pages when page clicked -->
+		<!-- Hide all header/footer items on passage/additional resource pages when page clicked -->
 		<script>
 			$(document).ready(function() {
-				$('.passage').click(function() {
-					$('.next-passage').toggle("show");
-					$('.previous-passage').toggle("show");
-					$('.passage-icon-left').toggle("show");
-					$('.section-number').toggle("show");
-					$('.resource-heading').toggle("show");
-					$('.passage-icon-right').toggle("show");
+				$('.passage-page').click(function() {
+					$($(this).children('.passage-header').children('a')).fadeToggle();
+					$($(this).children('.passage-header').children('.section-number')).fadeToggle();
+					$($(this).children('.passage-footer').children('a')).fadeToggle();
 				});
-				$('.passage-header').click(function() {
-					$('.next-passage').toggle("show");
-					$('.previous-passage').toggle("show");
-					$('.passage-icon-left').toggle("show");
-					$('.section-number').toggle("show");
-					$('.resource-heading').toggle("show");
-					$('.passage-icon-right').toggle("show");
-				});
-				$('.passage-footer').click(function() {
-					$('.next-passage').toggle("show");
-					$('.previous-passage').toggle("show");
-					$('.passage-icon-left').toggle("show");
-					$('.section-number').toggle("show");
-					$('.resource-heading').toggle("show");
-					$('.passage-icon-right').toggle("show");
+				$('.resource-page').click(function() {
+					$($(this).children('.passage-header').children('a')).fadeToggle();
+					$($(this).children('.passage-header').children('.resource-heading')).fadeToggle();
+					$($(this).children('.passage-footer').children('a')).fadeToggle();
+					$($(this).children('.passage-footer').children('.resource-heading')).fadeToggle();
 				});
 			});
 		</script>
@@ -1409,7 +1396,7 @@
 			</div>
 		</div>
 <!-- Book 1 Passages -->
-		<div data-role="page" data-control-title="b1q1" class="testingclass" id="b1q1">
+		<div data-role="page" data-control-title="b1q1" class="passage-page" id="b1q1">
 			<div data-theme="d" data-role="header" data-position="fixed" data-tap-toggle="false" class="passage-header">
 				<a class="passage-icon-left" data-theme="c" data-transition="slide" data-direction="reverse" href="#book1" data-icon="passage-left"></a><a href="#" data-theme="c" data-icon="passage-blank" class="passage-icon-right"></a>
 				<div class="section-number">
@@ -1424,7 +1411,7 @@
 				<a class="next-passage" data-theme="c" data-icon="next-passage"></a>
 			</div>
 		</div>
-		<div data-role="page" data-control-title="b1q2" class="testingclass" id="b1q2">
+		<div data-role="page" data-control-title="b1q2" class="passage-page" id="b1q2">
 			<div data-theme="d" data-role="header" data-position="fixed" data-tap-toggle="false" class="passage-header">
 				<a class="passage-icon-left" data-theme="c" data-transition="slide" data-direction="reverse" href="#book1" data-icon="passage-left"></a><a href="#" data-theme="c" data-icon="passage-blank" class="passage-icon-right"></a>
 				<div class="section-number">
@@ -1440,7 +1427,7 @@
 				<a class="previous-passage" data-theme="c" data-icon="previous-passage"></a>
 			</div>
 		</div>
-		<div data-role="page" data-control-title="b1q3" class="ui-icon-nodisc" id="b1q3">
+		<div data-role="page" data-control-title="b1q3" class="passage-page" id="b1q3">
 			<div data-theme="d" data-role="header" data-position="fixed" data-tap-toggle="false" class="passage-header">
 				<a class="passage-icon-left" data-theme="c" data-transition="slide" data-direction="reverse" href="#book1" data-icon="passage-left"></a><a href="#" data-theme="c" data-icon="passage-blank" class="passage-icon-right"></a>
 				<div class="section-number">
@@ -1456,7 +1443,7 @@
 				<a class="previous-passage" data-theme="c" data-icon="previous-passage"></a>
 			</div>
 		</div>
-		<div data-role="page" data-control-title="b1q4" class="ui-icon-nodisc" id="b1q44">
+		<div data-role="page" data-control-title="b1q4" class="passage-page" id="b1q4">
 			<div data-theme="d" data-role="header" data-position="fixed" data-tap-toggle="false" class="passage-header">
 				<a class="passage-icon-left" data-theme="c" data-transition="slide" data-direction="reverse" href="#book1" data-icon="passage-left"></a><a href="#" data-theme="c" data-icon="passage-blank" class="passage-icon-right"></a>
 				<div class="section-number">
@@ -1472,7 +1459,7 @@
 				<a class="previous-passage" data-theme="c" data-icon="previous-passage"></a>
 			</div>
 		</div>
-		<div data-role="page" data-control-title="b1q5" class="ui-icon-nodisc" id="b1q5">
+		<div data-role="page" data-control-title="b1q5" class="passage-page" id="b1q5">
 			<div data-theme="d" data-role="header" data-position="fixed" data-tap-toggle="false" class="passage-header">
 				<a class="passage-icon-left" data-theme="c" data-transition="slide" data-direction="reverse" href="#book1" data-icon="passage-left"></a><a href="#" data-theme="c" data-icon="passage-blank" class="passage-icon-right"></a>
 				<div class="section-number">
@@ -1488,7 +1475,7 @@
 				<a class="previous-passage" data-theme="c" data-icon="previous-passage"></a>
 			</div>
 		</div>
-		<div data-role="page" data-control-title="b1q6" class="ui-icon-nodisc" id="b1q6">
+		<div data-role="page" data-control-title="b1q6" class="passage-page" id="b1q6">
 			<div data-theme="d" data-role="header" data-position="fixed" data-tap-toggle="false" class="passage-header">
 				<a class="passage-icon-left" data-theme="c" data-transition="slide" data-direction="reverse" href="#book1" data-icon="passage-left"></a><a href="#" data-theme="c" data-icon="passage-blank" class="passage-icon-right"></a>
 				<div class="section-number">
@@ -1504,7 +1491,7 @@
 				<a class="previous-passage" data-theme="c" data-icon="previous-passage"></a>
 			</div>
 		</div>
-		<div data-role="page" data-control-title="b1q7" class="ui-icon-nodisc" id="b1q7">
+		<div data-role="page" data-control-title="b1q7" class="passage-page" id="b1q7">
 			<div data-theme="d" data-role="header" data-position="fixed" data-tap-toggle="false" class="passage-header">
 				<a class="passage-icon-left" data-theme="c" data-transition="slide" data-direction="reverse" href="#book1" data-icon="passage-left"></a><a href="#" data-theme="c" data-icon="passage-blank" class="passage-icon-right"></a>
 				<div class="section-number">
@@ -1520,7 +1507,7 @@
 				<a class="previous-passage" data-theme="c" data-icon="previous-passage"></a>
 			</div>
 		</div>
-		<div data-role="page" data-control-title="b1q8" class="ui-icon-nodisc" id="b1q8">
+		<div data-role="page" data-control-title="b1q8" class="passage-page" id="b1q8">
 			<div data-theme="d" data-role="header" data-position="fixed" data-tap-toggle="false" class="passage-header">
 				<a class="passage-icon-left" data-theme="c" data-transition="slide" data-direction="reverse" href="#book1" data-icon="passage-left"></a><a href="#" data-theme="c" data-icon="passage-blank" class="passage-icon-right"></a>
 				<div class="section-number">
@@ -1536,7 +1523,7 @@
 				<a class="previous-passage" data-theme="c" data-icon="previous-passage"></a>
 			</div>
 		</div>
-		<div data-role="page" data-control-title="b1q9" class="ui-icon-nodisc" id="b1q9">
+		<div data-role="page" data-control-title="b1q9" class="passage-page" id="b1q9">
 			<div data-theme="d" data-role="header" data-position="fixed" data-tap-toggle="false" class="passage-header">
 				<a class="passage-icon-left" data-theme="c" data-transition="slide" data-direction="reverse" href="#book1" data-icon="passage-left"></a><a href="#" data-theme="c" data-icon="passage-blank" class="passage-icon-right"></a>
 				<div class="section-number">
@@ -1552,7 +1539,7 @@
 				<a class="previous-passage" data-theme="c" data-icon="previous-passage"></a>
 			</div>
 		</div>
-		<div data-role="page" data-control-title="b1q10" class="ui-icon-nodisc" id="b1q10">
+		<div data-role="page" data-control-title="b1q10" class="passage-page" id="b1q10">
 			<div data-theme="d" data-role="header" data-position="fixed" data-tap-toggle="false" class="passage-header">
 				<a class="passage-icon-left" data-theme="c" data-transition="slide" data-direction="reverse" href="#book1" data-icon="passage-left"></a><a href="#" data-theme="c" data-icon="passage-blank" class="passage-icon-right"></a>
 				<div class="section-number">
@@ -1568,7 +1555,7 @@
 				<a class="previous-passage" data-theme="c" data-icon="previous-passage"></a>
 			</div>
 		</div>
-		<div data-role="page" data-control-title="b1q11" class="ui-icon-nodisc" id="b1q11">
+		<div data-role="page" data-control-title="b1q11" class="passage-page" id="b1q11">
 			<div data-theme="d" data-role="header" data-position="fixed" data-tap-toggle="false" class="passage-header">
 				<a class="passage-icon-left" data-theme="c" data-transition="slide" data-direction="reverse" href="#book1" data-icon="passage-left"></a><a href="#" data-theme="c" data-icon="passage-blank" class="passage-icon-right"></a>
 				<div class="section-number">
@@ -1584,7 +1571,7 @@
 				<a class="previous-passage" data-theme="c" data-icon="previous-passage"></a>
 			</div>
 		</div>
-		<div data-role="page" data-control-title="b1q12" class="ui-icon-nodisc" id="b1q12">
+		<div data-role="page" data-control-title="b1q12" class="passage-page" id="b1q12">
 			<div data-theme="d" data-role="header" data-position="fixed" data-tap-toggle="false" class="passage-header">
 				<a class="passage-icon-left" data-theme="c" data-transition="slide" data-direction="reverse" href="#book1" data-icon="passage-left"></a><a href="#" data-theme="c" data-icon="passage-blank" class="passage-icon-right"></a>
 				<div class="section-number">
@@ -1600,7 +1587,7 @@
 			</div>
 		</div>
 <!-- Book 2 Passages -->
-		<div data-role="page" data-control-title="b2q1" class="ui-icon-nodisc" id="b2q1">
+		<div data-role="page" data-control-title="b2q1" class="passage-page" id="b2q1">
 			<div data-theme="d" data-role="header" data-position="fixed" data-tap-toggle="false" class="passage-header">
 				<a class="passage-icon-left" data-theme="c" data-transition="slide" data-direction="reverse" href="#book2" data-icon="passage-left"></a><a href="#" data-theme="c" data-icon="passage-blank" class="passage-icon-right"></a>
 				<div class="section-number">
@@ -1615,7 +1602,7 @@
 				<a class="next-passage" data-theme="c" data-icon="next-passage"></a>
 			</div>
 		</div>
-		<div data-role="page" data-control-title="b2q2" class="ui-icon-nodisc" id="b2q2">
+		<div data-role="page" data-control-title="b2q2" class="passage-page" id="b2q2">
 			<div data-theme="d" data-role="header" data-position="fixed" data-tap-toggle="false" class="passage-header">
 				<a class="passage-icon-left" data-theme="c" data-transition="slide" data-direction="reverse" href="#book2" data-icon="passage-left"></a><a href="#" data-theme="c" data-icon="passage-blank" class="passage-icon-right"></a>
 				<div class="section-number">
@@ -1631,7 +1618,7 @@
 				<a class="previous-passage" data-theme="c" data-icon="previous-passage"></a>
 			</div>
 		</div>
-		<div data-role="page" data-control-title="b2q3" class="ui-icon-nodisc" id="b2q3">
+		<div data-role="page" data-control-title="b2q3" class="passage-page" id="b2q3">
 			<div data-theme="d" data-role="header" data-position="fixed" data-tap-toggle="false" class="passage-header">
 				<a class="passage-icon-left" data-theme="c" data-transition="slide" data-direction="reverse" href="#book2" data-icon="passage-left"></a><a href="#" data-theme="c" data-icon="passage-blank" class="passage-icon-right"></a>
 				<div class="section-number">
@@ -1647,7 +1634,7 @@
 				<a class="previous-passage" data-theme="c" data-icon="previous-passage"></a>
 			</div>
 		</div>
-		<div data-role="page" data-control-title="b2q4" class="ui-icon-nodisc" id="b2q4">
+		<div data-role="page" data-control-title="b2q4" class="passage-page" id="b2q4">
 			<div data-theme="d" data-role="header" data-position="fixed" data-tap-toggle="false" class="passage-header">
 				<a class="passage-icon-left" data-theme="c" data-transition="slide" data-direction="reverse" href="#book2" data-icon="passage-left"></a><a href="#" data-theme="c" data-icon="passage-blank" class="passage-icon-right"></a>
 				<div class="section-number">
@@ -1663,7 +1650,7 @@
 				<a class="previous-passage" data-theme="c" data-icon="previous-passage"></a>
 			</div>
 		</div>
-		<div data-role="page" data-control-title="b2q5" class="ui-icon-nodisc" id="b2q5">
+		<div data-role="page" data-control-title="b2q5" class="passage-page" id="b2q5">
 			<div data-theme="d" data-role="header" data-position="fixed" data-tap-toggle="false" class="passage-header">
 				<a class="passage-icon-left" data-theme="c" data-transition="slide" data-direction="reverse" href="#book2" data-icon="passage-left"></a><a href="#" data-theme="c" data-icon="passage-blank" class="passage-icon-right"></a>
 				<div class="section-number">
@@ -1679,7 +1666,7 @@
 				<a class="previous-passage" data-theme="c" data-icon="previous-passage"></a>
 			</div>
 		</div>
-		<div data-role="page" data-control-title="b2q6" class="ui-icon-nodisc" id="b2q6">
+		<div data-role="page" data-control-title="b2q6" class="passage-page" id="b2q6">
 			<div data-theme="d" data-role="header" data-position="fixed" data-tap-toggle="false" class="passage-header">
 				<a class="passage-icon-left" data-theme="c" data-transition="slide" data-direction="reverse" href="#book2" data-icon="passage-left"></a><a href="#" data-theme="c" data-icon="passage-blank" class="passage-icon-right"></a>
 				<div class="section-number">
@@ -1695,7 +1682,7 @@
 				<a class="previous-passage" data-theme="c" data-icon="previous-passage"></a>
 			</div>
 		</div>
-		<div data-role="page" data-control-title="b2q7" class="ui-icon-nodisc" id="b2q7">
+		<div data-role="page" data-control-title="b2q7" class="passage-page" id="b2q7">
 			<div data-theme="d" data-role="header" data-position="fixed" data-tap-toggle="false" class="passage-header">
 				<a class="passage-icon-left" data-theme="c" data-transition="slide" data-direction="reverse" href="#book2" data-icon="passage-left"></a><a href="#" data-theme="c" data-icon="passage-blank" class="passage-icon-right"></a>
 				<div class="section-number">
@@ -1711,7 +1698,7 @@
 				<a class="previous-passage" data-theme="c" data-icon="previous-passage"></a>
 			</div>
 		</div>
-		<div data-role="page" data-control-title="b2q8" class="ui-icon-nodisc" id="b2q8">
+		<div data-role="page" data-control-title="b2q8" class="passage-page" id="b2q8">
 			<div data-theme="d" data-role="header" data-position="fixed" data-tap-toggle="false" class="passage-header">
 				<a class="passage-icon-left" data-theme="c" data-transition="slide" data-direction="reverse" href="#book2" data-icon="passage-left"></a><a href="#" data-theme="c" data-icon="passage-blank" class="passage-icon-right"></a>
 				<div class="section-number">
@@ -1727,7 +1714,7 @@
 				<a class="previous-passage" data-theme="c" data-icon="previous-passage"></a>
 			</div>
 		</div>
-		<div data-role="page" data-control-title="b2q9" class="ui-icon-nodisc" id="b2q9">
+		<div data-role="page" data-control-title="b2q9" class="passage-page" id="b2q9">
 			<div data-theme="d" data-role="header" data-position="fixed" data-tap-toggle="false" class="passage-header">
 				<a class="passage-icon-left" data-theme="c" data-transition="slide" data-direction="reverse" href="#book2" data-icon="passage-left"></a><a href="#" data-theme="c" data-icon="passage-blank" class="passage-icon-right"></a>
 				<div class="section-number">
@@ -1743,7 +1730,7 @@
 				<a class="previous-passage" data-theme="c" data-icon="previous-passage"></a>
 			</div>
 		</div>
-		<div data-role="page" data-control-title="b2q10" class="ui-icon-nodisc" id="b2q10">
+		<div data-role="page" data-control-title="b2q10" class="passage-page" id="b2q10">
 			<div data-theme="d" data-role="header" data-position="fixed" data-tap-toggle="false" class="passage-header">
 				<a class="passage-icon-left" data-theme="c" data-transition="slide" data-direction="reverse" href="#book2" data-icon="passage-left"></a><a href="#" data-theme="c" data-icon="passage-blank" class="passage-icon-right"></a>
 				<div class="section-number">
@@ -1759,7 +1746,7 @@
 				<a class="previous-passage" data-theme="c" data-icon="previous-passage"></a>
 			</div>
 		</div>
-		<div data-role="page" data-control-title="b2q11" class="ui-icon-nodisc" id="b2q11">
+		<div data-role="page" data-control-title="b2q11" class="passage-page" id="b2q11">
 			<div data-theme="d" data-role="header" data-position="fixed" data-tap-toggle="false" class="passage-header">
 				<a class="passage-icon-left" data-theme="c" data-transition="slide" data-direction="reverse" href="#book2" data-icon="passage-left"></a><a href="#" data-theme="c" data-icon="passage-blank" class="passage-icon-right"></a>
 				<div class="section-number">
@@ -1775,7 +1762,7 @@
 				<a class="previous-passage" data-theme="c" data-icon="previous-passage"></a>
 			</div>
 		</div>
-		<div data-role="page" data-control-title="b2q12" class="ui-icon-nodisc" id="b2q12">
+		<div data-role="page" data-control-title="b2q12" class="passage-page" id="b2q12">
 			<div data-theme="d" data-role="header" data-position="fixed" data-tap-toggle="false" class="passage-header">
 				<a class="passage-icon-left" data-theme="c" data-transition="slide" data-direction="reverse" href="#book2" data-icon="passage-left"></a><a href="#" data-theme="c" data-icon="passage-blank" class="passage-icon-right"></a>
 				<div class="section-number">
@@ -1791,7 +1778,7 @@
 				<a class="previous-passage" data-theme="c" data-icon="previous-passage"></a>
 			</div>
 		</div>
-		<div data-role="page" data-control-title="b2q13" class="ui-icon-nodisc" id="b2q13">
+		<div data-role="page" data-control-title="b2q13" class="passage-page" id="b2q13">
 			<div data-theme="d" data-role="header" data-position="fixed" data-tap-toggle="false" class="passage-header">
 				<a class="passage-icon-left" data-theme="c" data-transition="slide" data-direction="reverse" href="#book2" data-icon="passage-left"></a><a href="#" data-theme="c" data-icon="passage-blank" class="passage-icon-right"></a>
 				<div class="section-number">
@@ -1807,7 +1794,7 @@
 				<a class="previous-passage" data-theme="c" data-icon="previous-passage"></a>
 			</div>
 		</div>
-		<div data-role="page" data-control-title="b2q14" class="ui-icon-nodisc" id="b2q14">
+		<div data-role="page" data-control-title="b2q14" class="passage-page" id="b2q14">
 			<div data-theme="d" data-role="header" data-position="fixed" data-tap-toggle="false" class="passage-header">
 				<a class="passage-icon-left" data-theme="c" data-transition="slide" data-direction="reverse" href="#book2" data-icon="passage-left"></a><a href="#" data-theme="c" data-icon="passage-blank" class="passage-icon-right"></a>
 				<div class="section-number">
@@ -1823,7 +1810,7 @@
 				<a class="previous-passage" data-theme="c" data-icon="previous-passage"></a>
 			</div>
 		</div>
-		<div data-role="page" data-control-title="b2q15" class="ui-icon-nodisc" id="b2q15">
+		<div data-role="page" data-control-title="b2q15" class="passage-page" id="b2q15">
 			<div data-theme="d" data-role="header" data-position="fixed" data-tap-toggle="false" class="passage-header">
 				<a class="passage-icon-left" data-theme="c" data-transition="slide" data-direction="reverse" href="#book2" data-icon="passage-left"></a><a href="#" data-theme="c" data-icon="passage-blank" class="passage-icon-right"></a>
 				<div class="section-number">
@@ -1839,7 +1826,7 @@
 				<a class="previous-passage" data-theme="c" data-icon="previous-passage"></a>
 			</div>
 		</div>
-		<div data-role="page" data-control-title="b2q16" class="ui-icon-nodisc" id="b2q16">
+		<div data-role="page" data-control-title="b2q16" class="passage-page" id="b2q16">
 			<div data-theme="d" data-role="header" data-position="fixed" data-tap-toggle="false" class="passage-header">
 				<a class="passage-icon-left" data-theme="c" data-transition="slide" data-direction="reverse" href="#book2" data-icon="passage-left"></a><a href="#" data-theme="c" data-icon="passage-blank" class="passage-icon-right"></a>
 				<div class="section-number">
@@ -1855,7 +1842,7 @@
 				<a class="previous-passage" data-theme="c" data-icon="previous-passage"></a>
 			</div>
 		</div>
-		<div data-role="page" data-control-title="b2q17" class="ui-icon-nodisc" id="b2q17">
+		<div data-role="page" data-control-title="b2q17" class="passage-page" id="b2q17">
 			<div data-theme="d" data-role="header" data-position="fixed" data-tap-toggle="false" class="passage-header">
 				<a class="passage-icon-left" data-theme="c" data-transition="slide" data-direction="reverse" href="#book2" data-icon="passage-left"></a><a href="#" data-theme="c" data-icon="passage-blank" class="passage-icon-right"></a>
 				<div class="section-number">
@@ -1871,7 +1858,7 @@
 				<a class="previous-passage" data-theme="c" data-icon="previous-passage"></a>
 			</div>
 		</div>
-		<div data-role="page" data-control-title="b2q18" class="ui-icon-nodisc" id="b2q18">
+		<div data-role="page" data-control-title="b2q18" class="passage-page" id="b2q18">
 			<div data-theme="d" data-role="header" data-position="fixed" data-tap-toggle="false" class="passage-header">
 				<a class="passage-icon-left" data-theme="c" data-transition="slide" data-direction="reverse" href="#book2" data-icon="passage-left"></a><a href="#" data-theme="c" data-icon="passage-blank" class="passage-icon-right"></a>
 				<div class="section-number">
@@ -1887,7 +1874,7 @@
 				<a class="previous-passage" data-theme="c" data-icon="previous-passage"></a>
 			</div>
 		</div>
-		<div data-role="page" data-control-title="b2q19" class="ui-icon-nodisc" id="b2q19">
+		<div data-role="page" data-control-title="b2q19" class="passage-page" id="b2q19">
 			<div data-theme="d" data-role="header" data-position="fixed" data-tap-toggle="false" class="passage-header">
 				<a class="passage-icon-left" data-theme="c" data-transition="slide" data-direction="reverse" href="#book2" data-icon="passage-left"></a><a href="#" data-theme="c" data-icon="passage-blank" class="passage-icon-right"></a>
 				<div class="section-number">
@@ -1903,7 +1890,7 @@
 				<a class="previous-passage" data-theme="c" data-icon="previous-passage"></a>
 			</div>
 		</div>
-		<div data-role="page" data-control-title="b2q20" class="ui-icon-nodisc" id="b2q20">
+		<div data-role="page" data-control-title="b2q20" class="passage-page" id="b2q20">
 			<div data-theme="d" data-role="header" data-position="fixed" data-tap-toggle="false" class="passage-header">
 				<a class="passage-icon-left" data-theme="c" data-transition="slide" data-direction="reverse" href="#book2" data-icon="passage-left"></a><a href="#" data-theme="c" data-icon="passage-blank" class="passage-icon-right"></a>
 				<div class="section-number">
@@ -1919,7 +1906,7 @@
 				<a class="previous-passage" data-theme="c" data-icon="previous-passage"></a>
 			</div>
 		</div>
-		<div data-role="page" data-control-title="b2q21" class="ui-icon-nodisc" id="b2q21">
+		<div data-role="page" data-control-title="b2q21" class="passage-page" id="b2q21">
 			<div data-theme="d" data-role="header" data-position="fixed" data-tap-toggle="false" class="passage-header">
 				<a class="passage-icon-left" data-theme="c" data-transition="slide" data-direction="reverse" href="#book2" data-icon="passage-left"></a><a href="#" data-theme="c" data-icon="passage-blank" class="passage-icon-right"></a>
 				<div class="section-number">
@@ -1935,7 +1922,7 @@
 				<a class="previous-passage" data-theme="c" data-icon="previous-passage"></a>
 			</div>
 		</div>
-		<div data-role="page" data-control-title="b2q22" class="ui-icon-nodisc" id="b2q22">
+		<div data-role="page" data-control-title="b2q22" class="passage-page" id="b2q22">
 			<div data-theme="d" data-role="header" data-position="fixed" data-tap-toggle="false" class="passage-header">
 				<a class="passage-icon-left" data-theme="c" data-transition="slide" data-direction="reverse" href="#book2" data-icon="passage-left"></a><a href="#" data-theme="c" data-icon="passage-blank" class="passage-icon-right"></a>
 				<div class="section-number">
@@ -1951,7 +1938,7 @@
 				<a class="previous-passage" data-theme="c" data-icon="previous-passage"></a>
 			</div>
 		</div>
-		<div data-role="page" data-control-title="b2q23" class="ui-icon-nodisc" id="b2q23">
+		<div data-role="page" data-control-title="b2q23" class="passage-page" id="b2q23">
 			<div data-theme="d" data-role="header" data-position="fixed" data-tap-toggle="false" class="passage-header">
 				<a class="passage-icon-left" data-theme="c" data-transition="slide" data-direction="reverse" href="#book2" data-icon="passage-left"></a><a href="#" data-theme="c" data-icon="passage-blank" class="passage-icon-right"></a>
 				<div class="section-number">
@@ -1967,7 +1954,7 @@
 				<a class="previous-passage" data-theme="c" data-icon="previous-passage"></a>
 			</div>
 		</div>
-		<div data-role="page" data-control-title="b2q24" class="ui-icon-nodisc" id="b2q24">
+		<div data-role="page" data-control-title="b2q24" class="passage-page" id="b2q24">
 			<div data-theme="d" data-role="header" data-position="fixed" data-tap-toggle="false" class="passage-header">
 				<a class="passage-icon-left" data-theme="c" data-transition="slide" data-direction="reverse" href="#book2" data-icon="passage-left"></a><a href="#" data-theme="c" data-icon="passage-blank" class="passage-icon-right"></a>
 				<div class="section-number">
@@ -1983,7 +1970,7 @@
 				<a class="previous-passage" data-theme="c" data-icon="previous-passage"></a>
 			</div>
 		</div>
-		<div data-role="page" data-control-title="b2q25" class="ui-icon-nodisc" id="b2q25">
+		<div data-role="page" data-control-title="b2q25" class="passage-page" id="b2q25">
 			<div data-theme="d" data-role="header" data-position="fixed" data-tap-toggle="false" class="passage-header">
 				<a class="passage-icon-left" data-theme="c" data-transition="slide" data-direction="reverse" href="#book2" data-icon="passage-left"></a><a href="#" data-theme="c" data-icon="passage-blank" class="passage-icon-right"></a>
 				<div class="section-number">
@@ -1999,7 +1986,7 @@
 				<a class="previous-passage" data-theme="c" data-icon="previous-passage"></a>
 			</div>
 		</div>
-		<div data-role="page" data-control-title="b2q26" class="ui-icon-nodisc" id="b2q26">
+		<div data-role="page" data-control-title="b2q26" class="passage-page" id="b2q26">
 			<div data-theme="d" data-role="header" data-position="fixed" data-tap-toggle="false" class="passage-header">
 				<a class="passage-icon-left" data-theme="c" data-transition="slide" data-direction="reverse" href="#book2" data-icon="passage-left"></a><a href="#" data-theme="c" data-icon="passage-blank" class="passage-icon-right"></a>
 				<div class="section-number">
@@ -2015,7 +2002,7 @@
 				<a class="previous-passage" data-theme="c" data-icon="previous-passage"></a>
 			</div>
 		</div>
-		<div data-role="page" data-control-title="b2q27" class="ui-icon-nodisc" id="b2q27">
+		<div data-role="page" data-control-title="b2q27" class="passage-page" id="b2q27">
 			<div data-theme="d" data-role="header" data-position="fixed" data-tap-toggle="false" class="passage-header">
 				<a class="passage-icon-left" data-theme="c" data-transition="slide" data-direction="reverse" href="#book2" data-icon="passage-left"></a><a href="#" data-theme="c" data-icon="passage-blank" class="passage-icon-right"></a>
 				<div class="section-number">
@@ -2031,7 +2018,7 @@
 				<a class="previous-passage" data-theme="c" data-icon="previous-passage"></a>
 			</div>
 		</div>
-		<div data-role="page" data-control-title="b2q28" class="ui-icon-nodisc" id="b2q28">
+		<div data-role="page" data-control-title="b2q28" class="passage-page" id="b2q28">
 			<div data-theme="d" data-role="header" data-position="fixed" data-tap-toggle="false" class="passage-header">
 				<a class="passage-icon-left" data-theme="c" data-transition="slide" data-direction="reverse" href="#book2" data-icon="passage-left"></a><a href="#" data-theme="c" data-icon="passage-blank" class="passage-icon-right"></a>
 				<div class="section-number">
@@ -2047,7 +2034,7 @@
 				<a class="previous-passage" data-theme="c" data-icon="previous-passage"></a>
 			</div>
 		</div>
-		<div data-role="page" data-control-title="b2q29" class="ui-icon-nodisc" id="b2q29">
+		<div data-role="page" data-control-title="b2q29" class="passage-page" id="b2q29">
 			<div data-theme="d" data-role="header" data-position="fixed" data-tap-toggle="false" class="passage-header">
 				<a class="passage-icon-left" data-theme="c" data-transition="slide" data-direction="reverse" href="#book2" data-icon="passage-left"></a><a href="#" data-theme="c" data-icon="passage-blank" class="passage-icon-right"></a>
 				<div class="section-number">
@@ -2063,7 +2050,7 @@
 				<a class="previous-passage" data-theme="c" data-icon="previous-passage"></a>
 			</div>
 		</div>
-		<div data-role="page" data-control-title="b2q30" class="ui-icon-nodisc" id="b2q30">
+		<div data-role="page" data-control-title="b2q30" class="passage-page" id="b2q30">
 			<div data-theme="d" data-role="header" data-position="fixed" data-tap-toggle="false" class="passage-header">
 				<a class="passage-icon-left" data-theme="c" data-transition="slide" data-direction="reverse" href="#book2" data-icon="passage-left"></a><a href="#" data-theme="c" data-icon="passage-blank" class="passage-icon-right"></a>
 				<div class="section-number">
@@ -2079,7 +2066,7 @@
 				<a class="previous-passage" data-theme="c" data-icon="previous-passage"></a>
 			</div>
 		</div>
-		<div data-role="page" data-control-title="b2q31" class="ui-icon-nodisc" id="b2q31">
+		<div data-role="page" data-control-title="b2q31" class="passage-page" id="b2q31">
 			<div data-theme="d" data-role="header" data-position="fixed" data-tap-toggle="false" class="passage-header">
 				<a class="passage-icon-left" data-theme="c" data-transition="slide" data-direction="reverse" href="#book2" data-icon="passage-left"></a><a href="#" data-theme="c" data-icon="passage-blank" class="passage-icon-right"></a>
 				<div class="section-number">
@@ -2095,7 +2082,7 @@
 				<a class="previous-passage" data-theme="c" data-icon="previous-passage"></a>
 			</div>
 		</div>
-		<div data-role="page" data-control-title="b2q32" class="ui-icon-nodisc" id="b2q32">
+		<div data-role="page" data-control-title="b2q32" class="passage-page" id="b2q32">
 			<div data-theme="d" data-role="header" data-position="fixed" data-tap-toggle="false" class="passage-header">
 				<a class="passage-icon-left" data-theme="c" data-transition="slide" data-direction="reverse" href="#book2" data-icon="passage-left"></a><a href="#" data-theme="c" data-icon="passage-blank" class="passage-icon-right"></a>
 				<div class="section-number">
@@ -2111,7 +2098,7 @@
 				<a class="previous-passage" data-theme="c" data-icon="previous-passage"></a>
 			</div>
 		</div>
-		<div data-role="page" data-control-title="b2q33" class="ui-icon-nodisc" id="b2q33">
+		<div data-role="page" data-control-title="b2q33" class="passage-page" id="b2q33">
 			<div data-theme="d" data-role="header" data-position="fixed" data-tap-toggle="false" class="passage-header">
 				<a class="passage-icon-left" data-theme="c" data-transition="slide" data-direction="reverse" href="#book2" data-icon="passage-left"></a><a href="#" data-theme="c" data-icon="passage-blank" class="passage-icon-right"></a>
 				<div class="section-number">
@@ -2127,7 +2114,7 @@
 				<a class="previous-passage" data-theme="c" data-icon="previous-passage"></a>
 			</div>
 		</div>
-		<div data-role="page" data-control-title="b2q34" class="ui-icon-nodisc" id="b2q34">
+		<div data-role="page" data-control-title="b2q34" class="passage-page" id="b2q34">
 			<div data-theme="d" data-role="header" data-position="fixed" data-tap-toggle="false" class="passage-header">
 				<a class="passage-icon-left" data-theme="c" data-transition="slide" data-direction="reverse" href="#book2" data-icon="passage-left"></a><a href="#" data-theme="c" data-icon="passage-blank" class="passage-icon-right"></a>
 				<div class="section-number">
@@ -2143,7 +2130,7 @@
 				<a class="previous-passage" data-theme="c" data-icon="previous-passage"></a>
 			</div>
 		</div>
-		<div data-role="page" data-control-title="b2q35" class="ui-icon-nodisc" id="b2q35">
+		<div data-role="page" data-control-title="b2q35" class="passage-page" id="b2q35">
 			<div data-theme="d" data-role="header" data-position="fixed" data-tap-toggle="false" class="passage-header">
 				<a class="passage-icon-left" data-theme="c" data-transition="slide" data-direction="reverse" href="#book2" data-icon="passage-left"></a><a href="#" data-theme="c" data-icon="passage-blank" class="passage-icon-right"></a>
 				<div class="section-number">
@@ -2159,7 +2146,7 @@
 				<a class="previous-passage" data-theme="c" data-icon="previous-passage"></a>
 			</div>
 		</div>
-		<div data-role="page" data-control-title="b2q36" class="ui-icon-nodisc" id="b2q36">
+		<div data-role="page" data-control-title="b2q36" class="passage-page" id="b2q36">
 			<div data-theme="d" data-role="header" data-position="fixed" data-tap-toggle="false" class="passage-header">
 				<a class="passage-icon-left" data-theme="c" data-transition="slide" data-direction="reverse" href="#book2" data-icon="passage-left"></a><a href="#" data-theme="c" data-icon="passage-blank" class="passage-icon-right"></a>
 				<div class="section-number">
@@ -2175,7 +2162,7 @@
 				<a class="previous-passage" data-theme="c" data-icon="previous-passage"></a>
 			</div>
 		</div>
-		<div data-role="page" data-control-title="b2q37" class="ui-icon-nodisc" id="b2q37">
+		<div data-role="page" data-control-title="b2q37" class="passage-page" id="b2q37">
 			<div data-theme="d" data-role="header" data-position="fixed" data-tap-toggle="false" class="passage-header">
 				<a class="passage-icon-left" data-theme="c" data-transition="slide" data-direction="reverse" href="#book2" data-icon="passage-left"></a><a href="#" data-theme="c" data-icon="passage-blank" class="passage-icon-right"></a>
 				<div class="section-number">
@@ -2191,7 +2178,7 @@
 				<a class="previous-passage" data-theme="c" data-icon="previous-passage"></a>
 			</div>
 		</div>
-		<div data-role="page" data-control-title="b2q38" class="ui-icon-nodisc" id="b2q38">
+		<div data-role="page" data-control-title="b2q38" class="passage-page" id="b2q38">
 			<div data-theme="d" data-role="header" data-position="fixed" data-tap-toggle="false" class="passage-header">
 				<a class="passage-icon-left" data-theme="c" data-transition="slide" data-direction="reverse" href="#book2" data-icon="passage-left"></a><a href="#" data-theme="c" data-icon="passage-blank" class="passage-icon-right"></a>
 				<div class="section-number">
@@ -2207,7 +2194,7 @@
 				<a class="previous-passage" data-theme="c" data-icon="previous-passage"></a>
 			</div>
 		</div>
-		<div data-role="page" data-control-title="b2q39" class="ui-icon-nodisc" id="b2q39">
+		<div data-role="page" data-control-title="b2q39" class="passage-page" id="b2q39">
 			<div data-theme="d" data-role="header" data-position="fixed" data-tap-toggle="false" class="passage-header">
 				<a class="passage-icon-left" data-theme="c" data-transition="slide" data-direction="reverse" href="#book2" data-icon="passage-left"></a><a href="#" data-theme="c" data-icon="passage-blank" class="passage-icon-right"></a>
 				<div class="section-number">
@@ -2223,7 +2210,7 @@
 				<a class="previous-passage" data-theme="c" data-icon="previous-passage"></a>
 			</div>
 		</div>
-		<div data-role="page" data-control-title="b2q40" class="ui-icon-nodisc" id="b2q40">
+		<div data-role="page" data-control-title="b2q40" class="passage-page" id="b2q40">
 			<div data-theme="d" data-role="header" data-position="fixed" data-tap-toggle="false" class="passage-header">
 				<a class="passage-icon-left" data-theme="c" data-transition="slide" data-direction="reverse" href="#book2" data-icon="passage-left"></a><a href="#" data-theme="c" data-icon="passage-blank" class="passage-icon-right"></a>
 				<div class="section-number">
@@ -2239,7 +2226,7 @@
 				<a class="previous-passage" data-theme="c" data-icon="previous-passage"></a>
 			</div>
 		</div>
-		<div data-role="page" data-control-title="b2q41" class="ui-icon-nodisc" id="b2q41">
+		<div data-role="page" data-control-title="b2q41" class="passage-page" id="b2q41">
 			<div data-theme="d" data-role="header" data-position="fixed" data-tap-toggle="false" class="passage-header">
 				<a class="passage-icon-left" data-theme="c" data-transition="slide" data-direction="reverse" href="#book2" data-icon="passage-left"></a><a href="#" data-theme="c" data-icon="passage-blank" class="passage-icon-right"></a>
 				<div class="section-number">
@@ -2255,7 +2242,7 @@
 				<a class="previous-passage" data-theme="c" data-icon="previous-passage"></a>
 			</div>
 		</div>
-		<div data-role="page" data-control-title="b2q42" class="ui-icon-nodisc" id="b2q42">
+		<div data-role="page" data-control-title="b2q42" class="passage-page" id="b2q42">
 			<div data-theme="d" data-role="header" data-position="fixed" data-tap-toggle="false" class="passage-header">
 				<a class="passage-icon-left" data-theme="c" data-transition="slide" data-direction="reverse" href="#book2" data-icon="passage-left"></a><a href="#" data-theme="c" data-icon="passage-blank" class="passage-icon-right"></a>
 				<div class="section-number">
@@ -2271,7 +2258,7 @@
 				<a class="previous-passage" data-theme="c" data-icon="previous-passage"></a>
 			</div>
 		</div>
-		<div data-role="page" data-control-title="b2q43" class="ui-icon-nodisc" id="b2q43">
+		<div data-role="page" data-control-title="b2q43" class="passage-page" id="b2q43">
 			<div data-theme="d" data-role="header" data-position="fixed" data-tap-toggle="false" class="passage-header">
 				<a class="passage-icon-left" data-theme="c" data-transition="slide" data-direction="reverse" href="#book2" data-icon="passage-left"></a><a href="#" data-theme="c" data-icon="passage-blank" class="passage-icon-right"></a>
 				<div class="section-number">
@@ -2287,7 +2274,7 @@
 				<a class="previous-passage" data-theme="c" data-icon="previous-passage"></a>
 			</div>
 		</div>
-		<div data-role="page" data-control-title="b2q44" class="ui-icon-nodisc" id="b2q44">
+		<div data-role="page" data-control-title="b2q44" class="passage-page" id="b2q44">
 			<div data-theme="d" data-role="header" data-position="fixed" data-tap-toggle="false" class="passage-header">
 				<a class="passage-icon-left" data-theme="c" data-transition="slide" data-direction="reverse" href="#book2" data-icon="passage-left"></a><a href="#" data-theme="c" data-icon="passage-blank" class="passage-icon-right"></a>
 				<div class="section-number">
@@ -2303,7 +2290,7 @@
 				<a class="previous-passage" data-theme="c" data-icon="previous-passage"></a>
 			</div>
 		</div>
-		<div data-role="page" data-control-title="b2q45" class="ui-icon-nodisc" id="b2q45">
+		<div data-role="page" data-control-title="b2q45" class="passage-page" id="b2q45">
 			<div data-theme="d" data-role="header" data-position="fixed" data-tap-toggle="false" class="passage-header">
 				<a class="passage-icon-left" data-theme="c" data-transition="slide" data-direction="reverse" href="#book2" data-icon="passage-left"></a><a href="#" data-theme="c" data-icon="passage-blank" class="passage-icon-right"></a>
 				<div class="section-number">
@@ -2319,7 +2306,7 @@
 				<a class="previous-passage" data-theme="c" data-icon="previous-passage"></a>
 			</div>
 		</div>
-		<div data-role="page" data-control-title="b2q46" class="ui-icon-nodisc" id="b2q46">
+		<div data-role="page" data-control-title="b2q46" class="passage-page" id="b2q46">
 			<div data-theme="d" data-role="header" data-position="fixed" data-tap-toggle="false" class="passage-header">
 				<a class="passage-icon-left" data-theme="c" data-transition="slide" data-direction="reverse" href="#book2" data-icon="passage-left"></a><a href="#" data-theme="c" data-icon="passage-blank" class="passage-icon-right"></a>
 				<div class="section-number">
@@ -2335,7 +2322,7 @@
 				<a class="previous-passage" data-theme="c" data-icon="previous-passage"></a>
 			</div>
 		</div>
-		<div data-role="page" data-control-title="b2q47" class="ui-icon-nodisc" id="b2q47">
+		<div data-role="page" data-control-title="b2q47" class="passage-page" id="b2q47">
 			<div data-theme="d" data-role="header" data-position="fixed" data-tap-toggle="false" class="passage-header">
 				<a class="passage-icon-left" data-theme="c" data-transition="slide" data-direction="reverse" href="#book2" data-icon="passage-left"></a><a href="#" data-theme="c" data-icon="passage-blank" class="passage-icon-right"></a>
 				<div class="section-number">
@@ -2351,7 +2338,7 @@
 				<a class="previous-passage" data-theme="c" data-icon="previous-passage"></a>
 			</div>
 		</div>
-		<div data-role="page" data-control-title="b2q48" class="ui-icon-nodisc" id="b2q48">
+		<div data-role="page" data-control-title="b2q48" class="passage-page" id="b2q48">
 			<div data-theme="d" data-role="header" data-position="fixed" data-tap-toggle="false" class="passage-header">
 				<a class="passage-icon-left" data-theme="c" data-transition="slide" data-direction="reverse" href="#book2" data-icon="passage-left"></a><a href="#" data-theme="c" data-icon="passage-blank" class="passage-icon-right"></a>
 				<div class="section-number">
@@ -2367,7 +2354,7 @@
 				<a class="previous-passage" data-theme="c" data-icon="previous-passage"></a>
 			</div>
 		</div>
-		<div data-role="page" data-control-title="b2q49" class="ui-icon-nodisc" id="b2q49">
+		<div data-role="page" data-control-title="b2q49" class="passage-page" id="b2q49">
 			<div data-theme="d" data-role="header" data-position="fixed" data-tap-toggle="false" class="passage-header">
 				<a class="passage-icon-left" data-theme="c" data-transition="slide" data-direction="reverse" href="#book2" data-icon="passage-left"></a><a href="#" data-theme="c" data-icon="passage-blank" class="passage-icon-right"></a>
 				<div class="section-number">
@@ -2383,7 +2370,7 @@
 				<a class="previous-passage" data-theme="c" data-icon="previous-passage"></a>
 			</div>
 		</div>
-		<div data-role="page" data-control-title="b2q50" class="ui-icon-nodisc" id="b2q50">
+		<div data-role="page" data-control-title="b2q50" class="passage-page" id="b2q50">
 			<div data-theme="d" data-role="header" data-position="fixed" data-tap-toggle="false" class="passage-header">
 				<a class="passage-icon-left" data-theme="c" data-transition="slide" data-direction="reverse" href="#book2" data-icon="passage-left"></a><a href="#" data-theme="c" data-icon="passage-blank" class="passage-icon-right"></a>
 				<div class="section-number">
@@ -2399,7 +2386,7 @@
 				<a class="previous-passage" data-theme="c" data-icon="previous-passage"></a>
 			</div>
 		</div>
-		<div data-role="page" data-control-title="b2q51" class="ui-icon-nodisc" id="b2q51">
+		<div data-role="page" data-control-title="b2q51" class="passage-page" id="b2q51">
 			<div data-theme="d" data-role="header" data-position="fixed" data-tap-toggle="false" class="passage-header">
 				<a class="passage-icon-left" data-theme="c" data-transition="slide" data-direction="reverse" href="#book2" data-icon="passage-left"></a><a href="#" data-theme="c" data-icon="passage-blank" class="passage-icon-right"></a>
 				<div class="section-number">
@@ -2415,7 +2402,7 @@
 				<a class="previous-passage" data-theme="c" data-icon="previous-passage"></a>
 			</div>
 		</div>
-		<div data-role="page" data-control-title="b2q52" class="ui-icon-nodisc" id="b2q52">
+		<div data-role="page" data-control-title="b2q52" class="passage-page" id="b2q52">
 			<div data-theme="d" data-role="header" data-position="fixed" data-tap-toggle="false" class="passage-header">
 				<a class="passage-icon-left" data-theme="c" data-transition="slide" data-direction="reverse" href="#book2" data-icon="passage-left"></a><a href="#" data-theme="c" data-icon="passage-blank" class="passage-icon-right"></a>
 				<div class="section-number">
@@ -2431,7 +2418,7 @@
 				<a class="previous-passage" data-theme="c" data-icon="previous-passage"></a>
 			</div>
 		</div>
-		<div data-role="page" data-control-title="b2q53" class="ui-icon-nodisc" id="b2q53">
+		<div data-role="page" data-control-title="b2q53" class="passage-page" id="b2q53">
 			<div data-theme="d" data-role="header" data-position="fixed" data-tap-toggle="false" class="passage-header">
 				<a class="passage-icon-left" data-theme="c" data-transition="slide" data-direction="reverse" href="#book2" data-icon="passage-left"></a><a href="#" data-theme="c" data-icon="passage-blank" class="passage-icon-right"></a>
 				<div class="section-number">
@@ -2447,7 +2434,7 @@
 				<p class="citation">Bahá’u’lláh ∙ Epistle to the Son of the Wolf ∙ p. 26</p>
 			</div>
 		</div>
-		<div data-role="page" data-control-title="b2q54" class="ui-icon-nodisc" id="b2q54">
+		<div data-role="page" data-control-title="b2q54" class="passage-page" id="b2q54">
 			<div data-theme="d" data-role="header" data-position="fixed" data-tap-toggle="false" class="passage-header">
 				<a class="passage-icon-left" data-theme="c" data-transition="slide" data-direction="reverse" href="#book2" data-icon="passage-left"></a><a href="#" data-theme="c" data-icon="passage-blank" class="passage-icon-right"></a>
 				<div class="section-number">
@@ -2463,7 +2450,7 @@
 			</div>
 		</div>
 <!-- Book 3 Passages -->
-		<div data-role="page" data-control-title="b3q1" class="ui-icon-nodisc" id="b3q1">
+		<div data-role="page" data-control-title="b3q1" class="passage-page" id="b3q1">
 			<div data-theme="d" data-role="header" data-position="fixed" data-tap-toggle="false" class="passage-header">
 				<a class="passage-icon-left" data-theme="c" data-transition="slide" data-direction="reverse" href="#book3" data-icon="passage-left"></a><a href="#" data-theme="c" data-icon="passage-blank" class="passage-icon-right"></a>
 				<div class="section-number">
@@ -2478,7 +2465,7 @@
 				<a class="next-passage" data-theme="c" data-icon="next-passage"></a>
 			</div>
 		</div>
-		<div data-role="page" data-control-title="b3q2" class="ui-icon-nodisc" id="b3q2">
+		<div data-role="page" data-control-title="b3q2" class="passage-page" id="b3q2">
 			<div data-theme="d" data-role="header" data-position="fixed" data-tap-toggle="false" class="passage-header">
 				<a class="passage-icon-left" data-theme="c" data-transition="slide" data-direction="reverse" href="#book3" data-icon="passage-left"></a><a href="#" data-theme="c" data-icon="passage-blank" class="passage-icon-right"></a>
 				<div class="section-number">
@@ -2494,7 +2481,7 @@
 				<a class="previous-passage" data-theme="c" data-icon="previous-passage"></a>
 			</div>
 		</div>
-		<div data-role="page" data-control-title="b3q3" class="ui-icon-nodisc" id="b3q3">
+		<div data-role="page" data-control-title="b3q3" class="passage-page" id="b3q3">
 			<div data-theme="d" data-role="header" data-position="fixed" data-tap-toggle="false" class="passage-header">
 				<a class="passage-icon-left" data-theme="c" data-transition="slide" data-direction="reverse" href="#book3" data-icon="passage-left"></a><a href="#" data-theme="c" data-icon="passage-blank" class="passage-icon-right"></a>
 				<div class="section-number">
@@ -2510,7 +2497,7 @@
 				<a class="previous-passage" data-theme="c" data-icon="previous-passage"></a>
 			</div>
 		</div>
-		<div data-role="page" data-control-title="b3q4" class="ui-icon-nodisc" id="b3q4">
+		<div data-role="page" data-control-title="b3q4" class="passage-page" id="b3q4">
 			<div data-theme="d" data-role="header" data-position="fixed" data-tap-toggle="false" class="passage-header">
 				<a class="passage-icon-left" data-theme="c" data-transition="slide" data-direction="reverse" href="#book3" data-icon="passage-left"></a><a href="#" data-theme="c" data-icon="passage-blank" class="passage-icon-right"></a>
 				<div class="section-number">
@@ -2526,7 +2513,7 @@
 				<a class="previous-passage" data-theme="c" data-icon="previous-passage"></a>
 			</div>
 		</div>
-		<div data-role="page" data-control-title="b3q5" class="ui-icon-nodisc" id="b3q5">
+		<div data-role="page" data-control-title="b3q5" class="passage-page" id="b3q5">
 			<div data-theme="d" data-role="header" data-position="fixed" data-tap-toggle="false" class="passage-header">
 				<a class="passage-icon-left" data-theme="c" data-transition="slide" data-direction="reverse" href="#book3" data-icon="passage-left"></a><a href="#" data-theme="c" data-icon="passage-blank" class="passage-icon-right"></a>
 				<div class="section-number">
@@ -2542,7 +2529,7 @@
 				<a class="previous-passage" data-theme="c" data-icon="previous-passage"></a>
 			</div>
 		</div>
-		<div data-role="page" data-control-title="b3q6" class="ui-icon-nodisc" id="b3q6">
+		<div data-role="page" data-control-title="b3q6" class="passage-page" id="b3q6">
 			<div data-theme="d" data-role="header" data-position="fixed" data-tap-toggle="false" class="passage-header">
 				<a class="passage-icon-left" data-theme="c" data-transition="slide" data-direction="reverse" href="#book3" data-icon="passage-left"></a><a href="#" data-theme="c" data-icon="passage-blank" class="passage-icon-right"></a>
 				<div class="section-number">
@@ -2558,7 +2545,7 @@
 				<a class="previous-passage" data-theme="c" data-icon="previous-passage"></a>
 			</div>
 		</div>
-		<div data-role="page" data-control-title="b3q7" class="ui-icon-nodisc" id="b3q7">
+		<div data-role="page" data-control-title="b3q7" class="passage-page" id="b3q7">
 			<div data-theme="d" data-role="header" data-position="fixed" data-tap-toggle="false" class="passage-header">
 				<a class="passage-icon-left" data-theme="c" data-transition="slide" data-direction="reverse" href="#book3" data-icon="passage-left"></a><a href="#" data-theme="c" data-icon="passage-blank" class="passage-icon-right"></a>
 				<div class="section-number">
@@ -2574,7 +2561,7 @@
 				<a class="previous-passage" data-theme="c" data-icon="previous-passage"></a>
 			</div>
 		</div>
-		<div data-role="page" data-control-title="b3q8" class="ui-icon-nodisc" id="b3q8">
+		<div data-role="page" data-control-title="b3q8" class="passage-page" id="b3q8">
 			<div data-theme="d" data-role="header" data-position="fixed" data-tap-toggle="false" class="passage-header">
 				<a class="passage-icon-left" data-theme="c" data-transition="slide" data-direction="reverse" href="#book3" data-icon="passage-left"></a><a href="#" data-theme="c" data-icon="passage-blank" class="passage-icon-right"></a>
 				<div class="section-number">
@@ -2590,7 +2577,7 @@
 				<a class="previous-passage" data-theme="c" data-icon="previous-passage"></a>
 			</div>
 		</div>
-		<div data-role="page" data-control-title="b3q9" class="ui-icon-nodisc" id="b3q9">
+		<div data-role="page" data-control-title="b3q9" class="passage-page" id="b3q9">
 			<div data-theme="d" data-role="header" data-position="fixed" data-tap-toggle="false" class="passage-header">
 				<a class="passage-icon-left" data-theme="c" data-transition="slide" data-direction="reverse" href="#book3" data-icon="passage-left"></a><a href="#" data-theme="c" data-icon="passage-blank" class="passage-icon-right"></a>
 				<div class="section-number">
@@ -2606,7 +2593,7 @@
 				<a class="previous-passage" data-theme="c" data-icon="previous-passage"></a>
 			</div>
 		</div>
-		<div data-role="page" data-control-title="b3q10" class="ui-icon-nodisc" id="b3q10">
+		<div data-role="page" data-control-title="b3q10" class="passage-page" id="b3q10">
 			<div data-theme="d" data-role="header" data-position="fixed" data-tap-toggle="false" class="passage-header">
 				<a class="passage-icon-left" data-theme="c" data-transition="slide" data-direction="reverse" href="#book3" data-icon="passage-left"></a><a href="#" data-theme="c" data-icon="passage-blank" class="passage-icon-right"></a>
 				<div class="section-number">
@@ -2622,7 +2609,7 @@
 				<a class="previous-passage" data-theme="c" data-icon="previous-passage"></a>
 			</div>
 		</div>
-		<div data-role="page" data-control-title="b3q24" class="ui-icon-nodisc" id="b3q24">
+		<div data-role="page" data-control-title="b3q24" class="passage-page" id="b3q24">
 			<div data-theme="d" data-role="header" data-position="fixed" data-tap-toggle="false" class="passage-header">
 				<a class="passage-icon-left" data-theme="c" data-transition="slide" data-direction="reverse" href="#book3" data-icon="passage-left"></a><a href="#" data-theme="c" data-icon="passage-blank" class="passage-icon-right"></a>
 				<div class="section-number">
@@ -2638,7 +2625,7 @@
 				<a class="previous-passage" data-theme="c" data-icon="previous-passage"></a>
 			</div>
 		</div>
-		<div data-role="page" data-control-title="b3q11" class="ui-icon-nodisc" id="b3q11">
+		<div data-role="page" data-control-title="b3q11" class="passage-page" id="b3q11">
 			<div data-theme="d" data-role="header" data-position="fixed" data-tap-toggle="false" class="passage-header">
 				<a class="passage-icon-left" data-theme="c" data-transition="slide" data-direction="reverse" href="#book3" data-icon="passage-left"></a><a href="#" data-theme="c" data-icon="passage-blank" class="passage-icon-right"></a>
 				<div class="section-number">
@@ -2654,7 +2641,7 @@
 				<a class="previous-passage" data-theme="c" data-icon="previous-passage"></a>
 			</div>
 		</div>
-		<div data-role="page" data-control-title="b3q12" class="ui-icon-nodisc" id="b3q12">
+		<div data-role="page" data-control-title="b3q12" class="passage-page" id="b3q12">
 			<div data-theme="d" data-role="header" data-position="fixed" data-tap-toggle="false" class="passage-header">
 				<a class="passage-icon-left" data-theme="c" data-transition="slide" data-direction="reverse" href="#book3" data-icon="passage-left"></a><a href="#" data-theme="c" data-icon="passage-blank" class="passage-icon-right"></a>
 				<div class="section-number">
@@ -2670,7 +2657,7 @@
 				<a class="previous-passage" data-theme="c" data-icon="previous-passage"></a>
 			</div>
 		</div>
-		<div data-role="page" data-control-title="b3q13" class="ui-icon-nodisc" id="b3q13">
+		<div data-role="page" data-control-title="b3q13" class="passage-page" id="b3q13">
 			<div data-theme="d" data-role="header" data-position="fixed" data-tap-toggle="false" class="passage-header">
 				<a class="passage-icon-left" data-theme="c" data-transition="slide" data-direction="reverse" href="#book3" data-icon="passage-left"></a><a href="#" data-theme="c" data-icon="passage-blank" class="passage-icon-right"></a>
 				<div class="section-number">
@@ -2686,7 +2673,7 @@
 				<a class="previous-passage" data-theme="c" data-icon="previous-passage"></a>
 			</div>
 		</div>
-		<div data-role="page" data-control-title="b3q14" class="ui-icon-nodisc" id="b3q14">
+		<div data-role="page" data-control-title="b3q14" class="passage-page" id="b3q14">
 			<div data-theme="d" data-role="header" data-position="fixed" data-tap-toggle="false" class="passage-header">
 				<a class="passage-icon-left" data-theme="c" data-transition="slide" data-direction="reverse" href="#book3" data-icon="passage-left"></a><a href="#" data-theme="c" data-icon="passage-blank" class="passage-icon-right"></a>
 				<div class="section-number">
@@ -2702,7 +2689,7 @@
 				<a class="previous-passage" data-theme="c" data-icon="previous-passage"></a>
 			</div>
 		</div>
-		<div data-role="page" data-control-title="b3q15" class="ui-icon-nodisc" id="b3q15">
+		<div data-role="page" data-control-title="b3q15" class="passage-page" id="b3q15">
 			<div data-theme="d" data-role="header" data-position="fixed" data-tap-toggle="false" class="passage-header">
 				<a class="passage-icon-left" data-theme="c" data-transition="slide" data-direction="reverse" href="#book3" data-icon="passage-left"></a><a href="#" data-theme="c" data-icon="passage-blank" class="passage-icon-right"></a>
 				<div class="section-number">
@@ -2718,7 +2705,7 @@
 				<a class="previous-passage" data-theme="c" data-icon="previous-passage"></a>
 			</div>
 		</div>
-		<div data-role="page" data-control-title="b3q16" class="ui-icon-nodisc" id="b3q16">
+		<div data-role="page" data-control-title="b3q16" class="passage-page" id="b3q16">
 			<div data-theme="d" data-role="header" data-position="fixed" data-tap-toggle="false" class="passage-header">
 				<a class="passage-icon-left" data-theme="c" data-transition="slide" data-direction="reverse" href="#book3" data-icon="passage-left"></a><a href="#" data-theme="c" data-icon="passage-blank" class="passage-icon-right"></a>
 				<div class="section-number">
@@ -2734,7 +2721,7 @@
 				<a class="previous-passage" data-theme="c" data-icon="previous-passage"></a>
 			</div>
 		</div>
-		<div data-role="page" data-control-title="b3q17" class="ui-icon-nodisc" id="b3q17">
+		<div data-role="page" data-control-title="b3q17" class="passage-page" id="b3q17">
 			<div data-theme="d" data-role="header" data-position="fixed" data-tap-toggle="false" class="passage-header">
 				<a class="passage-icon-left" data-theme="c" data-transition="slide" data-direction="reverse" href="#book3" data-icon="passage-left"></a><a href="#" data-theme="c" data-icon="passage-blank" class="passage-icon-right"></a>
 				<div class="section-number">
@@ -2750,7 +2737,7 @@
 				<a class="previous-passage" data-theme="c" data-icon="previous-passage"></a>
 			</div>
 		</div>
-		<div data-role="page" data-control-title="b3q18" class="ui-icon-nodisc" id="b3q18">
+		<div data-role="page" data-control-title="b3q18" class="passage-page" id="b3q18">
 			<div data-theme="d" data-role="header" data-position="fixed" data-tap-toggle="false" class="passage-header">
 				<a class="passage-icon-left" data-theme="c" data-transition="slide" data-direction="reverse" href="#book3" data-icon="passage-left"></a><a href="#" data-theme="c" data-icon="passage-blank" class="passage-icon-right"></a>
 				<div class="section-number">
@@ -2766,7 +2753,7 @@
 				<a class="previous-passage" data-theme="c" data-icon="previous-passage"></a>
 			</div>
 		</div>
-		<div data-role="page" data-control-title="b3q19" class="ui-icon-nodisc" id="b3q19">
+		<div data-role="page" data-control-title="b3q19" class="passage-page" id="b3q19">
 			<div data-theme="d" data-role="header" data-position="fixed" data-tap-toggle="false" class="passage-header">
 				<a class="passage-icon-left" data-theme="c" data-transition="slide" data-direction="reverse" href="#book3" data-icon="passage-left"></a><a href="#" data-theme="c" data-icon="passage-blank" class="passage-icon-right"></a>
 				<div class="section-number">
@@ -2782,7 +2769,7 @@
 				<a class="previous-passage" data-theme="c" data-icon="previous-passage"></a>
 			</div>
 		</div>
-		<div data-role="page" data-control-title="b3q20" class="ui-icon-nodisc" id="b3q20">
+		<div data-role="page" data-control-title="b3q20" class="passage-page" id="b3q20">
 			<div data-theme="d" data-role="header" data-position="fixed" data-tap-toggle="false" class="passage-header">
 				<a class="passage-icon-left" data-theme="c" data-transition="slide" data-direction="reverse" href="#book3" data-icon="passage-left"></a><a href="#" data-theme="c" data-icon="passage-blank" class="passage-icon-right"></a>
 				<div class="section-number">
@@ -2798,7 +2785,7 @@
 				<a class="previous-passage" data-theme="c" data-icon="previous-passage"></a>
 			</div>
 		</div>
-		<div data-role="page" data-control-title="b3q21" class="ui-icon-nodisc" id="b3q21">
+		<div data-role="page" data-control-title="b3q21" class="passage-page" id="b3q21">
 			<div data-theme="d" data-role="header" data-position="fixed" data-tap-toggle="false" class="passage-header">
 				<a class="passage-icon-left" data-theme="c" data-transition="slide" data-direction="reverse" href="#book3" data-icon="passage-left"></a><a href="#" data-theme="c" data-icon="passage-blank" class="passage-icon-right"></a>
 				<div class="section-number">
@@ -2814,7 +2801,7 @@
 				<a class="previous-passage" data-theme="c" data-icon="previous-passage"></a>
 			</div>
 		</div>
-		<div data-role="page" data-control-title="b3q22" class="ui-icon-nodisc" id="b3q22">
+		<div data-role="page" data-control-title="b3q22" class="passage-page" id="b3q22">
 			<div data-theme="d" data-role="header" data-position="fixed" data-tap-toggle="false" class="passage-header">
 				<a class="passage-icon-left" data-theme="c" data-transition="slide" data-direction="reverse" href="#book3" data-icon="passage-left"></a><a href="#" data-theme="c" data-icon="passage-blank" class="passage-icon-right"></a>
 				<div class="section-number">
@@ -2830,7 +2817,7 @@
 				<a class="previous-passage" data-theme="c" data-icon="previous-passage"></a>
 			</div>
 		</div>
-		<div data-role="page" data-control-title="b3q23" class="ui-icon-nodisc" id="b3q23">
+		<div data-role="page" data-control-title="b3q23" class="passage-page" id="b3q23">
 			<div data-theme="d" data-role="header" data-position="fixed" data-tap-toggle="false" class="passage-header">
 				<a class="passage-icon-left" data-theme="c" data-transition="slide" data-direction="reverse" href="#book3" data-icon="passage-left"></a><a href="#" data-theme="c" data-icon="passage-blank" class="passage-icon-right"></a>
 				<div class="section-number">
@@ -2846,7 +2833,7 @@
 			</div>
 		</div>
 <!-- Book 4 Passages -->
-		<div data-role="page" data-control-title="b4q1" class="ui-icon-nodisc" id="b4q1">
+		<div data-role="page" data-control-title="b4q1" class="passage-page" id="b4q1">
 			<div data-theme="d" data-role="header" data-position="fixed" data-tap-toggle="false" class="passage-header">
 				<a class="passage-icon-left" data-theme="c" data-transition="slide" data-direction="reverse" href="#book4" data-icon="passage-left"></a><a href="#" data-theme="c" data-icon="passage-blank" class="passage-icon-right"></a>
 				<div class="section-number">
@@ -2861,7 +2848,7 @@
 				<a class="next-passage" data-theme="c" data-icon="next-passage"></a>
 			</div>
 		</div>
-		<div data-role="page" data-control-title="b4q2" class="ui-icon-nodisc" id="b4q2">
+		<div data-role="page" data-control-title="b4q2" class="passage-page" id="b4q2">
 			<div data-theme="d" data-role="header" data-position="fixed" data-tap-toggle="false" class="passage-header">
 				<a class="passage-icon-left" data-theme="c" data-transition="slide" data-direction="reverse" href="#book4" data-icon="passage-left"></a><a href="#" data-theme="c" data-icon="passage-blank" class="passage-icon-right"></a>
 				<div class="section-number">
@@ -2877,7 +2864,7 @@
 				<a class="previous-passage" data-theme="c" data-icon="previous-passage"></a>
 			</div>
 		</div>
-		<div data-role="page" data-control-title="b4q3" class="ui-icon-nodisc" id="b4q3">
+		<div data-role="page" data-control-title="b4q3" class="passage-page" id="b4q3">
 			<div data-theme="d" data-role="header" data-position="fixed" data-tap-toggle="false" class="passage-header">
 				<a class="passage-icon-left" data-theme="c" data-transition="slide" data-direction="reverse" href="#book4" data-icon="passage-left"></a><a href="#" data-theme="c" data-icon="passage-blank" class="passage-icon-right"></a>
 				<div class="section-number">
@@ -2893,7 +2880,7 @@
 				<a class="previous-passage" data-theme="c" data-icon="previous-passage"></a>
 			</div>
 		</div>
-		<div data-role="page" data-control-title="b4q4" class="ui-icon-nodisc" id="b4q4">
+		<div data-role="page" data-control-title="b4q4" class="passage-page" id="b4q4">
 			<div data-theme="d" data-role="header" data-position="fixed" data-tap-toggle="false" class="passage-header">
 				<a class="passage-icon-left" data-theme="c" data-transition="slide" data-direction="reverse" href="#book4" data-icon="passage-left"></a><a href="#" data-theme="c" data-icon="passage-blank" class="passage-icon-right"></a>
 				<div class="section-number">
@@ -2909,7 +2896,7 @@
 				<a class="previous-passage" data-theme="c" data-icon="previous-passage"></a>
 			</div>
 		</div>
-		<div data-role="page" data-control-title="b4q5" class="ui-icon-nodisc" id="b4q5">
+		<div data-role="page" data-control-title="b4q5" class="passage-page" id="b4q5">
 			<div data-theme="d" data-role="header" data-position="fixed" data-tap-toggle="false" class="passage-header">
 				<a class="passage-icon-left" data-theme="c" data-transition="slide" data-direction="reverse" href="#book4" data-icon="passage-left"></a><a href="#" data-theme="c" data-icon="passage-blank" class="passage-icon-right"></a>
 				<div class="section-number">
@@ -2925,7 +2912,7 @@
 				<a class="previous-passage" data-theme="c" data-icon="previous-passage"></a>
 			</div>
 		</div>
-		<div data-role="page" data-control-title="b4q6" class="ui-icon-nodisc" id="b4q6">
+		<div data-role="page" data-control-title="b4q6" class="passage-page" id="b4q6">
 			<div data-theme="d" data-role="header" data-position="fixed" data-tap-toggle="false" class="passage-header">
 				<a class="passage-icon-left" data-theme="c" data-transition="slide" data-direction="reverse" href="#book4" data-icon="passage-left"></a><a href="#" data-theme="c" data-icon="passage-blank" class="passage-icon-right"></a>
 				<div class="section-number">
@@ -2941,7 +2928,7 @@
 				<a class="previous-passage" data-theme="c" data-icon="previous-passage"></a>
 			</div>
 		</div>
-		<div data-role="page" data-control-title="b4q7" class="ui-icon-nodisc" id="b4q7">
+		<div data-role="page" data-control-title="b4q7" class="passage-page" id="b4q7">
 			<div data-theme="d" data-role="header" data-position="fixed" data-tap-toggle="false" class="passage-header">
 				<a class="passage-icon-left" data-theme="c" data-transition="slide" data-direction="reverse" href="#book4" data-icon="passage-left"></a><a href="#" data-theme="c" data-icon="passage-blank" class="passage-icon-right"></a>
 				<div class="section-number">
@@ -2957,7 +2944,7 @@
 				<a class="previous-passage" data-theme="c" data-icon="previous-passage"></a>
 			</div>
 		</div>
-		<div data-role="page" data-control-title="b4q8" class="ui-icon-nodisc" id="b4q8">
+		<div data-role="page" data-control-title="b4q8" class="passage-page" id="b4q8">
 			<div data-theme="d" data-role="header" data-position="fixed" data-tap-toggle="false" class="passage-header">
 				<a class="passage-icon-left" data-theme="c" data-transition="slide" data-direction="reverse" href="#book4" data-icon="passage-left"></a><a href="#" data-theme="c" data-icon="passage-blank" class="passage-icon-right"></a>
 				<div class="section-number">
@@ -2977,7 +2964,7 @@
 			</div>
 		</div>
 <!-- Book 5 Passages -->
-		<div data-role="page" data-control-title="b5q1" class="ui-icon-nodisc" id="b5q1">
+		<div data-role="page" data-control-title="b5q1" class="passage-page" id="b5q1">
 			<div data-theme="d" data-role="header" data-position="fixed" data-tap-toggle="false" class="passage-header">
 				<a class="passage-icon-left" data-theme="c" data-transition="slide" data-direction="reverse" href="#book5" data-icon="passage-left"></a><a href="#" data-theme="c" data-icon="passage-blank" class="passage-icon-right"></a>
 				<div class="section-number">
@@ -2992,7 +2979,7 @@
 				<a class="next-passage" data-theme="c" data-icon="next-passage"></a>
 			</div>
 		</div>
-		<div data-role="page" data-control-title="b5q2" class="ui-icon-nodisc" id="b5q2">
+		<div data-role="page" data-control-title="b5q2" class="passage-page" id="b5q2">
 			<div data-theme="d" data-role="header" data-position="fixed" data-tap-toggle="false" class="passage-header">
 				<a class="passage-icon-left" data-theme="c" data-transition="slide" data-direction="reverse" href="#book5" data-icon="passage-left"></a><a href="#" data-theme="c" data-icon="passage-blank" class="passage-icon-right"></a>
 				<div class="section-number">
@@ -3008,7 +2995,7 @@
 				<a class="previous-passage" data-theme="c" data-icon="previous-passage"></a>
 			</div>
 		</div>
-		<div data-role="page" data-control-title="b5q3" class="ui-icon-nodisc" id="b5q3">
+		<div data-role="page" data-control-title="b5q3" class="passage-page" id="b5q3">
 			<div data-theme="d" data-role="header" data-position="fixed" data-tap-toggle="false" class="passage-header">
 				<a class="passage-icon-left" data-theme="c" data-transition="slide" data-direction="reverse" href="#book5" data-icon="passage-left"></a><a href="#" data-theme="c" data-icon="passage-blank" class="passage-icon-right"></a>
 				<div class="section-number">
@@ -3024,7 +3011,7 @@
 				<a class="previous-passage" data-theme="c" data-icon="previous-passage"></a>
 			</div>
 		</div>
-				<div data-role="page" data-control-title="b5q4" class="ui-icon-nodisc" id="b5q4">
+				<div data-role="page" data-control-title="b5q4" class="passage-page" id="b5q4">
 			<div data-theme="d" data-role="header" data-position="fixed" data-tap-toggle="false" class="passage-header">
 				<a class="passage-icon-left" data-theme="c" data-transition="slide" data-direction="reverse" href="#book5" data-icon="passage-left"></a><a href="#" data-theme="c" data-icon="passage-blank" class="passage-icon-right"></a>
 				<div class="section-number">
@@ -3041,7 +3028,7 @@
 				<a class="previous-passage" data-theme="c" data-icon="previous-passage"></a>
 			</div>
 		</div>
-				<div data-role="page" data-control-title="b5q5" class="ui-icon-nodisc" id="b5q5">
+				<div data-role="page" data-control-title="b5q5" class="passage-page" id="b5q5">
 			<div data-theme="d" data-role="header" data-position="fixed" data-tap-toggle="false" class="passage-header">
 				<a class="passage-icon-left" data-theme="c" data-transition="slide" data-direction="reverse" href="#book5" data-icon="passage-left"></a><a href="#" data-theme="c" data-icon="passage-blank" class="passage-icon-right"></a>
 				<div class="section-number">
@@ -3057,7 +3044,7 @@
 				<a class="previous-passage" data-theme="c" data-icon="previous-passage"></a>
 			</div>
 		</div>
-				<div data-role="page" data-control-title="b5q6" class="ui-icon-nodisc" id="b5q6">
+				<div data-role="page" data-control-title="b5q6" class="passage-page" id="b5q6">
 			<div data-theme="d" data-role="header" data-position="fixed" data-tap-toggle="false" class="passage-header">
 				<a class="passage-icon-left" data-theme="c" data-transition="slide" data-direction="reverse" href="#book5" data-icon="passage-left"></a><a href="#" data-theme="c" data-icon="passage-blank" class="passage-icon-right"></a>
 				<div class="section-number">
@@ -3073,7 +3060,7 @@
 				<a class="previous-passage" data-theme="c" data-icon="previous-passage"></a>
 			</div>
 		</div>
-				<div data-role="page" data-control-title="b5q7" class="ui-icon-nodisc" id="b5q7">
+				<div data-role="page" data-control-title="b5q7" class="passage-page" id="b5q7">
 			<div data-theme="d" data-role="header" data-position="fixed" data-tap-toggle="false" class="passage-header">
 				<a class="passage-icon-left" data-theme="c" data-transition="slide" data-direction="reverse" href="#book5" data-icon="passage-left"></a><a href="#" data-theme="c" data-icon="passage-blank" class="passage-icon-right"></a>
 				<div class="section-number">
@@ -3089,7 +3076,7 @@
 				<a class="previous-passage" data-theme="c" data-icon="previous-passage"></a>
 			</div>
 		</div>
-				<div data-role="page" data-control-title="b5q8" class="ui-icon-nodisc" id="b5q8">
+				<div data-role="page" data-control-title="b5q8" class="passage-page" id="b5q8">
 			<div data-theme="d" data-role="header" data-position="fixed" data-tap-toggle="false" class="passage-header">
 				<a class="passage-icon-left" data-theme="c" data-transition="slide" data-direction="reverse" href="#book5" data-icon="passage-left"></a><a href="#" data-theme="c" data-icon="passage-blank" class="passage-icon-right"></a>
 				<div class="section-number">
@@ -3105,7 +3092,7 @@
 			</div>
 		</div>
 <!-- Book 6 Passages -->
-		<div data-role="page" data-control-title="b6q1" class="ui-icon-nodisc" id="b6q1">
+		<div data-role="page" data-control-title="b6q1" class="passage-page" id="b6q1">
 			<div data-theme="d" data-role="header" data-position="fixed" data-tap-toggle="false" class="passage-header">
 				<a class="passage-icon-left" data-theme="c" data-transition="slide" data-direction="reverse" href="#book6" data-icon="passage-left"></a><a href="#" data-theme="c" data-icon="passage-blank" class="passage-icon-right"></a>
 				<div class="section-number">
@@ -3120,7 +3107,7 @@
 				<a class="next-passage" data-theme="c" data-icon="next-passage"></a>
 			</div>
 		</div>
-		<div data-role="page" data-control-title="b6q2" class="ui-icon-nodisc" id="b6q2">
+		<div data-role="page" data-control-title="b6q2" class="passage-page" id="b6q2">
 			<div data-theme="d" data-role="header" data-position="fixed" data-tap-toggle="false" class="passage-header">
 				<a class="passage-icon-left" data-theme="c" data-transition="slide" data-direction="reverse" href="#book6" data-icon="passage-left"></a><a href="#" data-theme="c" data-icon="passage-blank" class="passage-icon-right"></a>
 				<div class="section-number">
@@ -3136,7 +3123,7 @@
 				<a class="previous-passage" data-theme="c" data-icon="previous-passage"></a>
 			</div>
 		</div>
-		<div data-role="page" data-control-title="b6q3" class="ui-icon-nodisc" id="b6q3">
+		<div data-role="page" data-control-title="b6q3" class="passage-page" id="b6q3">
 			<div data-theme="d" data-role="header" data-position="fixed" data-tap-toggle="false" class="passage-header">
 				<a class="passage-icon-left" data-theme="c" data-transition="slide" data-direction="reverse" href="#book6" data-icon="passage-left"></a><a href="#" data-theme="c" data-icon="passage-blank" class="passage-icon-right"></a>
 				<div class="section-number">
@@ -3152,7 +3139,7 @@
 				<a class="previous-passage" data-theme="c" data-icon="previous-passage"></a>
 			</div>
 		</div>
-		<div data-role="page" data-control-title="b6q4" class="ui-icon-nodisc" id="b6q4">
+		<div data-role="page" data-control-title="b6q4" class="passage-page" id="b6q4">
 			<div data-theme="d" data-role="header" data-position="fixed" data-tap-toggle="false" class="passage-header">
 				<a class="passage-icon-left" data-theme="c" data-transition="slide" data-direction="reverse" href="#book6" data-icon="passage-left"></a><a href="#" data-theme="c" data-icon="passage-blank" class="passage-icon-right"></a>
 				<div class="section-number">
@@ -3168,7 +3155,7 @@
 				<a class="previous-passage" data-theme="c" data-icon="previous-passage"></a>
 			</div>
 		</div>
-		<div data-role="page" data-control-title="b6q5" class="ui-icon-nodisc" id="b6q5">
+		<div data-role="page" data-control-title="b6q5" class="passage-page" id="b6q5">
 			<div data-theme="d" data-role="header" data-position="fixed" data-tap-toggle="false" class="passage-header">
 				<a class="passage-icon-left" data-theme="c" data-transition="slide" data-direction="reverse" href="#book6" data-icon="passage-left"></a><a href="#" data-theme="c" data-icon="passage-blank" class="passage-icon-right"></a>
 				<div class="section-number">
@@ -3184,7 +3171,7 @@
 				<a class="previous-passage" data-theme="c" data-icon="previous-passage"></a>
 			</div>
 		</div>
-		<div data-role="page" data-control-title="b6q6" class="ui-icon-nodisc" id="b6q6">
+		<div data-role="page" data-control-title="b6q6" class="passage-page" id="b6q6">
 			<div data-theme="d" data-role="header" data-position="fixed" data-tap-toggle="false" class="passage-header">
 				<a class="passage-icon-left" data-theme="c" data-transition="slide" data-direction="reverse" href="#book6" data-icon="passage-left"></a><a href="#" data-theme="c" data-icon="passage-blank" class="passage-icon-right"></a>
 				<div class="section-number">
@@ -3200,7 +3187,7 @@
 				<a class="previous-passage" data-theme="c" data-icon="previous-passage"></a>
 			</div>
 		</div>
-		<div data-role="page" data-control-title="b6q7" class="ui-icon-nodisc" id="b6q7">
+		<div data-role="page" data-control-title="b6q7" class="passage-page" id="b6q7">
 			<div data-theme="d" data-role="header" data-position="fixed" data-tap-toggle="false" class="passage-header">
 				<a class="passage-icon-left" data-theme="c" data-transition="slide" data-direction="reverse" href="#book6" data-icon="passage-left"></a><a href="#" data-theme="c" data-icon="passage-blank" class="passage-icon-right"></a>
 				<div class="section-number">
@@ -3216,7 +3203,7 @@
 				<a class="previous-passage" data-theme="c" data-icon="previous-passage"></a>
 			</div>
 		</div>
-		<div data-role="page" data-control-title="b6q8" class="ui-icon-nodisc" id="b6q8">
+		<div data-role="page" data-control-title="b6q8" class="passage-page" id="b6q8">
 			<div data-theme="d" data-role="header" data-position="fixed" data-tap-toggle="false" class="passage-header">
 				<a class="passage-icon-left" data-theme="c" data-transition="slide" data-direction="reverse" href="#book6" data-icon="passage-left"></a><a href="#" data-theme="c" data-icon="passage-blank" class="passage-icon-right"></a>
 				<div class="section-number">
@@ -3232,7 +3219,7 @@
 				<a class="previous-passage" data-theme="c" data-icon="previous-passage"></a>
 			</div>
 		</div>
-		<div data-role="page" data-control-title="b6q9" class="ui-icon-nodisc" id="b6q9">
+		<div data-role="page" data-control-title="b6q9" class="passage-page" id="b6q9">
 			<div data-theme="d" data-role="header" data-position="fixed" data-tap-toggle="false" class="passage-header">
 				<a class="passage-icon-left" data-theme="c" data-transition="slide" data-direction="reverse" href="#book6" data-icon="passage-left"></a><a href="#" data-theme="c" data-icon="passage-blank" class="passage-icon-right"></a>
 				<div class="section-number">
@@ -3248,7 +3235,7 @@
 				<a class="previous-passage" data-theme="c" data-icon="previous-passage"></a>
 			</div>
 		</div>
-		<div data-role="page" data-control-title="b6q10" class="ui-icon-nodisc" id="b6q10">
+		<div data-role="page" data-control-title="b6q10" class="passage-page" id="b6q10">
 			<div data-theme="d" data-role="header" data-position="fixed" data-tap-toggle="false" class="passage-header">
 				<a class="passage-icon-left" data-theme="c" data-transition="slide" data-direction="reverse" href="#book6" data-icon="passage-left"></a><a href="#" data-theme="c" data-icon="passage-blank" class="passage-icon-right"></a>
 				<div class="section-number">
@@ -3264,7 +3251,7 @@
 				<a class="previous-passage" data-theme="c" data-icon="previous-passage"></a>
 			</div>
 		</div>
-		<div data-role="page" data-control-title="b6q11" class="ui-icon-nodisc" id="b6q11">
+		<div data-role="page" data-control-title="b6q11" class="passage-page" id="b6q11">
 			<div data-theme="d" data-role="header" data-position="fixed" data-tap-toggle="false" class="passage-header">
 				<a class="passage-icon-left" data-theme="c" data-transition="slide" data-direction="reverse" href="#book6" data-icon="passage-left"></a><a href="#" data-theme="c" data-icon="passage-blank" class="passage-icon-right"></a>
 				<div class="section-number">
@@ -3280,7 +3267,7 @@
 				<a class="previous-passage" data-theme="c" data-icon="previous-passage"></a>
 			</div>
 		</div>
-		<div data-role="page" data-control-title="b6q12" class="ui-icon-nodisc" id="b6q12">
+		<div data-role="page" data-control-title="b6q12" class="passage-page" id="b6q12">
 			<div data-theme="d" data-role="header" data-position="fixed" data-tap-toggle="false" class="passage-header">
 				<a class="passage-icon-left" data-theme="c" data-transition="slide" data-direction="reverse" href="#book6" data-icon="passage-left"></a><a href="#" data-theme="c" data-icon="passage-blank" class="passage-icon-right"></a>
 				<div class="section-number">
@@ -3296,7 +3283,7 @@
 				<a class="previous-passage" data-theme="c" data-icon="previous-passage"></a>
 			</div>
 		</div>
-		<div data-role="page" data-control-title="b6q13" class="ui-icon-nodisc" id="b6q13">
+		<div data-role="page" data-control-title="b6q13" class="passage-page" id="b6q13">
 			<div data-theme="d" data-role="header" data-position="fixed" data-tap-toggle="false" class="passage-header">
 				<a class="passage-icon-left" data-theme="c" data-transition="slide" data-direction="reverse" href="#book6" data-icon="passage-left"></a><a href="#" data-theme="c" data-icon="passage-blank" class="passage-icon-right"></a>
 				<div class="section-number">
@@ -3312,7 +3299,7 @@
 				<a class="previous-passage" data-theme="c" data-icon="previous-passage"></a>
 			</div>
 		</div>
-		<div data-role="page" data-control-title="b6q14" class="ui-icon-nodisc" id="b6q14">
+		<div data-role="page" data-control-title="b6q14" class="passage-page" id="b6q14">
 			<div data-theme="d" data-role="header" data-position="fixed" data-tap-toggle="false" class="passage-header">
 				<a class="passage-icon-left" data-theme="c" data-transition="slide" data-direction="reverse" href="#book6" data-icon="passage-left"></a><a href="#" data-theme="c" data-icon="passage-blank" class="passage-icon-right"></a>
 				<div class="section-number">
@@ -3328,7 +3315,7 @@
 				<a class="previous-passage" data-theme="c" data-icon="previous-passage"></a>
 			</div>
 		</div>
-		<div data-role="page" data-control-title="b6q15" class="ui-icon-nodisc" id="b6q15">
+		<div data-role="page" data-control-title="b6q15" class="passage-page" id="b6q15">
 			<div data-theme="d" data-role="header" data-position="fixed" data-tap-toggle="false" class="passage-header">
 				<a class="passage-icon-left" data-theme="c" data-transition="slide" data-direction="reverse" href="#book6" data-icon="passage-left"></a><a href="#" data-theme="c" data-icon="passage-blank" class="passage-icon-right"></a>
 				<div class="section-number">
@@ -3344,7 +3331,7 @@
 				<a class="previous-passage" data-theme="c" data-icon="previous-passage"></a>
 			</div>
 		</div>
-		<div data-role="page" data-control-title="b6q16" class="ui-icon-nodisc" id="b6q16">
+		<div data-role="page" data-control-title="b6q16" class="passage-page" id="b6q16">
 			<div data-theme="d" data-role="header" data-position="fixed" data-tap-toggle="false" class="passage-header">
 				<a class="passage-icon-left" data-theme="c" data-transition="slide" data-direction="reverse" href="#book6" data-icon="passage-left"></a><a href="#" data-theme="c" data-icon="passage-blank" class="passage-icon-right"></a>
 				<div class="section-number">
@@ -3360,7 +3347,7 @@
 				<a class="previous-passage" data-theme="c" data-icon="previous-passage"></a>
 			</div>
 		</div>
-		<div data-role="page" data-control-title="b6q17" class="ui-icon-nodisc" id="b6q17">
+		<div data-role="page" data-control-title="b6q17" class="passage-page" id="b6q17">
 			<div data-theme="d" data-role="header" data-position="fixed" data-tap-toggle="false" class="passage-header">
 				<a class="passage-icon-left" data-theme="c" data-transition="slide" data-direction="reverse" href="#book6" data-icon="passage-left"></a><a href="#" data-theme="c" data-icon="passage-blank" class="passage-icon-right"></a>
 				<div class="section-number">
@@ -3376,7 +3363,7 @@
 				<a class="previous-passage" data-theme="c" data-icon="previous-passage"></a>
 			</div>
 		</div>
-		<div data-role="page" data-control-title="b6q18" class="ui-icon-nodisc" id="b6q18">
+		<div data-role="page" data-control-title="b6q18" class="passage-page" id="b6q18">
 			<div data-theme="d" data-role="header" data-position="fixed" data-tap-toggle="false" class="passage-header">
 				<a class="passage-icon-left" data-theme="c" data-transition="slide" data-direction="reverse" href="#book6" data-icon="passage-left"></a><a href="#" data-theme="c" data-icon="passage-blank" class="passage-icon-right"></a>
 				<div class="section-number">
@@ -3392,7 +3379,7 @@
 				<a class="previous-passage" data-theme="c" data-icon="previous-passage"></a>
 			</div>
 		</div>
-		<div data-role="page" data-control-title="b6q19" class="ui-icon-nodisc" id="b6q19">
+		<div data-role="page" data-control-title="b6q19" class="passage-page" id="b6q19">
 			<div data-theme="d" data-role="header" data-position="fixed" data-tap-toggle="false" class="passage-header">
 				<a class="passage-icon-left" data-theme="c" data-transition="slide" data-direction="reverse" href="#book6" data-icon="passage-left"></a><a href="#" data-theme="c" data-icon="passage-blank" class="passage-icon-right"></a>
 				<div class="section-number">
@@ -3408,7 +3395,7 @@
 			</div>
 		</div>
 <!-- Book 7 Passages -->
-		<div data-role="page" data-control-title="b7q1" class="ui-icon-nodisc" id="b7q1">
+		<div data-role="page" data-control-title="b7q1" class="passage-page" id="b7q1">
 			<div data-theme="d" data-role="header" data-position="fixed" data-tap-toggle="false" class="passage-header">
 				<a class="passage-icon-left" data-theme="c" data-transition="slide" data-direction="reverse" href="#book7" data-icon="passage-left"></a><a href="#" data-theme="c" data-icon="passage-blank" class="passage-icon-right"></a>
 				<div class="section-number">
@@ -3423,7 +3410,7 @@
 				<a class="next-passage" data-theme="c" data-icon="next-passage"></a>
 			</div>
 		</div>
-		<div data-role="page" data-control-title="b7q2" class="ui-icon-nodisc" id="b7q2">
+		<div data-role="page" data-control-title="b7q2" class="passage-page" id="b7q2">
 			<div data-theme="d" data-role="header" data-position="fixed" data-tap-toggle="false" class="passage-header">
 				<a class="passage-icon-left" data-theme="c" data-transition="slide" data-direction="reverse" href="#book7" data-icon="passage-left"></a><a href="#" data-theme="c" data-icon="passage-blank" class="passage-icon-right"></a>
 				<div class="section-number">
@@ -3440,7 +3427,7 @@
 				<a class="previous-passage" data-theme="c" data-icon="previous-passage"></a>
 			</div>
 		</div>
-		<div data-role="page" data-control-title="b7q3" class="ui-icon-nodisc" id="b7q3">
+		<div data-role="page" data-control-title="b7q3" class="passage-page" id="b7q3">
 			<div data-theme="d" data-role="header" data-position="fixed" data-tap-toggle="false" class="passage-header">
 				<a class="passage-icon-left" data-theme="c" data-transition="slide" data-direction="reverse" href="#book7" data-icon="passage-left"></a><a href="#" data-theme="c" data-icon="passage-blank" class="passage-icon-right"></a>
 				<div class="section-number">
@@ -3456,7 +3443,7 @@
 				<a class="previous-passage" data-theme="c" data-icon="previous-passage"></a>
 			</div>
 		</div>
-		<div data-role="page" data-control-title="b7q4" class="ui-icon-nodisc" id="b7q4">
+		<div data-role="page" data-control-title="b7q4" class="passage-page" id="b7q4">
 			<div data-theme="d" data-role="header" data-position="fixed" data-tap-toggle="false" class="passage-header">
 				<a class="passage-icon-left" data-theme="c" data-transition="slide" data-direction="reverse" href="#book7" data-icon="passage-left"></a><a href="#" data-theme="c" data-icon="passage-blank" class="passage-icon-right"></a>
 				<div class="section-number">
@@ -3472,7 +3459,7 @@
 				<a class="previous-passage" data-theme="c" data-icon="previous-passage"></a>
 			</div>
 		</div>
-		<div data-role="page" data-control-title="b7q5" class="ui-icon-nodisc" id="b7q5">
+		<div data-role="page" data-control-title="b7q5" class="passage-page" id="b7q5">
 			<div data-theme="d" data-role="header" data-position="fixed" data-tap-toggle="false" class="passage-header">
 				<a class="passage-icon-left" data-theme="c" data-transition="slide" data-direction="reverse" href="#book7" data-icon="passage-left"></a><a href="#" data-theme="c" data-icon="passage-blank" class="passage-icon-right"></a>
 				<div class="section-number">
@@ -3488,7 +3475,7 @@
 				<a class="previous-passage" data-theme="c" data-icon="previous-passage"></a>
 			</div>
 		</div>
-		<div data-role="page" data-control-title="b7q6" class="ui-icon-nodisc" id="b7q6">
+		<div data-role="page" data-control-title="b7q6" class="passage-page" id="b7q6">
 			<div data-theme="d" data-role="header" data-position="fixed" data-tap-toggle="false" class="passage-header">
 				<a class="passage-icon-left" data-theme="c" data-transition="slide" data-direction="reverse" href="#book7" data-icon="passage-left"></a><a href="#" data-theme="c" data-icon="passage-blank" class="passage-icon-right"></a>
 				<div class="section-number">
@@ -3504,7 +3491,7 @@
 				<a class="previous-passage" data-theme="c" data-icon="previous-passage"></a>
 			</div>
 		</div>
-		<div data-role="page" data-control-title="b7q7" class="ui-icon-nodisc" id="b7q7">
+		<div data-role="page" data-control-title="b7q7" class="passage-page" id="b7q7">
 			<div data-theme="d" data-role="header" data-position="fixed" data-tap-toggle="false" class="passage-header">
 				<a class="passage-icon-left" data-theme="c" data-transition="slide" data-direction="reverse" href="#book7" data-icon="passage-left"></a><a href="#" data-theme="c" data-icon="passage-blank" class="passage-icon-right"></a>
 				<div class="section-number">
@@ -3520,7 +3507,7 @@
 				<a class="previous-passage" data-theme="c" data-icon="previous-passage"></a>
 			</div>
 		</div>
-		<div data-role="page" data-control-title="b7q8" class="ui-icon-nodisc" id="b7q8">
+		<div data-role="page" data-control-title="b7q8" class="passage-page" id="b7q8">
 			<div data-theme="d" data-role="header" data-position="fixed" data-tap-toggle="false" class="passage-header">
 				<a class="passage-icon-left" data-theme="c" data-transition="slide" data-direction="reverse" href="#book7" data-icon="passage-left"></a><a href="#" data-theme="c" data-icon="passage-blank" class="passage-icon-right"></a>
 				<div class="section-number">
@@ -3536,7 +3523,7 @@
 				<a class="previous-passage" data-theme="c" data-icon="previous-passage"></a>
 			</div>
 		</div>
-		<div data-role="page" data-control-title="b7q9" class="ui-icon-nodisc" id="b7q9">
+		<div data-role="page" data-control-title="b7q9" class="passage-page" id="b7q9">
 			<div data-theme="d" data-role="header" data-position="fixed" data-tap-toggle="false" class="passage-header">
 				<a class="passage-icon-left" data-theme="c" data-transition="slide" data-direction="reverse" href="#book7" data-icon="passage-left"></a><a href="#" data-theme="c" data-icon="passage-blank" class="passage-icon-right"></a>
 				<div class="section-number">
@@ -3552,7 +3539,7 @@
 				<a class="previous-passage" data-theme="c" data-icon="previous-passage"></a>
 			</div>
 		</div>
-		<div data-role="page" data-control-title="b7q10" class="ui-icon-nodisc" id="b7q10">
+		<div data-role="page" data-control-title="b7q10" class="passage-page" id="b7q10">
 			<div data-theme="d" data-role="header" data-position="fixed" data-tap-toggle="false" class="passage-header">
 				<a class="passage-icon-left" data-theme="c" data-transition="slide" data-direction="reverse" href="#book7" data-icon="passage-left"></a><a href="#" data-theme="c" data-icon="passage-blank" class="passage-icon-right"></a>
 				<div class="section-number">
@@ -3568,7 +3555,7 @@
 				<a class="previous-passage" data-theme="c" data-icon="previous-passage"></a>
 			</div>
 		</div>
-		<div data-role="page" data-control-title="b7q11" class="ui-icon-nodisc" id="b7q11">
+		<div data-role="page" data-control-title="b7q11" class="passage-page" id="b7q11">
 			<div data-theme="d" data-role="header" data-position="fixed" data-tap-toggle="false" class="passage-header">
 				<a class="passage-icon-left" data-theme="c" data-transition="slide" data-direction="reverse" href="#book7" data-icon="passage-left"></a><a href="#" data-theme="c" data-icon="passage-blank" class="passage-icon-right"></a>
 				<div class="section-number">
@@ -3584,7 +3571,7 @@
 				<a class="previous-passage" data-theme="c" data-icon="previous-passage"></a>
 			</div>
 		</div>
-		<div data-role="page" data-control-title="b7q12" class="ui-icon-nodisc" id="b7q12">
+		<div data-role="page" data-control-title="b7q12" class="passage-page" id="b7q12">
 			<div data-theme="d" data-role="header" data-position="fixed" data-tap-toggle="false" class="passage-header">
 				<a class="passage-icon-left" data-theme="c" data-transition="slide" data-direction="reverse" href="#book7" data-icon="passage-left"></a><a href="#" data-theme="c" data-icon="passage-blank" class="passage-icon-right"></a>
 				<div class="section-number">
@@ -3602,7 +3589,7 @@
 				<a class="previous-passage" data-theme="c" data-icon="previous-passage"></a>
 			</div>
 		</div>
-		<div data-role="page" data-control-title="b7q13" class="ui-icon-nodisc" id="b7q13">
+		<div data-role="page" data-control-title="b7q13" class="passage-page" id="b7q13">
 			<div data-theme="d" data-role="header" data-position="fixed" data-tap-toggle="false" class="passage-header">
 				<a class="passage-icon-left" data-theme="c" data-transition="slide" data-direction="reverse" href="#book7" data-icon="passage-left"></a><a href="#" data-theme="c" data-icon="passage-blank" class="passage-icon-right"></a>
 				<div class="section-number">
@@ -3618,7 +3605,7 @@
 				<a class="previous-passage" data-theme="c" data-icon="previous-passage"></a>
 			</div>
 		</div>
-		<div data-role="page" data-control-title="b7q14" class="ui-icon-nodisc" id="b7q14">
+		<div data-role="page" data-control-title="b7q14" class="passage-page" id="b7q14">
 			<div data-theme="d" data-role="header" data-position="fixed" data-tap-toggle="false" class="passage-header">
 				<a class="passage-icon-left" data-theme="c" data-transition="slide" data-direction="reverse" href="#book7" data-icon="passage-left"></a><a href="#" data-theme="c" data-icon="passage-blank" class="passage-icon-right"></a>
 				<div class="section-number">
@@ -3634,7 +3621,7 @@
 			</div>
 		</div>
 <!-- Excerpts on Memorization -->
-		<div data-role="page"  data-theme="a" data-control-title="excerpts" class="ui-icon-nodisc" id="excerpts">
+		<div data-role="page"  data-theme="a" data-control-title="excerpts" class="resource-page" id="excerpts">
 			<div data-theme="d" data-role="header" data-position="fixed" data-tap-toggle="false" class="passage-header">
 				<a class="passage-icon-left" data-theme="c" data-transition="slide" data-direction="reverse" href="#menu" data-icon="passage-left"></a>
 				<a href="#panel2" data-theme="c" data-icon="more-b" class="passage-icon-right"></a>
@@ -3738,7 +3725,7 @@
 			</div>
 		</div>
 <!-- Selections on Memorization -->
-		<div data-role="page"  data-theme="a" data-control-title="selections" class="ui-icon-nodisc" id="selections">
+		<div data-role="page"  data-theme="a" data-control-title="selections" class="resource-page" id="selections">
 			<div data-theme="d" data-role="header" data-position="fixed" data-tap-toggle="false" class="passage-header">
 				<a class="passage-icon-left" data-theme="c" data-transition="slide" data-direction="reverse" href="#menu" data-icon="passage-left"></a>
 				<a href="#panel3" data-theme="c" data-icon="more-b" class="passage-icon-right"></a>
@@ -3798,7 +3785,7 @@
 			</div>
 		</div>
 <!-- Long Obligatory Prayer -->
-		<div data-role="page" data-theme="a" data-control-title="obligatoryprayer" class="ui-icon-nodisc" id="obligatoryprayer">
+		<div data-role="page" data-theme="a" data-control-title="obligatoryprayer" class="resource-page" id="obligatoryprayer">
 			<div data-theme="d" data-role="header" data-position="fixed" data-tap-toggle="false" class="passage-header">
 				<a class="passage-icon-left" data-theme="c" data-transition="slide" data-direction="reverse" href="#menu" data-icon="passage-left"></a>
 				<a href="#panel4" data-theme="c" data-icon="more-b" class="passage-icon-right"></a>
