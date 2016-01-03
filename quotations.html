@@ -177,7 +177,7 @@
 				event.preventDefault();
 			});
 		</script> -->
-		<!-- Hide all header/footer items on passage/additional resource pages when page clicked -->
+		<!-- Hide all header/footer items on passage/additional resource pages when page clicked. Reshow items when panel button clicked. -->
 		<script>
 			$(document).ready(function() {
 				$('.passage-page').click(function() {
@@ -186,6 +186,12 @@
 					$($(this).children('.passage-footer').children('a')).fadeToggle();
 				});
 				$('.resource-page').click(function() {
+					$($(this).children('.passage-header').children('a')).fadeToggle();
+					$($(this).children('.passage-header').children('.resource-heading')).fadeToggle();
+					$($(this).children('.passage-footer').children('a')).fadeToggle();
+					$($(this).children('.passage-footer').children('.resource-heading')).fadeToggle();
+				});
+				$('.resource-page').on('panelbeforeopen', function() {
 					$($(this).children('.passage-header').children('a')).fadeToggle();
 					$($(this).children('.passage-header').children('.resource-heading')).fadeToggle();
 					$($(this).children('.passage-footer').children('a')).fadeToggle();
@@ -3593,7 +3599,7 @@
 		<div data-role="page"  data-theme="a" data-control-title="excerpts" class="resource-page" id="excerpts">
 			<div data-theme="d" data-role="header" data-position="fixed" data-tap-toggle="false" class="passage-header">
 				<a class="passage-icon-left" data-theme="c" data-transition="slide" data-direction="reverse" href="#menu" data-icon="passage-left"></a>
-				<a href="#panel2" data-theme="c" data-icon="more-b" class="passage-icon-right"></a>
+				<a href="#panel2" data-theme="c" data-icon="more-b" class="panel-button"></a>
 				<div class="resource-heading">
 					On Memorization
 				</div>
@@ -3697,7 +3703,7 @@
 		<div data-role="page"  data-theme="a" data-control-title="selections" class="resource-page" id="selections">
 			<div data-theme="d" data-role="header" data-position="fixed" data-tap-toggle="false" class="passage-header">
 				<a class="passage-icon-left" data-theme="c" data-transition="slide" data-direction="reverse" href="#menu" data-icon="passage-left"></a>
-				<a href="#panel3" data-theme="c" data-icon="more-b" class="passage-icon-right"></a>
+				<a href="#panel3" data-theme="c" data-icon="more-b" class="panel-button"></a>
 				<div class="resource-heading">
 					On Memorization
 				</div>
@@ -3757,7 +3763,7 @@
 		<div data-role="page" data-theme="a" data-control-title="obligatoryprayer" class="resource-page" id="obligatoryprayer">
 			<div data-theme="d" data-role="header" data-position="fixed" data-tap-toggle="false" class="passage-header">
 				<a class="passage-icon-left" data-theme="c" data-transition="slide" data-direction="reverse" href="#menu" data-icon="passage-left"></a>
-				<a href="#panel4" data-theme="c" data-icon="more-b" class="passage-icon-right"></a>
+				<a href="#panel4" data-theme="c" data-icon="more-b" class="panel-button"></a>
 				<div class="resource-heading">
 					Long Obligatory Prayer
 				</div>
