@@ -75,6 +75,11 @@
 	color: #404040 !important;
 	display: block; /* Makes entire area clickable */
 }
+.book-number-white {
+	font-size: 145%;
+	font-weight: bold !important;
+	color: white !important;
+}
 .book-1-number {
 	font-size: 145%;
 	font-weight: bold !important;
@@ -115,11 +120,6 @@
 	background-position: right, center;
 	background-repeat: no-repeat;
 }
-.book-number-white {
-	font-size: 145%;
-	font-weight: bold !important;
-	color: white !important;
-}
 .book-2-number {
 	font-size: 145%;
 	font-weight: bold !important;
@@ -147,23 +147,6 @@
 	background-position: top, center;
 	background-repeat: no-repeat;
 	padding-top: 8px;
-	padding-left: 2px;
-}
-.book-2-number-b {
-	font-size: 145%;
-	font-weight: bold !important;
-	color: white !important;
-}
-.book-2-number-wrapper-b {
-	display: inline-block;
-	vertical-align: top;
-	width: 49px;
-	height: 41px;
-	background-image: url('images/2-solid.png');
-	background-size: 48px;
-	background-position: top, center;
-	background-repeat: no-repeat;
-	padding-top: 9px;
 	padding-left: 2px;
 }
 .book-2-title-wrapper {
@@ -520,6 +503,12 @@
 }
 .ui-icon-passage-left {
   background-image: url('images/left-gray.png');
+  background-size: 8px;
+  background-repeat: no-repeat;
+  background-position: 22px 15px;
+}
+.ui-icon-passage-left-1 {
+  background-image: url('images/left-1.png');
   background-size: 8px;
   background-repeat: no-repeat;
   background-position: 22px 15px;
