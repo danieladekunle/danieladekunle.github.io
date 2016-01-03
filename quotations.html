@@ -170,13 +170,13 @@
 				});
 			});
 		</script>
-		<!-- Disable forward/back swipes on panel -->
-		<script>
+		<!-- Disable forward/back swipes on panel (disabled)-->
+		<!-- <script>
 			$(document).on('swipeleft swiperight', '[data-role="panel"]', function(event) {
 				event.stopPropagation();
 				event.preventDefault();
 			});
-		</script>
+		</script> -->
 		<!-- Hide all header/footer items on passage/additional resource pages when page clicked -->
 		<script>
 			$(document).ready(function() {
@@ -204,15 +204,15 @@
 				}); 
 			});
 		</script>
-		<!-- Go back in history with reverse slide transition on right swipe from edge of screen -->
-		<script>
+		<!-- Go back in history with reverse slide transition on right swipe from edge of screen (disabled) -->
+		<!-- <script>
 			$(document).bind('swiperight', function (event) {
 				if ( event.swipestart.coords[0] <10) {
 					history.back({transition:"slide", reverse:true,});
 				}
 			});
-		</script>
-		<!-- Go forward in history on left swipe (Disabled) -->
+		</script> -->
+		<!-- Go forward in history on left swipe (disabled) -->
 		<!-- <script>
 			$(document).bind('swipeleft', function () {
 				history.forward({transition:"slide"});
