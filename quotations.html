@@ -76,7 +76,7 @@
 			$(document).ready(function() {
 				$('.book-1-title-wrapper').hide();
 				$('.book-1-number-wrapper').click(function() {
-					$('.book-1-title-wrapper').fadeToggle();
+					$('.book-1-title-wrapper').fadeToggle("linear");
 					$('.book-2-title-wrapper').hide();
 					$('.book-3-title-wrapper').hide();
 					$('.book-4-title-wrapper').hide();
@@ -86,7 +86,7 @@
 				});
 				$('.book-2-title-wrapper').hide();
 				$('.book-2-number-wrapper').click(function() {
-					$('.book-2-title-wrapper').fadeToggle();
+					$('.book-2-title-wrapper').fadeToggle("fast", "linear");
 					$('.book-1-title-wrapper').hide();
 					$('.book-3-title-wrapper').hide();
 					$('.book-4-title-wrapper').hide();
@@ -421,7 +421,7 @@
 		<div data-role="page" data-control-title="book1" id="book1">
 			<div data-theme="d" data-role="header" data-position="fixed" data-tap-toggle="false" class="passage-menu-header">
 				<h2 style="display:none;">Book 1</h2>
-				<a href="#menu" data-transition="slide" data-direction="reverse"  data-theme="c" data-icon="left-gray" class="passage-menu-icon-left"></a>
+				<a href="#menu" data-transition="slide" data-direction="reverse"  data-theme="c" data-icon="menu" class="passage-menu-icon-left"></a>
 				<a href="#" data-theme="c" data-icon="blank" class="passage-menu-icon-right"></a>
 				<div class="passage-menu-heading">Book 1</div>
 			</div>
@@ -1388,7 +1388,7 @@
 		</div>
 		<div data-role="page" data-control-title="b1q2" class="passage-page" id="b1q2">
 			<div data-theme="d" data-role="header" data-position="fixed" data-tap-toggle="false" class="passage-header">
-				<a class="passage-icon-left" data-theme="c" data-transition="slide" data-direction="reverse" href="#book1" data-icon="passage-left"></a><a href="#" data-theme="c" data-icon="passage-blank" class="passage-icon-right"></a>
+				<a class="passage-icon-left-number" data-theme="c" data-transition="slide" data-direction="reverse" href="#book1" data-icon="passage-1">1</a><a href="#" data-theme="c" data-icon="passage-blank" class="passage-icon-right"></a>
 				<div class="section-number">
 					1∙1∙5
 				</div>

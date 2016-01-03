@@ -352,7 +352,7 @@
 	text-align: center;
 	letter-spacing: 4px;
 	font-size: small;
-	padding-top: 11px;
+	padding-top: 12px;
 }
 
 /* Passage Menus */
@@ -394,6 +394,12 @@
   background-size: 8px;
   background-repeat: no-repeat;
   background-position: 16px 16px;
+}
+.ui-icon-menu {
+  background-image: url('images/menu-outline.png');
+  background-size: 22px;
+  background-repeat: no-repeat;
+  background-position: 16px 12px;
 }
 .passage-menu-icon-right {
 	height: 22px;
@@ -440,6 +446,22 @@
   background-size: 8px;
   background-repeat: no-repeat;
   background-position: 22px 15px;
+}
+.passage-icon-left-number {
+	height: 22px;
+	width: 10px;
+	position: relative;
+	float: left;
+	text-align: left;
+	padding-top:13.5px;
+	padding-left:29px;
+	color: rgba(191,30,98,1) !important;
+}
+.ui-icon-passage-1 {
+  background-image: url('images/1-outline.png');
+  background-size: 20px;
+  background-repeat: no-repeat;
+  background-position: 21px 12px;
 }
 .section-number {
 	text-align: center;
