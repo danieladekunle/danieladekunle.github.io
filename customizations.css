@@ -513,6 +513,12 @@
   background-repeat: no-repeat;
   background-position: 22px 15px;
 }
+.ui-icon-passage-left-1-outline {
+  background-image: url('images/left-1-outline.png');
+  background-size: 16px;
+  background-repeat: no-repeat;
+  background-position: 22px 15px;
+}
 .passage-icon-left-number {
 	height: 22px;
 	width: 10px;
@@ -530,6 +536,13 @@
   background-position: 21px 12px;
 }
 .section-number {
+	text-align: center;
+	font-size: 92%;
+	padding-top: 16px;
+	color: gray;
+	letter-spacing: 2.5px;
+}
+.section-number-permanent {
 	text-align: center;
 	font-size: 92%;
 	padding-top: 16px;
