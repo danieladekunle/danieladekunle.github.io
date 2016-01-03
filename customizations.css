@@ -92,6 +92,18 @@
 	padding-top: 8px;
 	padding-left: 1px;
 }
+.book-1-number-wrapper-solid {
+	display: inline-block;
+	vertical-align: top;
+	width: 49px;
+	height: 41px;
+	background-image: url('images/1-solid.png');
+	background-size: 48px;
+	background-position: top, center;
+	background-repeat: no-repeat;
+	padding-top: 8px;
+	padding-left: 1px;
+}
 .book-1-title-wrapper {
 	padding-top: 3px;
 	padding-bottom: 3px;
@@ -103,22 +115,10 @@
 	background-position: right, center;
 	background-repeat: no-repeat;
 }
-.book-1-number-b {
+.book-number-white {
 	font-size: 145%;
 	font-weight: bold !important;
 	color: white !important;
-}
-.book-1-number-wrapper-b {
-	display: inline-block;
-	vertical-align: top;
-	width: 49px;
-	height: 41px;
-	background-image: url('images/1-solid.png');
-	background-size: 48px;
-	background-position: top, center;
-	background-repeat: no-repeat;
-	padding-top: 8px;
-	padding-left: 1px;
 }
 .book-2-number {
 	font-size: 145%;
@@ -134,7 +134,19 @@
 	background-size: 48px;
 	background-position: top, center;
 	background-repeat: no-repeat;
-	padding-top: 9px;
+	padding-top: 8px;
+	padding-left: 2px;
+}
+.book-2-number-wrapper-solid {
+	display: inline-block;
+	vertical-align: top;
+	width: 49px;
+	height: 41px;
+	background-image: url('images/2-solid.png');
+	background-size: 48px;
+	background-position: top, center;
+	background-repeat: no-repeat;
+	padding-top: 8px;
 	padding-left: 2px;
 }
 .book-2-number-b {
@@ -181,6 +193,18 @@
 	padding-top: 8px;
 	padding-left: 1px;
 }
+.book-3-number-wrapper-solid {
+	display: inline-block;
+	vertical-align: top;
+	width: 49px;
+	height: 41px;
+	background-image: url('images/3-solid.png');
+	background-size: 48px;
+	background-position: top, center;
+	background-repeat: no-repeat;
+	padding-top: 8px;
+	padding-left: 1px;
+}
 .book-3-title-wrapper {
 	padding-top: 3px;
 	padding-bottom: 3px;
@@ -208,6 +232,17 @@
 	background-repeat: no-repeat;
 	padding-top: 8px;
 }
+.book-4-number-wrapper-solid {
+	display: inline-block;
+	vertical-align: top;
+	width: 49px;
+	height: 41px;
+	background-image: url('images/4-solid.png');
+	background-size: 48px;
+	background-position: top, center;
+	background-repeat: no-repeat;
+	padding-top: 8px;
+}
 .book-4-title-wrapper {
 	line-height:45px;
 	padding-right: 0px;
@@ -229,6 +264,18 @@
 	width: 49px;
 	height: 41px;
 	background-image: url('images/5-outline.png');
+	background-size: 48px;
+	background-position: top, center;
+	background-repeat: no-repeat;
+	padding-top: 9px;
+	padding-left: 2px;
+}
+.book-5-number-wrapper-solid {
+	display: inline-block;
+	vertical-align: top;
+	width: 49px;
+	height: 41px;
+	background-image: url('images/5-solid.png');
 	background-size: 48px;
 	background-position: top, center;
 	background-repeat: no-repeat;
@@ -263,6 +310,18 @@
 	padding-top: 8px;
 	padding-left: 2px;
 }
+.book-6-number-wrapper-solid {
+	display: inline-block;
+	vertical-align: top;
+	width: 49px;
+	height: 41px;
+	background-image: url('images/6-solid.png');
+	background-size: 48px;
+	background-position: top, center;
+	background-repeat: no-repeat;
+	padding-top: 8px;
+	padding-left: 2px;
+}
 .book-6-title-wrapper {
 	line-height:45px;
 	padding-right: 0px;
@@ -284,6 +343,18 @@
 	width: 49px;
 	height: 41px;
 	background-image: url('images/7-outline.png');
+	background-size: 48px;
+	background-position: top, center;
+	background-repeat: no-repeat;
+	padding-top: 9px;
+	padding-left: 2px;
+}
+.book-7-number-wrapper-solid {
+	display: inline-block;
+	vertical-align: top;
+	width: 49px;
+	height: 41px;
+	background-image: url('images/7-solid.png');
 	background-size: 48px;
 	background-position: top, center;
 	background-repeat: no-repeat;
