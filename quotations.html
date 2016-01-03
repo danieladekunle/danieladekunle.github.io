@@ -37,12 +37,12 @@
 			}
 		</style>
 		<!-- FastClick -->
-		<!-- <script src="fastclick.js"></script>
+		<script src="fastclick.js"></script>
 		<script>
 			$(function() {
 				FastClick.attach(document.body);
 			});
-		</script> -->
+		</script>
 		<!-- Add to home screen popup -->	
 		<link rel="stylesheet" href="addtohomescreen.css">
 		<script type="application/javascript" src="addtohomescreen.js"></script>
@@ -182,8 +182,8 @@
 				});
 			});
 		</script>
-		<!-- Swipe left to open panel -->
-	<!-- 	<script>
+		<!-- Swipe left to open panel (disabled) -->
+		<!-- <script>
 			$( document ).on( "pageinit", "#menu", function() {
 				$( document ).on( "swipeleft", "#menu", function( e ) {
 					// We check if there is no open panel on the page because otherwise
@@ -210,7 +210,7 @@
 			$(document).ready(function() {
 				$('.passage-page').click(function() {
 					$($(this).children('.passage-header').children('a')).fadeToggle();
-					$($(this).children('.passage-header').children('.section-number')).fadeToggle();
+					<!-- $($(this).children('.passage-header').children('.section-number')).fadeToggle(); -->
 					$($(this).children('.passage-footer').children('a')).fadeToggle();
 				});
 				$('.resource-page').click(function() {
@@ -227,7 +227,7 @@
 				});
 				$('.passage-page').on('pageshow', function() {
 					$($(this).children('.passage-header').children('a')).show();
-					$($(this).children('.passage-header').children('.section-number')).show();
+					<!-- $($(this).children('.passage-header').children('.section-number')).show(); -->
 					$($(this).children('.passage-footer').children('a')).show();
 				});
 			});
@@ -243,8 +243,8 @@
 				}); 
 			});
 		</script>
-		<!-- If in standalone mode and panel is not open go back in history with reverse slide transition on right swipe from edge of screen -->
-		<script>
+		<!-- If in standalone mode and panel is not open go back in history with reverse slide transition on right swipe from edge of screen (disabled) -->
+		<!-- <script>
 			$(document).bind('swiperight', function (event) {
 				if (window.navigator.standalone == true) {
 					if ( $.mobile.activePage.jqmData( "panel" ) !== "open" ) {
@@ -254,7 +254,7 @@
 					}
 				}
 			});
-		</script>
+		</script> -->
 		<!-- Go forward in history on left swipe (disabled) -->
 		<!-- <script>
 			$(document).bind('swipeleft', function () {
@@ -1422,7 +1422,7 @@
 		<div data-role="page" data-control-title="b1q1" class="passage-page" id="b1q1">
 			<div data-theme="d" data-role="header" data-position="fixed" data-tap-toggle="false" class="passage-header">
 				<a class="passage-icon-left" data-theme="c" data-transition="slide" data-direction="reverse" href="#book1" data-icon="passage-left"></a><a href="#" data-theme="c" data-icon="passage-blank" class="passage-icon-right"></a>
-				<div class="section-number-permanent">
+				<div class="section-number">
 					1∙1∙5
 				</div>
 			</div>
