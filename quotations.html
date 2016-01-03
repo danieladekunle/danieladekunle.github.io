@@ -225,6 +225,11 @@
 					$($(this).children('.passage-footer').children('a')).fadeToggle();
 					$($(this).children('.passage-footer').children('.resource-heading')).fadeToggle();
 				});
+				$('.passage-page').on('pageshow', function() {
+					$($(this).children('.passage-header').children('a')).show();
+					$($(this).children('.passage-header').children('.section-number')).show();
+					$($(this).children('.passage-footer').children('a')).show();
+				});
 			});
 		</script>
 		<!-- Open next/previous passage when right/left arrow buttons clicked -->
