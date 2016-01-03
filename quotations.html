@@ -177,10 +177,26 @@
 				event.preventDefault();
 			});
 		</script>
-		<!-- Hide all header/footer items on passage pages when body clicked -->
+		<!-- Hide all header/footer items on passage pages when page clicked -->
 		<script>
 			$(document).ready(function() {
 				$('.passage').click(function() {
+					$('.next-passage').toggle("show");
+					$('.previous-passage').toggle("show");
+					$('.passage-icon-left').toggle("show");
+					$('.section-number').toggle("show");
+					$('.resource-heading').toggle("show");
+					$('.passage-icon-right').toggle("show");
+				});
+				$('.passage-header').click(function() {
+					$('.next-passage').toggle("show");
+					$('.previous-passage').toggle("show");
+					$('.passage-icon-left').toggle("show");
+					$('.section-number').toggle("show");
+					$('.resource-heading').toggle("show");
+					$('.passage-icon-right').toggle("show");
+				});
+				$('.passage-footer').click(function() {
 					$('.next-passage').toggle("show");
 					$('.previous-passage').toggle("show");
 					$('.passage-icon-left').toggle("show");
