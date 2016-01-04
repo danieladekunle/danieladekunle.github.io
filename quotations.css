@@ -3,19 +3,18 @@
 /* Header with Status Bar Background */
 
 .menu-header {
-	height: 90px;
+	height: 98px;
 	background: url('images/status-bar.png') no-repeat, -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 90%, rgba(255,255,255,0.9) 95%, rgba(255,255,255,0) 100%);
 	background: url('images/status-bar.png') no-repeat, -webkit-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(255,255,255,1) 90%,rgba(255,255,255,0.9) 95%,rgba(255,255,255,0) 100%); 
 	background: url('images/status-bar.png') no-repeat, linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(255,255,255,1) 90%,rgba(255,255,255,0.9) 95%,rgba(255,255,255,0) 100%);
-	filter: url('images/status-bar.png') no-repeat, progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=0 );
-	background-size: 100% 20px;
+	filter: url('images/status-bar.png') no-repeat, progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=0 );	
 }
 .menu-heading {
 	font-size: 19.5px;
 	text-align: center;
     text-transform: uppercase;
 	letter-spacing: 5px;
-	padding-top: 30px;
+	padding-top: 35px;
 	padding-bottom: 0px;
 	font-weight: 900;
 	color: #707070;
@@ -29,7 +28,7 @@
 	padding-bottom: 0px;
 }
 .menu-icon-left {
-	top: 20px;
+	top: 23px;
 	height: 40px;
 	width: 10px;
 	position: relative;
@@ -38,11 +37,11 @@
 .ui-icon-quotation-mark {
   background-image: url('images/quotation-mark.png');
   background-size: 14px;
-  background-position: center 16px;
+  background-position: center 19px;
   background-repeat: no-repeat;
 }
 .menu-icon-right {
-	top: 20px;
+	top: 23px;
 	height: 40px;
 	width: 10px;
 	position: relative;
@@ -51,7 +50,7 @@
 .ui-icon-menu-ellipse {
   background-image: url('images/ellipse-light.png');
   background-size: 18px;
-  background-position: center 23px;
+  background-position: center 26px;
   background-repeat: no-repeat;
 }
 .menu-wrapper-child { /* Vertically center (-8px) numbers between header/footer on iPhone 6/Plus */
@@ -68,7 +67,7 @@
 .book-wrapper {
 	text-align:center;
 	margin-top: 1px;
-	margin-bottom: 11px;
+	margin-bottom: 9px;
 }
 
 /* Header without Status Bar Background */
