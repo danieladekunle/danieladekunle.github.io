@@ -1,6 +1,6 @@
 CACHE MANIFEST
 
-# Version 101
+# Version 102
 
 fastclick.js
 jquery.mobile.structure-1.4.5.css
@@ -19,21 +19,13 @@ images/4-outline.png
 images/5-outline.png
 images/6-outline.png
 images/7-outline.png
-images/1-solid.png
-images/2-solid.png
-images/3-solid.png
-images/4-solid.png
-images/5-solid.png
-images/6-solid.png
-images/7-solid.png
 images/ajax-loader.gif
 images/blank.png
-images/dots-gray.png
-images/dots-light-gray.png
+images/ellipse-dark.png
+images/ellipse-light.png
 images/external.png
 images/left-gray.png
 images/menu-outline.png
-images/menu-solid.png
 images/quotation-mark.png
 images/right-black.png
 images/right-gray.png

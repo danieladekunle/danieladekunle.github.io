@@ -1,12 +1,20 @@
 /* Main Menu */
 
 .menu-header {
-	height:78px;
+	height: 78px;
 	background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 90%, rgba(255,255,255,0.9) 95%, rgba(255,255,255,0) 100%);
 	background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(255,255,255,1) 90%,rgba(255,255,255,0.9) 95%,rgba(255,255,255,0) 100%); 
 	background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(255,255,255,1) 90%,rgba(255,255,255,0.9) 95%,rgba(255,255,255,0) 100%);
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=0 );
 }
+/* .menu-header-wide {
+	height: 78px;
+	width: 375px;
+	background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 90%, rgba(255,255,255,0.9) 95%, rgba(255,255,255,0) 100%);
+	background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(255,255,255,1) 90%,rgba(255,255,255,0.9) 95%,rgba(255,255,255,0) 100%); 
+	background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(255,255,255,1) 90%,rgba(255,255,255,0.9) 95%,rgba(255,255,255,0) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=0 );
+} */
 .menu-heading {
 	font-size: 19.5px;
 	text-align: center;
@@ -33,8 +41,8 @@
 }
 .ui-icon-quotation-mark {
   background-image: url('images/quotation-mark.png');
-  background-size: 17px;
-  background-position: 15px 19px;
+  background-size: 14px;
+  background-position: center 19px;
   background-repeat: no-repeat;
 }
 .menu-icon-right {
@@ -49,17 +57,23 @@
   background-position: center 16px;
   background-repeat: no-repeat;
 }
+.ui-icon-menu-ellipse {
+  background-image: url('images/ellipse-light.png');
+  background-size: 18px;
+  background-position: center 26px;
+  background-repeat: no-repeat;
+}
 /* .menu-wrapper-parent {
 	position: relative;
 } */
-.menu-wrapper-child { /* Vertically center numbers between header/footer on iPhone 6/Plus */
+.menu-wrapper-child { /* Vertically center (-8px) numbers between header/footer on iPhone 6/Plus */
 	position: absolute;
 	top: 50%;
 	left: 50%;
 	width: 300px;
 	height: 424px;
 	margin-bottom: 0;
-	margin-top: -216px;
+	margin-top: -220px;
 	margin-left: -150px;
 	margin-right:0;
 }
@@ -493,6 +507,12 @@
   background-image: url('images/dots-gray.png');
   background-size: 4px;
   background-position: center 13.5px;
+  background-repeat: no-repeat;
+}
+.ui-icon-resources-ellipse {
+  background-image: url('images/ellipse-dark.png');
+  background-size: 22px;
+  background-position: center 22px;
   background-repeat: no-repeat;
 }
 .section-heading {
