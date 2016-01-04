@@ -27,15 +27,6 @@
 		<link rel="apple-touch-icon" sizes="76x76" href="images/quotations-76.png"/>
 		<link rel="apple-touch-icon" sizes="152x152" href="images/quotations-152.png"/>
 		<link rel="apple-touch-icon" sizes="58x58" href="images/quotations-58.png"/>
-		<!-- Border between list items (Increased from 3px to 4px) -->
-		<style>
-			.ui-listview > .ui-li-static,
-			.ui-listview > .ui-li-divider,
-			.ui-listview > li > a.ui-btn {
-				border-width: 4px 0 0 0;
-				border-style: solid;
-			}
-		</style>
 		<!-- FastClick -->
 		<script src="fastclick.js"></script>
 		<script>
@@ -224,27 +215,39 @@
 				});
 			});
 		</script>
-		<!-- If passage/resource page clicked above footer and below header hide all header/footer items (except section numbers). -->
-		<script>
+		<!-- If passage/resource page clicked below header and above footer toggle header/footer elements. (Working on b1q1 only, disabled) -->
+		<!-- <script>
 			$(document).ready(function() {
 				$('.passage-page').click(function(e) {
-					var offseta = $('.passage-header').offset();
-					var offsetb = $('.passage-footer').offset();
-					if ((e.pageY - offseta.top) > 50 && (e.pageY - offsetb.top) < 0) {
+					var headerOffset = $('.passage-header').offset();
+					var footerOffset = $('.passage-footer').offset();
+					if ((e.pageY - headerOffset.top) > 50 && (e.pageY - footerOffset.top) < 0) {
 						$($(this).children('.passage-header').children('a')).fadeToggle();
-						<!-- $($(this).children('.passage-header').children('.section-number')).fadeToggle(); -->
+						$($(this).children('.passage-header').children('.section-number')).fadeToggle();
 						$($(this).children('.passage-footer').children('a')).fadeToggle();
 					}
 				});
 				$('.resource-page').click(function(e) {
-					var offsetc = $('.passage-header').offset();
-					var offsetd = $('.passage-footer').offset();
-					if ((e.pageY - offsetc.top) > 50 && (e.pageY - offsetd.top) < 0) {
+					var headerOffset = $('.passage-header').offset();
+					var footerOffset = $('.passage-footer').offset();
+					if ((e.pageY - headerOffset.top) > 50 && (e.pageY - footerOffset.top) < 0) {
 						$($(this).children('.passage-header').children('a')).fadeToggle();
 						$($(this).children('.passage-header').children('.resource-heading')).fadeToggle();
 						$($(this).children('.passage-footer').children('a')).fadeToggle();
 						$($(this).children('.passage-footer').children('.resource-heading')).fadeToggle();
 					}
+				});
+			}); -->
+		</script>
+		<!-- Toggle header/footer elements on click on passage text -->
+		<script>
+			$(document).ready(function() {
+				$('.passage').click(function() {
+					$($(this).siblings('.passage-header').children('a')).fadeToggle();
+					<!-- $($(this).children('.passage-header').children('.section-number')).fadeToggle(); -->
+					$($(this).siblings('.passage-footer').children('a')).fadeToggle();
+					$($(this).siblings('.passage-header').children('.resource-heading')).fadeToggle();
+					$($(this).siblings('.passage-footer').children('.resource-heading')).fadeToggle();
 				});
 			});
 		</script>

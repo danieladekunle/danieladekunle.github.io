@@ -5,21 +5,6 @@
 
 /* Main Menu */
 
-/* Vertically center numbers between header/footer */
-.menu-wrapper-child {
-	position: relative;
-}
-.menu-wrapper-child {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	width: 300px;
-	height: 424px;
-	margin-bottom: 0;
-	margin-top: -216px;
-	margin-left: -150px;
-	margin-right:0;
-}
 .menu-header {
 	height:78px;
 	background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 90%, rgba(255,255,255,0.9) 95%, rgba(255,255,255,0) 100%);
@@ -68,6 +53,21 @@
   background-size: 4.5px;
   background-position: center 16px;
   background-repeat: no-repeat;
+}
+/* Vertically center numbers between header/footer */
+.menu-wrapper-child {
+	position: relative;
+}
+.menu-wrapper-child {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 300px;
+	height: 424px;
+	margin-bottom: 0;
+	margin-top: -216px;
+	margin-left: -150px;
+	margin-right:0;
 }
 .book-wrapper {
 	text-align:center;
@@ -465,6 +465,12 @@
   background-size: 9px;
   background-repeat: no-repeat;
   background-position: 16px 19px;
+}
+.ui-listview > .ui-li-static,
+.ui-listview > .ui-li-divider,
+.ui-listview > li > a.ui-btn {
+	border-width: 4px 0 0 0;
+	border-style: solid;
 }
 .pdf {
 	text-align: left;
