@@ -1,5 +1,53 @@
 /* Main Menu */
 
+/* Header without Status Bar Background */
+/* 
+.menu-header {
+	height: 78px;
+	background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 90%, rgba(255,255,255,0.9) 95%, rgba(255,255,255,0) 100%);
+	background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(255,255,255,1) 90%,rgba(255,255,255,0.9) 95%,rgba(255,255,255,0) 100%); 
+	background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(255,255,255,1) 90%,rgba(255,255,255,0.9) 95%,rgba(255,255,255,0) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=0 );
+}
+.menu-heading {
+	font-size: 19.5px;
+	text-align: center;
+    text-transform: uppercase;
+	letter-spacing: 5px;
+	padding-top: 15px;
+	padding-bottom: 0px;
+	font-weight: 900;
+	color: #707070;
+}
+.menu-icon-left {
+	height: 40px;
+	width: 10px;
+	position: relative;
+	float: left;
+}
+.menu-icon-right {
+	height: 40px;
+	width: 10px;
+	position: relative;
+	float: right;
+}
+.menu-wrapper-child { Vertically center (-8px) numbers between header/footer on iPhone 6/Plus
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 300px;
+	height: 424px;
+	margin-bottom: 0;
+	margin-top: -220px;
+	margin-left: -150px;
+	margin-right:0;
+}
+.book-wrapper {
+	text-align:center;
+	margin-top: 4px;
+	margin-bottom: 12px;
+} */
+
 /* Header with Status Bar Background */
 
 .menu-header {
@@ -19,14 +67,6 @@
 	font-weight: 900;
 	color: #707070;
 }
-.menu-subheading {
-	text-align: center;
-	font-size: 14px;
-	letter-spacing: 4px;
-	padding-top: 4px;
-	color: #909090;
-	padding-bottom: 0px;
-}
 .menu-icon-left {
 	top: 23px;
 	height: 40px;
@@ -34,24 +74,12 @@
 	position: relative;
 	float: left;
 }
-.ui-icon-quotation-mark {
-  background-image: url('images/quotation-mark.png');
-  background-size: 14px;
-  background-position: center 19px;
-  background-repeat: no-repeat;
-}
 .menu-icon-right {
 	top: 23px;
 	height: 40px;
 	width: 10px;
 	position: relative;
 	float: right;
-}
-.ui-icon-menu-ellipse {
-  background-image: url('images/ellipse-light.png');
-  background-size: 18px;
-  background-position: center 26px;
-  background-repeat: no-repeat;
 }
 .menu-wrapper-child { /* Vertically center (-8px) numbers between header/footer on iPhone 6/Plus */
 	position: absolute;
@@ -70,73 +98,6 @@
 	margin-bottom: 9px;
 }
 
-/* Header without Status Bar Background */
-
-.menu-header-a {
-	height: 78px;
-	background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 90%, rgba(255,255,255,0.9) 95%, rgba(255,255,255,0) 100%);
-	background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(255,255,255,1) 90%,rgba(255,255,255,0.9) 95%,rgba(255,255,255,0) 100%); 
-	background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(255,255,255,1) 90%,rgba(255,255,255,0.9) 95%,rgba(255,255,255,0) 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=0 );
-}
-.menu-heading-a {
-	font-size: 19.5px;
-	text-align: center;
-    text-transform: uppercase;
-	letter-spacing: 5px;
-	padding-top: 15px;
-	padding-bottom: 0px;
-	font-weight: 900;
-	color: #707070;
-}
-.menu-subheading-a {
-	text-align: center;
-	font-size: 14px;
-	letter-spacing: 4px;
-	padding-top: 4px;
-	color: #909090;
-	padding-bottom: 0px;
-}
-.menu-icon-left-a {
-	height: 40px;
-	width: 10px;
-	position: relative;
-	float: left;
-}
-.ui-icon-quotation-mark-a {
-  background-image: url('images/quotation-mark.png');
-  background-size: 14px;
-  background-position: center 19px;
-  background-repeat: no-repeat;
-}
-.menu-icon-right-a {
-	height: 40px;
-	width: 10px;
-	position: relative;
-	float: right;
-}
-.ui-icon-menu-ellipse-a {
-  background-image: url('images/ellipse-light.png');
-  background-size: 18px;
-  background-position: center 26px;
-  background-repeat: no-repeat;
-}
-.menu-wrapper-child-a { /* Vertically center (-8px) numbers between header/footer on iPhone 6/Plus */
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	width: 300px;
-	height: 424px;
-	margin-bottom: 0;
-	margin-top: -220px;
-	margin-left: -150px;
-	margin-right:0;
-}
-.book-wrapper-a {
-	text-align:center;
-	margin-top: 4px;
-	margin-bottom: 12px;
-}
 /* .ui-icon-menu-dots {
   background-image: url('images/dots-light-gray.png');
   background-size: 4.5px;
@@ -146,6 +107,26 @@
 /* .menu-wrapper-parent {
 	position: relative;
 } */
+.menu-subheading {
+	text-align: center;
+	font-size: 14px;
+	letter-spacing: 4px;
+	padding-top: 4px;
+	color: #909090;
+	padding-bottom: 0px;
+}
+.ui-icon-quotation-mark {
+  background-image: url('images/quotation-mark.png');
+  background-size: 14px;
+  background-position: center 19px;
+  background-repeat: no-repeat;
+}
+.ui-icon-menu-ellipse {
+  background-image: url('images/ellipse-light.png');
+  background-size: 18px;
+  background-position: center 26px;
+  background-repeat: no-repeat;
+}
 .book-title {
 	font-size: 86%;
 	letter-spacing: 1px;
@@ -401,8 +382,9 @@
 
 /* Passage Menus */
 
+/* Header without Status Bar Background */
 
-.passage-menu-header {
+/* .passage-menu-header {
 	height: 50px;
 	text-align: center;
 	background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 90%, rgba(255,255,255,0.9) 95%, rgba(255,255,255,0) 100%);
@@ -444,6 +426,54 @@
   background-repeat: no-repeat;
   background-position: 16px 19px;
 }
+ */
+/* Header with Status Bar Background */
+
+.passage-menu-header {
+	height: 70px;
+	text-align: center;
+	background:  url('images/status-bar.png') no-repeat, -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 90%, rgba(255,255,255,0.9) 95%, rgba(255,255,255,0) 100%);
+	background:  url('images/status-bar.png') no-repeat, -webkit-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(255,255,255,1) 90%,rgba(255,255,255,0.9) 95%,rgba(255,255,255,0) 100%); 
+	background:  url('images/status-bar.png') no-repeat, linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(255,255,255,1) 90%,rgba(255,255,255,0.9) 95%,rgba(255,255,255,0) 100%);
+	filter:  url('images/status-bar.png') no-repeat, progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=0 );
+}
+.passage-menu-heading {
+	font-size: 16px;
+	text-align: center;
+    text-transform: lowercase;
+	letter-spacing: 3px;
+	padding-top: 35px;
+	padding-bottom: 0px;
+	font-weight: 700;
+	color: #707070;
+}
+.passage-menu-icon-left {
+	top: 23px;
+	height: 22px;
+	width: 10px;
+	position: relative;
+	float: left;
+}
+.ui-icon-menu-outline {
+  background-image: url('images/menu-outline.png');
+  background-size: 22px;
+  background-repeat: no-repeat;
+  background-position: 16px 11px;
+}
+.passage-menu-icon-right {
+	top: 23px;
+	height: 22px;
+	width: 10px;
+	position: relative;
+	float: right;
+}
+.ui-icon-blank {
+  background-image: url('images/blank.png');
+  background-size: 9px;
+  background-repeat: no-repeat;
+  background-position: 16px 19px;
+}
+
 .ui-listview > .ui-li-static,
 .ui-listview > .ui-li-divider,
 .ui-listview > li > a.ui-btn {
@@ -466,7 +496,9 @@
 
 /* Passages */
 
-.passage-header {
+/* Header without Status Bar Background */
+
+/* .passage-header {
 	height:50px;
 	background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 80%, rgba(255,255,255,0.9) 90%, rgba(255,255,255,0) 100%);
 	background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(255,255,255,1) 80%,rgba(255,255,255,0.9) 90%,rgba(255,255,255,0) 100%); 
@@ -478,12 +510,6 @@
 	width: 10px;
 	position: relative;
 	float: left;
-}
-.ui-icon-passage-left {
-  background-image: url('images/left-gray.png');
-  background-size: 8px;
-  background-repeat: no-repeat;
-  background-position: 22px 14px;
 }
 .section-number {
 	text-align: center;
@@ -497,6 +523,44 @@
 	width: 10px;
 	position: relative;
 	float: right;
+} */
+
+/* Header with Status Bar Background */
+
+.passage-header {
+	height:70px;
+	background: url('images/status-bar.png') no-repeat, -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 80%, rgba(255,255,255,0.9) 90%, rgba(255,255,255,0) 100%);
+	background: url('images/status-bar.png') no-repeat, -webkit-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(255,255,255,1) 80%,rgba(255,255,255,0.9) 90%,rgba(255,255,255,0) 100%); 
+	background: url('images/status-bar.png') no-repeat, linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(255,255,255,1) 80%,rgba(255,255,255,0.9) 90%,rgba(255,255,255,0) 100%);
+	filter: url('images/status-bar.png') no-repeat, progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=0 );
+}
+.passage-icon-left {
+	top: 23px;
+	height: 22px;
+	width: 10px;
+	position: relative;
+	float: left;
+}
+.section-number {
+	text-align: center;
+	font-size: 92%;
+	padding-top: 36px;
+	color: gray;
+	letter-spacing: 2.5px;
+}
+.passage-icon-right {
+	top: 23px;
+	height: 22px;
+	width: 10px;
+	position: relative;
+	float: right;
+}
+
+.ui-icon-passage-left {
+  background-image: url('images/left-gray.png');
+  background-size: 8px;
+  background-repeat: no-repeat;
+  background-position: 22px 14px;
 }
 .ui-icon-passage-blank {
   background-image: url('images/blank.png');
@@ -554,7 +618,9 @@
 
 /* Additional Resources */
 
-.resource-heading {
+/* Header without Status Bar Background */
+
+/* .resource-heading {
 	text-align: center;
 	font-size: 90%;
 	padding-top: 16px;
@@ -566,7 +632,25 @@
 	width: 10px;
 	position: relative;
 	float: right;
+} */
+
+/* Header with Status Bar Background */
+
+.resource-heading {
+	text-align: center;
+	font-size: 90%;
+	padding-top: 36px;
+	color: gray;
+	letter-spacing: 0px;
 }
+.panel-button {
+	top: 23px;
+	height: 22px;
+	width: 10px;
+	position: relative;
+	float: right;
+}
+
 .ui-icon-resources-dots {
   background-image: url('images/dots-gray.png');
   background-size: 4px;
