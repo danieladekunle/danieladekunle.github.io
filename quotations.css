@@ -43,17 +43,16 @@
 	position: relative;
 	float: right;
 }
-.ui-icon-menu-more {
+.ui-icon-menu-dots {
   background-image: url('images/dots-light-gray.png');
   background-size: 4.5px;
   background-position: center 16px;
   background-repeat: no-repeat;
 }
-/* Vertically center numbers between header/footer */
-.menu-wrapper-child {
+/* .menu-wrapper-parent {
 	position: relative;
-}
-.menu-wrapper-child {
+} */
+.menu-wrapper-child { /* Vertically center numbers between header/footer on iPhone 6/Plus */
 	position: absolute;
 	top: 50%;
 	left: 50%;
@@ -73,12 +72,7 @@
 	font-size: 86%;
 	letter-spacing: 1px;
 	color: #404040 !important;
-	display: block; /* Makes entire area clickable */
-}
-.book-number-white {
-	font-size: 145%;
-	font-weight: bold !important;
-	color: white !important;
+	display: block; /* Make entire area clickable */
 }
 .book-1-number {
 	font-size: 145%;
@@ -91,18 +85,6 @@
 	width: 49px;
 	height: 41px;
 	background-image: url('images/1-outline.png');
-	background-size: 48px;
-	background-position: top, center;
-	background-repeat: no-repeat;
-	padding-top: 8px;
-	padding-left: 1px;
-}
-.book-1-number-wrapper-solid {
-	display: inline-block;
-	vertical-align: top;
-	width: 49px;
-	height: 41px;
-	background-image: url('images/1-solid.png');
 	background-size: 48px;
 	background-position: top, center;
 	background-repeat: no-repeat;
@@ -137,18 +119,6 @@
 	padding-top: 8px;
 	padding-left: 2px;
 }
-.book-2-number-wrapper-solid {
-	display: inline-block;
-	vertical-align: top;
-	width: 49px;
-	height: 41px;
-	background-image: url('images/2-solid.png');
-	background-size: 48px;
-	background-position: top, center;
-	background-repeat: no-repeat;
-	padding-top: 8px;
-	padding-left: 2px;
-}
 .book-2-title-wrapper {
 	line-height:45px;
 	padding-right: 0px;
@@ -170,18 +140,6 @@
 	width: 49px;
 	height: 41px;
 	background-image: url('images/3-outline.png');
-	background-size: 48px;
-	background-position: top, center;
-	background-repeat: no-repeat;
-	padding-top: 8px;
-	padding-left: 1px;
-}
-.book-3-number-wrapper-solid {
-	display: inline-block;
-	vertical-align: top;
-	width: 49px;
-	height: 41px;
-	background-image: url('images/3-solid.png');
 	background-size: 48px;
 	background-position: top, center;
 	background-repeat: no-repeat;
@@ -215,17 +173,6 @@
 	background-repeat: no-repeat;
 	padding-top: 8px;
 }
-.book-4-number-wrapper-solid {
-	display: inline-block;
-	vertical-align: top;
-	width: 49px;
-	height: 41px;
-	background-image: url('images/4-solid.png');
-	background-size: 48px;
-	background-position: top, center;
-	background-repeat: no-repeat;
-	padding-top: 8px;
-}
 .book-4-title-wrapper {
 	line-height:45px;
 	padding-right: 0px;
@@ -247,18 +194,6 @@
 	width: 49px;
 	height: 41px;
 	background-image: url('images/5-outline.png');
-	background-size: 48px;
-	background-position: top, center;
-	background-repeat: no-repeat;
-	padding-top: 9px;
-	padding-left: 2px;
-}
-.book-5-number-wrapper-solid {
-	display: inline-block;
-	vertical-align: top;
-	width: 49px;
-	height: 41px;
-	background-image: url('images/5-solid.png');
 	background-size: 48px;
 	background-position: top, center;
 	background-repeat: no-repeat;
@@ -293,18 +228,6 @@
 	padding-top: 8px;
 	padding-left: 2px;
 }
-.book-6-number-wrapper-solid {
-	display: inline-block;
-	vertical-align: top;
-	width: 49px;
-	height: 41px;
-	background-image: url('images/6-solid.png');
-	background-size: 48px;
-	background-position: top, center;
-	background-repeat: no-repeat;
-	padding-top: 8px;
-	padding-left: 2px;
-}
 .book-6-title-wrapper {
 	line-height:45px;
 	padding-right: 0px;
@@ -332,18 +255,6 @@
 	padding-top: 9px;
 	padding-left: 2px;
 }
-.book-7-number-wrapper-solid {
-	display: inline-block;
-	vertical-align: top;
-	width: 49px;
-	height: 41px;
-	background-image: url('images/7-solid.png');
-	background-size: 48px;
-	background-position: top, center;
-	background-repeat: no-repeat;
-	padding-top: 9px;
-	padding-left: 2px;
-}
 .book-7-title-wrapper {
 	padding-top: 3px;
 	padding-bottom: 3px;
@@ -361,14 +272,14 @@
 	background: linear-gradient(to bottom, rgba(255,255,255,0) 0%,rgba(255,255,255,0.9) 10%,rgba(255,255,255,1) 20%,rgba(255,255,255,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
 }
-.menu-footer-a {
+.menu-footer-top {
 	text-align: center;
 	letter-spacing: 2px;
 	font-size: 84%;
 	color: gray;
 	padding-top: 10px;
 }
-.menu-footer-b {
+.menu-footer-bottom {
 	text-align: center;
 	letter-spacing: 1.5px;
 	font-size: 81%;
@@ -439,12 +350,6 @@
 }
 .ui-icon-menu-outline {
   background-image: url('images/menu-outline.png');
-  background-size: 22px;
-  background-repeat: no-repeat;
-  background-position: 16px 11px;
-}
-.ui-icon-menu-solid {
-  background-image: url('images/menu-solid.png');
   background-size: 22px;
   background-repeat: no-repeat;
   background-position: 16px 11px;
@@ -584,7 +489,7 @@
 	position: relative;
 	float: right;
 }
-.ui-icon-more-b {
+.ui-icon-resources-dots {
   background-image: url('images/dots-gray.png');
   background-size: 4px;
   background-position: center 13.5px;
@@ -598,3 +503,100 @@
 	font-style: italic;
 	font-size: 90%;
 }
+
+/* Solid Theme */
+
+/* .book-number-white {
+	font-size: 145%;
+	font-weight: bold !important;
+	color: white !important;
+}
+.book-1-number-wrapper-solid {
+	display: inline-block;
+	vertical-align: top;
+	width: 49px;
+	height: 41px;
+	background-image: url('images/1-solid.png');
+	background-size: 48px;
+	background-position: top, center;
+	background-repeat: no-repeat;
+	padding-top: 8px;
+	padding-left: 1px;
+}
+.book-2-number-wrapper-solid {
+	display: inline-block;
+	vertical-align: top;
+	width: 49px;
+	height: 41px;
+	background-image: url('images/2-solid.png');
+	background-size: 48px;
+	background-position: top, center;
+	background-repeat: no-repeat;
+	padding-top: 8px;
+	padding-left: 2px;
+}
+.book-3-number-wrapper-solid {
+	display: inline-block;
+	vertical-align: top;
+	width: 49px;
+	height: 41px;
+	background-image: url('images/3-solid.png');
+	background-size: 48px;
+	background-position: top, center;
+	background-repeat: no-repeat;
+	padding-top: 8px;
+	padding-left: 1px;
+}
+.book-4-number-wrapper-solid {
+	display: inline-block;
+	vertical-align: top;
+	width: 49px;
+	height: 41px;
+	background-image: url('images/4-solid.png');
+	background-size: 48px;
+	background-position: top, center;
+	background-repeat: no-repeat;
+	padding-top: 8px;
+}
+.book-5-number-wrapper-solid {
+	display: inline-block;
+	vertical-align: top;
+	width: 49px;
+	height: 41px;
+	background-image: url('images/5-solid.png');
+	background-size: 48px;
+	background-position: top, center;
+	background-repeat: no-repeat;
+	padding-top: 9px;
+	padding-left: 2px;
+}
+.book-6-number-wrapper-solid {
+	display: inline-block;
+	vertical-align: top;
+	width: 49px;
+	height: 41px;
+	background-image: url('images/6-solid.png');
+	background-size: 48px;
+	background-position: top, center;
+	background-repeat: no-repeat;
+	padding-top: 8px;
+	padding-left: 2px;
+}
+.book-7-number-wrapper-solid {
+	display: inline-block;
+	vertical-align: top;
+	width: 49px;
+	height: 41px;
+	background-image: url('images/7-solid.png');
+	background-size: 48px;
+	background-position: top, center;
+	background-repeat: no-repeat;
+	padding-top: 9px;
+	padding-left: 2px;
+}
+.ui-icon-menu-solid {
+  background-image: url('images/menu-solid.png');
+  background-size: 22px;
+  background-repeat: no-repeat;
+  background-position: 16px 11px;
+} */

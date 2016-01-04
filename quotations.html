@@ -18,7 +18,7 @@
 		<!-- Custom Theme -->
 		<link rel="stylesheet" href="theme.css"/>
 		<!-- Custom Styles -->
-		<link rel="stylesheet" href="customizations.css">
+		<link rel="stylesheet" href="quotations.css">
 		<!-- Favicon -->
 		<link rel="icon" href='images/quotations-favicon.ico' type='image/x-icon'/>
 		<!-- iOS/Android Icons -->
@@ -43,299 +43,7 @@
 			   displayPace: 0 <!-- Minutes before the message is shown again (0: display every time) -->
 			});
 		</script>
-		<!-- If window height greater than 568 (iPhone 5/s) and less than or equal to 736 (iPhone 6 Plus) center numbers in menu between header/footer.
-		If height resized to greater than 568 and less than or equal to 736 center numbers, otherwise return to top. -->
-		<script>
-			$(document).ready(function() {
-				if($(window).height() > 568 && $(window).height() <= 736) {
-					$("#menu-wrapper-parent").addClass("menu-wrapper-parent");
-					$("#menu-wrapper-child").addClass("menu-wrapper-child");
-				}
-				window.addEventListener("resize", function() {
-					if($(window).height() > 568 && $(window).height() <= 736) {
-						$("#menu-wrapper-parent").addClass("menu-wrapper-parent");
-						$("#menu-wrapper-child").addClass("menu-wrapper-child");
-					}
-					else {
-						$("#menu-wrapper-parent").removeClass("menu-wrapper-parent");
-						$("#menu-wrapper-child").removeClass("menu-wrapper-child");
-					}
-				}, true);
-			});
-		</script>
-		<!-- If window height greater than 736 (iPhone 6 Plus) hide fixed footer and show floating footer, otherwise show fixed footer and hide floating footer.
-		Listen for resize and carry out same function. -->
-		<script>
-			$(document).ready(function() {
-				if($(window).height() > 736) {
-					$('.menu-footer').hide();
-					$('.floating-footer').show();
-				}
-				else {
-					$('.menu-footer').show();
-					$('.floating-footer').hide();
-				}
-				window.addEventListener("resize", function() {
-					if($(window).height() > 736) {
-						$('.menu-footer').hide();
-						$('.floating-footer').show();
-					}
-					else {
-						$('.menu-footer').show();
-						$('.floating-footer').hide();
-					}
-				}, true);
-			});
-		</script>
-		<!-- Hide all book titles by default. 
-		When number clicked if title hidden show title and hide any others, otherwise open book page. 
-		When title clicked hide all titles. -->
-		<script>
-			$(document).ready(function() {
-				$('.book-1-title-wrapper').hide();
-				$('.book-1-number-wrapper').click(function() {
-					if($('.book-1-title-wrapper').is(':hidden')){
-						$('.book-1-title-wrapper').fadeToggle("linear");
-						$('.book-2-title-wrapper').hide();
-						$('.book-3-title-wrapper').hide();
-						$('.book-4-title-wrapper').hide();
-						$('.book-5-title-wrapper').hide();
-						$('.book-6-title-wrapper').hide();
-						$('.book-7-title-wrapper').hide();
-					}
-					else {
-						location.href='#book1';
-						$('.book-1-title-wrapper').fadeToggle("linear");
-					}
-				});
-				$('.book-2-title-wrapper').hide();
-				$('.book-2-number-wrapper').click(function() {
-					if($('.book-2-title-wrapper').is(':hidden')){
-						$('.book-2-title-wrapper').fadeToggle("linear");
-						$('.book-1-title-wrapper').hide();
-						$('.book-3-title-wrapper').hide();
-						$('.book-4-title-wrapper').hide();
-						$('.book-5-title-wrapper').hide();
-						$('.book-6-title-wrapper').hide();
-						$('.book-7-title-wrapper').hide();
-					}
-					else {
-						location.href='#book2';
-						$('.book-2-title-wrapper').fadeToggle("linear");
-					}
-				}); 
-				$('.book-3-title-wrapper').hide();
-				$('.book-3-number-wrapper').click(function() {
-					if($('.book-3-title-wrapper').is(':hidden')){
-						$('.book-3-title-wrapper').fadeToggle("linear");
-						$('.book-1-title-wrapper').hide();
-						$('.book-2-title-wrapper').hide();
-						$('.book-4-title-wrapper').hide();
-						$('.book-5-title-wrapper').hide();
-						$('.book-6-title-wrapper').hide();
-						$('.book-7-title-wrapper').hide();
-					}
-					else {
-						location.href='#book3';
-						$('.book-3-title-wrapper').fadeToggle("linear");
-					}
-				}); 
-				$('.book-4-title-wrapper').hide();
-				$('.book-4-number-wrapper').click(function() {
-					if($('.book-4-title-wrapper').is(':hidden')){
-						$('.book-4-title-wrapper').fadeToggle("linear");
-						$('.book-1-title-wrapper').hide();
-						$('.book-2-title-wrapper').hide();
-						$('.book-3-title-wrapper').hide();
-						$('.book-5-title-wrapper').hide();
-						$('.book-6-title-wrapper').hide();
-						$('.book-7-title-wrapper').hide();
-					}
-					else {
-						location.href='#book4';
-						$('.book-4-title-wrapper').fadeToggle("linear");
-					}
-				}); 
-				$('.book-5-title-wrapper').hide();
-				$('.book-5-number-wrapper').click(function() {
-					if($('.book-5-title-wrapper').is(':hidden')){
-						$('.book-5-title-wrapper').fadeToggle("linear");
-						$('.book-1-title-wrapper').hide();
-						$('.book-2-title-wrapper').hide();
-						$('.book-3-title-wrapper').hide();
-						$('.book-4-title-wrapper').hide();
-						$('.book-6-title-wrapper').hide();
-						$('.book-7-title-wrapper').hide();
-					}
-					else {
-						location.href='#book5';
-						$('.book-5-title-wrapper').fadeToggle("linear");
-					}
-				}); 
-				$('.book-6-title-wrapper').hide();
-				$('.book-6-number-wrapper').click(function() {
-					if($('.book-6-title-wrapper').is(':hidden')){
-						$('.book-6-title-wrapper').fadeToggle("linear");
-						$('.book-1-title-wrapper').hide();
-						$('.book-2-title-wrapper').hide();
-						$('.book-3-title-wrapper').hide();
-						$('.book-4-title-wrapper').hide();
-						$('.book-5-title-wrapper').hide();
-						$('.book-7-title-wrapper').hide();
-					}
-					else {
-						location.href='#book6';
-						$('.book-6-title-wrapper').fadeToggle("linear");
-					}
-				}); 
-				$('.book-7-title-wrapper').hide();
-				$('.book-7-number-wrapper').click(function() {
-					if($('.book-7-title-wrapper').is(':hidden')){
-						$('.book-7-title-wrapper').fadeToggle("linear");
-						$('.book-1-title-wrapper').hide();
-						$('.book-2-title-wrapper').hide();
-						$('.book-3-title-wrapper').hide();
-						$('.book-4-title-wrapper').hide();
-						$('.book-5-title-wrapper').hide();
-						$('.book-6-title-wrapper').hide();
-					}
-					else {
-						location.href='#book7';
-						$('.book-7-title-wrapper').fadeToggle("linear");
-					}
-				}); 
-				$('.book-title').click(function() {
-					$('.book-1-title-wrapper').hide("slow");
-					$('.book-2-title-wrapper').hide("slow");
-					$('.book-3-title-wrapper').hide("slow");
-					$('.book-4-title-wrapper').hide("slow");
-					$('.book-5-title-wrapper').hide("slow");
-					$('.book-6-title-wrapper').hide("slow");
-					$('.book-7-title-wrapper').hide("slow");
-				});
-			});
-		</script>
-		<!-- If passage/resource page clicked below header and above footer toggle header/footer elements. (Working on b1q1 only, disabled) -->
-		<!-- <script>
-			$(document).ready(function() {
-				$('.passage-page').click(function(e) {
-					var headerOffset = $('.passage-header').offset();
-					var footerOffset = $('.passage-footer').offset();
-					if ((e.pageY - headerOffset.top) > 50 && (e.pageY - footerOffset.top) < 0) {
-						$($(this).children('.passage-header').children('a')).fadeToggle();
-						$($(this).children('.passage-header').children('.section-number')).fadeToggle();
-						$($(this).children('.passage-footer').children('a')).fadeToggle();
-					}
-				});
-				$('.resource-page').click(function(e) {
-					var headerOffset = $('.passage-header').offset();
-					var footerOffset = $('.passage-footer').offset();
-					if ((e.pageY - headerOffset.top) > 50 && (e.pageY - footerOffset.top) < 0) {
-						$($(this).children('.passage-header').children('a')).fadeToggle();
-						$($(this).children('.passage-header').children('.resource-heading')).fadeToggle();
-						$($(this).children('.passage-footer').children('a')).fadeToggle();
-						$($(this).children('.passage-footer').children('.resource-heading')).fadeToggle();
-					}
-				});
-			}); -->
-		</script>
-		<!-- Toggle header/footer elements on click on passage text -->
-		<script>
-			$(document).ready(function() {
-				$('.passage').click(function() {
-					$($(this).siblings('.passage-header').children('a')).fadeToggle();
-					<!-- $($(this).children('.passage-header').children('.section-number')).fadeToggle(); -->
-					$($(this).siblings('.passage-footer').children('a')).fadeToggle();
-					$($(this).siblings('.passage-header').children('.resource-heading')).fadeToggle();
-					$($(this).siblings('.passage-footer').children('.resource-heading')).fadeToggle();
-				});
-			});
-		</script>
-		<!-- Open next/previous passage when right/left arrow buttons clicked -->
-		<script>
-			$(document).ready( function(event){
-				$(".next-passage").click(function(){
-					$.mobile.pageContainer.pagecontainer("change", $(this).closest('[data-role="page"]').next('[data-role="page"]'), {transition:"slide"});
-				});  
-				$(".previous-passage").click(function(){
-					$.mobile.pageContainer.pagecontainer("change", $(this).closest('[data-role="page"]').prev('[data-role="page"]'), {transition:"slide", reverse:true,});
-				}); 
-			});
-		</script>
-		<!-- If in standalone mode and panel is not open go back in history with reverse slide transition on right swipe from edge of screen (disabled) -->
-		<!-- <script>
-			$(document).bind('swiperight', function (event) {
-				if (window.navigator.standalone == true) {
-					if ( $.mobile.activePage.jqmData( "panel" ) !== "open" ) {
-						if ( event.swipestart.coords[0] <10) {
-							history.back({transition:"slide", reverse:true,});
-						}
-					}
-				}
-			});
-		</script> -->
-		<!-- Go forward in history on left swipe (disabled) -->
-		<!-- <script>
-			$(document).bind('swipeleft', function () {
-				history.forward({transition:"slide"});
-			});
-		</script> -->
-		<!-- Save current location to local storage when navigation buttons clicked -->
-		<script>
-			$(document).ready( function(event){
-				$('.book-1-number-wrapper').on('click', function(){          
-					localStorage.lastlocation = location.href
-				});
-				$('.book-2-number-wrapper').on('click', function(){          
-					localStorage.lastlocation = location.href
-				});
-				$('.book-3-number-wrapper').on('click', function(){          
-					localStorage.lastlocation = location.href
-				});
-				$('.book-4-number-wrapper').on('click', function(){          
-					localStorage.lastlocation = location.href
-				});
-				$('.book-5-number-wrapper').on('click', function(){          
-					localStorage.lastlocation = location.href
-				});
-				$('.book-6-number-wrapper').on('click', function(){          
-					localStorage.lastlocation = location.href
-				});
-				$('.book-7-number-wrapper').on('click', function(){          
-					localStorage.lastlocation = location.href
-				});
-				$('.link').on('click', function(){          
-					localStorage.lastlocation = this.href
-				});
-				$('.menu-icon-left').on('click', function(){          
-					localStorage.lastlocation = this.href
-				});
-				$('.book-title').on('click', function(){          
-					localStorage.lastlocation = this.href
-				});
-				$('.passage-menu-icon-left').on('click', function(){          
-					localStorage.lastlocation = this.href
-				});
-				$('.pdf').on('click', function(){          
-					localStorage.lastlocation = location.href
-				});
-				$('.passage-icon-left').on('click', function(){          
-					localStorage.lastlocation = this.href
-				});
-				$('.next-passage').on('click', function(){          
-					localStorage.lastlocation = location.href
-				});
-				$('.previous-passage').on('click', function(){          
-					localStorage.lastlocation = location.href
-				});
-			});
-		</script>
-		<!-- Load last location saved in local storage on restart -->
-		<script>		
-			if (localStorage.lastlocation && location.currentURL != location.href) {
-				window.location = localStorage.lastlocation;
-			}
-		</script>
+		<script src="quotations.js"></script>
 	</head>
 	<body>
 <!-- Book List -->
@@ -343,7 +51,7 @@
 			<div data-theme="d" data-role="header" data-position="fixed" data-tap-toggle="false" class="menu-header">
 				<h1 style="display:none;">Quotations</h1>
 				<a href="#left-panel" data-theme="c" data-icon="quotation-mark" class="menu-icon-left"></a>
-				<a href="#panel1" data-theme="c" data-icon="menu-more" class="menu-icon-right"></a>
+				<a href="#panel1" data-theme="c" data-icon="menu-dots" class="menu-icon-right"></a>
 				<div class="menu-heading">Quotations</div>
 				<div class="menu-subheading">for&nbsp;memorization</div>
 			</div>
@@ -504,10 +212,10 @@
 							</div>
 						</div>
 						<div class="floating-footer">
-					<div class="menu-footer-a">
+					<div class="menu-footer-top">
 						from the ruhi institute's
 					</div>
-					<div class="menu-footer-b">
+					<div class="menu-footer-bottom">
 						main sequence of courses
 					</div>
 				</div>
@@ -515,10 +223,10 @@
 				</div>
 			</div>
 			<div data-theme="c" data-role="footer" data-position="fixed" data-tap-toggle="false" class="menu-footer">
-				<div class="menu-footer-a">
+				<div class="menu-footer-top">
 					from the ruhi institute's
 				</div>
-				<div class="menu-footer-b">
+				<div class="menu-footer-bottom">
 					main sequence of courses
 				</div>
 			</div>
@@ -3705,7 +3413,7 @@
 		<div data-role="page"  data-theme="a" data-control-title="excerpts" class="resource-page" id="excerpts">
 			<div data-theme="d" data-role="header" data-position="fixed" data-tap-toggle="false" class="passage-header">
 				<a class="passage-icon-left" data-theme="c" data-transition="slide" data-direction="reverse" href="#menu" data-icon="passage-left"></a>
-				<a href="#panel2" data-theme="c" data-icon="more-b" class="panel-button"></a>
+				<a href="#panel2" data-theme="c" data-icon="resources-dots" class="panel-button"></a>
 				<div class="resource-heading">
 					On Memorization
 				</div>
@@ -3809,7 +3517,7 @@
 		<div data-role="page"  data-theme="a" data-control-title="selections" class="resource-page" id="selections">
 			<div data-theme="d" data-role="header" data-position="fixed" data-tap-toggle="false" class="passage-header">
 				<a class="passage-icon-left" data-theme="c" data-transition="slide" data-direction="reverse" href="#menu" data-icon="passage-left"></a>
-				<a href="#panel3" data-theme="c" data-icon="more-b" class="panel-button"></a>
+				<a href="#panel3" data-theme="c" data-icon="resources-dots" class="panel-button"></a>
 				<div class="resource-heading">
 					On Memorization
 				</div>
@@ -3869,7 +3577,7 @@
 		<div data-role="page" data-theme="a" data-control-title="obligatoryprayer" class="resource-page" id="obligatoryprayer">
 			<div data-theme="d" data-role="header" data-position="fixed" data-tap-toggle="false" class="passage-header">
 				<a class="passage-icon-left" data-theme="c" data-transition="slide" data-direction="reverse" href="#menu" data-icon="passage-left"></a>
-				<a href="#panel4" data-theme="c" data-icon="more-b" class="panel-button"></a>
+				<a href="#panel4" data-theme="c" data-icon="resources-dots" class="panel-button"></a>
 				<div class="resource-heading">
 					Long Obligatory Prayer
 				</div>
