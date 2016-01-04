@@ -224,31 +224,27 @@
 				});
 			});
 		</script>
-		<!-- Hide all header/footer items on passage/additional resource pages when page clicked. 
-		Reshow items when panel button clicked. -->
+		<!-- If passage/resource page clicked above footer and below header hide all header/footer items (except section numbers). -->
 		<script>
 			$(document).ready(function() {
-				$('.passage-page').click(function() {
-					$($(this).children('.passage-header').children('a')).fadeToggle();
-					<!-- $($(this).children('.passage-header').children('.section-number')).fadeToggle(); -->
-					$($(this).children('.passage-footer').children('a')).fadeToggle();
+				$('.passage-page').click(function(e) {
+					var offseta = $('.passage-header').offset();
+					var offsetb = $('.passage-footer').offset();
+					if ((e.pageY - offseta.top) > 50 && (e.pageY - offsetb.top) < 0) {
+						$($(this).children('.passage-header').children('a')).fadeToggle();
+						<!-- $($(this).children('.passage-header').children('.section-number')).fadeToggle(); -->
+						$($(this).children('.passage-footer').children('a')).fadeToggle();
+					}
 				});
-				$('.resource-page').click(function() {
-					$($(this).children('.passage-header').children('a')).fadeToggle();
-					$($(this).children('.passage-header').children('.resource-heading')).fadeToggle();
-					$($(this).children('.passage-footer').children('a')).fadeToggle();
-					$($(this).children('.passage-footer').children('.resource-heading')).fadeToggle();
-				});
-				$('.resource-page').on('panelbeforeopen', function() {
-					$($(this).children('.passage-header').children('a')).fadeToggle();
-					$($(this).children('.passage-header').children('.resource-heading')).fadeToggle();
-					$($(this).children('.passage-footer').children('a')).fadeToggle();
-					$($(this).children('.passage-footer').children('.resource-heading')).fadeToggle();
-				});
-				$('.passage-page').on('pageshow', function() {
-					$($(this).children('.passage-header').children('a')).show();
-					<!-- $($(this).children('.passage-header').children('.section-number')).show(); -->
-					$($(this).children('.passage-footer').children('a')).show();
+				$('.resource-page').click(function(e) {
+					var offsetc = $('.passage-header').offset();
+					var offsetd = $('.passage-footer').offset();
+					if ((e.pageY - offsetc.top) > 50 && (e.pageY - offsetd.top) < 0) {
+						$($(this).children('.passage-header').children('a')).fadeToggle();
+						$($(this).children('.passage-header').children('.resource-heading')).fadeToggle();
+						$($(this).children('.passage-footer').children('a')).fadeToggle();
+						$($(this).children('.passage-footer').children('.resource-heading')).fadeToggle();
+					}
 				});
 			});
 		</script>
