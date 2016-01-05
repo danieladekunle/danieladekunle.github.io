@@ -348,8 +348,17 @@
 
 /* Panels */
 
+.ui-panel {
+	width: 17em;
+	min-height: 100%;
+	max-height: none;
+	border-width: 0;
+	position: absolute;
+	top: 20px;
+	display: block;
+}
 .label {
-	text-align: center;
+	text-align: center !important;
 	color: #707070;
 	letter-spacing: 1px;
 }
