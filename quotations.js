@@ -267,7 +267,6 @@ $(document).ready(function() {
 		$($(this).siblings('.passage-footer').children('.resource-heading-bottom')).fadeToggle();
 		$($(this).siblings('.passage-header-sb').children('a')).fadeToggle();
 		/* $($(this).children('.passage-header-sb').children('.section-number')).fadeToggle(); */
-		$($(this).siblings('.passage-footer').children('a')).fadeToggle();
 		$($(this).siblings('.passage-header-sb').children('.resource-heading-sb')).fadeToggle();
 	});
 });

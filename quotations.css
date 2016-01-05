@@ -572,11 +572,11 @@
 	float: right;
 }
 
-.ui-icon-passage-left {
+.ui-icon-passage-list {
   background-image: url('images/list.png');
-  background-size: 17px 11px;
+  background-size: 17px;
   background-repeat: no-repeat;
-  background-position: 22px 16px;
+  background-position: 22px 17px;
 }
 .ui-icon-passage-blank {
   background-image: url('images/blank.png');
