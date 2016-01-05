@@ -31,7 +31,7 @@
 	position: relative;
 	float: right;
 }
-.menu-wrapper-child-fs { /* Vertically center numbers between header/footer on iPhone 6/Plus */
+.menu-wrapper-child-fs { /* Vertically centers numbers between header/footer on iPhone 6/Plus */
 	position: absolute;
 	top: 50%;
 	left: 50%;
@@ -81,7 +81,7 @@
 	position: relative;
 	float: right;
 }
-.menu-wrapper-child-sb { /* Vertically center numbers between header/footer on iPhone 6/Plus */
+.menu-wrapper-child-sb { /* Vertically centers numbers between header/footer on iPhone 6/Plus */
 	position: absolute;
 	top: 50%;
 	left: 50%;
@@ -351,7 +351,7 @@
 .ui-panel {
 	width: 17em; 
 	border-width: 0;
-	position: static; /* 'absolute' raises menu 20px; 'fixed' locks scrolling on rt. */
+	position: static; /* 'absolute' raises menu 20px; 'fixed' causes intermittent locked scrolling on rt. of menu*/
 	display: block;
 	top: 20px; /* Prevents status bar overlap */
 	height: -moz-calc(100% - 20px); /* Compensates for 20px top (Firefox) */
@@ -507,7 +507,7 @@
 .ui-listview > .ui-li-static,
 .ui-listview > .ui-li-divider,
 .ui-listview > li > a.ui-btn {
-	border-width: 4px 0 0 0;
+	border-width: 4px 0 0 0; /* Increases default border between list items to 4px */
 	border-style: solid;
 }
 .pdf {
@@ -682,12 +682,17 @@
 	float: right;
 }
 
-.ui-icon-resources-dots {
+.ui-icon-resources-menu-outline {
+  background-image: url('images/menu-outline.png');
+  background-size: 22px;
+  background-repeat: no-repeat;
+  background-position: 16px 10px;
+}/* .ui-icon-resources-dots {
   background-image: url('images/dots-gray.png');
   background-size: 4px;
   background-position: center 13.5px;
   background-repeat: no-repeat;
-}
+} */
 .ui-icon-resources-ellipse {
   background-image: url('images/ellipse-dark.png');
   background-size: 22px;
@@ -710,7 +715,7 @@
 	letter-spacing: 0px;
 }
 
-/* Solid Theme */
+/* Solid Theme (disabled)*/
 
 /* .book-number-white {
 	font-size: 145%;
