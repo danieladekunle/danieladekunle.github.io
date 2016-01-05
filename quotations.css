@@ -349,28 +349,28 @@
 /* Panels */
 
 .ui-panel {
-	width: 17em;
+	width: 17em; 
 	border-width: 0;
-	position: fixed;
-	top: 20px;
+	position: absolute;
 	display: block;
-	height: -moz-calc(100% - 20px); /* Firefox */
-	height: -webkit-calc(100% - 20px); /* Chrome, Safari */
-	height: calc(100% - 20px); /* IE9+ and future browsers */
+	top: 20px; /* Prevents status bar overlap */
+	height: -moz-calc(100% - 20px); /* Compensates for 20px top (Firefox) */
+	height: -webkit-calc(100% - 20px); /* Compensates for 20px top (Chrome, Safari) */
+	height: calc(100% - 20px); /* Compensates for 20px top (IE9+ and future browsers) */
 }
 .ui-panel.ui-panel-open {
-	position:fixed;
+	position: fixed; /* Prevents panel from scrolling with page */
 }
 .ui-panel-inner {
 	position: absolute;
-	top: 15px;
+	top: 15px; /* Creates top margin for scrolling */
 	left: 0;
 	right: 0;
 	bottom: 0px;
-	overflow: scroll;
+	overflow: scroll; /* Enables scrolling within panel */
 	-webkit-overflow-scrolling: touch;
-	padding-top: 0px;
-	margin-top: 0px;
+	padding-top: 0px; /* Compensates for 15px top (and/or below) */
+	margin-top: 0px; /* Compensates for 15px top (and/or above) */
 }
 .label {
 	text-align: center;
