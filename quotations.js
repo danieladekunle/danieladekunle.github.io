@@ -77,50 +77,23 @@ $(document).ready(function() {
 	}, true);
 });
 
-// When status bar radio button changed if 'on' selected, replace all classes ending in '-fs' suffix with '-sb' suffix and refresh (and vice versa).
+// If in standalone mode show status bar radio button, otherwise hide.
 
 $(document).ready(function() {
-	$('input:radio[name="status-bar-option"]').change(function(){
-		if($(this).val() == 'on'){
-			$(document.body).find('div, a').each(function (i) {
-				var c = $(this).attr('class');
-				if(c !== undefined){
-					c = c.replace(/-fs/g,'-sb')
-					$(this).removeClass().addClass(c);
-					$(window).trigger('resize')
-				}
-			});
-		}
-		else {
-			$(document.body).find('div, a').each(function (i) {
-				var c = $(this).attr('class');
-				if(c !== undefined){
-					c = c.replace(/-sb/g,'-fs')
-					$(this).removeClass().addClass(c);
-					$(window).trigger('resize')
-				}
-			});
-		}
-	});
+	if (window.navigator.standalone == true) {
+		$('#sb-button').show();
+	}
+	else {
+		$('#sb-button').hide();
+	}
 });
- // 
+
+// If in standalone mode, when status bar radio button changed if 'on' selected, replace all classes ending in '-fs' suffix with '-sb' suffix and refresh (and reverse)
+
 $(document).ready(function() {
-	$(window).on("orientationchange",function(){
-		// alert("orientation change detected");
-		 if ($('input[name=status-bar-option]:checked').val() == "on"){
-			// alert("status bar detected");
-			if(window.orientation == 90 || window.orientation == -90) {
-				// alert("change to landscape mode detected");
-				$(document.body).find('div, a').each(function (i) {
-					var c = $(this).attr('class');
-					if(c !== undefined){
-						c = c.replace(/-sb/g,'-fs')
-						$(this).removeClass().addClass(c);
-						$(window).trigger('resize')
-					}
-				});
-			}
-			else {
+	if (window.navigator.standalone == true) {
+		$('input:radio[name="status-bar-option"]').change(function(){
+			if($(this).val() == 'on'){
 				$(document.body).find('div, a').each(function (i) {
 					var c = $(this).attr('class');
 					if(c !== undefined){
@@ -130,8 +103,49 @@ $(document).ready(function() {
 					}
 				});
 			}
-		}
-	});
+			else {
+				$(document.body).find('div, a').each(function (i) {
+					var c = $(this).attr('class');
+					if(c !== undefined){
+						c = c.replace(/-sb/g,'-fs')
+						$(this).removeClass().addClass(c);
+						$(window).trigger('resize')
+					}
+				});
+			}
+		});
+	}
+});
+
+// If in standalone mode and status bar shown, when rotated to landscape hide status bar and replace when rotated to portrait
+
+$(document).ready(function() {
+	if (window.navigator.standalone == true) {
+		$(window).on("orientationchange",function(){
+			 if ($('input[name=status-bar-option]:checked').val() == "on"){
+				if(window.orientation == 90 || window.orientation == -90) {
+					$(document.body).find('div, a').each(function (i) {
+						var c = $(this).attr('class');
+						if(c !== undefined){
+							c = c.replace(/-sb/g,'-fs')
+							$(this).removeClass().addClass(c);
+							$(window).trigger('resize')
+						}
+					});
+				}
+				else {
+					$(document.body).find('div, a').each(function (i) {
+						var c = $(this).attr('class');
+						if(c !== undefined){
+							c = c.replace(/-fs/g,'-sb')
+							$(this).removeClass().addClass(c);
+							$(window).trigger('resize')
+						}
+					});
+				}
+			}
+		});
+	}
 });
 
 // Hide all book titles by default. 
