@@ -351,7 +351,7 @@
 .ui-panel {
 	width: 17em; 
 	border-width: 0;
-	position: absolute;
+	position: static; /* 'absolute' raises menu 20px; 'fixed' locks scrolling on rt. */
 	display: block;
 	top: 20px; /* Prevents status bar overlap */
 	height: -moz-calc(100% - 20px); /* Compensates for 20px top (Firefox) */
