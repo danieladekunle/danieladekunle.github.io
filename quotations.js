@@ -103,11 +103,13 @@ $(document).ready(function() {
 		}
 	});
 });
-
+ // || window.orientation == -90
 $(document).ready(function() {
-	window.addEventListener("orientationchange",function(){
+	$(window).on("orientationchange",function(){
+		alert("orientation change detected");
 		if ($('input:radio[name="status-bar-option"]').val() == 'on'){
-			if(window.orientation == 90 || window.orientation == -90) {
+			alert("status bar detected");
+			if(window.orientation == 90) {
 				alert("change to landscape mode detected");
 				$(document.body).find('div, a').each(function (i) {
 					var c = $(this).attr('class');
