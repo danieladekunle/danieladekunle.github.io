@@ -4,19 +4,54 @@
 $(document).ready(function() {
 	if($(window).height() > 568 && $(window).height() <= 736) {
 		// $("#menu-wrapper-parent").addClass("menu-wrapper-parent");
-		$("#menu-wrapper-child").addClass("menu-wrapper-child");
+		$("#menu-wrapper-child").removeClass().addClass("menu-wrapper-child-fs");
 	}
 	window.addEventListener("resize", function() {
 		if($(window).height() > 568 && $(window).height() <= 736) {
 			// $("#menu-wrapper-parent").addClass("menu-wrapper-parent");
-			$("#menu-wrapper-child").addClass("menu-wrapper-child");
+			$("#menu-wrapper-child").removeClass().addClass("menu-wrapper-child-fs");
 		}
 		else {
 			// $("#menu-wrapper-parent").removeClass("menu-wrapper-parent");
-			$("#menu-wrapper-child").removeClass("menu-wrapper-child");
+			$("#menu-wrapper-child").removeClass("menu-wrapper-child-fs");
 		}
 	}, true);
 });
+
+// 	$(document).ready(function() {
+	// if ($('input:radio[name="status-bar-option"]').val() == 'on'){
+		// if($(window).height() > 568 && $(window).height() <= 736) {
+			// // $("#menu-wrapper-parent").addClass("menu-wrapper-parent");
+			// $("#menu-wrapper-child").removeClass().addClass("menu-wrapper-child-sb");
+		// }
+		// window.addEventListener("resize", function() {
+			// if($(window).height() > 568 && $(window).height() <= 736) {
+				// // $("#menu-wrapper-parent").addClass("menu-wrapper-parent");
+				// $("#menu-wrapper-child").removeClass().addClass("menu-wrapper-child-sb");
+			// }
+			// else {
+				// // $("#menu-wrapper-parent").removeClass("menu-wrapper-parent");
+				// $("#menu-wrapper-child").removeClass("menu-wrapper-child-sb");
+			// }
+		// }, true);
+	// }
+	// else {
+		// if($(window).height() > 568 && $(window).height() <= 736) {
+			// // $("#menu-wrapper-parent").addClass("menu-wrapper-parent");
+			// $("#menu-wrapper-child").removeClass().addClass("menu-wrapper-child-fs");
+		// }
+		// window.addEventListener("resize", function() {
+			// if($(window).height() > 568 && $(window).height() <= 736) {
+				// // $("#menu-wrapper-parent").addClass("menu-wrapper-parent");
+				// $("#menu-wrapper-child").removeClass().addClass("menu-wrapper-child-fs");
+			// }
+			// else {
+				// // $("#menu-wrapper-parent").removeClass("menu-wrapper-parent");
+				// $("#menu-wrapper-child").removeClass("menu-wrapper-child-fs");
+			// }
+		// }, true);
+	// }
+// });
 
 // If window height greater than 736 (iPhone 6 Plus) hide fixed footer and show floating footer, otherwise show fixed footer and hide floating footer.
 // Listen for resize and carry out same function.
@@ -40,6 +75,33 @@ $(document).ready(function() {
 			$('.floating-footer').hide();
 		}
 	}, true);
+});
+
+// When status bar radio button changed if on selected, replace all classes ending in '-fs' suffix with '-sb' suffix and refresh (and vice versa).
+
+$(document).ready(function() {
+	$('input:radio[name="status-bar-option"]').change(function(){
+		if($(this).val() == 'on'){
+			$(document.body).find('div, a').each(function (i) {
+				var c = $(this).attr('class');
+				if(c !== undefined){
+					c = c.replace(/-fs/g,'-sb')
+				   $(this).removeClass().addClass(c);
+				   $(window).trigger('resize')
+				}
+			});
+		}
+		else {
+			$(document.body).find('div, a').each(function (i) {
+				var c = $(this).attr('class');
+				if(c !== undefined){
+					c = c.replace(/-sb/g,'-fs')
+				   $(this).removeClass().addClass(c);
+				   $(window).trigger('resize')
+				}
+			});
+		}
+	});
 });
 
 // Hide all book titles by default. 
@@ -198,11 +260,16 @@ $(document).ready(function() {
 
 $(document).ready(function() {
 	$('.passage').click(function() {
-		$($(this).siblings('.passage-header').children('a')).fadeToggle();
-		/* $($(this).children('.passage-header').children('.section-number')).fadeToggle(); */
-		$($(this).siblings('.passage-footer').children('a')).fadeToggle();
-		$($(this).siblings('.passage-header').children('.resource-heading')).fadeToggle();
-		$($(this).siblings('.passage-footer').children('.resource-heading')).fadeToggle();
+		$($(this).siblings('.passage-header-fs').children('a')).fadeToggle();
+		/* $($(this).children('.passage-header-fs').children('.section-number')).fadeToggle(); */
+		$($(this).siblings('.passage-footer-fs').children('a')).fadeToggle();
+		$($(this).siblings('.passage-header-fs').children('.resource-heading')).fadeToggle();
+		$($(this).siblings('.passage-footer-fs').children('.resource-heading')).fadeToggle();
+		$($(this).siblings('.passage-header-sb').children('a')).fadeToggle();
+		/* $($(this).children('.passage-header-sb').children('.section-number')).fadeToggle(); */
+		$($(this).siblings('.passage-footer-sb').children('a')).fadeToggle();
+		$($(this).siblings('.passage-header-sb').children('.resource-heading')).fadeToggle();
+		$($(this).siblings('.passage-footer-sb').children('.resource-heading')).fadeToggle();
 	});
 });
 
@@ -262,19 +329,28 @@ $(document).ready( function(event){
 	$('.link').on('click', function(){          
 		localStorage.lastlocation = this.href
 	});
-	$('.menu-icon-left').on('click', function(){          
+	$('.menu-icon-left-fs').on('click', function(){          
+		localStorage.lastlocation = this.href
+	});
+	$('.menu-icon-left-sb').on('click', function(){          
 		localStorage.lastlocation = this.href
 	});
 	$('.book-title').on('click', function(){          
 		localStorage.lastlocation = this.href
 	});
-	$('.passage-menu-icon-left').on('click', function(){          
+	$('.passage-menu-icon-left-fs').on('click', function(){          
+		localStorage.lastlocation = this.href
+	});
+	$('.passage-menu-icon-left-sb').on('click', function(){          
 		localStorage.lastlocation = this.href
 	});
 	$('.pdf').on('click', function(){          
 		localStorage.lastlocation = location.href
 	});
-	$('.passage-icon-left').on('click', function(){          
+	$('.passage-icon-left-fs').on('click', function(){          
+		localStorage.lastlocation = this.href
+	});
+	$('.passage-icon-left-sb').on('click', function(){          
 		localStorage.lastlocation = this.href
 	});
 	$('.next-passage').on('click', function(){          
