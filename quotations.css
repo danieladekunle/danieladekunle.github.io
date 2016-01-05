@@ -354,7 +354,7 @@
 	max-height: 528px !important;
 	height: 528px !important;
 	border-width: 0;
-	position: absolute;
+	position: fixed !important;
 	top: 20px;
 	display: block;
 }
