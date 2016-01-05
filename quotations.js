@@ -86,8 +86,8 @@ $(document).ready(function() {
 				var c = $(this).attr('class');
 				if(c !== undefined){
 					c = c.replace(/-fs/g,'-sb')
-				   $(this).removeClass().addClass(c);
-				   $(window).trigger('resize')
+					$(this).removeClass().addClass(c);
+					$(window).trigger('resize')
 				}
 			});
 		}
@@ -96,8 +96,8 @@ $(document).ready(function() {
 				var c = $(this).attr('class');
 				if(c !== undefined){
 					c = c.replace(/-sb/g,'-fs')
-				   $(this).removeClass().addClass(c);
-				   $(window).trigger('resize')
+					$(this).removeClass().addClass(c);
+					$(window).trigger('resize')
 				}
 			});
 		}
@@ -105,9 +105,10 @@ $(document).ready(function() {
 });
 
 $(document).ready(function() {
-	if ($('input:radio[name="status-bar-option"]').val() == 'on'){
-		$(window).on("orientationchange",function(){
+	$(window).on("orientationchange",function(){
+		if ($('input:radio[name="status-bar-option"]').val() == 'on'){
 			if(window.orientation == 90 || window.orientation == -90) {
+				alert("change to landscape mode detected");
 				$(document.body).find('div, a').each(function (i) {
 					var c = $(this).attr('class');
 					if(c !== undefined){
@@ -122,13 +123,13 @@ $(document).ready(function() {
 					var c = $(this).attr('class');
 					if(c !== undefined){
 						c = c.replace(/-fs/g,'-sb')
-					   $(this).removeClass().addClass(c);
-					   $(window).trigger('resize')
+						$(this).removeClass().addClass(c);
+						$(window).trigger('resize')
 					}
 				});
 			}
-		});
-	}
+		}
+	});
 });
 
 // Hide all book titles by default. 
