@@ -105,7 +105,7 @@ $(document).ready(function() {
 });
 
 $(document).ready(function() {
-	$(window).on("orientationchange",function(){
+	window.addEventListener("orientationchange",function(){
 		if ($('input:radio[name="status-bar-option"]').val() == 'on'){
 			if(window.orientation == 90 || window.orientation == -90) {
 				alert("change to landscape mode detected");
