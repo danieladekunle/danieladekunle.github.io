@@ -57,14 +57,17 @@
 			</div>
 			<!-- Left Panel -->
 			<div data-role="panel" data-classes='{"modal":"needsclick ui-panel-dismiss"}' data-position="left" data-display="overlay" data-dismissible="true" data-position-fixed="true" id="left-panel">
-				<div>
-					<fieldset data-role="controlgroup" data-type="horizontal" class="label">
-						<legend>status bar</legend>
-						<input name="status-bar-option" id="status-bar-option-a" value="on" type="radio">
-						<label for="status-bar-option-a">on</label>
+				<div style="text-align:center;">
+					<fieldset data-role="controlgroup" data-type="horizontal">
+						<legend class="label">status bar</legend>
 						<input name="status-bar-option" id="status-bar-option-b" value="off" checked="checked" type="radio">
-						<label for="status-bar-option-b">off</label>
+						<label for="status-bar-option-b">hide *</label>
+						<input name="status-bar-option" id="status-bar-option-a" value="on" type="radio">
+						<label for="status-bar-option-a">show</label>
 					</fieldset>
+					<div class="note">
+						*battery indicator displayed when below 20%, charging, or in low power mode
+					</div>
 				</div>
 				<div class="label">
 					<br>feedback

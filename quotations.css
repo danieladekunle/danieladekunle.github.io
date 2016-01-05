@@ -350,7 +350,7 @@
 
 .ui-panel {
 	width: 17em;
-	min-height: 100%;
+	/* min-height: 100%; */
 	max-height: none;
 	border-width: 0;
 	position: absolute;
@@ -361,6 +361,13 @@
 	text-align: center !important;
 	color: #707070;
 	letter-spacing: 1px;
+}
+.note {
+	text-align: center;
+	font-size: 74%;
+	letter-spacing: 0px;
+	font-style: italic;
+	color: gray;
 }
 .feedback {
 	text-align: center;
