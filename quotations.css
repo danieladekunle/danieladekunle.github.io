@@ -350,16 +350,18 @@
 
 .ui-panel {
 	width: 17em;
-	/* min-height: 528px !important;
-	max-height: 528px !important;
-	height: 528px !important; */
-	min-height: 100%;
-	max-height: none;
+	/* min-height: 550px !important;
+	max-height: 550px !important;
+	height: 550px !important; */
+	/* min-height: 100%;
+	max-height: none; */
 	border-width: 0;
-	position: absolute;
+	position: fixed;
 	top: 20px;
 	display: block;
-	
+	height: -moz-calc(100% - 20px); /* Firefox */
+	height: -webkit-calc(100% - 20px); /* Chrome, Safari */
+	height: calc(100% - 20px); /* IE9+ and future browsers */
 }
 .ui-panel.ui-panel-open {
 	position:fixed;
@@ -369,7 +371,7 @@
 	top: 15px;
 	left: 0;
 	right: 0;
-	bottom: 20px;
+	bottom: 0px;
 	overflow: scroll;
 	-webkit-overflow-scrolling: touch;
 	padding-top: 0px;
