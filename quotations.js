@@ -77,7 +77,7 @@ $(document).ready(function() {
 	}, true);
 });
 
-// When status bar radio button changed if on selected, replace all classes ending in '-fs' suffix with '-sb' suffix and refresh (and vice versa).
+// When status bar radio button changed if 'on' selected, replace all classes ending in '-fs' suffix with '-sb' suffix and refresh (and vice versa).
 
 $(document).ready(function() {
 	$('input:radio[name="status-bar-option"]').change(function(){
@@ -102,6 +102,33 @@ $(document).ready(function() {
 			});
 		}
 	});
+});
+
+$(document).ready(function() {
+	if ($('input:radio[name="status-bar-option"]').val() == 'on'){
+		$(window).on("orientationchange",function(){
+			if(window.orientation == 90 || window.orientation == -90) {
+				$(document.body).find('div, a').each(function (i) {
+					var c = $(this).attr('class');
+					if(c !== undefined){
+						c = c.replace(/-sb/g,'-fs')
+						$(this).removeClass().addClass(c);
+						$(window).trigger('resize')
+					}
+				});
+			}
+			else {
+				$(document.body).find('div, a').each(function (i) {
+					var c = $(this).attr('class');
+					if(c !== undefined){
+						c = c.replace(/-fs/g,'-sb')
+					   $(this).removeClass().addClass(c);
+					   $(window).trigger('resize')
+					}
+				});
+			}
+		});
+	}
 });
 
 // Hide all book titles by default. 
