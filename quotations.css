@@ -573,10 +573,10 @@
 }
 
 .ui-icon-passage-left {
-  background-image: url('images/left-gray.png');
-  background-size: 8px;
+  background-image: url('images/list.png');
+  background-size: 17px 11px;
   background-repeat: no-repeat;
-  background-position: 22px 14px;
+  background-position: 22px 16px;
 }
 .ui-icon-passage-blank {
   background-image: url('images/blank.png');
@@ -595,6 +595,7 @@
 	font-style: italic;
 	font-size: small;
 	padding-top: 5px;
+	color: gray;
 }
 .passage-footer {
 	width:100%;
@@ -665,13 +666,6 @@
 	width: 10px;
 	position: relative;
 	float: right;
-}
-.resource-heading-sb {
-	text-align: center;
-	font-size: 90%;
-	padding-top: 36px;
-	color: gray;
-	letter-spacing: 0px;
 }
 
 .ui-icon-resources-dots {

@@ -1,6 +1,6 @@
 CACHE MANIFEST
 
-# Version 112
+# Version 113
 
 fastclick.js
 jquery.mobile.structure-1.4.5.css
@@ -25,6 +25,7 @@ images/ellipse-dark.png
 images/ellipse-light.png
 images/external.png
 images/left-gray.png
+images/list.png
 images/menu-outline.png
 images/quotation-mark.png
 images/right-black.png
