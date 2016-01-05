@@ -359,18 +359,21 @@
 	position: absolute;
 	top: 20px;
 	display: block;
+	
 }
 .ui-panel.ui-panel-open {
 	position:fixed;
 }
 .ui-panel-inner {
 	position: absolute;
-	top: 1px;
+	top: 15px;
 	left: 0;
 	right: 0;
 	bottom: 20px;
 	overflow: scroll;
 	-webkit-overflow-scrolling: touch;
+	padding-top: 0px;
+	margin-top: 0px;
 }
 .label {
 	text-align: center;
