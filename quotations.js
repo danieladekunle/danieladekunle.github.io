@@ -408,3 +408,13 @@ $(document).ready( function(event){
 if (localStorage.lastlocation && location.currentURL != location.href) {
 	window.location = localStorage.lastlocation;
 }
+
+
+
+var radios = document.getElementsByName("status-bar-option"); // list of radio buttons
+var val = localStorage.getItem('status-bar-option'); // local storage value
+for(var i=0;i<radios.length;i++){
+  if(radios[i].value == val){
+      radios[i].checked = true; // marking the required radio as checked
+  }
+}
