@@ -17,7 +17,7 @@ $(document).ready(function() {
 				$("#menu-wrapper-child").removeClass("menu-wrapper-child-fs");
 			}
 		}, true);
-	}, 500);
+	}, 3000);
 });
 
 // 	$(document).ready(function() {
