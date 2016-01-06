@@ -3,16 +3,13 @@
 
 $(document).ready(function() {
 	if($(window).height() > 568 && $(window).height() <= 736) {
-		// $("#menu-wrapper-parent").addClass("menu-wrapper-parent");
 		$("#menu-wrapper-child").removeClass().addClass("menu-wrapper-child-fs");
 	}
 	window.addEventListener("resize", function() {
 		if($(window).height() > 568 && $(window).height() <= 736) {
-			// $("#menu-wrapper-parent").addClass("menu-wrapper-parent");
 			$("#menu-wrapper-child").removeClass().addClass("menu-wrapper-child-fs");
 		}
 		else {
-			// $("#menu-wrapper-parent").removeClass("menu-wrapper-parent");
 			$("#menu-wrapper-child").removeClass("menu-wrapper-child-fs");
 		}
 	}, true);
@@ -88,20 +85,22 @@ $(document).ready(function() {
 	}
 });
 
-// If in standalone mode, when status bar radio button changed if 'on' selected, replace all classes ending in '-fs' suffix with '-sb' suffix and refresh (and reverse)
+// If in standalone mode, when status bar radio button changed if 'on' selected and device is in portrait mode replace all classes ending in '-fs' suffix with '-sb' suffix and trigger resize to refresh page, otherwise do opposite
 
 $(document).ready(function() {
 	if (window.navigator.standalone == true) {
 		$('input:radio[name="status-bar-option"]').change(function(){
 			if($(this).val() == 'on'){
-				$(document.body).find('div, a').each(function (i) {
-					var c = $(this).attr('class');
-					if(c !== undefined){
-						c = c.replace(/-fs/g,'-sb')
-						$(this).removeClass().addClass(c);
-						$(window).trigger('resize')
-					}
-				});
+				if(window.orientation == 0) {
+					$(document.body).find('div, a').each(function (i) {
+						var c = $(this).attr('class');
+						if(c !== undefined){
+							c = c.replace(/-fs/g,'-sb')
+							$(this).removeClass().addClass(c);
+							$(window).trigger('resize')
+						}
+					});
+				}
 			}
 			else {
 				$(document.body).find('div, a').each(function (i) {
@@ -117,7 +116,7 @@ $(document).ready(function() {
 	}
 });
 
-// If in standalone mode and status bar shown, when rotated to landscape hide status bar and replace when rotated to portrait
+// If in standalone mode and status bar option checked, when rotated to landscape hide status bar and replace when rotated to portrait
 
 $(document).ready(function() {
 	if (window.navigator.standalone == true) {
@@ -326,24 +325,6 @@ $(document).ready( function(event){
 	}); 
 });
 
-// If in standalone mode and panel is not open go back in history with reverse slide transition on right swipe from edge of screen (disabled)
-/* 
-$(document).bind('swiperight', function (event) {
-	if (window.navigator.standalone == true) {
-		if ( $.mobile.activePage.jqmData( "panel" ) !== "open" ) {
-			if ( event.swipestart.coords[0] <10) {
-				history.back({transition:"slide", reverse:true,});
-			}
-		}
-	}
-});
-*/
-// Go forward in history on left swipe (disabled)
-/* 
-$(document).bind('swipeleft', function () {
-	history.forward({transition:"slide"});
-});
-*/
 // Save current location to local storage when navigation buttons clicked
 
 $(document).ready( function(event){
@@ -409,5 +390,33 @@ if (localStorage.lastlocation && location.currentURL != location.href) {
 	window.location = localStorage.lastlocation;
 }
 
-// var input = document.getElementsByName("status-bar-option"); // list of radio buttons
-// var val = localStorage.getItem('status-bar-option'); // local storage value
+$(document).ready( function(event){
+	$('input:radio[name=status-bar-option]').change(function(){
+		if($(this).val() == 'on'){
+			localStorage.statusbar = 'on'
+		}
+	});
+});
+
+if (localStorage.statusbar  = 'on') {
+	$('input:radio[name=status-bar-option]').val(['on']);
+}
+
+// If in standalone mode and panel is not open go back in history with reverse slide transition on right swipe from edge of screen (disabled)
+/* 
+$(document).bind('swiperight', function (event) {
+	if (window.navigator.standalone == true) {
+		if ( $.mobile.activePage.jqmData( "panel" ) !== "open" ) {
+			if ( event.swipestart.coords[0] <10) {
+				history.back({transition:"slide", reverse:true,});
+			}
+		}
+	}
+});
+*/
+// Go forward in history on left swipe (disabled)
+/* 
+$(document).bind('swipeleft', function () {
+	history.forward({transition:"slide"});
+});
+*/
