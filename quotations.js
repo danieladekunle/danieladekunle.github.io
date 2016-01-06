@@ -7,16 +7,13 @@ $(document).ready(function() {
 		$("#menu-wrapper-child").removeClass().addClass("menu-wrapper-child-fs");
 	}
 	window.addEventListener("resize", function() {
-	// $( window ).resize(function() {
-		// setTimeout(function () {
-			// if($(window).height() > 568 && $(window).height() <= 736) {
-			if($(window).height() > 568) {
-				$("#menu-wrapper-child").removeClass().addClass("menu-wrapper-child-fs");
-			}
-			else {
-				$("#menu-wrapper-child").removeClass("menu-wrapper-child-fs");
-			}
-		// }, 500);
+		// if($(window).height() > 568 && $(window).height() <= 736) {
+		if($(window).height() > 568) {
+			$("#menu-wrapper-child").removeClass().addClass("menu-wrapper-child-fs");
+		}
+		else {
+			$("#menu-wrapper-child").removeClass("menu-wrapper-child-fs");
+		}
 	}, true);
 });
 
