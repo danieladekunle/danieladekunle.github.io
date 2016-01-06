@@ -2,7 +2,7 @@
 // If height resized to greater than 568 and less than or equal to 736 center numbers, otherwise return to top.
 
 $(document).ready(function() {
-	// if($(window).height() > 568 && $(window).height() <= 736) {
+	// if($(window).height() > 568 && $(window).height() <= 736) { (removed for iPad test)
 	if($(window).height() > 568) {
 		$("#menu-wrapper-child").removeClass().addClass("menu-wrapper-child-fs");
 	}
@@ -53,9 +53,9 @@ $(document).ready(function() {
 // });
 
 // If window height greater than 736 (iPhone 6 Plus) hide fixed footer and show floating footer, otherwise show fixed footer and hide floating footer.
-// Listen for resize and carry out same function.
+// Listen for resize and carry out same function. (disabled for iPad test)
 
-$(document).ready(function() {
+/* $(document).ready(function() {
 	if($(window).height() > 736) {
 		$('.menu-footer').hide();
 		$('.floating-footer').show();
@@ -74,7 +74,7 @@ $(document).ready(function() {
 			$('.floating-footer').hide();
 		}
 	}, true);
-});
+}); */
 
 // If in standalone mode show status bar radio button, otherwise hide.
 
@@ -177,7 +177,19 @@ $(document).ready( function(event){
 	if (window.navigator.standalone == true) {
 		if (localStorage.statusbar  == "on") {
 			$('#status-bar-option-a').prop('checked',true).trigger("click");
-			if(window.orientation == 0) {
+			if (navigator.userAgent.match(/(iPod|iPhone)/)) {
+				if(window.orientation == 0) {
+					$(document.body).find('div, a').each(function (i) {
+						var c = $(this).attr('class');
+						if(c !== undefined){
+							c = c.replace(/-fs/g,'-sb')
+							$(this).removeClass().addClass(c);
+							$(window).trigger('resize')
+						}
+					});
+				}
+			}
+			else {
 				$(document.body).find('div, a').each(function (i) {
 					var c = $(this).attr('class');
 					if(c !== undefined){
@@ -186,7 +198,7 @@ $(document).ready( function(event){
 						$(window).trigger('resize')
 					}
 				});
-			}
+			}	
 		}
 		else {
 			$('#status-bar-option-b').prop('checked',true).trigger("click");
