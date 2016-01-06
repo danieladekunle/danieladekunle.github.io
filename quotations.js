@@ -394,13 +394,18 @@ $(document).ready( function(event){
 	$('input:radio[name=status-bar-option]').change(function(){
 		if($(this).val() == 'on'){
 			localStorage.statusbar = 'on'
+			alert
 		}
 	});
 });
 
-if (localStorage.statusbar  = 'on') {
-	$('input:radio[name=status-bar-option]').val(['on']);
-}
+
+$(document).ready( function(event){
+	if (localStorage.statusbar  = 'on') {
+		$('#status-bar-option-a').prop('checked',true);
+		return false;
+	}
+});
 
 // If in standalone mode and panel is not open go back in history with reverse slide transition on right swipe from edge of screen (disabled)
 /* 
