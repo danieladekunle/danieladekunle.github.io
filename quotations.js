@@ -6,8 +6,20 @@ $(document).ready(function() {
 	if($(window).height() > 568) {
 		$("#menu-wrapper-child").removeClass().addClass("menu-wrapper-child-fs");
 	}
-	$( window ).resize(function() {
+	window.addEventListener("resize", function() {
+	// $( window ).resize(function() {
 		// if($(window).height() > 568 && $(window).height() <= 736) {
+		if($(window).height() > 568) {
+			$("#menu-wrapper-child").removeClass().addClass("menu-wrapper-child-fs");
+		}
+		else {
+			$("#menu-wrapper-child").removeClass("menu-wrapper-child-fs");
+		}
+	}, true);
+});
+
+$(document).ready(function() {
+	$(window).on("orientationchange",function(){
 		if($(window).height() > 568) {
 			$("#menu-wrapper-child").removeClass().addClass("menu-wrapper-child-fs");
 		}
