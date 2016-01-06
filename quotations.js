@@ -1,7 +1,8 @@
 // If window height greater than 568 (iPhone 5/s) and less than or equal to 736 (iPhone 6 Plus) center numbers in menu between header/footer.
 // If height resized to greater than 568 and less than or equal to 736 center numbers, otherwise return to top.
 
-$(document).ready(function() {
+// $(document).ready(function() {
+$(window).load(function () {
 	// if($(window).height() > 568 && $(window).height() <= 736) { (removed for iPad test)
 	if($(window).height() > 568) {
 		$("#menu-wrapper-child").removeClass().addClass("menu-wrapper-child-fs");
@@ -11,7 +12,6 @@ $(document).ready(function() {
 		// if($(window).height() > 568 && $(window).height() <= 736) {
 		if($(window).height() > 568) {
 			$("#menu-wrapper-child").removeClass().addClass("menu-wrapper-child-fs");
-			alert("resize detected and class readded");
 		}
 		else {
 			$("#menu-wrapper-child").removeClass("menu-wrapper-child-fs");
@@ -19,16 +19,16 @@ $(document).ready(function() {
 	}, true);
 });
 
-$(document).ready(function() {
-	$(window).on("orientationchange",function(){
-		if($(window).height() > 568) {
-			$("#menu-wrapper-child").removeClass().addClass("menu-wrapper-child-fs");
-		}
-		else {
-			$("#menu-wrapper-child").removeClass("menu-wrapper-child-fs");
-		}
-	});
-});
+// $(document).ready(function() {
+	// $(window).on("orientationchange",function(){
+		// if($(window).height() > 568) {
+			// $("#menu-wrapper-child").removeClass().addClass("menu-wrapper-child-fs");
+		// }
+		// else {
+			// $("#menu-wrapper-child").removeClass("menu-wrapper-child-fs");
+		// }
+	// });
+// });
 
 // 	$(document).ready(function() {
 	// if ($('input:radio[name="status-bar-option"]').val() == 'on'){
