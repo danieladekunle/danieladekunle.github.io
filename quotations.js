@@ -6,9 +6,9 @@ $(document).ready(function() {
 	if($(window).height() > 568) {
 		$("#menu-wrapper-child").removeClass().addClass("menu-wrapper-child-fs");
 	}
-	window.addEventListener("resize", function() {
-	// $( window ).resize(function() {
-		setTimeout(function () {
+	setTimeout(function () {
+		window.addEventListener("resize", function() {
+		// $( window ).resize(function() {
 			// if($(window).height() > 568 && $(window).height() <= 736) {
 			if($(window).height() > 568) {
 				$("#menu-wrapper-child").removeClass().addClass("menu-wrapper-child-fs");
@@ -16,8 +16,8 @@ $(document).ready(function() {
 			else {
 				$("#menu-wrapper-child").removeClass("menu-wrapper-child-fs");
 			}
-		}, 500);
-	}, true);
+		}, true);
+	}, 500);
 });
 
 // 	$(document).ready(function() {
