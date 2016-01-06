@@ -401,7 +401,15 @@ $(document).ready( function(event){
 	if (localStorage.statusbar  == "on") {
 		$('#status-bar-option-a').prop('checked',true);
 		$('#status-bar-option-a').next('label').addClass("checked");
+		$('#status-bar-option-a').next('label').addClass("active");
+		$('#status-bar-option-a-label').addClass("checked");
+		$('#status-bar-option-a-label').addClass("active");
+		$('#status-bar-option-b').prop('checked',false);
+		$('#status-bar-option-b').removeAttr("checked");
 		$('#status-bar-option-b').next('label').removeClass("checked");
+		$('#status-bar-option-b').next('label').addClass("active");
+		$('#status-bar-option-b-label').removeClass("checked");
+		$('#status-bar-option-b-label').removeClass("active");
 		if(window.orientation == 0) {
 			$(document.body).find('div, a').each(function (i) {
 				var c = $(this).attr('class');
