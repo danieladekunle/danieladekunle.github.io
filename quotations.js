@@ -147,6 +147,44 @@ $(document).ready(function() {
 	}
 });
 
+// When status bar option changed save value to local storage
+
+$(document).ready( function(event){
+	$('input:radio[name=status-bar-option]').change(function(){
+		localStorage.statusbar = $('input[name=status-bar-option]:checked').val()
+	});
+});
+
+// If in standalone mode and status bar option saved to local storage is 'on' restore option on restart
+
+$(document).ready( function(event){
+	if (window.navigator.standalone == true) {
+		if (localStorage.statusbar  == "on") {
+			$('#status-bar-option-a').prop('checked',true);
+			// $('#status-bar-option-a').next('label').addClass("checked");
+			// $('#status-bar-option-a').next('label').addClass("active");
+			$('#status-bar-option-a-label').addClass("checked");
+			$('#status-bar-option-a-label').addClass("active");
+			// $('#status-bar-option-b').prop('checked',false);
+			$('#status-bar-option-b').removeAttr("checked");
+			// $('#status-bar-option-b').next('label').removeClass("checked");
+			// $('#status-bar-option-b').next('label').addClass("active");
+			$('#status-bar-option-b-label').removeClass("checked");
+			$('#status-bar-option-b-label').removeClass("active");
+			if(window.orientation == 0) {
+				$(document.body).find('div, a').each(function (i) {
+					var c = $(this).attr('class');
+					if(c !== undefined){
+						c = c.replace(/-fs/g,'-sb')
+						$(this).removeClass().addClass(c);
+						$(window).trigger('resize')
+					}
+				});
+			}
+		}
+	}
+});
+
 // Hide all book titles by default. 
 // When number clicked if title hidden show title and hide any others, otherwise open book page. 
 // When title clicked hide all titles.
@@ -325,103 +363,74 @@ $(document).ready( function(event){
 	}); 
 });
 
-// Save current location to local storage when navigation buttons clicked
+// If in standalone mode, when navigation buttons clicked save current location to local storage
 
 $(document).ready( function(event){
-	$('.book-1-number-wrapper').on('click', function(){          
-		localStorage.lastlocation = location.href
-	});
-	$('.book-2-number-wrapper').on('click', function(){          
-		localStorage.lastlocation = location.href
-	});
-	$('.book-3-number-wrapper').on('click', function(){          
-		localStorage.lastlocation = location.href
-	});
-	$('.book-4-number-wrapper').on('click', function(){          
-		localStorage.lastlocation = location.href
-	});
-	$('.book-5-number-wrapper').on('click', function(){          
-		localStorage.lastlocation = location.href
-	});
-	$('.book-6-number-wrapper').on('click', function(){          
-		localStorage.lastlocation = location.href
-	});
-	$('.book-7-number-wrapper').on('click', function(){          
-		localStorage.lastlocation = location.href
-	});
-	$('.link').on('click', function(){          
-		localStorage.lastlocation = this.href
-	});
-	$('.menu-icon-left-fs').on('click', function(){          
-		localStorage.lastlocation = this.href
-	});
-	$('.menu-icon-left-sb').on('click', function(){          
-		localStorage.lastlocation = this.href
-	});
-	$('.book-title').on('click', function(){          
-		localStorage.lastlocation = this.href
-	});
-	$('.passage-menu-icon-left-fs').on('click', function(){          
-		localStorage.lastlocation = this.href
-	});
-	$('.passage-menu-icon-left-sb').on('click', function(){          
-		localStorage.lastlocation = this.href
-	});
-	$('.pdf').on('click', function(){          
-		localStorage.lastlocation = location.href
-	});
-	$('.passage-icon-left-fs').on('click', function(){          
-		localStorage.lastlocation = this.href
-	});
-	$('.passage-icon-left-sb').on('click', function(){          
-		localStorage.lastlocation = this.href
-	});
-	$('.next-passage').on('click', function(){          
-		localStorage.lastlocation = location.href
-	});
-	$('.previous-passage').on('click', function(){          
-		localStorage.lastlocation = location.href
-	});
-});
-
-// Load last location saved in local storage on restart
-	
-if (localStorage.lastlocation && location.currentURL != location.href) {
-	window.location = localStorage.lastlocation;
-}
-
-$(document).ready( function(event){
-	$('input:radio[name=status-bar-option]').change(function(){
-		localStorage.statusbar = $('input[name=status-bar-option]:checked').val()
-	});
-});
-
-
-$(document).ready( function(event){
-	if (localStorage.statusbar  == "on") {
-		$('#status-bar-option-a').prop('checked',true);
-		$('#status-bar-option-a').next('label').addClass("checked");
-		$('#status-bar-option-a').next('label').addClass("active");
-		$('#status-bar-option-a-label').addClass("checked");
-		$('#status-bar-option-a-label').addClass("active");
-		$('#status-bar-option-b').prop('checked',false);
-		$('#status-bar-option-b').removeAttr("checked");
-		$('#status-bar-option-b').next('label').removeClass("checked");
-		$('#status-bar-option-b').next('label').addClass("active");
-		$('#status-bar-option-b-label').removeClass("checked");
-		$('#status-bar-option-b-label').removeClass("active");
-		if(window.orientation == 0) {
-			$(document.body).find('div, a').each(function (i) {
-				var c = $(this).attr('class');
-				if(c !== undefined){
-					c = c.replace(/-fs/g,'-sb')
-					$(this).removeClass().addClass(c);
-					$(window).trigger('resize')
-				}
-			});
-		}
+	if (window.navigator.standalone == true) {	
+		$('.book-1-number-wrapper').on('click', function(){          
+			localStorage.lastlocation = location.href
+		});
+		$('.book-2-number-wrapper').on('click', function(){          
+			localStorage.lastlocation = location.href
+		});
+		$('.book-3-number-wrapper').on('click', function(){          
+			localStorage.lastlocation = location.href
+		});
+		$('.book-4-number-wrapper').on('click', function(){          
+			localStorage.lastlocation = location.href
+		});
+		$('.book-5-number-wrapper').on('click', function(){          
+			localStorage.lastlocation = location.href
+		});
+		$('.book-6-number-wrapper').on('click', function(){          
+			localStorage.lastlocation = location.href
+		});
+		$('.book-7-number-wrapper').on('click', function(){          
+			localStorage.lastlocation = location.href
+		});
+		$('.link').on('click', function(){          
+			localStorage.lastlocation = this.href
+		});
+		$('.menu-icon-left-fs').on('click', function(){          
+			localStorage.lastlocation = this.href
+		});
+		$('.menu-icon-left-sb').on('click', function(){          
+			localStorage.lastlocation = this.href
+		});
+		$('.book-title').on('click', function(){          
+			localStorage.lastlocation = this.href
+		});
+		$('.passage-menu-icon-left-fs').on('click', function(){          
+			localStorage.lastlocation = this.href
+		});
+		$('.passage-menu-icon-left-sb').on('click', function(){          
+			localStorage.lastlocation = this.href
+		});
+		$('.pdf').on('click', function(){          
+			localStorage.lastlocation = location.href
+		});
+		$('.passage-icon-left-fs').on('click', function(){          
+			localStorage.lastlocation = this.href
+		});
+		$('.passage-icon-left-sb').on('click', function(){          
+			localStorage.lastlocation = this.href
+		});
+		$('.next-passage').on('click', function(){          
+			localStorage.lastlocation = location.href
+		});
+		$('.previous-passage').on('click', function(){          
+			localStorage.lastlocation = location.href
+		});
 	}
 });
+
+// If in standalone mode and last location saved in local storage is not same as current location go to saved location on restart
+
+if (window.navigator.standalone == true) {	
+	if (localStorage.lastlocation && location.currentURL != location.href) {
+		window.location = localStorage.lastlocation;
+	}
+}
 
 // If in standalone mode and panel is not open go back in history with reverse slide transition on right swipe from edge of screen (disabled)
 /* 
