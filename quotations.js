@@ -171,22 +171,22 @@ $(document).ready( function(event){
 	});
 });
 
-// If in standalone mode and status bar option saved to local storage is 'on' trigger click on radio button option, otherwise trigger click on other option
+// If in standalone mode and status bar option saved to local storage is 'on' trigger click on radio button option and replace full screen classes, otherwise trigger click on other option
 
 $(document).ready( function(event){
 	if (window.navigator.standalone == true) {
 		if (localStorage.statusbar  == "on") {
 			$('#status-bar-option-a').prop('checked',true).trigger("click");
-			// if(window.orientation == 0) {
-				// $(document.body).find('div, a').each(function (i) {
-					// var c = $(this).attr('class');
-					// if(c !== undefined){
-						// c = c.replace(/-fs/g,'-sb')
-						// $(this).removeClass().addClass(c);
-						// $(window).trigger('resize')
-					// }
-				// });
-			// }
+			if(window.orientation == 0) {
+				$(document.body).find('div, a').each(function (i) {
+					var c = $(this).attr('class');
+					if(c !== undefined){
+						c = c.replace(/-fs/g,'-sb')
+						$(this).removeClass().addClass(c);
+						$(window).trigger('resize')
+					}
+				});
+			}
 		}
 		else {
 			$('#status-bar-option-b').prop('checked',true).trigger("click");
