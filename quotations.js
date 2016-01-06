@@ -11,6 +11,7 @@ $(document).ready(function() {
 		// if($(window).height() > 568 && $(window).height() <= 736) {
 		if($(window).height() > 568) {
 			$("#menu-wrapper-child").removeClass().addClass("menu-wrapper-child-fs");
+			alert("resize detected and class readded");
 		}
 		else {
 			$("#menu-wrapper-child").removeClass("menu-wrapper-child-fs");
