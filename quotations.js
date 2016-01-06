@@ -87,13 +87,25 @@ $(document).ready(function() {
 	}
 });
 
-// If in standalone mode, when status bar radio button changed if 'on' selected and device is in portrait mode replace all classes ending in '-fs' suffix with '-sb' suffix and trigger resize to refresh page, otherwise do opposite
+// If in standalone mode, when status bar radio button changed, if 'on' selected and if device is iPod/iPhone and if in portrait mode or if device is iPad replace all classes ending in '-fs' suffix with '-sb' suffix and trigger resize to refresh page, otherwise do opposite.
 
 $(document).ready(function() {
 	if (window.navigator.standalone == true) {
 		$('input:radio[name="status-bar-option"]').change(function(){
 			if($(this).val() == 'on'){
-				if(window.orientation == 0) {
+				if (navigator.userAgent.match(/(iPod|iPhone)/)) {
+					if(window.orientation == 0) {
+						$(document.body).find('div, a').each(function (i) {
+							var c = $(this).attr('class');
+							if(c !== undefined){
+								c = c.replace(/-fs/g,'-sb')
+								$(this).removeClass().addClass(c);
+								$(window).trigger('resize')
+							}
+						});
+					}
+				}
+				else {
 					$(document.body).find('div, a').each(function (i) {
 						var c = $(this).attr('class');
 						if(c !== undefined){
@@ -102,7 +114,7 @@ $(document).ready(function() {
 							$(window).trigger('resize')
 						}
 					});
-				}
+				}	
 			}
 			else {
 				$(document.body).find('div, a').each(function (i) {
@@ -118,34 +130,36 @@ $(document).ready(function() {
 	}
 });
 
-// If in standalone mode and status bar option checked, when rotated to landscape hide status bar and replace when rotated to portrait
+// If in standalone mode and device is iPod or iPhone and status bar option checked, when rotated to landscape hide status bar and replace when rotated to portrait
 
 $(document).ready(function() {
 	if (window.navigator.standalone == true) {
-		$(window).on("orientationchange",function(){
-			 if ($('input[name=status-bar-option]:checked').val() == "on"){
-				if(window.orientation == 90 || window.orientation == -90) {
-					$(document.body).find('div, a').each(function (i) {
-						var c = $(this).attr('class');
-						if(c !== undefined){
-							c = c.replace(/-sb/g,'-fs')
-							$(this).removeClass().addClass(c);
-							$(window).trigger('resize')
-						}
-					});
+		if (navigator.userAgent.match(/(iPod|iPhone)/)) {
+			$(window).on("orientationchange",function(){
+				 if ($('input[name=status-bar-option]:checked').val() == "on"){
+					if(window.orientation == 90 || window.orientation == -90) {
+						$(document.body).find('div, a').each(function (i) {
+							var c = $(this).attr('class');
+							if(c !== undefined){
+								c = c.replace(/-sb/g,'-fs')
+								$(this).removeClass().addClass(c);
+								$(window).trigger('resize')
+							}
+						});
+					}
+					else {
+						$(document.body).find('div, a').each(function (i) {
+							var c = $(this).attr('class');
+							if(c !== undefined){
+								c = c.replace(/-fs/g,'-sb')
+								$(this).removeClass().addClass(c);
+								$(window).trigger('resize')
+							}
+						});
+					}
 				}
-				else {
-					$(document.body).find('div, a').each(function (i) {
-						var c = $(this).attr('class');
-						if(c !== undefined){
-							c = c.replace(/-fs/g,'-sb')
-							$(this).removeClass().addClass(c);
-							$(window).trigger('resize')
-						}
-					});
-				}
-			}
-		});
+			});
+		}
 	}
 });
 
