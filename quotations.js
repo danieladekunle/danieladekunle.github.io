@@ -9,6 +9,10 @@ $(document).ready(function() {
 				$("#menu-wrapper-child").removeClass().addClass("menu-wrapper-child-sb");
 				alert(".menu-wrapper-child-sb added");
 			}
+			else {
+				$("#menu-wrapper-child").removeClass().addClass("menu-wrapper-child-fs");
+				alert(".menu-wrapper-child-fs added");
+			}
 		}
 		else {
 			$("#menu-wrapper-child").removeClass().addClass("menu-wrapper-child-fs");
@@ -98,21 +102,21 @@ $(document).ready(function() {
 	}, true);
 }); */
 
-// If in standalone mode show status bar radio button, otherwise hide.
+// If in standalone mode show status bar radio button, otherwise hide. (disabled for desktop testing)
 
-$(document).ready(function() {
+/* $(document).ready(function() {
 	if (window.navigator.standalone == true) {
 		$('#sb-button').show();
 	}
 	else {
 		$('#sb-button').hide();
 	}
-});
+}); */
 
 // If in standalone mode, when status bar radio button changed, if 'on' selected and if device is iPod/iPhone and if in portrait mode or if device is iPad replace all classes ending in '-fs' suffix with '-sb' suffix and trigger resize to refresh page, otherwise do opposite.
 
 $(document).ready(function() {
-	if (window.navigator.standalone == true) {
+	// if (window.navigator.standalone == true) { (disabled for desktop testing)
 		$('input:radio[name="status-bar-option"]').change(function(){
 			if($(this).val() == 'on'){
 				if (navigator.userAgent.match(/(iPod|iPhone)/)) {
@@ -149,7 +153,7 @@ $(document).ready(function() {
 				});
 			}
 		});
-	}
+	// }
 });
 
 // If in standalone mode and device is iPod or iPhone and status bar option checked, when rotated to landscape hide status bar and replace when rotated to portrait
