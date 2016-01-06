@@ -394,7 +394,7 @@ $(document).ready( function(event){
 	$('input:radio[name=status-bar-option]').change(function(){
 		if($(this).val() == 'on'){
 			localStorage.statusbar = 'on'
-			alert
+			alert("value saved in local storage");
 		}
 	});
 });
@@ -402,7 +402,9 @@ $(document).ready( function(event){
 
 $(document).ready( function(event){
 	if (localStorage.statusbar  = 'on') {
+		alert("value retrieved from local storage");
 		$('#status-bar-option-a').prop('checked',true);
+		alert("radio button checked");
 		return false;
 	}
 });
