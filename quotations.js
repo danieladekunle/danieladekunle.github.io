@@ -7,16 +7,13 @@ $(document).ready(function() {
 		if (window.navigator.standalone == true) {
 			if (localStorage.statusbar  == "on") {
 				$("#menu-wrapper-child").removeClass().addClass("menu-wrapper-child-sb");
-				alert(".menu-wrapper-child-sb added");
 			}
 			else {
 				$("#menu-wrapper-child").removeClass().addClass("menu-wrapper-child-fs");
-				alert(".menu-wrapper-child-fs added");
 			}
 		}
 		else {
 			$("#menu-wrapper-child").removeClass().addClass("menu-wrapper-child-fs");
-			alert(".menu-wrapper-child-fs added");
 		}
 	}
 	window.addEventListener("resize", function() {
@@ -24,11 +21,9 @@ $(document).ready(function() {
 		if($(window).height() > 568) {
 			if ($('input[name=status-bar-option]:checked').val() == "on"){
 				$("#menu-wrapper-child").removeClass().addClass("menu-wrapper-child-sb");
-				alert(".menu-wrapper-child-sb added");
 			}
 			else {
 				$("#menu-wrapper-child").removeClass().addClass("menu-wrapper-child-fs");
-				alert(".menu-wrapper-child-fs added");
 			}
 		}
 		else {
@@ -37,46 +32,13 @@ $(document).ready(function() {
 	}, true);
 });
 
+// When orientation changes, trigger resize (to trigger above function to run after window resize complete)
+
 $(document).ready(function() {
 	$(window).on("orientationchange",function(){
 		$(window).trigger('resize');
 	});
 });
-
-// 	$(document).ready(function() {
-	// if ($('input:radio[name="status-bar-option"]').val() == 'on'){
-		// if($(window).height() > 568 && $(window).height() <= 736) {
-			// // $("#menu-wrapper-parent").addClass("menu-wrapper-parent");
-			// $("#menu-wrapper-child").removeClass().addClass("menu-wrapper-child-sb");
-		// }
-		// window.addEventListener("resize", function() {
-			// if($(window).height() > 568 && $(window).height() <= 736) {
-				// // $("#menu-wrapper-parent").addClass("menu-wrapper-parent");
-				// $("#menu-wrapper-child").removeClass().addClass("menu-wrapper-child-sb");
-			// }
-			// else {
-				// // $("#menu-wrapper-parent").removeClass("menu-wrapper-parent");
-				// $("#menu-wrapper-child").removeClass("menu-wrapper-child-sb");
-			// }
-		// }, true);
-	// }
-	// else {
-		// if($(window).height() > 568 && $(window).height() <= 736) {
-			// // $("#menu-wrapper-parent").addClass("menu-wrapper-parent");
-			// $("#menu-wrapper-child").removeClass().addClass("menu-wrapper-child-fs");
-		// }
-		// window.addEventListener("resize", function() {
-			// if($(window).height() > 568 && $(window).height() <= 736) {
-				// // $("#menu-wrapper-parent").addClass("menu-wrapper-parent");
-				// $("#menu-wrapper-child").removeClass().addClass("menu-wrapper-child-fs");
-			// }
-			// else {
-				// // $("#menu-wrapper-parent").removeClass("menu-wrapper-parent");
-				// $("#menu-wrapper-child").removeClass("menu-wrapper-child-fs");
-			// }
-		// }, true);
-	// }
-// });
 
 // If window height greater than 736 (iPhone 6 Plus) hide fixed footer and show floating footer, otherwise show fixed footer and hide floating footer.
 // Listen for resize and carry out same function. (disabled for iPad test)
@@ -102,21 +64,21 @@ $(document).ready(function() {
 	}, true);
 }); */
 
-// If in standalone mode show status bar radio button, otherwise hide. (disabled for desktop testing)
+// If in standalone mode show status bar radio button, otherwise hide.
 
-/* $(document).ready(function() {
+$(document).ready(function() {
 	if (window.navigator.standalone == true) {
 		$('#sb-button').show();
 	}
 	else {
 		$('#sb-button').hide();
 	}
-}); */
+});
 
 // If in standalone mode, when status bar radio button changed, if 'on' selected and if device is iPod/iPhone and if in portrait mode or if device is iPad replace all classes ending in '-fs' suffix with '-sb' suffix and trigger resize to refresh page, otherwise do opposite.
 
 $(document).ready(function() {
-	// if (window.navigator.standalone == true) { (disabled for desktop testing)
+	if (window.navigator.standalone == true) {
 		$('input:radio[name="status-bar-option"]').change(function(){
 			if($(this).val() == 'on'){
 				if (navigator.userAgent.match(/(iPod|iPhone)/)) {
@@ -153,7 +115,7 @@ $(document).ready(function() {
 				});
 			}
 		});
-	// }
+	}
 });
 
 // If in standalone mode and device is iPod or iPhone and status bar option checked, when rotated to landscape hide status bar and replace when rotated to portrait
