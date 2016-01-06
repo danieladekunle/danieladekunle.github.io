@@ -88,7 +88,7 @@
 	width: 300px;
 	height: 399px;
 	margin-bottom: 0;
-	margin-top: -190px; /* half of height (200px) - 10px (half of height of status bar?) */
+	margin-top: -185px; /* half of height (200px) - 10px (half of height of status bar?) */
 	margin-left: -150px;
 	margin-right:0;
 }
