@@ -4,10 +4,12 @@
 $(document).ready(function() {
 	// if($(window).height() > 568 && $(window).height() <= 736) { (removed for iPad test)
 	if($(window).height() > 568) {
-		if ($('input[name=status-bar-option]:checked').val() == "on"){
-			$("#menu-wrapper-child").removeClass().addClass("menu-wrapper-child-sb");
-			alert(".menu-wrapper-child-sb added")
-		}
+		if (window.navigator.standalone == true) {
+			if (localStorage.statusbar  == "on") {
+				$("#menu-wrapper-child").removeClass().addClass("menu-wrapper-child-sb");
+				alert(".menu-wrapper-child-sb added")
+			}
+		)
 		else {
 			$("#menu-wrapper-child").removeClass().addClass("menu-wrapper-child-fs");
 			alert(".menu-wrapper-child-fs added")
