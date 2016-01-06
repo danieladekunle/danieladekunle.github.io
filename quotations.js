@@ -161,8 +161,8 @@ $(document).ready( function(event){
 	if (window.navigator.standalone == true) {
 		if (localStorage.statusbar  == "on") {
 			$('#status-bar-option-a').prop('checked',true);
+			$('#status-bar-option-a').attr("checked", "checked");
 			// $('#status-bar-option-b').removeAttr("checked");
-			// $('#status-bar-option-a').attr("checked", "checked");
 			// $('#status-bar-option-a').next('label').addClass("checked");
 			// $('#status-bar-option-a').next('label').addClass("active");
 			// $('#status-bar-option-a-label').addClass("checked");
@@ -185,6 +185,7 @@ $(document).ready( function(event){
 		}
 		else {
 			$('#status-bar-option-b').prop('checked',true);
+			$('#status-bar-option-b').attr("checked", "checked");
 		}
 	}
 });
