@@ -2,11 +2,13 @@
 // If height resized to greater than 568 and less than or equal to 736 center numbers, otherwise return to top.
 
 $(document).ready(function() {
-	if($(window).height() > 568 && $(window).height() <= 736) {
+	// if($(window).height() > 568 && $(window).height() <= 736) {
+	if($(window).height() > 568) {
 		$("#menu-wrapper-child").removeClass().addClass("menu-wrapper-child-fs");
 	}
 	window.addEventListener("resize", function() {
-		if($(window).height() > 568 && $(window).height() <= 736) {
+		// if($(window).height() > 568 && $(window).height() <= 736) {
+		if($(window).height() > 568) {
 			$("#menu-wrapper-child").removeClass().addClass("menu-wrapper-child-fs");
 		}
 		else {
@@ -155,37 +157,25 @@ $(document).ready( function(event){
 	});
 });
 
-// If in standalone mode and status bar option saved to local storage is 'on' restore option on restart
+// If in standalone mode and status bar option saved to local storage is 'on' trigger click on radio button option, otherwise trigger click on other option
 
 $(document).ready( function(event){
 	if (window.navigator.standalone == true) {
 		if (localStorage.statusbar  == "on") {
 			$('#status-bar-option-a').prop('checked',true).trigger("click");
-			// $('#status-bar-option-a').attr("checked", "checked");
-			// $('#status-bar-option-b').removeAttr("checked");
-			// $('#status-bar-option-a').next('label').addClass("checked");
-			// $('#status-bar-option-a').next('label').addClass("active");
-			// $('#status-bar-option-a-label').addClass("checked");
-			// $('#status-bar-option-a-label').addClass("active");
-			// $('#status-bar-option-b').prop('checked',false);
-			// $('#status-bar-option-b').next('label').removeClass("checked");
-			// $('#status-bar-option-b').next('label').addClass("active");
-			// $('#status-bar-option-b-label').removeClass("checked");
-			// $('#status-bar-option-b-label').removeClass("active");
-			if(window.orientation == 0) {
-				$(document.body).find('div, a').each(function (i) {
-					var c = $(this).attr('class');
-					if(c !== undefined){
-						c = c.replace(/-fs/g,'-sb')
-						$(this).removeClass().addClass(c);
-						$(window).trigger('resize')
-					}
-				});
-			}
+			// if(window.orientation == 0) {
+				// $(document.body).find('div, a').each(function (i) {
+					// var c = $(this).attr('class');
+					// if(c !== undefined){
+						// c = c.replace(/-fs/g,'-sb')
+						// $(this).removeClass().addClass(c);
+						// $(window).trigger('resize')
+					// }
+				// });
+			// }
 		}
 		else {
-			$('#status-bar-option-b').prop('checked',true).trigger("click");;
-			// $('#status-bar-option-b').attr("checked", "checked");
+			$('#status-bar-option-b').prop('checked',true).trigger("click");
 		}
 	}
 });
