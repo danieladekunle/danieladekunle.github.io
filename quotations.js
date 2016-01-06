@@ -400,7 +400,8 @@ $(document).ready( function(event){
 $(document).ready( function(event){
 	if (localStorage.statusbar  == "on") {
 		$('#status-bar-option-a').prop('checked',true);
-		$('#status-bar-option-b').prop('checked',false);
+		$('#status-bar-option-b').removeClass('active');
+		$('#status-bar-option-a').addClass('active');
 		if(window.orientation == 0) {
 			$(document.body).find('div, a').each(function (i) {
 				var c = $(this).attr('class');
