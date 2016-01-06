@@ -393,17 +393,14 @@ if (localStorage.lastlocation && location.currentURL != location.href) {
 $(document).ready( function(event){
 	$('input:radio[name=status-bar-option]').change(function(){
 		localStorage.statusbar = $('input[name=status-bar-option]:checked').val()
-		alert("new value saved in local storage");
 	});
 });
 
 
 $(document).ready( function(event){
 	if (localStorage.statusbar  == "on") {
-		alert("'on' value retrieved from local storage");
 		$('#status-bar-option-a').prop('checked',true);
-		alert("radio button checked");
-		// return false;
+		$('#status-bar-option-b').prop('checked',false);
 		if(window.orientation == 0) {
 			$(document.body).find('div, a').each(function (i) {
 				var c = $(this).attr('class');
