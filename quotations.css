@@ -495,6 +495,18 @@
 	float: right;
 }
 
+.passage-list-sm {
+	padding: 0px 12px;
+	font-size: 100%;
+}
+.passage-list-md {
+	padding: 0px 12px;
+	font-size: 115%;
+}
+.passage-list-lg {
+	padding: 0px 12px;
+	font-size: 130%;
+}
 .ui-icon-menu-outline {
   background-image: url('images/menu-outline.png');
   background-size: 22px;
@@ -512,6 +524,10 @@
 .ui-listview > li > a.ui-btn {
 	border-width: 4px 0 0 0; /* Increases default border between list items to 4px */
 	border-style: solid;
+	font-size: 100%;
+}
+.ui-listview {
+	
 }
 .pdf {
 	text-align: left;
@@ -601,11 +617,26 @@
   background-repeat: no-repeat;
   background-position: 16px 14px;
 }
-.passage {
+.passage-sm {
 	padding-top: 0px;
 	margin-left: 14px;
 	margin-right: 14px;
 	text-align: justify;
+	font-size: 100%;
+}
+.passage-md {
+	padding-top: 0px;
+	margin-left: 14px;
+	margin-right: 14px;
+	text-align: justify;
+	font-size: 115%;
+}
+.passage-lg {
+	padding-top: 0px;
+	margin-left: 14px;
+	margin-right: 14px;
+	text-align: justify;
+	font-size: 130%;
 }
 .citation {
 	text-align: center;

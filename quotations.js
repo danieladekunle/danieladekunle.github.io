@@ -194,6 +194,60 @@ $(document).ready( function(event){
 	}
 });
 
+$(document).ready(function() {
+	$('input:radio[name="font-sizes"]').change(function(){
+		if($(this).val() == 'medium'){
+			$(document.body).find('div').each(function (i) {
+				var c = $(this).attr('class');
+				if(c !== undefined){
+					c = c.replace(/-sm/g,'-md')
+					c = c.replace(/-lg/g,'-md')
+					$(this).removeClass().addClass(c);
+				}
+			});
+		}			
+		else if($(this).val() == 'large'){	
+			$(document.body).find('div').each(function (i) {
+				var c = $(this).attr('class');
+				if(c !== undefined){
+					c = c.replace(/-sm/g,'-lg')
+					c = c.replace(/-md/g,'-lg')
+					$(this).removeClass().addClass(c);
+				}
+			});
+		}
+		else if($(this).val() == 'small'){	
+			$(document.body).find('div').each(function (i) {
+				var c = $(this).attr('class');
+				if(c !== undefined){
+					c = c.replace(/-md/g,'-sm')
+					c = c.replace(/-lg/g,'-sm')
+					$(this).removeClass().addClass(c);
+				}
+			});
+		}
+	});
+});
+
+
+$(document).ready( function(event){
+	$('input:radio[name=font-sizes]').change(function(){
+		localStorage.fontsize = $('input[name=font-sizes]:checked').val()
+	});
+});
+
+$(document).ready( function(event){
+	if (localStorage.fontsize  == "medium") {
+		$('#font-m').prop('checked',true).trigger("click");
+	}
+	else if (localStorage.fontsize  == "large") {
+		$('#font-l').prop('checked',true).trigger("click");
+	}
+	else {
+		$('#font-s').prop('checked',true).trigger("click");
+	}
+});
+
 // Hide all book titles by default. 
 // When number clicked if title hidden show title and hide any others, otherwise open book page. 
 // When title clicked hide all titles.
@@ -349,7 +403,7 @@ $(document).ready(function() {
 // Toggle header/footer elements on click on passage text
 
 $(document).ready(function() {
-	$('.passage').click(function() {
+	$('.passage-sm').click(function() {
 		$($(this).siblings('.passage-header-fs').children('a')).fadeToggle();
 		$($(this).siblings('.passage-header-fs').children('.section-number-fs')).fadeToggle();
 		$($(this).siblings('.passage-footer').children('a')).fadeToggle();
