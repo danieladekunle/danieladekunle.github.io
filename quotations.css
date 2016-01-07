@@ -372,6 +372,11 @@
 	padding-top: 0px; /* Compensates for 15px top (and/or below) */
 	margin-top: 0px; /* Compensates for 15px top (and/or above) */
 }
+.ui-radio {
+	-webkit-border-radius: 0 !important;
+	border-radius: 0 !important;
+	box-shadow: 0 0 0 0 !important;
+}
 .label {
 	text-align: center;
 	color: #333333;

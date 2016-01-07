@@ -66,7 +66,7 @@ $(document).ready(function() {
 
 // If in standalone mode show status bar radio button, otherwise hide.
 
-$(document).ready(function() {
+/* $(document).ready(function() {
 	if (window.navigator.standalone == true) {
 		$('#sb-button').show();
 	}
@@ -74,7 +74,7 @@ $(document).ready(function() {
 		$('#sb-button').hide();
 	}
 });
-
+ */
 // If in standalone mode, when status bar radio button changed, if 'on' selected and if device is iPod/iPhone and if in portrait mode or if device is iPad replace all classes ending in '-fs' suffix with '-sb' suffix and trigger resize to refresh page, otherwise do opposite.
 
 $(document).ready(function() {
