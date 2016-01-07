@@ -239,9 +239,25 @@ $(document).ready( function(event){
 $(document).ready( function(event){
 	if (localStorage.fontsize  == "medium") {
 		$('#font-m').prop('checked',true).trigger("click");
+		$(document.body).find('div').each(function (i) {
+			var c = $(this).attr('class');
+			if(c !== undefined){
+				c = c.replace(/-sm/g,'-md')
+				c = c.replace(/-lg/g,'-md')
+				$(this).removeClass().addClass(c);
+			}
+		});
 	}
 	else if (localStorage.fontsize  == "large") {
 		$('#font-l').prop('checked',true).trigger("click");
+		$(document.body).find('div').each(function (i) {
+			var c = $(this).attr('class');
+			if(c !== undefined){
+				c = c.replace(/-sm/g,'-lg')
+				c = c.replace(/-md/g,'-lg')
+				$(this).removeClass().addClass(c);
+			}
+		});
 	}
 	else {
 		$('#font-s').prop('checked',true).trigger("click");
