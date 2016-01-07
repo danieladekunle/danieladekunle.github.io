@@ -372,6 +372,9 @@
 	padding-top: 0px; /* Compensates for 15px top (and/or below) */
 	margin-top: 0px; /* Compensates for 15px top (and/or above) */
 }
+.ui-controlgroup-horizontal .ui-controlgroup-controls .ui-btn.ui-last-child {
+	border-right-width: 0px !important;
+}
 .label {
 	text-align: center;
 	color: #333333;
