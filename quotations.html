@@ -166,7 +166,7 @@
 				</div>
 			</div>
 			<!-- Left Panel -->
-			<div data-role="panel" data-classes='{"modal":"needsclick ui-panel-dismiss"}' data-position="left" data-display="overlay" data-dismissible="true" data-position-fixed="true" id="left-panel">
+			<div data-role="panel" style="text-align:center" data-classes='{"modal":"needsclick ui-panel-dismiss"}' data-position="left" data-display="overlay" data-dismissible="true" data-position-fixed="true" id="left-panel">
 				<div class="ui-panel-inner">
 					<div id="sb-button" style="text-align:center;">
 						<div class="label">
@@ -188,14 +188,14 @@
 						<div class="label">
 							font size
 						</div>
-						<fieldset data-role="controlgroup" data-type="horizontal">
+						<fieldset data-role="controlgroup" data-type="horizontal" style="">
 							<!-- <legend>font size</legend> -->
 							<input name="font-sizes" id="font-s" value="small" type="radio">
-							<label for="font-s" style="font-size:100%; padding-top:19px; padding-bottom:17px;">Aa</label>
+							<label for="font-s" style="font-size:100%; padding-top:16.5px; padding-bottom:15px; padding-right:20px; padding-left:20px;">Aa</label>
 							<input name="font-sizes" id="font-m" value="medium" type="radio">
-							<label for="font-m" style="font-size:115%; padding-top:17px; padding-bottom:16px;">Aa</label>
+							<label for="font-m" style="font-size:115%; padding-top:14.5px; padding-bottom:14px; padding-right:18.5px; padding-left:18.5px;">Aa</label>
 							<input name="font-sizes" id="font-l" value="large" type="radio">
-							<label for="font-l" style="font-size:130%; padding-top:14px; padding-bottom:15px;">Aa</label>
+							<label for="font-l" style="font-size:130%; padding-top:12px; padding-bottom:13px; padding-right:17px; padding-left:17px;">Aa</label>
 						</fieldset>
 						<div class="note">
 							
@@ -204,12 +204,13 @@
 					</div>
 					<div class="label">
 						feedback
-						<a data-role="button" href="mailto:danieladekunle@gmail.com?Subject=recite%20feedback">
-							<div class="feedback">
-								comments ∙ corrections ∙ suggestions...
-							</div>
-						</a>
 					</div>
+					<!-- <div class="feedback">
+						comments ∙ corrections ∙ suggestions...
+					</div> -->
+					<a data-role="button" data-inline="true" href="mailto:danieladekunle@gmail.com?Subject=recite%20feedback">
+						mail
+					</a>
 					<!-- <div class="panel-footer">
 						<a class="link" href="#menu" data-rel="close" data-transition="slide" data-theme="c" style="color:gray;">
 							back to menu
