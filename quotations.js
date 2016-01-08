@@ -529,7 +529,8 @@ $(document).bind('swipeleft', function () {
 	history.forward({transition:"slide"});
 });
 */
-
+$(document).ready(function() {
 $(window).on( "panelclose", function() {
-	$(window).trigger('resize');
+	$('#menu-header').trigger("click");
+});
 });
