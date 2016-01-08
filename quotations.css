@@ -348,29 +348,39 @@
 
 /* Panels */
 
-.ui-panel {
-	width: 17em; 
-	border-width: 0;
-	position: static; /* 'absolute' raises menu 20px; 'fixed' causes intermittent locked scrolling on rt. of menu*/
-	display: block;
-	top: 20px; /* Prevents status bar overlap */
-	height: -moz-calc(100% - 20px); /* Compensates for 20px top (Firefox) */
-	height: -webkit-calc(100% - 20px); /* Compensates for 20px top (Chrome, Safari) */
-	height: calc(100% - 20px); /* Compensates for 20px top (IE9+ and future browsers) */
+.ui-panel-display-overlay {
+	-webkit-box-shadow: 1px 0 1px rgba(0,0,0,.1);
+	-moz-box-shadow: 1px 0 1px rgba(0,0,0,.1);
+	box-shadow: 1px 0 1px rgba(0,0,0,.1);
+	/* border-right-color: #gray;
+	border-right-style: solid;
+	border-right-width: 1px; */
 }
-.ui-panel.ui-panel-open {
-	position: fixed; /* Prevents panel from scrolling with page */
+.ui-panel-display-overlay-sb {
+	-webkit-box-shadow: 0px 0 0px rgba(0,0,0,0);
+	-moz-box-shadow: 0px 0 0px rgba(0,0,0,0);
+	box-shadow: 0px 0 0px rgba(0,0,0,0);
+	border-right-color: #gray;
+	border-right-style: solid;
+	border-right-width: 1px;
+	background: url('images/status-bar.png') no-repeat, white;
 }
-.ui-panel-inner {
-	position: absolute;
-	top: 15px; /* Creates top margin for scrolling */
-	left: 0;
-	right: 0;
-	bottom: 0px;
-	overflow: scroll; /* Enables scrolling within panel */
-	-webkit-overflow-scrolling: touch;
-	padding-top: 0px; /* Compensates for 15px top (and/or below) */
-	margin-top: 0px; /* Compensates for 15px top (and/or above) */
+.ui-panel-position-right.ui-panel-display-overlay {
+	-webkit-box-shadow: -1px 0 1px rgba(0,0,0,.1);
+	-moz-box-shadow: -1px 0 1px rgba(0,0,0,.1);
+	box-shadow: -1px 0 1px rgba(0,0,0,.1);
+	/* border-left-color: #gray;
+	border-left-style: solid;
+	border-left-width: 1px; */
+}
+.ui-panel-position-right.ui-panel-display-overlay-sb {
+	-webkit-box-shadow: 0px 0 0px rgba(0,0,0,0);
+	-moz-box-shadow: 0px 0 0px rgba(0,0,0,0);
+	box-shadow: 0px 0 0px rgba(0,0,0,0);
+	border-left-color: #gray;
+	border-left-style: solid;
+	border-left-width: 1px;
+	background: url('images/status-bar.png') no-repeat, white;
 }
 .ui-controlgroup-horizontal .ui-controlgroup-controls .ui-btn.ui-last-child {
 	border-right-width: 0px !important;
@@ -388,7 +398,7 @@
 }
 .feedback {
 	text-align: center;
-	font-size:;
+	font-size: small;
 	letter-spacing: 1px;
 	padding-bottom: 4px;
 	white-space: normal;
