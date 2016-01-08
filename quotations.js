@@ -529,8 +529,9 @@ $(document).bind('swipeleft', function () {
 	history.forward({transition:"slide"});
 });
 */
-$(document).ready(function() {
-$(window).on( "panelclose", function() {
-	$('#menu-header').trigger("click");
-});
-});
+
+/* $(document).ready(function() {
+	$(window).on( "panelclose", function() {
+		$('#menu-header').trigger("click");
+	});
+}); */
