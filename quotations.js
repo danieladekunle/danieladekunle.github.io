@@ -530,6 +530,6 @@ $(document).bind('swipeleft', function () {
 });
 */
 
-$( "#menu" ).on( "panelclose", function() {
-	$(window).trigger('resize')
+$(window).on( "panelclose", function() {
+	$(window).trigger('resize');
 });
