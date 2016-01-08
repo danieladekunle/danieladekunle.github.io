@@ -529,3 +529,7 @@ $(document).bind('swipeleft', function () {
 	history.forward({transition:"slide"});
 });
 */
+
+$( "#menu" ).on( "panelclose", function() {
+	$(window).trigger('resize')
+});
