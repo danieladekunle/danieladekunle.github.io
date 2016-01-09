@@ -524,10 +524,23 @@ $(document).bind('swiperight', function(event){
 });
 */
 
-$(document).on("pagecontainerbeforetransition", function(event, ui){
+/* $(document).on("pagecontainerbeforetransition", function(event, ui){
 	if (window.navigator.standalone == false){
 		if (ui.options.reverse == true){
 			ui.options.transition = "none";
 		}
 	}
+}); */
+
+var direction = '';
+$(window).on("navigate", function (event, data) {
+    direction = data.state.direction;
+});
+
+$(document).on("pagebeforechange", function (e, ui) {
+    if (direction == "back") {
+        ui.options.transition = "none";
+    }
+}).on("pagecontainertransition", function () {
+    direction = '';
 });
