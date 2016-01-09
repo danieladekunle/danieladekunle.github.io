@@ -524,6 +524,12 @@ $(document).bind('swiperight', function(event){
 });
 */
 
+$(document).on("pagecontainerbeforechange", function (e, data) {
+  if (data.options.direction == "back" || data.options.direction == "forward") {
+      data.options.transition = "none";
+  }
+});
+
 /* $(document).on("pagecontainerbeforetransition", function(event, ui){
 	if (window.navigator.standalone == false){
 		if (ui.options.reverse == true){
@@ -532,7 +538,7 @@ $(document).bind('swiperight', function(event){
 	}
 }); */
 
-var direction = '';
+/* var direction = '';
 $(window).on("navigate", function (event, data) {
     direction = data.state.direction;
 });
@@ -543,4 +549,4 @@ $(document).on("pagebeforechange", function (e, ui) {
     }
 }).on("pagecontainertransition", function () {
     direction = '';
-});
+}); */
