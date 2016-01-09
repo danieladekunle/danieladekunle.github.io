@@ -525,7 +525,9 @@ $(document).bind('swiperight', function(event){
 */
 
  $(document).on("pagecontainerbeforetransition", function(event, ui){
-    if (ui.options.reverse == true){
-        ui.options.transition = "none";
-    }
+	if (window.navigator.standalone == false){
+		if (ui.options.reverse == true){
+			ui.options.transition = "none";
+		}
+	}
  });
