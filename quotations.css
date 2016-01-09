@@ -631,6 +631,12 @@
 	margin-right: 14px;
 	text-align: justify;
 	font-size: 115%;
+	word-break: break-word; /* Non standard for webkit */
+	-webkit-hyphens: auto;
+    /* word-break: break-all;
+    -ms-word-break: break-all;
+	hyphens: auto;
+	-moz-hyphens: auto; */
 }
 .passage-lg {
 	padding-top: 0px;
@@ -638,12 +644,12 @@
 	margin-right: 14px;
 	text-align: justify;
 	font-size: 130%;
-	-ms-word-break: break-all;
-    word-break: break-all;
-    word-break: break-word; /* Non standard for webkit */
+	word-break: break-word; /* Non standard for webkit */
 	-webkit-hyphens: auto;
-	-moz-hyphens: auto;
-    hyphens: auto;
+    /* word-break: break-all;
+    -ms-word-break: break-all;
+	hyphens: auto;
+	-moz-hyphens: auto; */
 }
 .citation {
 	text-align: center;
