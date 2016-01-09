@@ -524,10 +524,18 @@ $(document).bind('swiperight', function(event){
 });
 */
 
- $(document).on("pagecontainerbeforetransition", function(event, ui){
+$(document).on("pagecontainerbeforetransition", function(event, ui){
 	if (window.navigator.standalone == false){
 		if (ui.options.reverse == true){
 			ui.options.transition = "none";
 		}
 	}
- });
+});
+ 
+$(document).on("pageshow", function(event, ui) {
+    $.mobile.loading('show');
+    setTimeout(function(){
+        processCreateBtnAction(); //This takes 5 seconds to complete the operation
+        $.mobile.loading('hide');
+    }, 20);
+});
