@@ -523,3 +523,9 @@ $(document).bind('swiperight', function(event){
 	}
 });
 */
+
+ $(document).on("pagecontainerbeforetransition", function(event, ui){
+    if (ui.options.reverse == true){
+        ui.options.transition = "none";
+    }
+ });
