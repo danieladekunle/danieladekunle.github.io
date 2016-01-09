@@ -524,29 +524,10 @@ $(document).bind('swiperight', function(event){
 });
 */
 
+// If not in standalone mode and page navigates back or forward in history, disable transitions (to prevent double-transitions)
+
 $(document).on("pagecontainerbeforechange", function (e, data) {
   if (data.options.direction == "back" || data.options.direction == "forward") {
       data.options.transition = "none";
   }
 });
-
-/* $(document).on("pagecontainerbeforetransition", function(event, ui){
-	if (window.navigator.standalone == false){
-		if (ui.options.reverse == true){
-			ui.options.transition = "none";
-		}
-	}
-}); */
-
-/* var direction = '';
-$(window).on("navigate", function (event, data) {
-    direction = data.state.direction;
-});
-
-$(document).on("pagebeforechange", function (e, ui) {
-    if (direction == "back") {
-        ui.options.transition = "none";
-    }
-}).on("pagecontainertransition", function () {
-    direction = '';
-}); */
