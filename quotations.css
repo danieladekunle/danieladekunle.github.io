@@ -762,6 +762,13 @@
 	letter-spacing: 0px;
 }
 
+.ui-loader {
+  display:none !important;
+}
+.ui-icon-loading {
+    background:none !important;
+}
+
 /* Solid Theme (disabled)*/
 
 /* .book-number-white {
