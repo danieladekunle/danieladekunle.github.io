@@ -531,11 +531,3 @@ $(document).on("pagecontainerbeforetransition", function(event, ui){
 		}
 	}
 });
- 
-$(document).on("pageshow", function(event, ui) {
-    $.mobile.loading('show');
-    setTimeout(function(){
-        processCreateBtnAction(); //This takes 5 seconds to complete the operation
-        $.mobile.loading('hide');
-    }, 20);
-});
