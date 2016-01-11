@@ -38,6 +38,23 @@ $(document).ready(function(){
 	}, true);
 });
 
+$(document).ready(function(event){
+	$(".passage-menu-icon-left-fs").click(function(){
+		$.mobile.pageContainer.pagecontainer("change", "#menu", {transition:"slide", reverse:true,});
+		$("#menu-wrapper-child").hide();
+		setTimeout(function(){
+			$("#menu-wrapper-child").fadeIn("slow");
+		}, 300);
+	});
+	$(".resource-icon-left-fs").click(function(){
+		$.mobile.pageContainer.pagecontainer("change", "#menu", {transition:"slide", reverse:true,});
+		$("#menu-wrapper-child").hide();
+		setTimeout(function(){
+			$("#menu-wrapper-child").fadeIn("slow");
+		}, 300);
+	});
+}); 
+
 // When orientation changes, trigger resize (to trigger above function to run after window resize complete)
 
 $(document).ready(function(){
