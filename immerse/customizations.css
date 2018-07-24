@@ -21,13 +21,14 @@ h1 {
     color: white;
     text-shadow: none;
     text-transform: uppercase;
-	letter-spacing: 5px;
+	  letter-spacing: 5px;
 }
 /* CLASSES */
 .quotation {
   text-align: center;
   font-family: 'EB Garamond', serif;
   font-size: larger;
+  letter-spacing: 1.5px;
 }
 .center {
 	text-align: center;
