@@ -1,5 +1,5 @@
 /* FONT */
-@import url('https://fonts.googleapis.com/css?family=Lato:300');
+@import url('https://fonts.googleapis.com/css?family=Lato:300|EB+Garamond');
 * {
 	font-family: 'Lato', sans-serif;
 }
@@ -24,6 +24,11 @@ h1 {
 	letter-spacing: 5px;
 }
 /* CLASSES */
+.quotation {
+  text-align: center;
+  font-family: 'EB Garamond', serif;
+  font-size: larger;
+}
 .center {
 	text-align: center;
 }
