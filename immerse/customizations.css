@@ -1,5 +1,5 @@
 /* FONT */
-@import url('https://fonts.googleapis.com/css?family=Lato:300|EB+Garamond');
+@import url('https://fonts.googleapis.com/css?family=EB+Garamond|Lato:300');
 * {
 	font-family: 'Lato', sans-serif;
 }
@@ -24,6 +24,18 @@ h1 {
 	  letter-spacing: 5px;
 }
 /* CLASSES */
+/*.attribution {
+  text-align: center;
+  font-family: 'Cinzel', serif;
+  font-size: small;
+  letter-spacing: 1.5px;
+}*/
+.attribution {
+  text-align: center;
+  font-family: 'EB Garamond', serif;
+  font-variant: small-caps;
+  letter-spacing: 2px;
+}
 .quotation {
   text-align: center;
   font-family: 'EB Garamond', serif;
@@ -33,6 +45,7 @@ h1 {
 .center {
 	text-align: center;
   color: gray;
+  letter-spacing: 1px;
 }
 /* IMMERSE ICONS */
 .ui-icon-advanced {
