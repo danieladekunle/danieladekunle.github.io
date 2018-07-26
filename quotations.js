@@ -89,203 +89,206 @@ $(document).ready(function(){
 
 // If in standalone mode show status bar radio button, otherwise hide. (disabled for desktop testing)
 
-// $(document).ready(function(){
-// 	if (window.navigator.standalone == true){
-// 		$('#sb-button').show();
-// 	}
-// 	else {
-// 		$('#sb-button').hide();
-// 	}
-// });
+$(document).ready(function(){
+	if (window.navigator.standalone == true){
+		$('#sb-button').show();
+	}
+	else {
+		$('#sb-button').hide();
+	}
+});
 
-// // If in standalone mode, when status bar radio button changed, if 'on' selected and if device is iPod/iPhone and if in portrait mode or if device is iPad replace all classes ending in '-fs' suffix with '-sb' suffix and trigger resize to refresh page, otherwise do opposite.
+// If in standalone mode, when status bar radio button changed, if 'on' selected and if device is iPod/iPhone and if in portrait mode or if device is iPad replace all classes ending in '-fs' suffix with '-sb' suffix and trigger resize to refresh page, otherwise do opposite.
+$(document).ready(function(){
+	localStorage.clear()
+});
 
-// $(document).ready(function(){
-// 	if (window.navigator.standalone == true){
-// 		$('input:radio[name="status-bar-option"]').change(function(){
-// 			if ($(this).val() == 'on'){
-// 				if (navigator.userAgent.match(/(iPod|iPhone)/)){
-// 					if (window.orientation == 0){
-// 						$(document.body).find('div, a').each(function(i){
-// 							var c = $(this).attr('class');
-// 							if (c !== undefined){
-// 								c = c.replace(/-fs/g,'-sb')
-// 								$(this).removeClass().addClass(c);
-// 								$(window).trigger('resize')
-// 							}
-// 						});
-// 					}
-// 				}
-// 				else {
-// 					$(document.body).find('div, a').each(function(i){
-// 						var c = $(this).attr('class');
-// 						if (c !== undefined){
-// 							c = c.replace(/-fs/g,'-sb')
-// 							$(this).removeClass().addClass(c);
-// 							$(window).trigger('resize')
-// 						}
-// 					});
-// 				}	
-// 			}
-// 			else {
-// 				$(document.body).find('div, a').each(function(i){
-// 					var c = $(this).attr('class');
-// 					if (c !== undefined){
-// 						c = c.replace(/-sb/g,'-fs')
-// 						$(this).removeClass().addClass(c);
-// 						$(window).trigger('resize')
-// 					}
-// 				});
-// 			}
-// 		});
-// 	}
-// });
+$(document).ready(function(){
+	if (window.navigator.standalone == true){
+		$('input:radio[name="status-bar-option"]').change(function(){
+			if ($(this).val() == 'on'){
+				if (navigator.userAgent.match(/(iPod|iPhone)/)){
+					if (window.orientation == 0){
+						$(document.body).find('div, a').each(function(i){
+							var c = $(this).attr('class');
+							if (c !== undefined){
+								c = c.replace(/-fs/g,'-sb')
+								$(this).removeClass().addClass(c);
+								$(window).trigger('resize')
+							}
+						});
+					}
+				}
+				else {
+					$(document.body).find('div, a').each(function(i){
+						var c = $(this).attr('class');
+						if (c !== undefined){
+							c = c.replace(/-fs/g,'-sb')
+							$(this).removeClass().addClass(c);
+							$(window).trigger('resize')
+						}
+					});
+				}	
+			}
+			else {
+				$(document.body).find('div, a').each(function(i){
+					var c = $(this).attr('class');
+					if (c !== undefined){
+						c = c.replace(/-sb/g,'-fs')
+						$(this).removeClass().addClass(c);
+						$(window).trigger('resize')
+					}
+				});
+			}
+		});
+	}
+});
 
-// // If in standalone mode and device is iPod or iPhone and status bar option checked, when rotated to landscape hide status bar and replace when rotated to portrait
+// If in standalone mode and device is iPod or iPhone and status bar option checked, when rotated to landscape hide status bar and replace when rotated to portrait
 
-// $(document).ready(function(){
-// 	if (window.navigator.standalone == true){
-// 		if (navigator.userAgent.match(/(iPod|iPhone)/)){
-// 			$(window).on("orientationchange",function(){
-// 				 if ($('input[name=status-bar-option]:checked').val() == "on"){
-// 					if (window.orientation == 90 || window.orientation == -90){
-// 						$(document.body).find('div, a').each(function(i){
-// 							var c = $(this).attr('class');
-// 							if (c !== undefined){
-// 								c = c.replace(/-sb/g,'-fs')
-// 								$(this).removeClass().addClass(c);
-// 								$(window).trigger('resize')
-// 							}
-// 						});
-// 					}
-// 					else {
-// 						$(document.body).find('div, a').each(function(i){
-// 							var c = $(this).attr('class');
-// 							if (c !== undefined){
-// 								c = c.replace(/-fs/g,'-sb')
-// 								$(this).removeClass().addClass(c);
-// 								$(window).trigger('resize')
-// 							}
-// 						});
-// 					}
-// 				}
-// 			});
-// 		}
-// 	}
-// });
+$(document).ready(function(){
+	if (window.navigator.standalone == true){
+		if (navigator.userAgent.match(/(iPod|iPhone)/)){
+			$(window).on("orientationchange",function(){
+				 if ($('input[name=status-bar-option]:checked').val() == "on"){
+					if (window.orientation == 90 || window.orientation == -90){
+						$(document.body).find('div, a').each(function(i){
+							var c = $(this).attr('class');
+							if (c !== undefined){
+								c = c.replace(/-sb/g,'-fs')
+								$(this).removeClass().addClass(c);
+								$(window).trigger('resize')
+							}
+						});
+					}
+					else {
+						$(document.body).find('div, a').each(function(i){
+							var c = $(this).attr('class');
+							if (c !== undefined){
+								c = c.replace(/-fs/g,'-sb')
+								$(this).removeClass().addClass(c);
+								$(window).trigger('resize')
+							}
+						});
+					}
+				}
+			});
+		}
+	}
+});
 
-// // When status bar option changed save value to local storage
+// When status bar option changed save value to local storage
 
-// $(document).ready(function(event){
-// 	$('input:radio[name=status-bar-option]').change(function(){
-// 		localStorage.statusbar = $('input[name=status-bar-option]:checked').val()
-// 	});
-// });
+$(document).ready(function(event){
+	$('input:radio[name=status-bar-option]').change(function(){
+		localStorage.statusbar = $('input[name=status-bar-option]:checked').val()
+	});
+});
 
-// // If in standalone mode and status bar option saved to local storage is 'on' trigger click on radio button option and replace full screen classes, otherwise trigger click on other option
+// If in standalone mode and status bar option saved to local storage is 'on' trigger click on radio button option and replace full screen classes, otherwise trigger click on other option
 
-// $(document).ready(function(event){
-// 	if (window.navigator.standalone == true){
-// 		if (localStorage.statusbar  == "on"){
-// 			$('#status-bar-option-a').prop('checked',true).trigger("click");
-// 			if (navigator.userAgent.match(/(iPod|iPhone)/)){
-// 				if (window.orientation == 0){
-// 					$(document.body).find('div, a').each(function(i){
-// 						var c = $(this).attr('class');
-// 						if (c !== undefined){
-// 							c = c.replace(/-fs/g,'-sb')
-// 							$(this).removeClass().addClass(c);
-// 							$(window).trigger('resize')
-// 						}
-// 					});
-// 				}
-// 			}
-// 			else {
-// 				$(document.body).find('div, a').each(function(i){
-// 					var c = $(this).attr('class');
-// 					if (c !== undefined){
-// 						c = c.replace(/-fs/g,'-sb')
-// 						$(this).removeClass().addClass(c);
-// 						$(window).trigger('resize')
-// 					}
-// 				});
-// 			}	
-// 		}
-// 		else {
-// 			$('#status-bar-option-b').prop('checked',true).trigger("click");
-// 		}
-// 	}
-// });
+$(document).ready(function(event){
+	if (window.navigator.standalone == true){
+		if (localStorage.statusbar  == "on"){
+			$('#status-bar-option-a').prop('checked',true).trigger("click");
+			if (navigator.userAgent.match(/(iPod|iPhone)/)){
+				if (window.orientation == 0){
+					$(document.body).find('div, a').each(function(i){
+						var c = $(this).attr('class');
+						if (c !== undefined){
+							c = c.replace(/-fs/g,'-sb')
+							$(this).removeClass().addClass(c);
+							$(window).trigger('resize')
+						}
+					});
+				}
+			}
+			else {
+				$(document.body).find('div, a').each(function(i){
+					var c = $(this).attr('class');
+					if (c !== undefined){
+						c = c.replace(/-fs/g,'-sb')
+						$(this).removeClass().addClass(c);
+						$(window).trigger('resize')
+					}
+				});
+			}	
+		}
+		else {
+			$('#status-bar-option-b').prop('checked',true).trigger("click");
+		}
+	}
+});
 
-// $(document).ready(function(){
-// 	$('input:radio[name="font-sizes"]').change(function(){
-// 		if ($(this).val() == 'medium'){
-// 			$(document.body).find('div').each(function(i){
-// 				var c = $(this).attr('class');
-// 				if (c !== undefined){
-// 					c = c.replace(/-sm/g,'-md')
-// 					c = c.replace(/-lg/g,'-md')
-// 					$(this).removeClass().addClass(c);
-// 				}
-// 			});
-// 		}			
-// 		else if ($(this).val() == 'large'){	
-// 			$(document.body).find('div').each(function(i){
-// 				var c = $(this).attr('class');
-// 				if (c !== undefined){
-// 					c = c.replace(/-sm/g,'-lg')
-// 					c = c.replace(/-md/g,'-lg')
-// 					$(this).removeClass().addClass(c);
-// 				}
-// 			});
-// 		}
-// 		else if ($(this).val() == 'small'){	
-// 			$(document.body).find('div').each(function(i){
-// 				var c = $(this).attr('class');
-// 				if (c !== undefined){
-// 					c = c.replace(/-md/g,'-sm')
-// 					c = c.replace(/-lg/g,'-sm')
-// 					$(this).removeClass().addClass(c);
-// 				}
-// 			});
-// 		}
-// 	});
-// });
+$(document).ready(function(){
+	$('input:radio[name="font-sizes"]').change(function(){
+		if ($(this).val() == 'medium'){
+			$(document.body).find('div').each(function(i){
+				var c = $(this).attr('class');
+				if (c !== undefined){
+					c = c.replace(/-sm/g,'-md')
+					c = c.replace(/-lg/g,'-md')
+					$(this).removeClass().addClass(c);
+				}
+			});
+		}			
+		else if ($(this).val() == 'large'){	
+			$(document.body).find('div').each(function(i){
+				var c = $(this).attr('class');
+				if (c !== undefined){
+					c = c.replace(/-sm/g,'-lg')
+					c = c.replace(/-md/g,'-lg')
+					$(this).removeClass().addClass(c);
+				}
+			});
+		}
+		else if ($(this).val() == 'small'){	
+			$(document.body).find('div').each(function(i){
+				var c = $(this).attr('class');
+				if (c !== undefined){
+					c = c.replace(/-md/g,'-sm')
+					c = c.replace(/-lg/g,'-sm')
+					$(this).removeClass().addClass(c);
+				}
+			});
+		}
+	});
+});
 
 
-// $(document).ready(function(event){
-// 	$('input:radio[name=font-sizes]').change(function(){
-// 		localStorage.fontsize = $('input[name=font-sizes]:checked').val()
-// 	});
-// });
+$(document).ready(function(event){
+	$('input:radio[name=font-sizes]').change(function(){
+		localStorage.fontsize = $('input[name=font-sizes]:checked').val()
+	});
+});
 
-// $(document).ready(function(event){
-// 	if (localStorage.fontsize  == "medium"){
-// 		$('#font-m').prop('checked',true).trigger("click");
-// 		$(document.body).find('div').each(function(i){
-// 			var c = $(this).attr('class');
-// 			if (c !== undefined){
-// 				c = c.replace(/-sm/g,'-md')
-// 				c = c.replace(/-lg/g,'-md')
-// 				$(this).removeClass().addClass(c);
-// 			}
-// 		});
-// 	}
-// 	else if (localStorage.fontsize  == "large"){
-// 		$('#font-l').prop('checked',true).trigger("click");
-// 		$(document.body).find('div').each(function(i){
-// 			var c = $(this).attr('class');
-// 			if (c !== undefined){
-// 				c = c.replace(/-sm/g,'-lg')
-// 				c = c.replace(/-md/g,'-lg')
-// 				$(this).removeClass().addClass(c);
-// 			}
-// 		});
-// 	}
-// 	else {
-// 		$('#font-s').prop('checked',true).trigger("click");
-// 	}
-// });
+$(document).ready(function(event){
+	if (localStorage.fontsize  == "medium"){
+		$('#font-m').prop('checked',true).trigger("click");
+		$(document.body).find('div').each(function(i){
+			var c = $(this).attr('class');
+			if (c !== undefined){
+				c = c.replace(/-sm/g,'-md')
+				c = c.replace(/-lg/g,'-md')
+				$(this).removeClass().addClass(c);
+			}
+		});
+	}
+	else if (localStorage.fontsize  == "large"){
+		$('#font-l').prop('checked',true).trigger("click");
+		$(document.body).find('div').each(function(i){
+			var c = $(this).attr('class');
+			if (c !== undefined){
+				c = c.replace(/-sm/g,'-lg')
+				c = c.replace(/-md/g,'-lg')
+				$(this).removeClass().addClass(c);
+			}
+		});
+	}
+	else {
+		$('#font-s').prop('checked',true).trigger("click");
+	}
+});
 
 // Hide all book titles by default. 
 // When number clicked if title hidden show title and hide any others, otherwise open book page. 
