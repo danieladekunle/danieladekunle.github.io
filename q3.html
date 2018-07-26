@@ -37,6 +37,17 @@
 		<!-- Add to home screen popup -->	
 		<link rel="stylesheet" href="addtohomescreen.css">
 		<script type="application/javascript" src="addtohomescreen.js"></script>
+		<script>
+			$(document).ready(function(){
+				if (window.navigator.standalone == true){
+					if (navigator.userAgent.match(/(iPod|iPhone)/)){
+						$(window).on("orientationchange",function(){
+							$(window).trigger('create')
+						});
+					}
+				}
+			});
+		</script>
 		<!-- <script>
 			addToHomescreen({
 			   icon: false, 
@@ -151,7 +162,7 @@
 								from the ruhi institute's
 							</div>
 							<div class="menu-footer-bottom">
-								main sequence of courses (1.1.0.1)
+								main sequence of courses (1.1.0.2)
 							</div>
 						</div>
 					</div>
@@ -162,7 +173,7 @@
 					from the ruhi institute's
 				</div>
 				<div class="menu-footer-bottom">
-					main sequence of courses (1.1.0.1)
+					main sequence of courses (1.1.0.2)
 				</div>
 			</div>
 			<!-- Left Panel -->
