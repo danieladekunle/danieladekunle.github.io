@@ -41,13 +41,11 @@
 			$(document).ready(function(){
 				if (window.navigator.standalone == true){
 					if (navigator.userAgent.match(/(iPod|iPhone)/)){
-						$(function(){
-							window.onorientationchange = OrientationChanged;
-							window.setTimeout(OrientationChanged, 0);
-						}
-						function OrientationChanged(e){
-							$('body').css('-webkit-transform', window.orientation % 180 == 0 ? '' : 'rotate(-90deg)');
-						}
+						$(window).bind("orientationchange", function(){
+						var orientation = window.orientation;
+						var new_orientation = (orientation) ? 0 : 180 + orientation;
+						$('body').css({"-webkit-transform": "rotate(" + new_orientation + "deg)"});
+						});
 					}
 				}
 			});
